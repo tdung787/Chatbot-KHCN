@@ -1,0 +1,52 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+hiện số.
+Bước 4: Khi vật rơi và chắn các tia hồng
+ngoại của cổng quang điện, đồng hồ sẽ
+dừng. Đọc thời gian rơi trên đồng hồ và ghi
+số liệu vào bảng.
+Câu 8: Nêu ra các nguyên nhân gây ra sai số trong phương án thí
+nghiệm lựa chọn.
+Lời giải:
+Nguyên nhân gây ra sai số của phép đo:
++ Sai số dụng cụ đo
++ Thao tác thực hiện không đúng
++ Chưa RESET máy đo thời gian hiện số
+Câu 9: Xử lí số liệu kết quả thí nghiệm
+a. Tính tốc độ trung bình và tốc độ tức thời của viên bi thép và điền kết
+quả vào Bảng 6.1 và Bảng 6.2.
+Bảng 6.1. Quãng đường: s = 0,5 (m)
+Giá trị trung
+Lần đo
+Đại lượng bình
+Lần 1 Lần 2 Lần 3
+………
+Thời gian 0,777 0,780 0,776
+t
+i
+Bảng 6.2. Đường kính của viên bi: d = 0,02 (m); sai số: 0,02 mm =
+0,00002 (m)
+Giá trị trung
+Lần đo
+Đại lượng bình
+Lần 1 Lần 2 Lần 3
+Thời gian …………
+0,033 0,032 0,031
+s
+t
+i
+b. Tính sai số của phép đo s, t và phép đo tốc độ rồi điền vào bảng 6.1
+và bảng 6.2. Trong đó
++ Δs bằng nửa ĐCNN của thước đo
++ Δt theo công thức đã học (bỏ qua sai số dụng cụ)
++ Δv tính theo công thức đã học
+c. Rút ra nhận xét sau khi tính toán.
+Hướng dẫn giải:
+Bảng 6.1
+t +t +t
+- Giá trị trung bình của thời gian: t= 1 2 3=0,778(s)
+3
+ Sai số tuyệt đối mỗi lần đo:
+∆t =|t −t|=0,001(s);∆ t =|t −t|=0,002(s);∆t =|t −t|=0,002(s);
+1 1 2 2 3 3
+377

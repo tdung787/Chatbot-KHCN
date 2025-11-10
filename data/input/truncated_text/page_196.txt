@@ -1,0 +1,43 @@
+Câu 17: Cho đồ thị độ dịch chuyển – thời gian của một vật như hình.
+Chọn phát biểu đúng.
+A. Vật đang chuyển động thẳng đều theo chiều
+dương.
+d
+B. Vật đang chuyển động thẳng đều theo chiều âm.
+C. Vật đang đứng yên.
+D. Vật chuyển động thẳng đều theo chiều dương rồi
+0 t
+đổi chiều chuyển động ngược lại.
+Câu 18: Một chất điểm chuyển động thẳng đều, với
+v(m/s)
+đồ thị vận tốc – thời gian được cho như hình vẽ. Quãng 3
+đường mà chất điểm đi được trong khoảng thời gian từ
+t(
+1 s đến 2 s là
+O s)
+1 2
+A. 1 m. C. 2 m. B. 3 m. D. 4
+m.
+Câu 19: Vật chuyển động thẳng đều có đồ thị toạ độ – thời gian như
+h.vẽ. Kết luận nào rút ra từ đồ thị là sai
+A. Quãng đường đi được sau 10s là 20m
+B. Độ dịch chuyển của vật sau 10s là -20m
+C. Giá trị đại số vận tốc của vật là 2m/s
+D. Vật chuyển động bắt đầu từ toạ độ 20m
+Câu 20: (SBT-CD) Đồ thị tọa độ - thời
+gi an của 2 xe 1 và 2 được biểu diễn như
+Hình 4.2. Hai xe gặp nhau tại vị trí cách
+vị trí xuất phát của xe 2 một khoảng
+A. 40 km. B. 30 km
+C. 35 km. D. 70 km
+Câu 21: Hình vẽ bên là đồ thị tọa độ - thời gian của một chiếc xe chạy
+từ A đến B trên đường 1 đường thẳng. Xe này xuất phát lúc
+A. 0 giờ (tính từ mốc thời gian), từ điểm A
+x(km)
+trùng với gốc tọa độ O. 150 B
+B. 1 giờ ( tính từ mốc thời gian), từ điểm A 120
+trùng với gốc tọa độ O.
+C. 0 giờ ( tính từ mốc thời gian), từ điểm A 30
+A t(h)
+cách gốc tọa độ O 30km. O 1 2 3 4 5
+D. 1 giờ ( tính từ mốc thời gian), từ điểm A

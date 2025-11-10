@@ -1,0 +1,41 @@
+Câu 8: Thời gian hòn đá rơi là bao nhiêu s (Kết quả lấy sau dấu phẩy
+0 chữ số thập phân.
+Đáp 3
+án:
+Câu 9: Độ cao lớn nhất mà hòn đá đạt được so với mặt đất là bao
+nhiêu m. Lấy g = 9,8 m/s2. (Kết quả lấy sau dấu phẩy 1 chữ số thập
+phân)
+Đáp
+án:
+Hướng dẫn giải
+- Chọn gốc tọa độ O tại mặt đất
+- Trục Ox nằm ngang, trục Oy thẳng đứng hướng lên
+- Gốc thời gian là lúc ném hòn đá
+- Các phương trình của hòn đá:
+x
+- Từ (3) ¿>t= , thay vào (4) ta
+cos450
+1 x2
+được: y=h+tan 450. x− g (5)
+2 v2cos2450
+Câu 7: Khi hòn đá rơi đến đất thì y=0 và x=42m.
+- Vận tốc hòn đá khi ném:
+Câu 8: Thời gian hòn đá chuyển động từ lúc ném đến khi chạm đất:
+x 42
+¿>t= = ≈3s
+Từ (1) v cos450 √2
+0 20.
+Câu 9: Độ cao lớn nhất mà hòn đá đạt đến:
+- Khi đạt độ cao cực đại: v =0
+y
+- Từ (4) ¿>¿ thời gian hòn đá bay đến vị trí có độ cao lớn nhất:
+√2
+20.
+v sin450 2
+t '= 0 = =1,44s
+g 9,8
+- Độ cao cực đại:
+12 √2 1
+y=hosin 40 ⇔h (1,44)2
+2 2 2
+max max

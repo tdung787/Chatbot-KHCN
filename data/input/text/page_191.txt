@@ -1,0 +1,54 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
++ t = 4s: v=1m/s
++ t = 6s: v=0
+7−4
++ t = 10s: v= =1,5m/s
+10−8
+d 6−10
++ t = 16s: v= = =−1m/s
+t 16−12
+ Tốc độ tức thời tại:
+2
++ t = 2s: v= =1m/s
+2
++ t = 4s: v=1m/s
++ t = 6s: v=0
+7−4
++ t = 10s: v= =1,5m/s
+10−8
+| |
+6−10
++ t = 16s: v= =1m/s
+16−12
+Ví dụ 4. Tại một thời điểm, ở vị trí M trên đoạn đường thẳng có xe
+máy A chạy qua với tốc độ 30 km/h. Sau 10 phút, cũng tại vị trí M, có
+xe máy B chạy qua với tốc độ 40 km/h để đuổi theo xe máy A. Giả sử
+hai xe máy chuyển động thẳng với tốc độ xem như không đổi.
+a. Tính thời gian để xe máy B đuổi kịp xe máy A.
+b. Tính quãng đường mà xe máy A đã đi được đến khi xe máy B đuổi
+kịp.
+Hướng dẫn giải
+a. Chọn gốc tọa độ O ≡ M, chiều dương cùng chiều chuyển động. Gốc
+thời gian lúc xe B qua M.
+( 1) ( 1)
+Phương trình chuyển động của xe A: x =v . t+ =30. t+ .
+A A 6 6
+Phương trình chuyển động của xe B: x =v .t=40t.
+B B
+( 1)
+Khi 2 xe gặp nhau, ta có:x =x ⇒30. t+ =40.t⇒t=0,5h
+A B 6
+Vậy, thời gian để xe máy B đuổi kịp xe máy A là 0,5 h.
+b. Quãng đường mà xe máy A đã đi được đến khi xe máy B đuổi kịp là
+( 1) ( 1)
+s =x =v . t+ =30. 0,5+ =20 km
+A A A 6 6
+Ví dụ 5. Một xe máy xuất phát từ A lúc 6 giờ chạy thẳng tới B với vận
+tốc không đổi 40 km/h. Một ô tô xuất phát từ B lúc 8 giờ chạy với vận
+tốc không đổi 80 km/h theo cùng hướng với xe máy. Biết khoảng cách
+AB = 20 km. Chọn thời điểm 6 giờ là mốc thời gian, chiều dương từ A
+đến B. Xác định vị trí và thời điểm ô tô đuổi kịp xe máy bằng công thức
+và bằng đồ thị.
+Hướng dẫn giải
+191

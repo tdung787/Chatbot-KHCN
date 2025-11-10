@@ -1,0 +1,50 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+∆ A +∆ A +...+∆ A 0,1+0+0,1+0
+∆ A= 1 2 n= =0,05cm
+n 4
+ Sai số tuyệt đối ∆ A: ∆ A=∆ A+∆ A =0,1cm
+dc
+ Viết kết quả: A=(2,4±0,1)cm
+Câu 14: Bảng 1. Ghi thời gian một vật rơi giữa hai điểm cố định.
+Thời gian rơi (s)
+Lần 1 Lần 2 Lần 3 Lần 4 Lần 5
+0,2027 0,2024 0,2023 0,2023 0,2022
+a. Tính giá trị trung bình của thời gian rơi.
+b. Tìm sai số tuyệt đối trung bình.
+c. Ghi kết quả sai số phép đo.
+Hướng dẫn giải:
+a. Giá trị trung bình của thời gian rơi.
+t +t +t +t +t
+t= 1 2 3 4 5=0,2024 s
+5
+b. Sai số tuyệt đối ứng với 5 lần đo:
+∆t =|t−t |=3.10−4s;∆t =|t−t |=0 s;
+1 1 2 2
+∆t =|t−t |=10−4 s;∆t =|t−t |=10−4s;
+3 3 4 4
+∆t =|t−t |=2.10−4 s
+5 5
+ Sai số tuyệt đối trung bình của phép đo:
+∆t +∆t +∆t +∆t +∆t
+∆t= 1 2 3 4 5=1,6.10−4 s
+5
+c. Sai số tuyệt đối:
+∆t=∆t+∆t =1,6.10−4+5.10−5=2,1.10−4
+dc
+ Ghi kết quả sai số phép đo:
+t=(0,2024±0,0002)s
+Câu 15: Dùng một thước có ĐCNN là 1
+mm và một đồng hồ đo thời gian có
+ĐCNN 0,01s để đo 5 lần thời gian chuyển
+động của chiếc xe đồ chơi chạy bằng pin
+từ điểm A (v = 0) đến điểm B (Hình 3.1).
+A
+Ghi các giá trị vào Bảng 3.1 và trả lời các
+câu hỏi.
+Lần đo s (m) s (m) t (s) t (s)
+(n)
+1
+2
+3
+68

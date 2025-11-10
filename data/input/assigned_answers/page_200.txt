@@ -1,0 +1,53 @@
+Câu 34: Lúc 7h, ô tô thứ nhất đi qua điểm A, ô tô thứ hai đi qua điểm
+B cách A 10km. Xe đi qua A với vận tốc 50 km/h, xe đi qua B với vận tốc
+40km/h. Biết hai xe chuyển động cùng chiều theo hướng từ A đến.
+B. Coi chuyển động của 2 ô tô là chuyển động đều. Hỏi:
+a. Hai xe gặp nhau lúc mấy giờ?
+A. 7h30. B. 8h. C. 9h. D. 8h30
+<Đáp án: B>
+b. Quãng đường xe A đã đi được đến khi gặp xe B
+A. 80 km. B. 40 km. C. 50 km. D. 90 km.
+<Đáp án: C>
+c. Hai xe cách nhau 20 km lúc mấy giờ?
+A. 9h. B. 9h30. C. 10h. D. 11h.
+<Đáp án: C>
+
+Câu 35: Hãy viết phương trình chuyển động của một ô tô chuyển động
+thẳng đều biết rằng ô tô chuyển động theo chiều âm với vận tốc 36 km/h
+và ở thời điểm 1,5h thì vật có tọa độ 6km
+A. 30 – 31t. B. 30 – 60t. C. 60 – 36t. D. 60 – 63t.
+<Đáp án: C>
+
+Câu 36: Lúc 8h sáng, một người đi xe máy khởi hành từ A chuyển
+động thẳng đều với vận tốc 40km/h. Người đó cách A 60km sau mấy giờ
+kể từ lúc khởi hành?
+A. 1h. B. 1,5h. C. 2h. D. 2,5h.
+<Đáp án: B>
+
+Câu 37: Hãy viết phương trình chuyển động của một ô tô chuyển
+động thẳng đều biết rằng tại t = 2h thì x = 40km và tại t = 3h thì x =
+90km.
+A. – 60 + 50t. B. – 60 + 30t. C. – 60 + 40t. D. – 60 +
+20t.
+<Đáp án: A>
+
+Câu 38: Hãy thiết lập phương trình chuyển động của một ô tô chuyển
+động thẳng đều biết. Ôtô chuyển động theo chiều dương với vận tốc
+10m/s và ở thời điểm 3s thì vật có tọa độ 60m.
+A. 30 + 10t. B. 20 + 10t. C. 10 + 20t. D. 40 + 10t.
+<Đáp án: A>
+
+Câu 39: Mộṭ vâṭ chuyển đôṇ g thẳng đều theo truc ̣Ox. Chọn gốc thời
+gian là lúc bắt đầu khảo sát chuyển đôṇg. Tại các thời điểm t = 2 s và
+t = 4 s, tọa độ tương ứng của vật là x = 8 m và x = 16 m. Kết luâṇ nào
+sau đây là không chính xác?
+A. Phương trình chuyển động của vâṭ: x = 4t (m; s).
+B. Vâṇ tốc của vâṭ có đô ̣lớn 4 m/s.
+C. Vâṭ chuyển động cùng chiều dương truc ̣Ox.
+D. Thời điểm ban đầu vâṭ cách gốc toạ đô ̣O là 8m.
+<Đáp án: D>
+
+Câu 40: Ta có A cách B 72km. Lúc 7h30 sáng, Xe ô tô một khởi hành
+từ A chuyển động thẳng đều về B với 36km / h. Nửa giờ sau, xe ô tô hai
+chuyển động thẳng đều từ B đến A và gặp nhau lúc 8 giờ 30 phút. Tìm
+vận tốc của xe ô tô thứ hai.

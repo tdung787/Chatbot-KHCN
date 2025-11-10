@@ -1,0 +1,53 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. Thời gian rơi theo phương thẳng đứng của quả bóng A nhỏ hơn
+⎕
+thời gian của quả bóng B.
+b. Tốc độ chạm đất của hai quả bóng là như nhau. ⎕
+c. Thời gian rơi của quả bóng B là 1s. ⎕
+d. Tầm ném xa của quả bóng B là L=15√2m ⎕
+Hướng dẫn giải
+a) [S] Thời gian rơi theo phương thẳng đứng của quả bóng A bằng thời
+gian của quả bóng B.
+b) [S] Quả bóng B chạm đất với tốc độ lớn hơn quả bóng A.
+√
+2h
+c) [S] Thời gian rơi t = =√2s
+g
+d) [Đ] Tầm xa: L = v t = 15√2 m.
+o
+Câu 3: Một chiếc máy bay muốn thả
+hàng tiếp tế cho những người leo núi
+đang bị cô lập. Máy bay đang bay ở độ
+cao 235 m so với vị trí đứng của những
+người leo núi với tốc độ 250 km/h theo
+phương ngang. Lấy g = 9,8 m/s2 và bỏ
+qua lực cản của không khí.
+a. Người quan sát đứng trên núi nhìn thấy quỹ đạo của gói hàng
+⎕
+là một phần của Parabol.
+b. Người quan sát đứng trên máy bay nhìn thấy quỹ đạo của vật
+⎕
+là một đường thẳng đứng.
+c. Thời gian rơi của gói hàng là 4,9s. ⎕
+d. Để người nhận được hàng tiếp tế, máy bay phải thả hàng cách
+⎕
+người một khoảng 480,9m.
+Hướng dẫn giải
+a) [Đ] Chuyển động của quả bóng A là chuyển động rơi tự do => thẳng
+nhanh dần đều..
+b) [S] Quỹ đạo của chuyển động của quả bóng B là 1 nhánh của đường
+parabol.
+√
+2h
+c) [S] Thời gian rơi t = ≈6,9s
+g
+d) [Đ] Để người nhận được hàng tiếp tế, máy bay phải thả hàng cách
+người một khoảng:
+√
+2h
+L=v ≈480,9m.
+0 g
+Câu 4: Một viên đạn được bắn theo
+phương nằm ngang từ một khẩu súng đặt ở độ
+393

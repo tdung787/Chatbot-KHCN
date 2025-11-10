@@ -1,0 +1,38 @@
+Câu 7: Tầm cao H là bao nhiêu m? Kết quả lấy sau dấu phẩy 1 chữ
+số thập phân.
+Đáp
+án:
+Câu 8: Tầm xa L là bao nhiêu m? Kết quả lấy sau dấu phẩy 1 chữ số
+thập phân.
+Đáp
+án:
+4 Tự luận (3,0 điểm)
+Một vật được ném từ một điểm M ở độ cao h = 45 m với vận tốc ban đầu
+v = 20 m/s lên trên theo phương hợp với phương nằm ngang một góc
+450. Lấy g = 10 m/s2, bỏ qua lực cản của không khí.
+a. Viết phương trình quỹ đạo của vật? Quỹ đạo của vật có dạng là đường
+gì?
+b. Tính độ cao cực đại vật đạt được so với mặt đất và thời gian vật bay
+trong không khí?
+c. Tính tầm bay xa của vật, vận tốc của vật khi chạm đất?
+HƯỚNG DẪN GIẢI
+ĐỀ
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câ Đáp Câ Đáp
+u án u án
+1 D 7 B
+2 D 8 D
+3 A 9 C
+4 C 10 B
+5 D 11 D
+6 B 12 C
+Hướng dẫn chi tiết các câu cần suy luận:
+1 v 2.sin2α 1 202.sin2300
+Câu 4. h 0 = 15+ . = 20 m. Chọn C
+2 g 2 10
+max
+Câu 5. v =v .cosα=15.cos450= 7,5√2m/s.
+x 0

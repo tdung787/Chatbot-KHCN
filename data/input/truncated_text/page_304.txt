@@ -1,0 +1,30 @@
+Câu 24: Hình bên là đồ thị vận tốc – thời gian của hai vật chuyển động
+thẳng cùng hướng, xuất phát từ cùng một vị trí, gốc thời gian là lúc hai
+vật bắt đầu chuyển động. Nhận xét sai là
+A. Hai vật cùng chuyển động nhanh dần
+B. Vật 1 bắt đầu chuyển động từ trạng thái nghỉ
+C. Vật 2 chuyển động với gia tốc lớn hơn vật 1
+D. Ở thời điểm t , vật 1 ở phía sau vật 2
+Câu 25: Đồ thị gia tốc – thời gian của một vật chuyển động từ trạng
+thái nghỉ ở hình bên.
+a. Vận tốc của vật sau 2s là
+A. 5 m/s2 B. 10 m/s2
+C. 20 m/s2 D. 15 m/s2
+b. Quãng đường vật đi được sau 2 s đầu tiên là
+A. 5m B. 10m
+C. 20m D. 15m
+c. Vận tốc của vật sau 4s là
+A. 10 m/s B. 7 m/s
+C. 14 m/s D. 20 m/s
+Câu 26: Một ôtô chuyển động nhanh dần đều từ trạng thái
+nghỉ với gia tốc bằng 4 m/s2 trong thời gian 1 s, sau đó ôtô chuyển động
+chậm dần đều với gia tốc –2m/s2 tới thời điểm t thì dừng hẳn (đồ thị gia
+tốc - thời gian như hình vẽ dưới). Gốc thời gian là lúc ô tô bắt đầu
+chuyển động. Giá trị của t là
+A. 1s
+B. 2s
+C. 3s
+D. 4s
+Câu 27: Đồ thị vận tốc – thời gian của hai xe A và B chuyển động trên
+một đường thẳng như hình vẽ bên (xe B tới vị trí xe A thì xe A bắt đầu
+chuyển động)

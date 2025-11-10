@@ -1,0 +1,39 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. Vẽ đồ thị độ dịch chuyển – thời
+gian:
+b. Mô tả chuyển động của xe:
+- Từ 0 – 3 giây: xe chuyển động
+thẳng.
+- Từ giây thứ 3 đến giây thứ 5: xe
+đứng yên (dừng lại)
+c. Độ dịch chuyển của xe trong 3
+giây đầu là:
+d = 7 – 1 = 6m
+Vận tốc của xe trong 3 giây đầu
+là:
+v = Δd/Δt = 6/3 = 2(m/s)
+Câu 6. (SBT-CTST) Hình 4.3 mô tả
+đồ thị tọa độ - thời gian của hai chiếc
+xe trong cùng một khoảng thời gian.
+a) Xe nào có vận tốc tức thời lớn hơn?
+Tại sao?
+b) Xe nào có tốc độ tức thời lớn hơn?
+Tại sao?
+Hướng dẫn giải
+a. Ta có vận tốc tức thời của hai b. Với cùng một khoảng thời gian,
+xe lần lượt: xe 2 đi được quãng đường lớn hơn
+d ∆ x nên có tốc độ lớn hơn xe 1.
+v = 1 = 1 >0
+1 ∆t ∆t
+d ∆x
+v = 2 = 2 <0
+2 ∆t ∆t
+ Xe 1 có vận tốc tức thời lớn hơn
+xe 2
+Câu 7. (SBT-CTST) Hình 4.5 mô tả đồ thị
+tọa độ - thời gian của hai xe, hãy nêu đặc
+điểm chuyển động của mỗi xe.
+Hướng dẫn giải
+- Chuyển động của xe 1:
+212

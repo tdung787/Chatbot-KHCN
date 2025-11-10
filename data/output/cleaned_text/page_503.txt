@@ -1,0 +1,33 @@
+Câu 6:
+Chọn gốc tọa độ O trùng với vị trí đánh bóng lên, chiều
+dương hướng lên.
+- Trong quá trình ném lên, do chuyển động này là chậm
+dần đều mà v > 0 nên gia tốc
+- Khi lên đến độ cao cực đại: v = 0 mà
+- Thời gian này cũng chính là thời gian bóng rơi từ độ cao cực đại về vị
+trí ban đầu.
+Câu 7:
+Quãng đường đi được trong khoảng thời gian:
+0→1s:s =|4−0|=4cm
+1s→2,5 s:s =|−2−4|=6cm
+2,5s→4s:s =|−2−(−2)|=0
+4 s←5s:s =|0−(−2)=2cm|
+Tốc độ trung bình của chất điểm trong khoảng
+s s +s +s +s 6+0+2+4
+v = = 1 2 3 4= =2,4cm/s
+là tb t t 5
+thời gian từ 0 đến 5s
+Câu 8: Trong 7s cuối cùng vật rơi được 385m:
+g.t2 g.(t−7)2
+Δh= − =385m→t=9s
+2 2
+Độ cao vật rơi là:
+4 Tự luận (3,0 điểm)
+Câ Hướng dẫn
+Điểm
+u
+Câu 1 1đ
+a) Viết được công thức 0,5
+Thay số được
+d (cm)
+40 503

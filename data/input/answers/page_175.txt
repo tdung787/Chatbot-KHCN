@@ -1,0 +1,7 @@
+D_ MODE A B: Đo tổng của hai khoảng thời gian vật chắn cổng quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+D. MODE T: Đo khoảng thời gian T của từng chu kì dao động.
+D. Tất cả các dụng cụ trên
+A. Đổng hổ đo thời gian hiện số, cổng quang điện, viên bi, máng và thước thẳng .
+B. Đổng hổ đo thời gian hiện số, cổng quang điện, viên bi, máng và thước kẹp.
+C. Băng giấy và cẩn rung.
+D khe định vị, giắc cắm

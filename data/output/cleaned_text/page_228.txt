@@ -1,0 +1,40 @@
+Ví dụ 5. (SBT-CD) Một đoàn tàu đang chạy với vận tốc 20 m/s thì
+tăng tốc vói gia tốc 0,5 m/s2 trong 30 s. Tính quãng đường đi được
+trong thời gian này.
+Hướng dẫn giải
+- Chọn chiều (+) là chiều chuyển động của đoàn tàu.
+1 1
+s=v .t+ .a.t2¿20.30+ .0,5.302=825m
+0 2 2
+Ví dụ 6. (SBT-CD) Một người đi xe máy
+đang chuyển động với vận tốc 10 m/s. Để
+không va vào con chó, người ấy phanh xe.
+Biết độ dài vết phanh xe là 5m. Tính giá
+trị của gia tốc.
+Hướng dẫn giải
+- Chọn chiều (+) là chiều chuyển động của người đi xe máy.
+v2−v 2 02−102
+v2−v 2=2as⇒ a= 0 = =−10m/s2
+0 2s 2.5
+Ví dụ 7. (SBT-CTST) Một người đi xe đạp lên dốc
+dài 50 m. Tốc độ ở dưới chân dốc là 18 km/h và ở đầu
+dốc lúc đến nơi là 3 m/s. Tính gia tốc của chuyển
+động và thời gian lên dốc. Coi chuyển động trên là
+chuyển động chậm dần đều.
+Hướng dẫn giải
+Đổi: 18km/h=5m/s
+- Chọn gốc thời gian là lúc vật ở chân dốc, chiều dương cùng chiều
+chuyển động.
+v2−v 2 32−52
+- Ta có: v2−v 2=2as⇒ a= 0 = =−0,16m/s2
+0 2s 2.50
+- Thời gian chuyển động lên dốc:
+v−v v−v 3−5
+a= o ⇒t= o= =12,5s
+t a −0,16
+Ví dụ 8. Hai điểm A và B cách nhau 200 m, tại A một ô tô có vận tốc 3
+m/s và đang chuyển động nhanh dần đều với gia tốc 2 m/s2 đi đến B.
+Cùng lúc đó một ô tô khác bắt đầu khởi hành từ B về A với gia tốc 2,8
+m/s2. Xác định vị trí hai xe gặp nhau.
+Hướng dẫn giải
+- Phương trình chuyển động của xe đi từ A: x =3t+t2

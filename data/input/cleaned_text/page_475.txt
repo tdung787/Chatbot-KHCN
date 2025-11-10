@@ -1,0 +1,31 @@
+- Thời gian bạn Nam đi từ nhà đến trường là:
+- Tốc độ:
+Lần đo s (m)
+- Vận tốc:
+1 2,000
+Câu 3:
+2 2,020
+Giá trị trung bình của quãng đường là
+3 2,000
+4 1,980
+5 1,990
+Trung bình ?
+Câu 5:
+Giả sử 1 ô trên trục v là 1m/s
+Gia tốc trong giây thứ 1 là
+Gia tốc trong giây thứ 2 là
+Gia tốc trong giây thứ 3 là
+Gia tốc trong giây thứ 4 là
+Câu 10:
+Gia tốc a của ô tô trong khoảng thời gian đó là
+Câu 11:
+Quãng đường đi được trong khoảng thời gian:
+0→1s:s =|4−0|=4cm
+1s→2,5 s:s =|−2−4|=6cm
+2,5s→4s:s =|−2−(−2)|=0
+4 s←5s:s =|0−(−2)=2cm|
+Tốc độ trung bình của chất điểm trong khoảng
+s s +s +s +s 6+0+2+4
+v = = 1 2 3 4= =2,4cm/s
+tb t t 5
+thời gian từ 0 đến 5s là

@@ -1,0 +1,55 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 3: Một xe đang chuyển động với vận tốc 7,2 km/h thì tăng tốc. Sau
+4s,
+xe đi thêm được 40m.
+a. Gia tốc của xe là 4m/s2 ⎕
+b. Vận tốc của xe sau 6 s là 26m ⎕
+c. Cuối giây thứ 6, xe tắt máy. Sau 13s thì ngừng hẳn lại. Gia tốc ⎕
+của xe
+sau khi tắt máy là 2m/s2
+d. Quãng đường đi được cho đến khi dừng lại là 169m ⎕
+Hướng dẫn giải
+a. [Đ] v = 7,2km/h = 2m/s
+0
+Gia tốc của xe là
+1 1
+Áp dụng công thức: s=v t+ at2⇔40=2.4+ a.42⇒a=4m/s2
+0 2 2
+b. [Đ] Vận tốc của xe sau 6s là: v = v + at = 2 + 4.6 = 26m/s
+0
+v'−v 0−26
+c. [S] Gia tốc của xe sau khi tắt máy: a'= = =−2m/s2
+t' 13
+d. [Đ] Quãng đường đi được cho đến khi dừng lại là:
+1
+s'=2.13+ .(−2).132=169m
+2
+Câu 4: Một chiếc xe đang chạy với tốc độ 36 km/h thì tài xế hãm
+phanh, xe chuyển động thẳng chậm dần đều rồi dừng lại sau 5s.
+a. Gia tốc của xe là 2 m/s2 ⎕
+b. Quãng đường xe chạy đến lức dừng hẳn là 25 ⎕
+c. Quãng đường xe chạy sau 4s là 20m ⎕
+d. Quãng đường xe chạy trong giây cuối cùng là 5m ⎕
+Hướng dẫn giải
+a. [S] v = 36km/h = 10 m/s, t = 5s
+0
+v−v 0−10
+Gia tốc của xe là a= 0= =−2m/s2
+t 5
+v2−v2 02−102
+b. [Đ] Quãng đường xe đi được đến lức dừng hẳn là S = 0= =25 m
+5 2a 2.(−2)
+1 1
+c. [S] Quãng đường xe đi được sau 4s là S =v .t+ at2=10.4+ .(−2).42=24 m
+4 0 2 2
+d. [S] Quãng đường xe đi được trong giây cuối cùng là ΔS=S −S =1m
+5 4
+Câu 5: Một xe chuyển động nhanh dần đều với vận tốc đầu 18km/h.
+Trong giây thứ 5 xe đi được 14m.
+a. Gia tốc của xe ô tô là 2 m/s2 ⎕
+b. Vận tốc của xe sau 10s chuyển động là 20 m/s ⎕
+c. Quãng đường xe đi được sau 10s chuyển động là 150m ⎕
+d. Quãng đường xe đi trong giây thứ 10 là 240 m ⎕
+Hướng dẫn giải
+283

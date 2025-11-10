@@ -1,0 +1,3 @@
+C. Khi vật chuyển động thẳng không đổi chiều, độ lớn của véc tơ độ dịch chuyển bằng quãng đường đi được.  
+B. Véc tơ độ dịch chuyển có độ lớn luôn bằng quãng đường đi được của vật.  
+D. Một vật có kích thước rất nhỏ so với độ dài đường đi. Một viên bi sắt được thả rơi tự do.

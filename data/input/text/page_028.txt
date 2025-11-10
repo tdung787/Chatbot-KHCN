@@ -1,0 +1,26 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+phải sử dụng găng tay và khẩu trang để dọn sạch thủy ngân, tuyệt đối
+không được tiếp xúc trực tiếp với thủy ngân bằng tay.
+Câu 4: Hãy quan sát hai thiết bị chuyển đổi điện áp, tham khảo kí hiệu ở
+bảng 2.1 và thảo luận để trả lời các câu hỏi sau:
+a. Chức năng của hai thiết bị là gì? Giống và khác nhau như thế nào?
+b. Bộ chuyển đổi điện áp (Hình 2.1b) sử dụng điện áp vào bao nhiêu?
+c. Các điện áp đầu ra như thế nào?
+d. Những nguy cơ nào có thể gây mất an toàn hoặc hỏng các thiết bị
+khi sử dụng thiết bị chuyển đổi điện áp này?
+Hướng dẫn giải :
+a. Chức năng của hai thiết bị trên là biến đổi điện áp trong nguồn điện.
+- Giống nhau: Cả hai đều dùng để biến đổi điện áp.
+- Khác nhau:
++ Máy biến áp: chỉ dùng để biến đổi điện áp xoay chiều, chúng không
+thể hoạt động trong dòng điện một chiều.
++ Bộ chuyển đổi điện áp: có thể được sử dụng với đầu vào một chiều
+hoặc xoay chiều để chuyển đổi chúng sang xoay chiều hoặc một
+chiều.
+b. Bộ chuyển đổi điện áp (Hình 2.1b) sử dụng điện áp vào là: 220 –
+240V AC.
+c. Các điện áp đầu ra là 12V AC.
+d. Những nguy cơ có thể gây mất an toàn hoặc hỏng các thiết bị khi
+sử dụng thiết bị chuyển đổi điện áp này là:
+28

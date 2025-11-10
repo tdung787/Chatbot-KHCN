@@ -1,0 +1,53 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Sử dụng thông tin sau để trả lời câu 7,8,9:
+Một quả bóng tennis đang bay với vận tốc 25 m/s theo hướng đông thì
+chạm vào tường chắn và bay trở lại với vận tốc 15 m/s theo hướng tây.
+Thời gian va chạm giữa tường và bóng là 0,05 s.
+Câu 7: Tính sự thay đổi tốc độ của quả bóng theo đơn vị m/s
+Đáp 1 0
+án:
+Câu 8: Tính sự thay đổi vận tốc của quả bóng theo đơn vị m/s
+Đáp - 4 0
+án:
+Câu 9: Tính gia tốc của quả bóng trong thời gian tiếp xúc với tường theo
+đơn vị m/s2
+Đáp - 8 0 0
+án:
+Hướng dẫn giải
+Câu 7: υ =25m/s;υ =15m/s⇒ Δυ=10m/s.
+1 2
+Câu 8: Chọn chiều dương từ tây sang đông.
+⇒ v =25m/sv =−15m/s
+1 2
+⇒ Δv=v −v =−40m/s
+2 1
+Δv −40
+Câu 9: a= = =−800m/s2
+Δt 0,05
+Câu 10: Sau khi khởi hành được 50 m, xe đạt vận tốc 5 m/s. Hỏi sau khi đi
+hết 50 m tiếp theo xe có vận tốc là bao nhiêu m/s. ? (kết quả lấy 2 chữ số
+sau dấu phẩy thập phân) Biết xe chuyển động thẳng nhanh dần đều.
+Đáp 7 , 0 7
+án:
+Hướng dẫn giải
+Chọn chiều dương là chiều chuyển động của xe.
+v 2−v 2 25
+Gia tốc xe: a= 1 0 = =0,25m/s2
+2s 100
+1
+Vận tốc xe sau khi đi được 50 m tiếp theo:
+v 2−v 2=2.a.s ⇔v 2−52=2.0,25.50⇒ v =7,07m/s
+2 1 2 2 2
+Câu 11: Một máy bay có vận tốc khi tiếp đất là 100 m/s. Để giảm vận
+tốc sau khi tiếp đất, máy bay chỉ có thể có gia tốc đạt độ lớn cực đại là 4
+m/s2. Tính thời gian ngắn nhất để máy bay dừng hẳn kể từ khi tiếp đất,
+theo đơn vị s
+Hướng dẫn giải
+Chọn chiều dương là chiều chuyển động của máy bay.
+v =100m/s;a=−4m/s2;v=0
+0
+v−v
+v=v +at ⇒t= 0=25 s
+0 a
+252

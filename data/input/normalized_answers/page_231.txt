@@ -1,0 +1,9 @@
+C. Vận tốc của chuyển động tăng đều theo thời gian.  
+A. Quãng đường đi được của vật luôn tỉ lệ thuận với thời gian vật đi.  
+B. Vận tốc giảm đều, gia tốc không đổi.  
+B. Tích số a . v > 0.  
+C. d = V₀t + at²/2 (a, V₀ cùng dấu).  
+D. Câu A và B.  
+A. m/s^2
+B. V² - V₀² = 2ad (a và V₀ trái dấu).  
+C. Chuyển động thẳng nhanh dần đều có gia tốc luôn cùng chiều với vận tốc.

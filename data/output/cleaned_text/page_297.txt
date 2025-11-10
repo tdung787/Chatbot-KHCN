@@ -1,0 +1,19 @@
+Chủ đề 5 GIA TỐC – CHUYỂN ĐỘNG THẲNG BIẾN ĐỔI
+ĐỀUĐƯỢCĐƯỢCĐƯỢC
+Dạng 3Đồ thị vận tốc – gia tốc trong chuyển động thẳng biến
+đổi đều
+I BÀI TẬP MẪU
+Ví dụ 1. Dựa vào đồ thị (v – t) của vật
+chuyển động trong hình. Hãy xác định gia
+tốc và độ dịch chuyển của vật trong các giai
+đoạn:
+a) Từ 0 s đến 40 s.
+b) Từ 80 s đến 160 s.
+Hướng dẫn giải
+Chọn chiều (+) là chiều chuyển động của vật.
+a)
+- Độ dịch chuyển trong giai đoạn này chính là
+diện tích hình thang OABC.
+1 1
+d = .(OA+BC).OC= .(40+120).40=3200cm
+1 2 2

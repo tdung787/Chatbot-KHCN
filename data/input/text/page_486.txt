@@ -1,0 +1,40 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+án:
+Câu 8: Một viên đạn được bắn theo phương
+nằm ngang từ một khẩu súng đặt ở độ cao 20
+m so với mặt đất. Tốc độ của đạn lúc vừa ra
+khỏi nòng súng là 300 m/s. Lấy g = 10m/s2.
+Điểm đạn rơi xuống cách điểm bắn theo
+phương ngang là bao nhiêu m?
+Đáp 6 0 0
+án:
+4 Tự luận (3,0 điểm)
+Câu 1 (1 điểm): Viết các phương trình của chuyển động thẳng biến đổi
+đều: phương trình vận tốc, phương trình độ dịch chuyển, phương trình
+chuyển động và phương trình liên hệ giữa gia tốc, vận tốc và độ dịch
+chuyển.
+Câu 2 (1 điểm): Một đoàn tàu rời ga chuyển động thẳng nhanh dần
+đều. Sau 0,5 phút tàu đạt vận tốc 54 km/h.
+a. Tính gia tốc của đoàn tàu.
+b. Tính quãng đường mà tàu đi được trong 0,5 phút đó.
+Câu 3 (1 điểm): Dùng một cân đồng hồ có sai số dụng cụ 0,05 kg để đo
+khối lượng của một vật. Kết quả đo cho trong bảng sau:
+Lần đo m (kg) ∆m (kg)
+1 5,5
+2 5,6
+3 5,4
+4 5,4
+5 5,6
+Trung bình m=¿ ∆m=¿
+Sai số tuyệt
+đối
+Sai số tương
+đối
+Kết quả
+phép đo
+Hãy tính khối lượng trung bình, sai số tuyệt đối, sai số tương đối của
+phép đo và biểu diễn kết quả đo này.
+HƯỚNG DẪN GIẢI
+ĐỀ
+486

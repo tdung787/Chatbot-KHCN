@@ -1,0 +1,33 @@
+a. Sai. Để đo tốc độ trong phòng thí nghiệm, ta cần đo quãng và thời
+gian chuyển động của vật đó.
+b. Sai. Những dụng cụ chính để đo tốc độ tức thời gồm: Đồng hồ đo thời
+gian hiện số và cổng quang điện, viên bi, máng và thước kẹp
+c. Đúng. Những dụng cụ chính để đo tốc độ tức thời trung bình gồm:
+Đồng hồ đo thời gian hiện số và cổng quang điện, viên bi, máng và
+thước thẳng có độ chia nhỏ nhất 1mm.
+d. Đúng. Khi cắm cổng quang điện vào ổ cắm A, B cần chú ý xoay đúng
+khe định vị, cắm thẳng giác cắm, không rung, lắc chân cắm.
+Câu 2: Tìm hiểu thang đo thời gian và
+chức năng của các chế độ đo (MODE)
+trên đồng hồ đo thời gian hiện số (Hình
+6.1)
+a. Bên nút thang đo có ghi giới hạn đo (GHĐ) và độ chia nhỏ nhất ⎕
+(ĐCNN) của đồng hồ là: 9,999 s – 0,001 s và 99,99 s – 0,01 s.
+b. MODE A: Đo thời gian vật chắn cổng quang điện nối với ổ A. ⎕
+c. MODE A + B: Đo thời gian vật chuyển động từ cổng quang ⎕
+điện nối với ổ A tới cổng quang điện nối với ổ B.
+d. MODE T: Đo khoảng thời gian T của từng chu kì dao động. ⎕
+Hướng dẫn giải
+a. Đúng. Bên nút thang đo có ghi giới hạn đo (GHĐ) và độ chia nhỏ nhất
+(ĐCNN) của đồng hồ là: 9,999 s – 0,001 s và 99,99 s – 0,01 s.
+b. Đúng. MODE A: Đo thời gian vật chắn cổng quang điện nối với ổ A.
+c. Sai. MODE A + B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ổ A và vật chắn cổng quang điện nối với ổ B.
+d. Đúng. MODE T: Đo khoảng thời gian T của từng chu kì dao động.
+Câu 3: Tìm hiểu thang đo thời gian và
+chức năng của các chế độ đo (MODE)
+trên đồng hồ đo thời gian hiện số (Hình
+6.1)
+a. MODE: Núm này dùng để chọn chế độ làm việc của đồng hồ. ⎕
+b. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B. ⎕
+c. MODE A↔B: Đo tổng của hai khoảng thời gian vật chắn cổng ⎕

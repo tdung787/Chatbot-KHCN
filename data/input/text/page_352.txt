@@ -1,0 +1,46 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Một quả bóng quần vợt được thả ra từ một khinh khí cầu đang bay lên theo
+phương thẳng đứng với vận tốc 7,5 m/s. Bóng rơi chạm đất sau 2,5 s. Bỏ
+qua sức cản của không khí và lấy g = 10 m/s2.
+Câu 12: Xác định thời điểm bóng đạt độ cao cực đại. (kết quả lấy đến 1
+chữ số thập phân, theo đơn vị m)
+Đáp 0 , 7 5
+án:
+Câu 13: Tính quãng đường đi được của bóng từ khi được thả rơi tới khi
+đạt độ cao cực đại. (kết quả lấy đến 1 chữ số thập phân, theo đơn vị m)
+Đáp 2 , 8
+án:
+Câu 14: Độ cao cực đại của bóng cách mặt đất bao nhiêu? (kết quả lấy
+đến 1 chữ số thập phân, theo đơn vị m)
+Đáp 1 5 , 3
+án:
+Hướng dẫn giải
+Bóng được thả ra có vận tốc ban đầu bằng vận tốc của khinh khí cầu tại
+thời điểm bóng được thả. Dưới tác dụng của trọng lực, bóng chuyển
+động đi lên chậm dần đều với gia tốc a = - g. Khi đạt độ cao cực đại,
+bóng có vận tốc v = 0 và từ đó rơi tự do tới khi chạm đất.
+Câu 12: Khi bóng đạt độ cao cực đại: v = 0
+Ta có:
+v=v −¿⇔0=7,5−10t⇒t=0,75s
+0
+Câu 13: v2−v 2=2.(−g).h02−7,52=2.(−10).h⇒h=2,8125m
+0
+Câu 14: Thời gian bóng rơi tự do từ độ cao cực đại tới đất:
+t'=2,5−0,75=1,75s.
+Độ cao cực đại của bóng cách mặt đất một khoảng:
+1 1
+H= gt'2= .10.1,752=15,3125m
+2 2
+4 Tự luận
+Câu 1: Dựa vào đặc điểm về phương của
+sự tự do, hãy tìm cách kiểm tra bề mặt của
+bức tường trong lớp học có phải là mặt
+phẳng thẳng đứng không.
+Hướng dẫn giải
+Để kiểm tra bề mặt của bức tường trong lớp học, chúng ta có thể lấy bất
+kì một vật nào đó, thả rơi vật đó từ một độ cao bất kì của bức tường, nếu
+vật đó rơi theo phương thẳng đứng thì bề mặt bức tường là mặt phẳng
+thẳng đứng, còn vật rơi không theo phương thẳng đứng thì bề mặt của
+bức tường không phẳng
+352

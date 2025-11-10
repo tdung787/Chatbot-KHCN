@@ -1,0 +1,33 @@
+Quãng đường t2 (s2
+t
+(m) )
+0,4 0,285 0,081
+0,6 0,349 0,122
+0,8 0,404 0,163
+1,0 0,451 0,203
+1,2 0,494 0,244
+Đồ thị mô tả mối quan hệ s và t2
+d. Nhận xét về dạng đồ thị trên: có dạng một đường thẳng hướng lên
+chứng tỏ s và t2 có mối quan hệ tỉ lệ thuận với nhau.
+e. Đề xuất một phương án thí nghiệm khác để đo gia tốc rơi tự do của
+trụ thép:
+Ta có thể sử dụng 1 cổng quang điện để tính tốc độ tức thời bằng cách:
++ Đo kích thước hình trụ s bằng thước kẹp
++ Đo thời gian trụ thép qua cổng quang điện B t (để chế độ MODE B).
+ Tính tốc độ tức thời v = s/t
+v2
+ Tính gia tốc rơi tự do: g= (s là quãng đường từ nam châm đến cổng
+2s
+quang điện B)
+- Dụng cụ: Bộ dụng cụ đo gia tốc rơi tự do gồm:
+(1) Nam châm điện (2) Trụ thép
+(3) Cổng quang điện (4) Công tắc điều khiển
+(5) Đồng hồ đo thời gian (6) Giá (7) Thước kẹp
+- Tiến hành
+Bước 1: Lắp các dụng cụ.
++ Lắp cổng quang điện B cách nam châm điện một đoạn s, đặt đồng hồ
+chế độ MODE B.
++ Đặt trụ thép dính vào phía dưới nam châm.
++ Nhấn công tắc cho trụ thép rơi.
+Bước 2: Đọc số chỉ thời gian rơi trên đồng hồ, thực hiện phép đo ít nhất
+3 lần.

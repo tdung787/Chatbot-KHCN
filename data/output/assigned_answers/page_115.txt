@@ -1,0 +1,43 @@
+Câu 11: Điều nào sau đây là sai với vật chuyển động thẳng đều?
+A. Quỹ đạo là đường thẳng, vận tốc không thay đổi theo thời gian.
+B. Vectơ vận tốc không thay đổi theo thời gian.
+C. Vectơ vận tốc của vật thay đổi theo thời gian.
+D. Vật đi được những quãng đường bằng nhau trong những khoảng thời gian bằng nhau bất kì.
+<Đáp án: C>
+
+Câu 12: Chỉ ra câu sai. Chuyển động thẳng đều có những đặc điểm sau:
+A. Quỹ đạo là đường thẳng.
+B. Tốc độ trung bình trên mọi quảng đường là như nhau.
+C. Tốc độ không đổi từ lúc xuất phát đến lúc dừng lại.
+D. Vật đi được những quãng đường bằng nhau trong những khoảng thời gian bằng nhau bất kì.
+<Đáp án: C>
+
+Câu 13: Trường hợp nào sau đây nói đến vận tốc trung bình:
+A. Vận tốc của người đi bộ là 5 km/h.
+B. Khi ra khỏi nòng súng, vận tốc của viên đạn là 480 m/s.
+C. Số chỉ của tốc kế gắn trên xe máy là 56 km/h.
+D. Khi đi qua điểm A, vận tốc của vật là 10 m/s.
+<Đáp án: A>
+
+Câu 14: Nếu nói "Trái Đất quay quanh Mặt Trời" thì trong câu nói này vật nào được chọn làm vật mốc:
+A. Cả Mặt Trời và Trái Đất. 
+B. Trái Đất.
+C. Mặt Trăng. 
+D. Mặt Trời.
+<Đáp án: D>
+
+Câu 15: Chọn câu đúng
+A. Độ lớn vận tốc trung bình bằng tốc độ trung bình.
+B. Khi chất điểm chuyển động thẳng chỉ theo một chiều thì bao giờ vận tốc trung bình cũng bằng tốc độ trung bình.
+C. Độ lớn vận tốc tức thời bằng tốc độ tức thời.
+D. Vận tốc tức thời cho ta biết chiều chuyển động, do đó bao giờ cũng có giá trị dương.
+<Đáp án: C>
+
+Câu 16: Một vật chuyển động thẳng đều trong 6h đi được 180km, khi đó tốc độ của vật là:
+A. 900m/s. 
+B. 30km/h. 
+C. 900km/h.
+D. 30m/s.
+<Đáp án: B>
+
+Câu 17: Từ A một chiếc xe chuyển động thẳng trên một quãng đường dài 10 km, rồi sau đó lập tức quay về về A. Thời gian của hành trình là 20 phút. Tốc độ trung bình và vận tốc trung bình của xe trong thời gian này là

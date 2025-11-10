@@ -1,0 +1,30 @@
+BC = 1200 m. Một người đi bộ xuất quanh thành xuất phát từ A chuyển
+động thẳng đến B, sau đó tiếp tục chuyển động thẳng đến C. Biết
+khoảng thời gian chuyển động của người này là khoảng 12 phút. Tính
+tốc độ trung bình của người này?
+(kết quả làm tròn đến 2 chữ số thập phân, theo đơn vị m/s)
+Đáp 5 , 8 3
+án:
+Câu 5: Các giọt nước mưa rơi từ mái nhà xuống sau
+những khoảng thời gian bằng nhau. Giọt 1 chạm đất thì
+giọt 5 bắt đầu rơi. Biết mái nhà cao 16m. Lấy .
+Khoảng thời gian rơi giữa các giọt nước kế tiếp nhau
+bằng bao nhiêu?
+(kết quả làm tròn đến 2 chữ số thập phân, theo đơn vị
+m/s)
+Đáp 0 , 4 5
+án:
+Câu 6: Một vật được ném theo phương ngang, sau
+thời gian 0,5s vật rơi cách vị trí ném 5m. Xác định
+góc hợp bởi phương vận tốc và phương ngang sau
+khi ném 0,2s. Lấy g = 10 m/s2.
+(kết quả làm tròn đến 0 chữ số thập phân, theo đơn
+vị độ)
+Đáp 1 1
+án:
+Câu 7: Một chiếc máy bay muốn thả hàng tiếp tế cho những người leo
+núi đang bị cô lập. Máy bay đang bay ở độ cao 235 m so với vị trí đứng
+của những người leo núi với tốc độ 250 km/h theo phương ngang (Xem
+hình). Máy bay phải thả hàng tiếp tế ở vị trí cách những người leo núi
+bao nhiêu km để họ có thể nhận được hàng ? Lấy g = 9,8 m/s2 và bỏ qua
+lực cản không khí.

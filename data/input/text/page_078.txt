@@ -1,0 +1,53 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câ Đáp Câ Đáp
+u án u án
+1 2,25 5 0,83
+2 0,05 6 1,67
+3 3,1 7 0,55
+4 0,12 8 2,22
+Câu 1. Giá trị trung bình của thời gian rơi
+t +t +t 2,15+2,25+2,35
+t= 1 2 3= =2,25s.
+3 3
+Câu 1. Sai số dụng cụ bằng nửa độ chia nhỏ nhất :
+0,1
+Δx=Δx = =0,05cm.
+đc 2
+( δs δt )
+Câu 2. Sai số tỉ đổi: δv= + .100%=3,1%
+¯s ¯t
+Câu 3. Sai số tuyệt đối:
+Câu 4. - Sai số tỷ đối của phép đo của người thứ nhất:
+Δd 1
+δ = 1 .100%= .100%=0,83%
+1 d 120
+1
+Câu 5. - Sai số tỷ đối của phép đo của người thứ hai:
+Δd 2
+δ = 2 .100%= .100%=1,67%
+2 d 120
+2
+Câu 6. Giá trị trung bình của phép đo s và t:
+s +s +s +s +s
+¯s= 1 2 3 4 5=0,552(m)
+5
+Câu 7.
+t +t +t +t +t
+¯t= 1 2 3 4 5=2,48(s)
+5
+- Sai số tuyệt đối mỗi lần đo
+Δs =|¯s−s |=|0,552−0,546|=0,006(m) Δt =|¯t−t |=|2,48−2,47|=0,01(s)
+1 1 1 1
+Δs =|¯s−s |=|0,552−0,554|=0,002(m) Δt =|¯t−t |=|2,48−2,51|=0,03(s)
+2 2 2 2
+Δs =|¯s−s |=|0,552−0,549|=0,003(m) Δt =|¯t−t |=|2,48−2,42|=0,06(s)
+3 3 3 3
+Δs =|¯s−s |=|0,552−0,560|=0,008(m) Δt =|¯t−t |=|2,48−2,52|=0,04(s)
+4 4 4 4
+Δs =|¯s−s |=|0,552−0,551|=0,001(m) Δt =|¯t−t |=|2,48−2,48|=0,00(s)
+5 5 5 5
+- Sai số tuyệt đối trung bình:
+78

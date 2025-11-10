@@ -1,0 +1,3 @@
+A. Đo thời gian và quãng đường chuyển động của vật.  
+D. MODE T: Đo khoảng thời gian vật chuyển động từ cổng quang điện A tới cổng quang điện B.  
+B. MODE: Chọn kiểu làm việc cho máy đo thời gian.

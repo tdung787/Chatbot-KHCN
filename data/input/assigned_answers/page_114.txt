@@ -1,0 +1,57 @@
+Câu 1: Chất điểm thực hiện được những độ dời bằng nhau trong những
+khoảng thời gian bất kỳ.
+A. Chất điểm thực hiện được những độ dời bằng nhau trong những
+khoảng thời gian bất kỳ.
+B. Chất điểm thực hiện được những độ dời bất kỳ trong những khoảng
+thời gian bằng nhau.
+C. Chất điểm thực hiện được những quảng đường bằng nhau bất kỳ
+trong những khoảng thời gian bằng nhau bất kỳ.
+D. Chất điểm thực hiện được những độ dời bằng nhau trong những
+khoảng thời gian bằng nhau.
+<Đáp án: D>
+
+Câu 5: Công thức nào sao đây có thể dùng để tính tốc độ trung
+bình của chuyển động thẳng, không đổi hướng.
+A. v = s/t B. v = v + 1/2 a.t2 C. v = (v + v )/2
+o 1 2
+D. Cả A và C
+<Đáp án: A>
+
+Câu 6: Trong các trường hợp dưới đây, tốc độ nào là tốc độ trung
+bình:
+A. viên đạn bay khỏi nòng súng với tốc độ 600m/s
+B. tốc độ chuyển động của búa máy khi va chạm là 8m/s
+C. xe lửa chạy với tốc độ 40km/h khi chạy từ HN đến HP
+D. Cả A, B, C đều đúng
+<Đáp án: C>
+
+Câu 7: Hãy chỉ ra phát biểu sai:
+A. Quỹ đạo của chuyển động thẳng đều là đường thẳng.
+B. Tốc độ trung bình của chuyển động thẳng đều trên mọi đoạn đường
+là như nhau
+C. Trong chuyển động thẳng đều, quãng đường vật đi được tỉ lệ thuận
+với thời gian chuyển động.
+D. Chuyển động đi lại của một pittông trong xylanh là chuyển động
+thẳng đều.
+<Đáp án: D>
+
+Câu 8: Chọn ý sai. Chuyển động thẳng đều có
+A. quỹ đạo là một đường thẳng.
+B. quãng đường vật đi được hằng nhau trong những khoảng thời gian
+bằng nhau
+C. tốc độ trung bình trên mọi quãng đường bằng nhau.
+D. tốc độ tăng đều sau những quãng đường bằng nhau.
+<Đáp án: D>
+
+Câu 9: Chuyển động thẳng đều là chuyển động
+A. thẳng có vận tốc không đổi cả về hướng và độ lớn.
+C. có vận tốc không đổi phương.
+B. mà vật đi được những quãng đường bằng nhau
+D. có quãng đường đi tăng tỉ lệ với vận tốc.
+<Đáp án: A>
+
+Câu 10: Hãy nêu đầy đủ các tính chất đặc trưng cho chuyển động
+thẳng đều của một vật
+A. Vật đi được những quãng đường bằng nhau trong những khoảng thời
+gian bằng nhau bất kì.
+<Đáp án: A>

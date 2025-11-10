@@ -1,0 +1,34 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Tốc độ tức thời tại vị trí B:
+∆ d 4−4
+v = B= =0(m/s)
+B ∆t 3−2
+B
+Tốc độ tức thời tại vị trí C:
+∆d |2−4|
+v = C= ≈2(m/s)
+C ∆t 4−3
+C
+Câu 4. Hãy vẽ đồ thị dịch chuyển – thời gian trong chuyển động của bạn
+A nêu ở trên theo trình tự sau đây:
+a. Vẽ bảng ghi số liệu vào vở.
+Độ dịch chuyển 0 200 400 600 800 100 800
+(m) 0
+Thời gian (s) 0 50 100 150 200 250 300
+b. Vẽ đồ thị: trên trục tung (trục độ dịch chuyển) 1 cm ứng với 200 m;
+trên trục hoành (trục thời gian) 1 cm ứng với 50 s.
+Hướng dẫn giải
+Từ bảng số liệu ta vẽ được đồ thị như hình sau:
+Câu 5. Số liệu về độ dịch chuyển và thời gian của chuyển động thẳng
+của một xe ô tô đồ chơi chạy bằng pin được ghi trong bảng bên:
+Độ dịch chuyển
+1 3 5 7 7 7
+(m)
+Thời gian (s) 0 1 2 3 4 5
+Dựa vào bảng này để:
+a. Vẽ đồ thị độ dịch chuyển – thời gian của chuyển động.
+b. Mô tả chuyển động của xe.
+c. Tính vận tốc của xe trong 3 s đầu.
+Hướng dẫn giải
+211

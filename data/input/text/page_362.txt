@@ -1,0 +1,40 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 2. Ga-li-lê thả quả đạn hình cầu từ độ cao 56m trên tháp
+nghiêng Pi-da xuống đất. Tính thời gian quả đạn rơi. Biết g =9,81m/s2
+(kết quả lấy đến 2 chữ số thập phân, theo đơn vị s)
+Câu 3. Thả một hòn đá từ mép một vách núi dựng đứng xuống vực
+sâu. Sau 3,96s từ lúc thả thì nghe thấy tiếng hòn đá chạm đáy vực
+sâu.Biết g =9,8 m/s2 và tốc độ truyền âm trong không khí là 330m/s. Tìm
+chiều cao vách đá bờ vực đó
+(kết quả lấy đến 0 chữ số thập phân, theo đơn vị m)
+Đáp
+án:
+Câu 4. Một trái banh được ném từ mặt đất thẳng đứng với vận tốc
+20m/s. Thời gian từ lúc ném banh đến lúc chạm đất là bao nhiêu?
+(kết quả lấy đến 0 chữ số thập phân, theo đơn vị s)
+Đáp
+án:
+Câu 5. Một vật rơi tự do từ độ cao h. Biết rằng trong giây
+cuối cùng vật rơi được 15m. Độ cao nơi thả vật là bao nhiêu?
+(kết quả lấy đến 0 chữ số thập phân, theo đơn vị m)
+Đáp
+án:
+Câu 6. Một vật được thả rơi tự do, vận tốc của vật ngay trước khi
+chạm đất là 50m/s. Cho . Độ cao của vật sau 3s là bao nhiêu?
+(kết quả lấy đến 0 chữ số thập phân, theo đơn vị m)
+Câu 7. Tính quãng đường mà vật rơi tự do đi được trong giây thứ tư kể
+từ lúc được thả rơi. Lấy g = 9,8 m/s2. (kết quả lấy đến 1 chữ số thập phân,
+theo đơn vị m)
+Đáp
+án:
+Câu 8. Trong khoảng thời gian 4s vận tốc của vật đã tăng lên bao
+nhiêu m/s? Lấy g = 9,8. (kết quả lấy đến 1 chữ số thập phân)
+Đáp
+án:
+4 Tự luận (3,0 điểm)
+Một vật rơi tự do tại một địa điểm có độ cao 500m biết g = 10m/s2.
+a. Tính thời gian vật rơi hết quãng đường.
+b. Tính quãng đường vật rơi được trong 5s đầu tiên.
+c. Tính quãng đường vật rơi trong giây thứ 5.
+362

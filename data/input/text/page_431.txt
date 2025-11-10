@@ -1,0 +1,30 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 7: Một con tàu chiến ở
+bên này ngọn núi trên một hòn
+đảo, bắn một viên đạn với vận
+tốc ban đầu 250 m/s theo
+phương nghiêng góc 750 so với
+mặt nước biển tới đích là một
+con tàu khác nằm ở phía bên
+kia ngọn núi. Biết vị trí của hai
+con tàu và độ cao của ngọn núi
+được mô tả như hình. Lấy g =
+10 m/s2.
+Hướng dẫn giải
+Phương trình chuyển động của viên đạn:
+Theo phương Ox: x=v t=(250cos750).t
+0x
+1 1
+Theo phương Oy: y=v t− gt2=(250sin750).t− .10t2
+0 y 2 2
+Để xác định xem viên đạn có bay qua được đỉnh núi hay không, ta thay x
+= 2500 m rồi so sánh y với độ cao của núi 1800 m.
+2500=(250cos750).t ⇒t≈38,64 s.
+1
+⇒ y=(250sin 750).38,64− .10.38,642≈1865,6m→Viên đạn bay qua được đỉnh núi.
+2
+v2sin2α (¿2.750)
+Tầm bay xa của viên đạn: L= 0 =2502sin =3125m.¿
+g 10
+431

@@ -1,0 +1,39 @@
+C. Khi vật chuyển động thẳng không đổi chiều, độ lớn của véc tơ độ dịch
+chuyển bằng quãng đường đi được.
+D. Quãng đường cho ta biết chiều chuyển động nên luôn có giá trị
+dương.
+Câu 2: (SBT-KNTT) Chỉ ra phát biểu sai.
+A. Véc tơ độ dịch chuyển là một véc tơ nối vị trí đầu và vị trí cuối của vật
+chuyển động.
+B. Véc tơ độ dịch chuyển có độ lớn luôn bằng quãng đường đi được của
+vật.
+C. Khi vật đi từ điểm A đến điểm B, sau đó đến điểm C, rồi quay về A thì
+độ dịch chuyển của vật có độ lớn bằng 0.
+D. Độ dịch chuyển có thể có giá trị âm, dương, hoặc bằng không.
+Câu 3: Kết luận nào sau đây là đúng khi nói về độ dịch chuyển và quãng
+đường đi được của một vật.
+A. Độ dịch chuyển và quãng đường đi được đều là đại lượng vô hướng.
+B. Độ dịch chuyển là đại lượng vectơ còn quãng đường đi được là đại
+lượng vô hướng.
+C. Độ dịch chuyển và quãng đường đi được đều là đại lượng vectơ.
+D. Độ dịch chuyển và quãng đường đi được đều là đại lượng không âm.
+Câu 4: Kết luận nào sau đây là sai khi nói về độ dịch chuyển của một
+vật.
+A. Khi vật chuyển động thẳng, không đổi chiều thì độ lớn của độ dịch
+chuyển và quãng đường đi được bằng nhau (d = s).
+B. Có thể nhận giá trị dương, âm hoặc bằng 0.
+C. Độ dịch chuyển được biểu diễn bằng một mũi tên nối vị trí đầu và vị
+trí cuối của chuyển động, có độ lớn chính bằng khoảng cách giữa vị trí
+đầu và vị trí cuối. Kí hiệu là d⃗.
+D. Khi vật chuyển động thẳng, có đổi chiều thì độ lớn của độ dịch
+chuyển và quãng đường đi được bằng nhau (d = s).
+Câu 5: Chất điểm là:
+A. một vật có kích thước vô cùng bé
+B. một điểm hình học
+C. một vật khi ta nghiên cứu chuyển động của nó trong một khoảng rất
+nhỏ
+D. một vật có kích thước rất nhỏ so với độ dài đường đi
+Câu 6: Trường hợp nào sau đây quỹ đạo của vật là đường thẳng?
+A. Một học sinh B. Một viên đá C. Một ôtô D. Một viên bi
+đi xe từ nhà đến được ném theo chuyển động sắt được thả
+trường phương ngang trên đường rơi tự do

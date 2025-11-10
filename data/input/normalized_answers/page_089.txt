@@ -1,0 +1,7 @@
+D. Hệ trục tọa độ.  
+D. Chiều chuyển động.  
+D. Hướng đi của con tàu tại mỗi điểm.  
+C. Một đoàn tàu xuất phát từ Hà Nội lúc 0 giờ, đến 8 giờ thì đoàn tàu đến Hải Phòng.  
+B. Vật 2 đi 200 m theo hướng 45° Đông Bắc.  
+B. 8 m; -2 m.  
+D. 14 km.

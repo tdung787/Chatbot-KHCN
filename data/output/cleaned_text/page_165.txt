@@ -1,0 +1,41 @@
+C. 11,5m/s D. Khác A,
+B, C.
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ 2 câu. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh
+chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Câu 1 : Một ca nô chạy trong hồ nước yên lặng
+có vận tốc tối đa 18 km/h. Nếu ca nô chạy ngang
+một con sông có dòng chảy theo hướng Bắc –
+Nam với vận tốc lên tới 5 m/s.
+Gọi (1): ca nô
+(2): nước
+(3): bờ
+a. Vận tốc của ca nô so với bờ là là 5m/s ⎕
+⎕
+b. Vận tốc của ca nô so với bờ v  v2 v2
+13 12 23
+c. Vận tốc tối đa ca nô có thể đạt được so với bờ sông là 18,68 ⎕
+m/s
+
+v ⎕
+d. Hướng của nghiêng 450 theo hướng Đông – Nam
+Câu 2: Một đoàn tàu đang chuyển động
+đều với tốc độ 8 m/s và có một người soát
+vé đang ổn định khách trong toa tàu. Một
+học sinh đang đứng bên đường
+Chọn chiều dương là chiều chuyển động
+của đoàn tàu
+Gọi v : là vận tốc của người soát vé so với đoàn tàu
+v : là vận tốc của đoàn tàu với học sinh
+v : là vận tốc của người soát vé với học sinh.
+a. Vận tốc của người soát vé so với đoàn tàu ⎕
+v = 8 m/s
+b. Người soát vé đi với tốc độ 1,5 m/s về phía đuôi tàu. ⎕
+Vận tốc của người soát vé đối với học sinh là: 9,5 m/s
+c. Người soát vé đi với tốc độ 1,5 m/s về phía đầu tàu. Vận ⎕
+tốc của người soát vé đối với học sinh là: 6,5 m/s

@@ -1,0 +1,322 @@
+tdung787@pop-os:~/Desktop/pdf_parser$ uv run main_ocr.py
+📂 Tổng số ảnh sẽ xử lý: 50
+Using CPU. Note: This module is much faster with a GPU.
+
+=== 🔍 Ảnh 1/50: page_000.png ===
+✅ 1: C. Nghiên cứu vể các dạng chuyển động và các dạng năng lượng khác nhau.
+✅ 2: B. Nghiên cứu vể nhiệt động
+✅ 3: lực học
+✅ 4: C Xác định vấn để cẩn nghiên cứu, quan sát, dự đoán, thí nghiệm, kết luận.
+✅ 5: D. không làm thí nghiệm để kiểm tra quan điểm của mình. Ông
+💾 Lưu kết quả tại: data/output/answers/page_000.txt
+
+=== 🔍 Ảnh 2/50: page_001.png ===
+✅ 1: C. Các dạng vận động của vật chất và năng lượng.
+✅ 2: C. các dạng vận động của vật chất và năng lượng.
+✅ 3: D vận động
+✅ 4: A khám phá ra quy luật tổng quát nhất chi phối sự vận động của vật chất và năng lượng, cũng như tương tác giữa chúng ở mọi cấp độ: vi mô, vĩ mô.
+✅ 5: A. cấp độ dùng để mô phỏng vật chất nhỏ bé.
+✅ 6: C. cấp độ dùng để mô phỏng tâm rộng lớn hay rất lớn của vật chất
+✅ 7: C Phương pháp thực nghiệm dùng thí nghiệm để phát hiện kết quả mới giúp kiểm chứng, hoàn thiện, bổ sung hay bác bỏ giả thuyết nào đó.
+💾 Lưu kết quả tại: data/output/answers/page_001.txt
+
+=== 🔍 Ảnh 3/50: page_002.png ===
+✅ 1: B_ Phưong pháp lí thuyết sử dụng ngữ toán học và suy luận lí thuyết để phát hiện một kết mới. ngôn quả
+✅ 2: D. 5 - 4 - 2 - 1 -
+✅ 3: 3.
+✅ 4: D. Tất cả các đáp án trên đêu đúng.
+✅ 5: A Vật lí đem lại cho con người những lợi ích tuyệt vời và không gây ra một ảnh hưởng xấu nào.
+✅ 6: B_ Thả rơi một vật từ trên cao xuống mặt đất.
+💾 Lưu kết quả tại: data/output/answers/page_002.txt
+
+=== 🔍 Ảnh 4/50: page_003.png ===
+✅ 1: A. Tính toán quỹ đạo chuyển động của Thiên vương tinh dựa vào toán học-
+✅ 2: A Ô tô khi chạy đường dài có thể xem ô tô như là một chất điểm.
+✅ 3: D. Ném một quả bóng lên trên cao_
+💾 Lưu kết quả tại: data/output/answers/page_003.txt
+
+=== 🔍 Ảnh 5/50: page_004.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 6/50: page_005.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 7/50: page_006.png ===
+⚠️ 1: [KHÔNG ĐỌC ĐƯỢC]
+⚠️ 2: [KHÔNG ĐỌC ĐƯỢC]
+✅ 3: 21800
+⚠️ 4: [KHÔNG ĐỌC ĐƯỢC]
+💾 Lưu kết quả tại: data/output/answers/page_006.txt
+
+=== 🔍 Ảnh 8/50: page_007.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 9/50: page_008.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 10/50: page_009.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 11/50: page_010.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 12/50: page_011.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 13/50: page_012.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 14/50: page_013.png ===
+✅ 1: B. Vật lí.
+✅ 2: B. Hiện tượng cảm ứng điện tử.
+💾 Lưu kết quả tại: data/output/answers/page_013.txt
+
+=== 🔍 Ảnh 15/50: page_014.png ===
+✅ 1: B. điện tử, chất bán dẫn hay vi mạch.
+✅ 2: A- tự động hóa các quá trình sản xuất.
+✅ 3: A- Cơ học, nhiệt học, điện học và quang học.
+✅ 4: C. Nghiên cứu vể các dạng chuyển động và các dạng năng lượng khác nhau.
+✅ 5: D. Không tuân thủ các quy tắc an toàn khi làm thí nghiệm Vật lí.
+✅ 6: A. các dạng vận động của vật chất, năng lượng_
+💾 Lưu kết quả tại: data/output/answers/page_014.txt
+
+=== 🔍 Ảnh 16/50: page_015.png ===
+✅ 1: B_ Nghiên cứu vể nhiệt động
+✅ 2: lực học
+✅ 3: B. làm thí nghiệm để kiểm tra
+✅ 4: C. quan sát, trãi nghiệm thực tế, các kiến thức đã có liên quan đến dự đoán.
+✅ 5: B. Ga-li-lê _
+✅ 6: B. Nhiệt học.
+✅ 7: A Sử dụng trí tuệ nhân tạo, robot, internet toàn cẩu, công nghệ vật liệu siêu nhỏ, điện thoại thông minh vv.
+✅ 8: B. Xây dựng các dây chuyển sản suất tự động dựa trên những thành tựu nghiên cứu vể điện tử,vi mạch, chất bán dẫn vv.
+💾 Lưu kết quả tại: data/output/answers/page_015.txt
+
+=== 🔍 Ảnh 17/50: page_016.png ===
+✅ 1: D. Thay thế sức lực cơ bắp bằng sức máy móc. lực
+✅ 2: A. Nghiên cứu hiện tượng cảm ứng điện từ.
+✅ 3: C. Nghiên cứu vể cảm ứng điện từ.
+✅ 4: C. Xác định vấn để cẩn nghiên cứu, quan sát, dự đoán, thí nghiệm, kết luận.
+✅ 5: A. ô nhiễm môi trường sống -
+💾 Lưu kết quả tại: data/output/answers/page_016.txt
+
+=== 🔍 Ảnh 18/50: page_017.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 19/50: page_018.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 20/50: page_019.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 21/50: page_020.png ===
+✅ 1: D. Mang á0 phòng hộ và không cẩn đeo mặt nạ
+✅ 2: A Tạo ra nhiêu sản phẩm mang lại lợi nhuận
+^[[C✅ 3: B. Tắt công tắc nguổn thiết bị điện sau khi cắm hoặc tháo thiết bị điện.
+✅ 4: A Tuyệt đối không tiếp xúc với các vật và các thiết bị thí nghiệm có nhiệt độ cao ngay khi có dụng cụ bảo hộ.
+💾 Lưu kết quả tại: data/output/answers/page_020.txt
+
+=== 🔍 Ảnh 22/50: page_021.png ===
+✅ 1: C. Được phép tiến hành thí nghiệm khi đã mang đổ bảo hộ.
+✅ 2: D. Phải vệ sinh, sắp xếp gọn gàng, các thiết bị và dụng cụ thí nghiệm, bỏ chất thải thí nghiệm vào đúng nơi quy định sau khi tiến hành thí nghiệm.
+✅ 3: A. Dòng điện 1 chiểu
+✅ 4: B. Dòng điện xoay chiêu
+✅ 5: C. Cực dưong
+✅ 6: D_ Cực âm
+✅ 7: A Đẩu vào
+✅ 8: B. Đẩu ra
+✅ 9: C. Dụng cụ đặt đứng
+💾 Lưu kết quả tại: data/output/answers/page_021.txt
+
+=== 🔍 Ảnh 23/50: page_022.png ===
+✅ 1: A- Không được phép bỏ vào thùng rác
+✅ 2: D. Dụng cụ dễ vỡ
+✅ 3: B_ Tránh ánh nắng
+✅ 4: chiếu trực tiếp
+✅ 5: C Bình khí nén áp suất cao
+✅ 6: C. Cảnh báo tia laser
+✅ 7: B. Nhiệt độ cao
+✅ 8: A Luu ý cẩn thận
+✅ 9: D_ Cảnh báo vật sắc,
+✅ 10: nhọn
+✅ 11: D Chất dễ cháy
+💾 Lưu kết quả tại: data/output/answers/page_022.txt
+
+=== 🔍 Ảnh 24/50: page_023.png ===
+✅ 1: C. Chất độc môi trường
+✅ 2: A_ Chất độc sức khỏe
+✅ 3: A. Nơi nguy hiểm vể điện
+✅ 4: B_ Từ trường
+✅ 5: B. Nơi cấm lửa
+✅ 6: A. Nơi có chất phóng xạ
+✅ 7: B. Chất ăn mòn
+⚠️ 8: [KHÔNG ĐỌC ĐƯỢC]
+✅ 9: D Lối thoát hiểm
+✅ 10: D. Bao chống hóa chất, chống khuẩn tay
+✅ 11: A- Cẩn đeo mặt nạ phòng độc
+💾 Lưu kết quả tại: data/output/answers/page_023.txt
+
+=== 🔍 Ảnh 25/50: page_024.png ===
+✅ 1: B. Cẩn mang đổ bảo hộ cơ thể, chống hóa chất, chống nước
+✅ 2: C. Cân mang kính bảo vệ mắt khỏi những hóa chất độc hại và đảm bảo thị lực của người trong phòng TN.
+💾 Lưu kết quả tại: data/output/answers/page_024.txt
+
+=== 🔍 Ảnh 26/50: page_025.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 27/50: page_026.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 28/50: page_027.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 29/50: page_028.png ===
+⚠️ 1: [KHÔNG ĐỌC ĐƯỢC]
+⚠️ Không có text nào để lưu cho page_028.png
+
+=== 🔍 Ảnh 30/50: page_029.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 31/50: page_030.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 32/50: page_031.png ===
+✅ 1: B. Từ trường.
+✅ 2: B_ Nơi cấm lửa_
+✅ 3: B. Chất ăn mòn.
+✅ 4: A. Nơi có chất phóng xạ.
+⚠️ 5: [KHÔNG ĐỌC ĐƯỢC]
+✅ 6: D. Lối thoát hiểm.
+✅ 7: D. Cẩn sử dụng bao tay chống hóa chất, chống khuẩn.
+✅ 8: A_ Cân đeo mặt nạ phòng độc.
+✅ 9: B. Cẩn mang đổ bảo hộ cơ thể, chống hóa chất, chống nước.
+💾 Lưu kết quả tại: data/output/answers/page_031.txt
+
+=== 🔍 Ảnh 33/50: page_032.png ===
+✅ 1: C. Cẩn mang kính bảo vệ mắt khỏi những hóa chất độc hại và đảm bảo thị lực của người trong phòng TN.
+✅ 2: A báo cáo ngay với giáo viên trong phòng thực hành.
+✅ 3: B. ngắt mạch điện ra khỏi nguổn sau đó kiểm tra mạch điện và nguổn điện
+✅ 4: A ngắt điện, di chuyển các chất dễ cháy ra ngoài và chống cháy lan, cứu người, cứu tài sản, dập tắt đám cháy.
+✅ 5: D. để các thiết bị nối với nguổn điện giúp duy trì năng lượng_
+✅ 6: A sử dụng phương tiện phòng hộ cá nhân như quân á0 phòng hộ, găng tay, mũ á0 chì.
+💾 Lưu kết quả tại: data/output/answers/page_032.txt
+
+=== 🔍 Ảnh 34/50: page_033.png ===
+✅ 1: C. Để hóa chất không đúng nơi quy định sau khi làm xong thí nghiệm
+✅ 2: D. Mang á0 phòng hộ và không cẩn đeo mặt nạ
+✅ 3: A tạo ra nhiểu sản phẩm mang lại lợi nhuận
+✅ 4: B. Tắt công tắc nguổn thiết bị điện sau khi cắm hoặc tháo thiết bị điện.
+✅ 5: A Tiếp xúc với các vật và các thiết bị thí nghiệm có nhiệt độ cao ngay khi có dụng cụ bảo hộ.
+✅ 6: C Được phép tiến hành thí nghiệm khi đã mang đổ bảo hộ_
+💾 Lưu kết quả tại: data/output/answers/page_033.txt
+
+=== 🔍 Ảnh 35/50: page_034.png ===
+✅ 1: D Phải vệ sinh, sắp xếp gọn gàng, các thiết bị và dụng cụ thí nghiệm, bỏ chất thải thí nghiệm vào đúng nơi quy định sau khi tiến hành thí nghiệm
+💾 Lưu kết quả tại: data/output/answers/page_034.txt
+
+=== 🔍 Ảnh 36/50: page_035.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 37/50: page_036.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 38/50: page_037.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 39/50: page_038.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 40/50: page_039.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 41/50: page_040.png ===
+⚠️ Không tìm thấy vùng xanh.
+
+=== 🔍 Ảnh 42/50: page_041.png ===
+✅ 1: B. (1) K; (2) Nhiệt độ; (3) Cường độ dòng điện; (4) Cường độ ánh sáng .
+✅ 2: D. Năm-
+✅ 3: D_ (1) thứ nguyên; (2) đơn vị; (3) Hai vế_
+✅ 4: B. là sai số do điểm 0 ban đẩu của dụng cụ đo bị lệch.
+💾 Lưu kết quả tại: data/output/answers/page_041.txt
+
+=== 🔍 Ảnh 43/50: page_042.png ===
+✅ 1: B. là những sai xót mắc phải khi đo.
+✅ 2: C. là phép so sánh nó với một đại lượng cùng loại được quy ước làm đơn vị.
+✅ 3: B. Các đại lượng vật lí luôn có thể đo trực tiếp.
+✅ 4: D.
+✅ 5: B. mét (m)
+✅ 6: A. chiểu dài lớn nhất ghi trên thước
+✅ 7: C. chiêu dài giữa hai vạch chia liên tiếp trên thước
+✅ 8: C. kilôgam
+💾 Lưu kết quả tại: data/output/answers/page_042.txt
+
+=== 🔍 Ảnh 44/50: page_043.png ===
+✅ 1: C_ giây.
+✅ 2: A. (1), (2).
+✅ 3: B. Niuton, mol.
+✅ 4: D_ 210 m.
+✅ 5: A Sai số hệ thống.
+✅ 6: D. Vôn (V).
+✅ 7: D. loại trừ khi đo bằng cách hiệu chỉnh khi đo.
+✅ 8: D. Trong công thức xác định sai số gián tiếp có chứa các hằng số
+✅ 9: B. 2
+✅ 10: D_ 3
+✅ 11: A
+💾 Lưu kết quả tại: data/output/answers/page_043.txt
+
+=== 🔍 Ảnh 45/50: page_044.png ===
+✅ 1: A thước dây
+✅ 2: D_ thước
+✅ 3: thẳng
+✅ 4: C com pa
+✅ 5: B thước kẹp
+✅ 6: C. Đổng hổ bấm giây
+💾 Lưu kết quả tại: data/output/answers/page_044.txt
+
+=== 🔍 Ảnh 46/50: page_045.png ===
+✅ 1: B. Đổng hổ hẹn giờ.
+✅ 2: B. 50 'C và 2'C.
+✅ 3: A Nhiệt kế kim loại
+✅ 4: B. Nhiệt kế y tế
+✅ 5: D Nhiệt kế rượu
+💾 Lưu kết quả tại: data/output/answers/page_045.txt
+
+=== 🔍 Ảnh 47/50: page_046.png ===
+✅ 1: C. Nhiệt kế thủy ngân
+✅ 2: A thước kẻ có giới hạn đo 10 cm và độ chia nhỏ nhất 1 mm.
+✅ 3: A. Giới hạn đo là 30 cm và độ chia nhỏ nhất là 1 mm
+✅ 4: A. 1 g.
+✅ 5: D 10
+✅ 6: C. Giá trị trung bình của tất cả các trị đo được_ giá
+💾 Lưu kết quả tại: data/output/answers/page_046.txt
+
+=== 🔍 Ảnh 48/50: page_047.png ===
+✅ 1: A. lựa chọn đổng hổ đo phù hợp.
+✅ 2: c. (2), (3), (1), (5), (4)
+✅ 3: D. Cả ba nguyên nhân trên.
+✅ 4: D Nhiệt độ của một lò luyện
+✅ 5: kim
+✅ 6: A (2), (4), (3), (1), (5)
+✅ 7: C Hiệu chỉnh vê vạch số 0.
+💾 Lưu kết quả tại: data/output/answers/page_047.txt
+
+=== 🔍 Ảnh 49/50: page_048.png ===
+✅ 1: B Khi đo phải hiệu chỉnh
+✅ 2: cẩn thận.
+✅ 3: B. 5%
+✅ 4: C. 12 cm:
+✅ 5: C. 10 cm:
+✅ 6: B. 2 g, 50 g, 200 g, 500 mg_ 5 9
+💾 Lưu kết quả tại: data/output/answers/page_048.txt
+
+=== 🔍 Ảnh 50/50: page_049.png ===
+✅ 1: C. g = 9,72 + 0,07 m/s?
+✅ 2: A. 0,1%
+✅ 3: A.
+✅ 4: m/s
+✅ 5: C_
+✅ 6: A
+✅ 7: D_
+✅ 8: A_ 8%
+💾 Lưu kết quả tại: data/output/answers/page_049.txt
+
+✅ Đã xử lý xong 27 ảnh, kết quả nằm trong: data/output/answers

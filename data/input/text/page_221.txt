@@ -1,0 +1,41 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. Chiều dương từ A đến B nên vận tốc của người xuất phát từ A là ⎕
+v =4 km/h, vận tốc của người xuất phát từ B là v = 4 km/h
+1 2
+b. Phương trình chuyển động của người xuất phát từ A: d =4t(km) ⎕
+A
+c. Phương trình chuyển động của người xuất phát từ B: ⎕
+d =10−4(t−0,5)(km)
+B
+d. Hai người gặp nhau sau khi người xuất phát từ A đi được 1,5 h ⎕
+tại vị trí cách B một khoảng 6 km.
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câu 1: Hình bên mô tả đồ thị độ dịch
+chuyển - thời gian của một chiếc xe ô
+tô chạy trên một đường thẳng. Tính
+vận tốc trung bình của xe theo đơn vị
+km/h?
+Đáp
+án:
+Câu 2: (SBT- CTST) Hình bên mô tả
+đồ thị tọa độ - thời gian của hai xe.
+Trong khoảng thời gian từ 0 h đến 2
+h, xe (2) chuyển động đều theo chiều
+âm với tốc độ là bao nhiêu m/s?(kết
+quả lấy đến 1 chữ số phần thập phân)
+Đáp
+án:
+Câu 3: Phương trình chuyển động của một chất điểm dọc theo theo trục
+Ox có dạng
+d = -10 + 60t (d đo bằng km, t đo bằng h). Gốc thời gian là lúc xuất
+phát. Khi vật có tọa độ 80 km thì quãng đường vật đã đi được là bao
+nhiêu, lấy đơn vị km?
+(kết quả lấy đến 0 chữ số phần thập phân)
+Đáp
+án:
+Câu 4: Một tàu ngầm sử dụng hệ thống phát sóng âm để đo độ sâu của
+biển. Hệ thống phát ra các sóng âm và đo thời gian quay trở lại của sóng
+221

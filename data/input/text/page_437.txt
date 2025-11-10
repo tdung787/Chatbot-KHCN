@@ -1,0 +1,64 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+v =v .sinα−¿=15.sin 450−9,8.2,99= -18,69 m/s
+y 0
+1
+Khi vật chạm đất: y=0 thì h+(v .sin α).t− gt2=0 −4,9t2+7,5√2t+12=0
+0 2
+Giải phương trình, ta được: t = 2,99 s
+√
+Vận tốc của vật khi chạm đất: v= v 2+v 2= √¿¿=21,4 m/s. Chọn D
+x y
+x L 200
+Câu 7. Thời gian hòn đá rơi: t= = = = 19,2 s. Chọn
+v .cosα v .cosα 12.cos300
+0 0
+B
+1 x2
+Câu 8. Khi vật chạm đất: y=0 thì h+tanα . x− g =0
+2 v 2.cos2α
+0
+1 1002
+10+√3.100− .10. =0 v  33 m/s. Chọn D
+2 v 2.cos2600 0
+0
+1
+Câu 10. Khi vật chạm đất: y=0 thì h+(v .sin α).t− gt2=0 −5t2+10t+15=0
+0 2
+ t = 3s.
+Tầm bay xa của vật là: L=v .t = v .cosα .t = 20.cos 300.3 52 m. Chọn B
+x 0
+x L 150
+Câu 11. Thời gian hòn đá rơi: t= = = = 14,4 s.
+v .cosα v .cosα 12.cos300
+0 0
+Chọn C
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ 2 câu. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh
+chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Lệnh Đáp án Đáp án
+Câu Câu Lệnh hỏi
+hỏi (Đ/S) (Đ/S)
+A) S A) Đ
+B) Đ B) Đ
+1 2
+C) S C) S
+D) Đ D) Đ
+Hướng dẫn chi tiết các câu cần suy luận:
+Câu 1.
+1 x2
+a) [S] Phương trình quỹ đạo của vật : y=h+tanα .x− g
+2 v 2.cos2α
+0
+1 g 1
+ y=45+tan450. x− . .x2=45+x− x2
+2 v 2.cos2α 40
+0
+b) [Đ] Quỹ đạo của vật có dạng là một đường Parabol
+c) [S] Thời gian bay của vật trong không khí :
+437

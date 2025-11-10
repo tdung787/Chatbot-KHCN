@@ -1,0 +1,57 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+t +t +t
+ Sai số tuyệt đối trung bình: t= 1 2 3=0,002(s)=t
+3
+- Δs bằng nửa ĐCNN của thước đo nên: Δs = 0,0005 (s)
+s 0,5 m
+- Tốc độ trung bình: v= = =0,643( )
+t 0,778 s
+∆ v ∆ s ∆t ∆v 0,0005 0,002 m
+- Sai số: v = s + t  = +  = + v=0,002( )
+v s t 0,643 0,5 0,778 s
+ Giá trị tốc độ: v = 0,643 ± 0,002 (m/s)
+Bảng 6.2
+t +t +t
+- Giá trị trung bình của thời gian: t= 1 2 3=0,032(s)
+3
+ Sai số tuyệt đối mỗi lần đo:
+∆t =|t −t|=0,001(s);∆t =|t −t|=0,000(s);∆t =|t −t|=0,001(s);
+1 1 2 2 3 3
+t +t +t
+ Sai số tuyệt đối trung bình: t= 1 2 3=0,001(s)=t
+3
+d 0,02 m
+- Tốc độ tức thời: v= = =0,625( )
+t 0,032 s
+∆v ∆ d ∆t ∆v 0,00002 0,001 m
+- Sai số: v = d + t  = +  = + v=0,001( )
+v d t 0,6 0,02 0,032 s
+ Giá trị tốc độ: v = 0,625 ± 0,001 (m/s)
+Nhận xét: Tốc độ trung bình gần bằng tốc độ tức thời, vì viên bi gần
+như chuyển động đều.
+Câu 10: Giả sử khi đo thời gian ta có bảng số liệu sau
+Lần đo thời gian Thời gian Gia tốc
+Quãng
+trung rơi tự do
+đường
+Lần Lần Lần Lần Lần bình 2S
+g=
+1 2 3 4 5 t t2
+0,400 0,285 0,286 0,284 0,285 0,286
+0,600 0,349 0,351 0,348 0,349 0,350
+0,800 0,404 0,405 0,403 0,404 0,403
+0,100 0,451 0,452 0,452 0,451 0,450
+0,120 0,494 0,495 0,494 0,494 0,493
+a. Hãy tính giá trị trung bình và sai số tuyệt đối của phép đo gia tốc
+rơi tự do.
+b. Tại sao lại dùng trụ thép làm vật rơi trong thí nghiệm? Có thể dùng
+viên bi thép được không? Giải thích tại sao.
+c. Vẽ đồ thị mô tả mối quan hệ s và t2 trên hệ tọa độ (s – t2).
+d. Nhận xét chung về dạng của đồ thị mô tả mối quan hệ s và t2 rồi rút
+ra kết luận về tính chất của chuyển động rơi tự do.
+e. Hãy đề xuất một phương án thí nghiệm khác để đo gia tốc rơi tự do
+của trụ thép.
+Nhận xét và đánh giá kết quả thí nghiệm:
+Hướng dẫn giải:
+378

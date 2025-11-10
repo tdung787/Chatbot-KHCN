@@ -1,0 +1,33 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
++ Trong khoảng thời gian từ 0 đến 1 h, xe chuyển động đều theo chiều
+dương với tốc độ:
+∆s 40+20 ( km)
+v= = =20
+∆t 1−0 h
++ Trong khoảng thời gian từ 1 h đến 2 h, xe đứng yên.
++ Trong khoảng thời gian từ 2 h đến 3 h, xe chuyển động đều theo chiều
+âm với tốc độ:
+∆s 40−0 ( km)
+v= = =40
+∆t 3−2 h
+- Chuyển động của xe 2: Trong khoảng thời gian từ 0 đến 2 h, xe chuyển
+động đều theo chiều âm với tốc độ:
+∆s 80−0 (km )
+v= = =40
+∆t 2−0 h
+Câu 8. Một chiếc xe đồ chơi điều khiển từ xa đang
+chuyển động trên một đoạn đường thẳng có độ dịch
+chuyển tại các thời điểm khác nhau được cho trong
+bảng dưới đây.
+a. Hãy vẽ đồ thị độ dịch chuyển – thời gian của xe
+đồ chơi.
+b. Hãy xác định vận tốc và tốc độ tức thời tại các
+thời điểm 2 s, 4 s, 6 s, 10 s và 16 s.
+Thời điểm (s) 0 2 4 6 8 10 12 14 16 18 20
+Độ dịch chuyển 0 2 4 4 4 7 10 8 6 4 4
+(m)
+Hướng dẫn giải
+a.
+b.
+213

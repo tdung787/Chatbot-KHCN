@@ -1,0 +1,37 @@
+a. Chuyển động nhanh dần đều là: đồ thị a và b ⎕
+b. Chuyển động chậm dần đều: đồ thị c ⎕
+c. Đồ thị b: v = v + at (a < 0) ⎕
+d. Đồ thị c: v = v0 + at (a > 0) ⎕
+Hướng dẫn giải
+a. [Đ] Chuyển động nhanh dần đều là: đồ thị a và b
+b. [Đ] Chuyển động chậm dần đều: đồ thị c
+c. [S] Đồ thị b: v = v + at (a > 0)
+d. [S] Đồ thị c: v = v0 + at (a < 0)
+Câu 3 : Chất điểm chuyển động
+có đồ thị vận tốc theo thời gian
+như hình
+a. Quãng đường mà chất điểm đi được từ khi bắt đầu chuyển ⎕
+động cho tới 10s là 43,75m
+b. Độ dịch chuyển của chất điểm từ khi bắt đầu chuyển động đến ⎕
+thời điểm 4s là 10m
+c. Vận tốc trung bình của chất điểm trong 4s đầu là 2m/s ⎕
+d. Tốc độ trung bình kể từ khi bắt đầu đi đến thời điểm 6s là ⎕
+3,1m/s
+Hướng dẫn giải
+a. [S] Quãng đường vật đi được trong 2 s đầu là:
+4−0 4 ( m ) 52−02
+a = = =¿ s = =9,375(m)
+1 3 3 s2 1 4
+2.
+Quãng đường vật đi được từ 3 – 7 s là:
+s =4.(7−3)=16(m)
+Quãng đường vật đi được từ 7 – 10 s là:
+6−4 2 ( m ) 62−42
+a = = =¿s = =15(m)
+13 10−7 3 s2 3 ( 2 )
+2.
+Quãng đường mà chất điểm đi đượctừ lúc bắt đầu đến khi dừng
+hẳn là:
+S = 9,375 + 16 + 15 = 40,375 (m)
+b. [Đ] Độ dịch chuyển = Diện tích hình thang OABC
+ Độ dịch chuyển của người này là:

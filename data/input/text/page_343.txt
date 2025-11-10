@@ -1,0 +1,44 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 24: Một vật rơi tự do khi chạm đất thì vật đạt vận tốc 40m/s. Hỏi
+vật được thả rơi từ độ cao nào? biết g = 10m/s2.
+A. 20m B. 80m C. 60m D. 70m
+Câu 25: Người ta thả một vật rơi tự do từ một tòa tháp thì sau 20s vật
+chạm đất cho g = 10m/s2. Tính độ cao của tòa tháp.
+A. 4000m B. 3000m C. 2000m
+D. 1000m
+Câu 26: Người ta thả một vật rơi tự do từ một tòa tháp thì sau 20s vật
+chạm đất cho g = 10m/s2. Vận tốc khi chạm đất.
+A. 400m/s B. 300m/s C. 100m/s
+D. 200m/s
+Câu 27: Người ta thả một vật rơi tự do từ một tòa tháp thì sau 20s vật
+chạm đất cho g = 10m/s2. Độ cao của vật sau khi vật thả được 4s.
+A. 1920m B. 1290m C. 2910m
+D. 1029m
+Câu 28: Một vật được thả rơi từ độ cao 1280 m so với mặt đất. Lấy
+g=10m/s2. Tìm thời gian để vật rơi đến đất?
+A. 15s B. 16s C. 51s D. 15s
+Câu 29: Một vật được thả rơi từ độ cao 1280 m so với mặt đất. Lấy
+g=10m/s2.Tìm vận tốc của vật khi chạm đất?
+A. 120m/s B. 130m/s C. 140m/s D.
+160m/s
+Câu 30: Một vật được thả rơi từ độ cao 1280 m so với mặt đất. Lấy
+g=10m/s2. Sau khi rơi được 2s thì vật còn cách mặt đất bao nhiêu?
+A. 1260m B. 1620m C. 1026m
+D. 6210m
+Câu 31: Một vật được thả rơi từ độ cao 1280 m so với mặt đất. Lấy
+g=10m/s2. Khi vận tốc của vật là 40m/s thì vật còn cách mặt đất bao
+nhiêu? Còn bao lâu nữa thì vật rơi đến đất?
+A. 1000m; 6s B. 1200m; 12s C. 800m; 15s D. 900m;
+20s
+Câu 32: Một người thả một hòn đá từ tầng 2 độ cao h xuống đấy, hòn
+đá rơi trong 2s. Nếu thả hòn đá đó từ tầng 32 có độ cao h’ = 16h thì thời
+gian rơi là bao nhiêu?
+A. 6s B. 12s C. 8s
+D. 10s
+Câu 33: Một vật được thả rơi tự do không vận tốc đầu từ độ cao h biết
+trong 7s cuối cùng vật rơi được 385m cho g = 10m/s2. Xác định thời gian
+và quãng đường rơi
+A. 9s; 405m B. 8s; 504m C. 7s; 500m
+D. 6s; 450m
+343

@@ -1,0 +1,60 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Thời gian máy bay, bay từ B về A là: t = BA/13,5 = 5000/13,5 = 370 (s)
+2
+Tốc độ trung bình trên cả tuyến đường bay là:
+s m
+v= =14,2( )
+t +t s
+1 2
+Câu 4. (SBT-KNTT) Hai ô tô khởi
+hành cùng một lúc từ hai địa điểm
+cách nhau 40km. Nếu chúng đi ngược
+chiều thì sau 24 min sẽ gặp nhau. Nếu
+chúng đi cùng chiều thì sau 2h sẽ gặp
+nhau. Tính vận tốc mỗi xe.
+Hướng dẫn giải
+Đổi 24 min = 0,4 h
+ Gọi: + ⃗v là vận tốc của xe A với xe B
+12
++ ⃗v là vận tốc của xe B so với đường
+23
++ ⃗v là vận tốc của xe A so với đường
+13
+ Áp dụng công thức cộng vận tốc:
+⃗v = ⃗v + ⃗v
+13 12 23
+ Chọn chiều dương là chiều của xe A đi:
+- Khi đi ngược chiều: v = v – v  v = v + v = 40/0,4 = 100 km/h
+13 12 23 12 13 23
+(1)
+- Khi đi cùng chiều: v = v + v  v = v - v = 40/2 = 20 km/h (2)
+13 12 23 12 13 23
+Giải hệ phương trình (1) và (2) ta được: v =60km/h;v =40km/h.
+13 23
+Câu 5. (SBT-KNTT) Tại một thời điểm, ở vị trí M trên đoạn đường
+thẳng có xe máy A chạy qua với tốc độ 30km/h. Sau 10 phút, cũng tại vị
+trí M, có xe máy B chạy qua với tốc độ 40km/h để đuổi theo xe máy A. Giả
+sử hai xe máy chuyển động với tốc độ xem như không đổi.
+a) Tính thời gian để xe máy B đuổi kịp xe máy A.
+b) Tính quãng đường mà xe máy A đã đi được đến khi xe máy B
+đuổi kịp.
+Hướng dẫn giải
+ Gọi: + ⃗v là vận tốc của xe B so với A
+12
++ ⃗v là vận tốc của xe A với đường
+23
++ ⃗v là vận tốc của xe B so với đường
+13
+ Áp dụng công thức cộng vận tốc:
+⃗v = ⃗v + ⃗v
+13 12 23
+ Chọn chiều dương là chiều xe A đi:
+Vì hai xe chuyển động cùng chiều nhau nên: v = v + v
+13 12 23
+ Vận tốc của xe A so với B: v = v - v = 10 km/h
+12 13 23
+a) Quãng đường mà xe máy A đã đi được sau 10 phút: s =v ×Δt=5km
+A A
+Thời gian để xe máy B đuổi kịp xe máy A là:
+157

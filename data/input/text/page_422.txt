@@ -1,0 +1,65 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 6. Từ mặt đất một quả cầu được néo theo phương hướng lên hợp
+với phương ngang một góc 600 với vận tốc 20 m/s.
+x2 ⎕
+a. Phương trình quỹ đạo của quả cầu là y=√3 x− (cm)
+20
+b. Độ cao cực đại vật đạt được so với mặt đất là 10 m ⎕
+c. Tầm bay xa của vật là 20√3 (cm) ⎕
+d. Vận tốc của vật lúc chạm đất là 10 m/s ⎕
+Hướng dẫn giải
+a) [Đ] Chọn hệ quy chiếu Oxy như hình vẽ
+- Thời điểm ban đầu (t = 0)
++ Chiếu lên trục Ox có :
+x = 0 ; v = v .cos = 20.cos600 = 10 (m/s)
+0 0x 0
++ chiếu lên trục Oy có :
+y = 0 ; v = v .sin = 20.sin 600= 10√3 (m/s)
+0 0y 0
+-xét tại thời điểm t
++ Chiếu lên trục Ox có :
+v = v .cos = 10 (m/s)
+x 0
+x
+d = x = (v .cos).t  t =
+x 0 v .cosα
+0
++ chiếu lên trục Oy có :
+v = v .sin - gt
+y 0
+1
+d = y= h+(v .sin).t - gt2
+y o 2
+Rút t ở phương trình d thế vào phương trình d :
+x y
+g
+y = h+ (tan).x - . x2
+2v 2.cos2α
+o
+g
+Thế số vào phươn trình : y = h+ (tan).x - . x2 , ta được :
+2v 2.cos2α
+o
+1
+y=√3. x− x2 : phương trình quỹ đạo chuyền động của vật.
+20
+1 v 2.sin2α 1 202.sin2600
+b) [S] Tầm bay cao của vật : h 0 = . =15 (m)
+2 g 2 10
+max
+v 2.sin 2α 202.sin1200
+c) [Đ] Tầm bay xa của vật : L 0 = = 20√3 (m)
+g 10
+max
+d) [S] Vận tốc của vật lúc chạm đất :
+x 20√3
+v= √ v 2+v 2mà v = v .cos = 10 (m/s) ; t = = =2√3 (s)
+x y x 0 v .cosα 20.cos600
+0
+v = v .sin - gt = 20.sin 600 – 10. 2√3= −10√3 (m/s)
+y 0
+suy ra : v= √ v 2+v 2= √ 102+¿¿= 20 (m/s)
+x y
+3 Câu trắc nghiệm trả lời ngắn
+422

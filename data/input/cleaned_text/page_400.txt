@@ -1,0 +1,51 @@
+Ta có v = 5 m/s; h = 10m
+a. Phương trình chuyển động của hòn đá là:
++ Ox: d = v t = 5t
+x 0
+1 1
++ Oy: d = gt2= .9,81.t2=4,905t2
+y 2 2
+b. Tọa độ của hòn đá sau 1s là:
+d = 5t = 5 (m)
+x
+d =4,905t2=4,905.12=4,905(m)
+y
+√ √
+2g 2.10
+c. Thời gian rơi của vật: t= = ≈2(s)
+h 9,81
+Vị trí của hòn đá ngay trước khi hòn đá chạm mặt nước biển:
+d = 5t = 10 m; d =4,905t2=4,905.22=19,62(m)
+x y
+Tốc độ của hòn đá trước khi chạm mặt nước biển là:
+v=√2gh=√2.9,81.10≈14(m/s)
+Câu 9: Một máy bay đang bay ở độ cao 5 km với tốc độ 500 km/h theo
+phương ngang thì thả rơi một vật. Hỏi người lái bay phải thả vật cách
+mục tiêu bao xa theo phương ngang để vật rơi trúng mục tiêu? Lấy g =
+9,8 m/s2 .
+Hướng dẫn giải
+Ta có: v = 500 km/h = 138,89 m/s; h = 5 km = 5000 m
+Người lái máy bay phải thả vật cách mục tiêu là:
+L = d = v .t = v .√2gh=138,89.√2.9,81.5000≈4436,68(m/s)
+xmax 0 0
+Câu 10: Một máy bay chở hàng đang bay ngang ở độ cao
+490 m với vận tốc 100 m/s thì thả một gói hàng cứu trợ xuống một làng
+đang bị lũ lụt. Lấy g = 9,8 m/s2 và bỏ qua sức cản của không khí.
+a. Sau bao lâu thì gói hàng chạm đất?
+b. Tầm xa của gói hàng là bao nhiêu?
+c. Xác định vận tốc của gói hàng khi chạm đất.
+Hướng dẫn giải
+√ √
+2h 2.490
+a. Thời gian gói hàng chạm đất: t= = =10(s)
+g 9,8
+b. Tầm xa gói hàng là: L = v .t = 100.10 = 1000(m)
+c. Vận tốc gói hàng khi chạm đất: v= √ v2+2gh= √ 1002+2.9,8.490≈140(m/s)
+Câu 11: Một người đứng ở độ cao 80m ném một vật thì vật
+phải có vận tốc ban đầu là bao nhiêu để ngay lúc chạm đất có v =
+50m/s, bỏ qua lực cản của không khí.
+a. Viết phương trình quỹ đạo của vật
+b. Tính khoảng thời gian vật chạm đất.
+c. Tính tầm ném xa của vật khi chạm đất.
+Hướng dẫn giải
+Chọn hệ quy chiếu Oxy với O là vị trí ném

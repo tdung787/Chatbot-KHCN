@@ -1,0 +1,42 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 6: Để tính gia tốc rơi tự do g, người ta có thể dùng công thức tính
+chu kì của một con lắc đơn gồm một vật nặng có kích thước nhỏ treo vào
+một dây nhẹ, không co giãn:
+√
+l
+T=2π , trong đó, T là thời gian để vật nặng thực hiện một dao động và l
+g
+là chiều dài sợi dây. Trong thí nghiệm với con lắc đơn, người ta đo được:
+l=(0,350±0,005) m và T=(1,18±0,02) s. Sai số tuyệt đối của phép đo này là bao
+nhiêu m/s2?
+Đáp 0 , 5
+án:
+Hướng dẫn giải
+l 0,350
+Gia tốc rơi tự do: g=4 π2. =4 π2. (m/s2)
+T2 ¿¿
+Δg Δl ΔT 0,005 0,02
+Sai số tỉ đối: = +2. = +2. =0,05
+g l T 0,350 1,18
+Sai số tuyệt đối: Δg=0,05. g=0,05.9,92=0,50 (m/s2)
+Câu 7: Dùng thước thẳng có giới hạn đo là 20cm và độ chia nhỏ
+nhất là 0,5cm để đo chiều dài chiếc bút máy. Nếu chiếc bút có
+độ dài cỡ 15cm thì phép đo này sai số tỷ đối là bao nhiêu %?
+Đáp 1 , 6 7
+án:
+Hướng dẫn giải
+Sai số tuyệt đối của phép đo bằng ½ độ chia nhỏ nhất của thước thẳng:
+0,5
+Δl= =0,25cm.
+2
+Δl 0,25
+Sai số tỉ đối của phép đo: = =0,0167=1,67%
+l 15
+Câu 8: Cạnh của một hình lập phương đo được là a=(2,00±0,01)cm. Sai số
+tuyệt đối của phép đo thể tích khối lập phương là bao nhiêu cm3?. (Kết
+quả lấy đến 2 chữ số sau dấu phẩy thập phân).
+Đáp 0 , 1 2
+án:
+Hướng dẫn giải
+61

@@ -1,0 +1,45 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Đáp 1 0
+án:
+Hướng dẫn giải
+Dựa vào đồ thị, diện tích hình giới hạn bởi đường biểu diễn trong đồ thị
+vận tốc - thời gian có độ lớn bằng quãng đường đi được. Khi hai xe gặp
+nhau, thì diện tích hình giới hạn bởi đường biểu diễn cho hai xe bằng
+nhau.
+a thấy diện tích hình chữ nhật OAHI giới hạn bởi đường biểu diễn v – t
+cho xe máy bằng với diện tích hình OCKLI giới hạn bởi đường biểu diễn
+v – t cho xe bus cùng bằng 10 ô. Do đó, tại thời điểm t = 10 s thì d = d ,
+1 2
+nghĩa là xe bus đuổi kịp xe máy
+Kiểm tra bằng phương trình chuyển động:
+Đối với xe bus:
+Trong 4 s đầu: d = ½.a t2 = ½.2.42 = 16m
+1 1 1
+Trong 4 s tiếp theo: d = v t2 + ½.a t2 = 8.4 + 12.1.42 = 40m
+2 0 2 2
+Trong các giây tiếp theo: d = v t = 12t
+3 3 3 3
+Nếu gọi thời điểm hai xe gặp nhau là t thì t = t ± (t + t ) ⇒ t = t ± 8
+3 1 2 3
+Chọn dấu “-” vì trong 8 s đầu xe bus mới đi được d + d = 56 m, còn xe
+1 2
+máy đã đi được
+d = v t = 8.8 = 64m > 56m
+m m m
+Độ dịch chuyển của xe máy trong thời gian t là d = v t = 8t (1)
+m m
+Độ dịch chuyển của xe bus trong thời gian t là
+d = 16 + 40 + 12t = 16 + 40 + 12(t - 8) = 12t - 40 (2)
+b 3
+Khi hai xe gặp nhau d = d ⇒ 12t – 40 = 8t ⇒ t = 10s
+m b
+Hai xe gặp nhau tại thời điểm t = 10 s.
+Câu 5 : Một quả bóng bàn được bắn ra theo phương ngang với vận tốc
+đầu bằng không đến va chạm vào tường và bật lại trong khoảng thời
+gian rất ngắn. Hình bên là đồ thị (v – t) mô tả chuyển động của quả bóng
+trong 20 s đầu tiên. Tính quãng đường mà bóng bay được sau 20 s kể từ
+lúc bắt đầu chuyển động theo đơn vị dm?( kết quả lấy đến 0 chữ số phần
+thập phân)
+Đáp 1 1 3
+312

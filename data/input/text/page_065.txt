@@ -1,0 +1,40 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+1
+sử dụng công thức h= g.t2 để xác định g. Hãy nêu ít nhất 2 giải pháp
+2
+giúp bạn học sinh đó làm giảm sai số trong quá trình thực nghiệm để
+thu đươc kết quả gần đúng nhất.
+Hướng dẫn giải:
+Một số giải pháp phù hợp:
+ hạn chế sự tác động của lực cản không khí,
+ thả rơi quả bóng ở nhiều độ cao khác nhau,
+ sử dụng đồng hồ có độ nhạy cao,
+ thao tác bấm đồng hồ dứt khoát.
+Câu 6: (SBT-KNTT) Hãy xác định số đo chiều dài của cây bút chì trong
+các trường hợp dưới đây:
+Trường hợp 1: Trường hợp 2:
+Hướng dẫn giải:
+Độ dài của cây bút chì đo được trong các trường hợp là:
+0,5
+- Th1: sai số dụng cụ bằng nửa độ chia nhỏ nhất: Δx=Δx = ≈0,3cm.
+đc 2
+Kết quả đo: x=¯x+Δx=6,0±0,3cm.
+0,1
+- Th2: Sai số dụng cụ bằng nửa độ chia nhỏ nhất : Δx=Δx = =0,05cm.
+đc 2
+Kết quả đo: x=¯x+Δx=6,20±0,05cm.
+Câu 7: Tìm những chữ số có nghĩa trong các số: 215; 0,56; 0,002;
+3,8.104.
+Hướng dẫn giải:
+215: có 3 chữ số có nghĩa; 0,56: có hai chữ số có nghĩa;
+0,002: có 1 chữ số có nghĩa; 3,8.104: có 2 chữ số có
+nghĩa.
+Câu 8: Khi thực hiện các phép tính, phải đảm bảo rằng kết quả cuối
+cùng có cùng số chữ số có nghĩa với số có ít chữ số có nghĩa nhất được
+sử dụng trong phép tính. Ví dụ: Tích của các độ dài 12,5m; 16m và
+15,88m phải được viết là 3,2.103 m3 vì số chữ số có nghĩa của 16 là 2 chữ
+số có nghĩa.
+Từ quy ước trên, thực hiện phép tính và viết kết quả đúng số chữ
+số có nghĩa:
+65

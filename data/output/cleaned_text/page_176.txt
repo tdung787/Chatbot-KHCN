@@ -1,0 +1,44 @@
+Câu 22. Sắp xếp theo đúng thứ tự các bước làm thí nghiệm đo tốc độ
+trung bình:
+a. Nới vít cổng quang
+điện, dịch chuyển đến vị
+trí thích hợp và vặn chặt
+để định vị. Đo quãng
+đường EF và ghi số liệu
+b. Thực hiện lại các thao
+tác ít nhất ba lần và ghi
+các giá trị thời gian t
+tương ứng với quãng
+đường s
+c. Bố trí thí nghiệm như
+hình 6.6
+d. Đặt viên bi thép lên máng nghiêng tại vị trí tiếp xúc với nam châm
+điện N và bị giữ lại ở đó
+e. Nhấn nút của hộp công tắc kép để ngắt điện vào nam châm N: viên
+bi lăn xuống và chuyển động đi qua cổng quang điện E, F trên máng
+nghiêng
+f. Nới vít hãm và đặt cổng quang điện E cách chân phần dốc của máng
+nghiêng.
+g. Ghi lại các giá trị thời gian hiển thị trên đồng hồ.
+h. Cắm nguồn điện của đồng hồ và bật công tắc nguồn đồng hồ đo
+thời gian hiện số, đặt MODE ở A↔B
+i. Nối hai cổng quang điện E, F với hai ổ cắm A, B ở mặt sau của đồng
+hồ đo thời gian.
+k. Nhấn nút RESET của đồng hồ đo thời gian hiện số để chuyển các số
+hiển thị về giá trị ban đầu 0.000
+A. c – f – i – h – a – d – k – e – g – b. B. c – a – k – d – b – e – f – h
+– g – i – k.
+C. c – d – e – f – i – k – a – b – g – h. D. c – k – i – h – g – a – b – d
+– e – f – g.
+<Đáp án: A>
+
+Câu 23. Sắp xếp theo đúng thứ tự các bước làm thí nghiệm đo tốc độ
+tức thời:
+a. Đặt viên bi thép lên máng
+nghiêng tại vị trí tiếp xúc với
+nam châm điện N và bị giữ lại
+ở đó.
+b. Sử dụng thước cặp đo
+đường kính viên bi
+c. Thực hiện lại các thao tác ít
+nhất ba lần và ghi các giá trị t

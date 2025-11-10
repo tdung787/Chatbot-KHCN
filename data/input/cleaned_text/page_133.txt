@@ -1,0 +1,37 @@
+Câu 5: Một tàu ngầm sử dụng hệ thống phát
+sóng âm để đo độ sâu của biển. Hệ thống phát ra
+các sóng âm và đo thời gian quay trở lại của
+sóng âm sau khi chúng bị phản xạ tại đáy biển.
+Tại một vị trí trên mặt biển, thời gian mà hệ
+thống ghi nhận được là 0,13 s kể từ khi sóng âm
+được truyền đi. Tính độ sâu mực nước biển theo
+đơn vị dm. Biết tốc độ truyền sóng âm trong
+nước khoảng 1500 m/s.
+Đáp
+án:
+Câu 6: Trong 1 lần thử xe ôtô, người ta đo được vị trí của xe sau những
+khoảng thời gian bằng nhau. (xem bảng) Hãy xác định tốc độ trung bình
+của ôtô trong 3 giây cuối cùng theo đơn vị cm/s
+x
+0 2,3 9,2 20,7 36,8 57,5
+(m)
+t (s) 0 1,0 2,0 3,0 4,0 5,0
+Sử dụng thông tin sau để trả lời câu 7, 8:
+Một ôtô đi trên quãng đường AB với v = 72km/h. Nếu giảm vận tốc đi
+18km/h thì ôtô đến B trễ hơn dự định 45 phút.
+Đáp
+án:
+Câu 7: Tính thời gian dự tính để đi quãng đường đó theo đơn vị s, (kết
+quả lấy đến 2 số sau dấu phẩy thập phân)
+Câu 8:
+Đáp
+án:
+Tính quãng đường AB theo đơn vị km?
+4 Tự luận (3,0 điểm)
+Câu 1: Bố bạn A đưa A đi học bằng xe máy vào lúc 7
+giờ. Sau 5 phút xe đạt tốc độ 30 km/h. Sau 10 phút
+nữa, xe tăng tốc lên thêm 15 km/h. Đến gần trường,
+xe giảm dần tốc độ và dừng trước cổng trường lúc 7
+giờ 30 phút.
+a. Tính tốc độ trung bình của xe máy chở A khi đi từ nhà đến trường.
+Biết quãng đường từ nhà đến trường dài 15 km.

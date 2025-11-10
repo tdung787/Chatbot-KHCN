@@ -1,0 +1,8 @@
+A- Vận tốc không đổi
+D_ Đổ thị độ dịch chuyển thời gian là đường thẳng nằm ngang
+C. Đổ thị độ dịch chuyển theo thời gian của chuyển động thẳng bao cũng là một đường thẳng. giờ
+A_ Trong khoảng thời gian từ 0 đến t1.
+D Đường thẳng song song
+trục thời gian
+D_ Song song với trục
+thời gian Ot.

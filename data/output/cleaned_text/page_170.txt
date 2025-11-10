@@ -1,0 +1,51 @@
+4 10 8 400
+Hướng dẫn chi tiết:
+Câu 1:
+Gọi:
++ ⃗v là vận tốc của người so với nước
++ ⃗v là vận tốc của nước so với bờ
++ ⃗v là vận tốc của người so với bờ
+Ta có: ⃗v =⃗v +⃗v
+13 12 23
+- Khi người bơi trong bể nước yên lặng, tức v = 0, ta có: v = v = 1
+23 12 13
+(m/s)
+- Khi người này bơi xuôi dòng chảy với vận tốc v = 1(m/s), ta có:
+v = v + v = 1 + 1 = 2 (m/s)
+13 12 23
+Vậy nếu người này bơi xuôi dòng sông có dòng chảy với vận tốc 1 m/s thì
+có thể đạt vận tốc tối đa là 2 m/s.
+Câu 2:
+Gọi: + ⃗v là vận tốc của thuyền so với nước
++ ⃗v là vận tốc của nước so với bờ
++ ⃗v là vận tốc của thuyền so với bờ
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+− Vận tốc của thuyền so với bờ: v = 10 km/h
+Đổi 1 phút = 1/60 h; 100/3 m = 1/30 km
+− Vận tốc của nước so với bờ: v = v = 2 km / h
+23 gỗ
+Vì đi ngược dòng nên: v = v – v  v = v + v = 12 km/h
+13 12 23 12 13 2
+Câu 3:
+ Gọi: + ⃗v là vận tốc của thuyền so với nước
++ ⃗v là vận tốc của nước so với bờ
++ ⃗v là vận tốc của thuyền so với bờ
+Đổi: 8 m 20 s = 500 s  v = AB/t = 400/500 = 0,8
+m/s
+ Áp dụng công thức cộng vận tốc:
+⃗v = ⃗v + ⃗v
+13 12 23
+√
+Từ hình vẽ, ta có: v = v2 +v2 =1m/s
+12 13 23
+Câu 4:
+Gọi: + ⃗v là vận tốc của ô tô A so với ô tô B
++ ⃗v là vận tốc của ô tô A so với đất
++ ⃗v là vận tốc của ô tô B so với đất
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+Hai ô tô chạy cùng chiều: v = v + v suy ra v = v – v = 50 - 40=
+13 12 23 12 13 23
+10km/h
+Câu 5:

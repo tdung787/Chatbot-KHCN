@@ -1,0 +1,53 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+S 34
+⇒ v = = =34(km/h)
+tb t 1
+Câu 4: Một ôtô đi trên quãng đường AB với v = 72km/h. Nếu giảm
+vận tốc đi 18km/h thì ôtô đến B trễ hơn dự định 45 phút. Tính quãng
+đường AB theo đơn vị km.
+Đáp 1 6 2
+án:
+Hướng dẫn giải
+3
++ Ta có v =72(km/h)⇒ v =72−18=54 (km/h);t ⇒t =t +
+1 2 1 2 1 4
+( 3)
++ Mà S=v .t =v .t ⇒72t =54 t + ⇒t =2,25h
+1 1 2 2 1 1 4 1
++ S=v .t =72.2,25=162(km)
+1 1
+Câu 5: Một ôtô chạy trên đoạn đường thẳng từ A đến B phải mất
+khoảng thời gian t. Trong nửa đầu của khoảng thời gian này ô tô có tốc
+độ là 60km/h. Trong nửa khoảng thời gian cuối ô tô có tốc độ là 40km/h.
+Tính tốc độ trung bình trên cả đoạn AB theo đơn vị km/h
+Đáp 5 0
+án:
+Hướng dẫn giải
+t
++ Trong nửa thời gian đầu: S =v .t =60. =30t
+1 1 1 2
+t
++ Trong nửa thời gian cuối: S =v .t =40. =20t
+2 2 2 2
+S S +S 30t+20t
++ Mà ta có: v = = 1 2= =50(km/h)
+tb t t +t t
+1 2
+Câu 6: Một ô tô đi trên quảng đường thẳng, trong 2/3 thời gian đầu
+đi với tốc độ 12m/s; trong thời gian còn lại đi với tốc độ 8m/s, tính tốc độ
+trung bình của ô tô trên cả quảng đường. theo đơn vị km/h (kết quẳ lấy
+đến 1 số sau dấu phẩy thập phân)
+Đáp 1 0 , 7
+án:
+Hướng dẫn giải
++ Gọi t là tổng thời gian vật chuyển động: t = 2t/3; t = t/3
+1 2
++ Ta có tốc độ trung bình của xe trong suốt thời gian chuyển động là:
+2 1
+12. t+8. t
+s +s v t +v t 3 3
+v = 1 2= 1 1 2 2= ≈10,7m/s
+tb t +t t t
+1 2
+124

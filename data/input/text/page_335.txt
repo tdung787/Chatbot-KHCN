@@ -1,0 +1,53 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+B) S B) Đ
+C) S C) Đ
+D) Đ D) Đ
+Câu 1 :
+a. [Đ] Vận tốc của vật không đổi trong khoảng thời gian từ 10s đến 20s.
+b.[S] Dựa vào đồ thị tính độ dốc của đoạn đồ thị trong 5 s đầu: a =
+1
+tanα = 10/5 = 2m/s2
+1
+c. [S] Quãng đường vật đi được khoảng thời gian từ 10s đến 20s là
+S=v.t=30.10=300m
+d. [Đ] Gia tốc của ô tô trong 5 s cuối là:
+∆v 0−10
+a = 2= =−2m/s2
+2 ∆t 5−0
+2
+Câu 2 :
+a. [S] Hai xe chuyển động thẳng không đổi chiều nên d = s, d = v t =
+A A A
+40.20 = 800 m.
+Δv 50−25
+b.[Đ] Gia tốc xe B: a= B= =1,25m/s2
+Δt 20
+c. [Đ]Khi 2 xe gặp nhau: d =d
+A B
+với d = 40.t(1)
+A
+a.t2 1,25.202
+d = d +d , d =v .t + B=25.20+ =750md =v .(t−20)=50.(t−20)
+B B1 B2 B1 0B B 2 2 B20 B
+→d =750+50.(t−20)(2)
+B
+Từ (1),(2) 40t=750+50t-1000 suy ra t=25s
+d.[Đ] Khi 2 xe gặp nhau d =d = 40.25=1000m
+A B
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câ Đáp Câ Đáp
+u án u án
+1 48 5 50
+2 700 6 -5
+3 80,3 7 0,1
+4 100 8 3,9
+Hướng dẫn chi tiết:
+Câu 1 :
+120.80
+Độ dịch chuyển của vật :d=S = =4800cm=48m
+¿ 2
+Câu 2 :
+335

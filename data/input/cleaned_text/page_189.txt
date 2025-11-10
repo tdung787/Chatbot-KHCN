@@ -1,0 +1,23 @@
+Chủ đề 4 CHUYỂN ĐỘNG THẲNG ĐỀU- ĐỒ THỊ ĐỘ DỊCH
+CHUYỂN – THỜI GIAN
+GIANĐƯỢCĐƯỢCĐƯỢC
+I BÀI TẬP MẪU
+Ví dụ 1.
+Một vật chuyển động thẳng có đồ thị (d – t) được mô tả
+như hình. Hãy xác định tốc độ tức thời của vật tại các
+vị trí A, B và C
+Hướng dẫn giải
+2−0 2 2−4
+v = = =2m/sv =0v = =−2m/s
+A 1 1 B C 4−3
+Ví dụ 2. (SGK-KNTT) Cho đồ thị độ dịch chuyển – thời gian của một
+người đang bơi trong một bể bơi dài 50 m.
+Đồ thị này cho biết những gì về chuyển
+đông của người đó ?
+1. Trong 25 giây đầu mỗi giây người
+đó bơi được bao nhiêu mét? Tính vận
+tốc của người đó ra m/s
+2. Từ giây nào đến giây nào người đó
+không bơi
+3. Từ giây 35 đến giây 60 người đó
+bơi theo chiều nào ?

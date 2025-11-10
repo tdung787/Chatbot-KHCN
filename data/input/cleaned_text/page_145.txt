@@ -1,0 +1,44 @@
+Câu 27: Một người chèo thuyền qua sông với vận tốc
+5,4km/h theo hướng vuông góc với bờ sông. Do nước
+sông chảy nên thuyền đã bị đưa xuôi theo dòng chảy
+xuống phía dưới hạ lưu một đoạn bằng 120m. Độ rộng
+của dòng sông là 450m. Hãy tính vận tốc của dòng
+nước chảy đối với bờ sông và thời gian thuyền qua
+sông ?
+A. 0,4m/s và 5 phút. B. 0,4m/s và 6 phút.
+C. 0,54m/s. và 7 phút. D. 0,45m/s và 7 phút
+Câu 28: Các giọt nước mưa rơi đều thẳng đứng với vận tốc v . Một xe
+lửa chuyển động thẳng đều theo phương ngang với vận tốc v = 10 m/s.
+Các giọt mưa rơi bám vào cửa kính và chạy dọc theo cửa kính theo
+hướng hợp góc 450 so với phương thẳng đứng. Vận tốc rơi đều của các
+giọt mưa là
+A. 34,6m/s B. 30m/s. C. 11,5m/s D. 10m/s
+Câu 29: Một ô tô chạy với vận tốc 50km/h
+trong trời mưa. Mưa rơi theo phương thẳng đứng.
+Trên cửa kính bên xe, các vệt nước mưa rơi hợp
+với phương thẳng đứng một góc 600. Vận tốc của
+giọt mưa đối với mặt đất là
+A. 62,25km/h.B. 57,73km/h. C. 28,87km/h. D. 43,3km/h.
+Câu 30: Các giọt nước mưa rơi đều thẳng đứng vận tốc v . Một xe lửa
+chạy thẳng đều theo phương ngang với vận tốc v = 17,3m/s. Các giọt
+nước mưa bám vào cửa kính và chạy dọc theo hướng hợp 300 với phương
+thẳng đứng. Vận tốc rơi thẳng đều của các giọt nước mưa là
+A. 34,6m/s B. 30m/s. C. 11,5m/s D. Khác A, B, C.
+Câu 31: Hai ô tô cùng chuyển động
+đều trên đường thẳng. Nếu hai ô tô đi
+ngược chiều thì cứ 20 phút khoảng cách
+của chúng giảm 30km. Nếu chúng đi
+cùng chiều thì cứ sau 10 phút khoảng
+cách giữa chúng giảm 10 km. Tính vận
+tốc mỗi xe.
+A. v = 75km/h; v = 15 km/h B. v = 25km/h; v = 65 km/h
+1 2 1 2
+C. v = 35km/h; v = 45 km/h D. v = 15km/h; v = 65 km/h
+1 2 1 2
+Câu 32: Một chiếc phà chạy xuôi dòng từ A đến B mất 3 giờ, khi chạy
+về mất 6 giờ. Nếu phà tắt máy trôi theo dòng nước từ A đến B thì mất
+A. 13 giờ. B. 12 giờ. C. 11 giờ. D.10 giờ.
+Câu 33: Một ca nô đi trong mặt nước yên lặng với vận tốc 16 m/s, vận
+tốc của dòng nước so với bờ sông là 2 m/s. Góc giữa vectơ vận tốc của ca
+nô đi trong nước yên lặng là vectơ vận tốc của dòng nước là 0 < α <
+180o. Độ lớn vận tốc của ca nô so với bờ có thể là

@@ -1,0 +1,38 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 30: Đồ thị vận tốc – thời gian của hai xe A
+và B chuyển động cùng chiều dọc theo một đường
+thẳng được thể hiện như ở hình bên. Gốc thời gian
+t = 0 được chọn khi hai xe ở cùng một vị trí. Từ
+thời điểm t = 0, hai xe đi được quãng đường bằng
+nhau sau khoảng thời gian
+A. 1 s B. 2 s
+C. 3 s D. 4 s
+2 Câu trắc nghiệm đúng sai
+Câu 1 : Đồ thị mô tả sự thay đổi
+vận tốc theo thời gian trong
+chuyển động của một ô tô thể
+thao đang chạy thử về phía Bắc.
+a. Ô tô bắt đầu chuyển động với vận tốc ban đầu là 20m/s ⎕
+b. Gia tốc của ô tô trong 4 s đầu là 5m/s2 ⎕
+c. Gia tốc của ô tô từ giây thứ 20 đến giây thứ 28 là -2,5m/s2 ⎕
+d. Quãng đường ô tô đi được sau 20s đầu là 320m ⎕
+Hướng dẫn giải
+a. [S] Ô tô bắt đầu chuyển động với vận tốc ban đầu là 0m/s
+b. [Đ] Trong 4 s đầu: Δv = 20 (m/s); Δt = 4(s)
+Δv 20
+⇒a= = =5(m/s2)
+Δt 4
+c. [Đ] Từ giây thứ 20 đến giây thứ 28: Δv = −20 – 0 = −20
+(m/s); Δt = 28 – 20 = 8(s)
+Δv −20
+⇒a= = =−2,5(m/s2)
+Δt 8
+d. [S] Quãng đường ô tô đi được sau 20s đầu
+(8+20).20
+S=S = =280m
+h∈hthang 2
+Câu 2 : Từ các đồ thị trong hình
+9.1. Nhận định sau đúng hay
+sai?
+306

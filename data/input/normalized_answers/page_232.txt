@@ -1,0 +1,9 @@
+B. Gia tốc không đổi, vận tốc tăng đều.  
+A. Vectơ gia tốc cùng phương, ngược chiều với các vectơ vận tốc.  
+A. a luôn luôn cùng dấu với v.  
+D. S = V0 * t + (a * t^2) / 2.
+D. V = V0 + a * t.
+C. A luôn luôn trái dấu với v.  
+C. Tích số a.v không đổi.  
+B. S = V0 * t + (a * t^2) / 2.
+A - Vận tốc có lúc tăng lên, có lúc giảm xuống.

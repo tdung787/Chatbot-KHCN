@@ -1,0 +1,49 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+6 D 12 D
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ 2 câu. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh
+chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Lệnh Đáp án Đáp án
+Câu Câu Lệnh hỏi
+hỏi (Đ/S) (Đ/S)
+A) S A) S
+B) Đ B) Đ
+1 2
+C) S C) S
+D) S D) S
+Câu 1:
+a) [S] Người quan sát đứng dưới làng nhìn thấy quỹ đạo của gói hàng là
+một phần của Parabol.
+√ √
+2h 2.490
+b) [Đ] Thời gian gói hàng chạm đất: t= = =10(s)
+g 9,8
+c) [S] Tầm xa gói hàng là: L = v .t = 100.10 = 1000(m)
+0
+d) [S] Vận tốc gói hàng khi chạm đất: v= √ v2+2gh= √ 1002+2.9,8.490≈140(m/s)
+0
+Câu 2:
+a) [S] Chọn gốc tọa độ O ở đỉnh tháp, trục tọa độ Ox theo hướng ⃗v , trục
+0
+OY thẳng đứng hướng xuống, gốc thời gian là lúc vừa ném vật
+Phương trình tọa độ của quả cầu
+{
+¿x=v t {
+0 ¿ x=20t
+1 ⇒ .
+¿ y= gt2 ¿ y=5t2
+2
+b) [Đ] Phương trình tọa độ của quả cầu
+{
+¿x=v t { {
+0 ¿ x=20t ¿ x=40m
+1 ⇒ . Lúc t=2s:
+¿ y= gt2 ¿ y=5t2 ¿ y=20m
+2
+408

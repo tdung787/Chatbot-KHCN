@@ -1,0 +1,34 @@
+Câu 1: Véctơ gia tốc a⃗ có tính chất nào kể sau?
+A. Đặc trưng cho sự biến thiên của vận tốc.
+B. Cùng chiều với ⃗v nếu chuyển động nhanh dần.
+C. Ngược chiều với ⃗v nếu chuyển động chậm dần.
+D. Các tính chất A, B, C.
+<Đáp án: D>
+
+Câu 2: Gia tốc là một đại lượng
+A. Đại số, đặc trưng cho sự biến đổi nhanh hay chậm của chuyển
+động.
+B. Đại số, đặc trưng cho tính không đổi của vận tốc.
+C. Vectơ, đặc trưng cho sự biến đổi nhanh hay chậm của chuyển động.
+D. Vectơ, đặc trưng cho sự biến đổi nhanh hay chậm của vận tốc.
+<Đáp án: D>
+
+Câu 3: Trong chuyển động thẳng nhanh dần đều:
+A. Vận tốc tăng đến cực đại rồi giảm dần.
+B. Vận tốc cuả vật tỷ lệ với bình phương thời gian.
+C. Gia tốc tăng đều theo thời gian.
+D. Vận tốc tăng đều theo thời gian.
+<Đáp án: D>
+
+Câu 4: Trong chuyển động biến đổi đều thì
+A. Gia tốc là một đại lượng không đổi.
+B. Gia tốc là đại lượng biến thiên theo thời gian.
+C. Vận tốc là đại lượng không đổi.
+D. Vận tốc là đại lượng biến thiên theo thời gian theo quy luật hàm
+bậc hai.
+<Đáp án: A>
+
+Câu 5: (8.2 SBT) Chuyển động nào sau đây là chuyển động biến đổi?
+A. Chuyển động có độ dịch chuyển tăng đều theo thời gian.
+B. Chuyển động có độ dịch chuyển giảm đều theo thời gian.
+C. Chuyển động có độ dịch chuyển không đổi theo thời gian.

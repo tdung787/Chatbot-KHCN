@@ -1,0 +1,20 @@
+Câu 1: Phát biểu nào sau đây chưa đúng:
+A. Trong các chuyển động thẳng nhanh dần đều, vận tốc có giá trị
+dương
+B. Trong các chuyển động thẳng nhanh dần đều, vận tốc a cùng dấu
+với vận tốc v
+C. Trong chuyển động thẳng chậm dần đều, các véc tơ vận tốc và gia
+tốc ngược chiều nhau
+D. Trong chuyển động thẳng có vận tốc tăng 1 lượng bằng nhau sau 1
+đơn vị thời gian là chuyển động thẳng nhanh dần đều
+<Đáp án: C>
+
+Câu 2: Một chất điểm chuyển động chậm dần đều, cùng chiều với trục
+Ox, quãng đường khi dừng lại được tính theo biểu thức
+v2 v2
+A. s = B. s = o
+2a 2a
+v2
+C. s = - o D. s = ¿¿
+2a
+<Đáp án: A>

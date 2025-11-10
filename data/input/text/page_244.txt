@@ -1,0 +1,48 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+A. 3m/s B. 4m/s C. 1m/s D.
+0,5m/s
+Câu 109: Một xe máy chuyển động thẳng nhanh dần đều trên đoạn AD
+dài 28m. Sau khi xe qua A được 1s xe tới B với vận tốc 6m/s. 1s trước khi
+tới D, xe ở C và vận tốc 8m/s. Thời gian xe đi trên đoạn đường AD là
+A. 4s. B. 10s C. 3s.
+D. 7s.
+Câu 110: Một chiếc xe chuyển động chậm dần đều trên đường thẳng.
+Vận tốc khi nó qua A là 10 m/s, và khi đi qua B vận tốc chỉ còn 4 m/s.
+Vận tốc của xe khi nó đi qua I là trung điểm của đoạn AB là
+A. 7 m/s. B. 5 m/s.
+C. 6 m/s. D. 7,6 m/s.
+Câu 111: Xe chạy chậm dần lên một dốc có độ dài là S.
+Tốc độ ở chân dốc 54km/h, ở đỉnh dốc là 36km/h. Chọn
+gốc tọa độ tại chân dốc, chiều dương là chiều chuyển
+động. Sau khi lên được nửa dốc thì tốc độ xe bằng
+A. 11,32m/s. B. 12,25m/s.
+C. 12,75m/s. D. 13,35m/s.
+Câu 112: Một chất điểm chuyển động trên trục 0x với gia tốc không đổi
+a = 4m/s2 và vận tốc ban đầu v = - 10m/s.
+0
+A. Sau thời gian 2,5s thì vật dừng lại, sau đó tiếp tục chuyển động chậm
+dần đều. Vận tốc của nó lúc t = 5s là v = 10m/s.
+B. Sau thời gian 2,5s thì vật dừng lại, sau đó tiếp tục chuyển động
+nhanh dần đều. Vận tốc của nó lúc t = 5s là v = - 10m/s.
+C. Sau thời gian 2,5s thì vật dừng lại, sau đó tiếp tục chuyển động
+nhanh dần đều. Vận tốc của nó lúc t = 5s là v = 10m/s.
+D. Sau thời gian 2,5s thì vật dừng lại, sau đó tiếp tục vẫn đứng yên. Vận
+tốc của nó lúc t = 5s là v = 0m/s.
+Câu 113: Một ôtô đang chuyển động với vận tốc 72km/h thì giảm đều
+tốc độ cho đến khi dừng lại. Biết rằng sau quãng đường 50m, vận tốc
+giảm đi còn một nửa. Gia tốc và quãng đường từ đó cho đến lúc xe dừng
+hẳn là
+A. a = 3m/s2; s = 66,67m B. a = -
+3m/s2; s = 16,67m
+C. a = -6m/s2; s = 66,67m D. a =
+6m/s2; s = 66,67m
+Câu 114: Một ôtô chuyển động trên đường thẳng, bắt đầu khởi hành
+nhanh dần đều với gia tốc a = 5 m/s2, sau đó chuyển động thẳng đều và
+1
+cuối cùng chuyển động chậm dần đều với gia tốc a = − 5 m/s2 cho đến
+3
+khi dừng lại. Thời gian ôtô chuyển động là 25 s. Tốc độ trung bình của ô
+tô trên cả đoạn đường là 20 m/s. Trong giai đoạn chuyển động thẳng
+đều ôtô đạt vận tốc
+244

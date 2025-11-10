@@ -1,0 +1,50 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 52: Để đặc trưng cho chuyển động về sự nhanh, chậm và về
+phương chiều, người ta đưa ra khái niệm
+A. vectơ gia tốc tức thời. B. vectơ gia tốc trung bình,
+C. vectơ vận tốc tức thời. D. vectơ vận tốc trung
+bình.
+Câu 53: Phát biểu nào sau đây chưa đúng:
+A. Trong các chuyển động thẳng nhanh dần đều, vận tốc có giá trị
+dương
+B. Trong các chuyển động thẳng nhanh dần đều, vận tốc a cùng dấu
+với vận tốc v
+C. Trong chuyển động thẳng chậm dần đều, các véc tơ vận tốcvà gia
+tốc ngược chiều nhau
+D. Trong chuyển động thẳng có vận tốc tăng 1 lượng bằng nhau sau 1
+đơn vị thời gian là chuyển động thẳng nhanh dần đều
+Câu 54: Một chất điểm chuyển động chậm dần đều, cùng
+chiều với trục Ox, quãng đường khi dừng lại được tính theo biểu thức
+v2 v2 v2
+A. s = B. s = o C. s = - o
+2a 2a 2a
+D. s = ¿¿
+Câu 55: Xác định biểu thức
+tính gia tốc tức thời của chuyển động thẳng biến đổi đều:
+→ →
+A. a= v 0 −v B. → a= v−v 0 C. → a= v 0 −v D. → a= v−v 0
+t−t t −t t−t
+t−t
+0 0 0
+0
+Câu 56: Trong chuyển động thẳng biến đổi đều, véc tơ gia tốc tức thời
+có đặc điểm
+A. Hướng thay đổi, độ lớn không đổi C. Hướng không đổi, độ
+lớn thay đổi
+B. Hướng thay đổi, độ lớn thay đổi D. Hướng không đổi, độ lớn
+không đổi
+Câu 57: Trong chuyển động thẳng biến đổi đều thì:
+A. vận tốc tỉ lệ nghịch với thời gian
+B. đường đi tỉ lệ với bình phương của thời gian
+C. sự thay đổi vận tốc sau những khoảng thời gian như nhau là không
+đổi
+D. vận tốc có lúc tăng lên, có lúc giảm xuống
+Câu 58: Chọn phát biểu đúng:
+A. chuyển động thẳng chậm dần đều gia tốc có giá trị âm
+B. chuyển động thẳng chậm dần đều vận tốc có giá trị âm
+C. chuyển động thẳng nhanh dần đều vận tốc và gia tốc luôn có giá
+trị dương
+D. chuyển động thẳng nhanh dần đều gia tốc có thể có giá trị âm
+hay dương
+236

@@ -1,0 +1,46 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+A. Độ dịch chuyển và quãng đường đi được có thể bằng nhau trong
+trường hợp đặc biệt.
+B. Độ dịch chuyển chỉ cho biết độ dài, không cho biết hướng của sự
+thay đổi vị trí.
+C. Độ dịch chuyển được biểu diễn bằng một mũi tên nối vị trí đầu và
+vị trí cuối của chuyển động, có độ dài tỉ lệ với độ lớn của độ dịch
+chuyển.
+D. Độ dịch chuyển là một đại lượng vectơ.
+Câu 2: Biết ⃗d là độ dịch chuyển 6 m về phía Tây, ⃗d là độ dịch chuyển 8
+1 2
+m về phía Bắc. Độ dịch chuyển tổng hợp d⃗ có độ lớn là
+A. 4 m. B. 10 m. C. 14 m. D. 2 m.
+Câu 3: Một thang máy mang một người từ tầng trệt
+đi xuống tầng hầm sâu 5m, rồi lên đến tầng 3. Biết
+rằng mỗi tầng cách nhau 4m. Trục tọa độ có gốc và
+chiều dương như hình vẽ. Quãng đường chuyển động
+khi người này lên đến tầng 3?
+A. 22 m. B. 17 m.
+C. 29 m. D. 34 m.
+Câu 4: Một người chạy bộ theo đường thẳng AB =
+50m, từ A đến B rồi quay về A. Gốc tọa độ O ở trong khoảng AB, Cách A
+một khoảng 10m, chiều dương từ A đến B. Độ dời từ A khi người này đến
+O là
+A. 20m.B B. 10m. C. 0m. D. 40m.
+Câu 5: Bạn Việt đi xe đạp đến trường theo đường thẳng như hình vẽ. Khi
+đến quán báo, bạn sực nhớ đã quên một cuốn sách ở nhà nên quay về
+nhà lấy sách rồi đạp xe đến trường. Độ dời khi bạn quay từ quán báo về
+nhà và độ dời khi bạn từ quán báo đến trường lần lượt là
+A. 400m và 600m.
+B. 400m và 1000m.
+C. - 400m và 1000m.
+D. - 400m và 600m.
+Câu 6: Một người tập thể dục chạy trên một đường thẳng. Lúc đấy
+người đó chạy với vận tốc trung bình 5m/s trong thời gian 4 phút. Sau đó
+người ấy giảm tốc độ còn 4m/s trong thời gian 3 phút. Người đó chạy
+được trên quãng đường bằng bao nhiêu?
+A. 1,2km B. 0,72km C. 1,920km
+D. 2km
+Câu 7: Một vật chuyển động dọc theo chiều (+) trục Ox với vận tốc
+không đổi thì
+A. tọa độ của vật luôn có giá trị (+)
+B. vận tốc của vật luôn có giá trị (+)
+C. tọa độ và vận tốc của vật luôn có giá trị (+)
+104

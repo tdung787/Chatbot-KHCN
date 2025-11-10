@@ -1,0 +1,58 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Theo đề bài khoảng thời gian từ lúc bắt đầu thả đến lúc nghe thấy tiếng
+là t = 4s nên ta có:
+t = t + t = 4s
+1 2
+√
+2h h
++ =4h=70,3(m)
+g 330
+(sử dụng chức năng SLOVE trong máy tính Casio fx 570 VN Plus ta giải
+nhanh được h)
+(ta có thể phương trình trên tìm h bằng cách đặt ẩn x = √h → x2 = h rùi
+chuyển về phương trình bậc 2 ẩn x:
+√
+1 2
+x2+ .x−4=0h=70,3(m)
+330 g
+Câu 15: Thả một hòn sỏi rơi từ trên gác cao xuống đất. Trong giây
+cuối cùng hòn sỏi rơi được quãng đường 15 m. Tính độ cao của điểm từ
+đó bắt đầu thả rơi hòn sỏi. Lấy g = 9,8 m/s2.
+Hướng dẫn giải
+Gọi thời gian rơi của hòn sỏi là: t (s) , t > 0.
+Độ cao của điểm bắt đầu thả hòn sỏi là: h = ½.g.t2.
+Trong (t – 1) (s) hòn sỏi đi được quãng đường là: s = ½.g.(t – 1)2.
+Quãng đường đi được của hòn sỏi trong giây cuối cùng là:
+s’ = h – s = ½.g.(t2 – (t – 1)2) = 15 m (*).
+Giải phương trình (*), ta được, t = 2 (s).
+Độ cao của điểm bắt đầu thả là: h = ½.g.t2 = ½.10.22 = 20 (m)
+Câu 16: Cho một vật rơi tự do từ độ cao h. Biết rằng trong 2s cuối
+cùng vật rơi được quãng đường bằng quãng đường đi trong 5s đầu tiên,
+g = 10m/s2.
+a. Tìm độ cao lúc thả vật và thời gian vật rơi.
+b. Tìm vận tốc cuả vật lúc vừa chạm đất.
+Hướng dẫn giải
+a. + Gọi t là thời gian vật rơi.
+1
++ Quãng đường vật rơi trong t giây: h= gt2
+2
+1
++ Quãng đường vật rơi trong ( t – 2) giây: h = g(t−2)2
+t−2 2
+1 1
++ Quãng đường vật rơi trong 2 giây cuối: Δh=h−h = gt2− g¿
+t−2 2 2
+1
++ Quãng đường vật rơi trong 5s đầu tiên: h = gt2=125m
+5 2 5
+1 1
++ Theo bài ra ta có: Δh=h ⇒ gt2− h¿ ⇒t = 7,25s
+5 2 2
+1 1
++ Độ cao lúc thả vật: h= gt2= .10.7,252=252,81m
+2 2
+b. Vận tốc lúc vừa chạm đất: v = gt = 72,5m/s
+Câu 17: Hai bạn Giang và Vân đi chơi ở một tòa nhà cao tầng. Từ tầng
+19 của tòa nhà, Giang thả rơi viên bi A thì 1s sau thì Vân thả rơi viên bi
+358

@@ -1,0 +1,34 @@
+Câu 6: Một cầu thủ tennis ăn mừng chiến thắng bằng cách
+đánh quả bóng lên trời theo phương thẳng đứng với vận tốc
+lên tới 30 m/s. Bỏ qua sức cản của không khí và lấy g = 10
+m/s2.
+Tính thời gian từ khi bóng đạt độ cao cực đại tới khi trở về
+vị trí được đánh lên? Chọn gốc tọa độ O trùng với vị trí
+đánh bóng lên, chiều dương hướng lên.
+(kết quả làm tròn đến 0 chữ số thập phân, theo đơn vị s)
+Đáp 3
+án:
+Câu 7: Một chất điểm chuyển động trên một đường
+thẳng. Đồ thị độ dịch chuyển theo thời gian của
+chất điểm được mô tả như hình vẽ. Tốc độ trung
+bình của chất điểm trong khoảng thời gian từ 0 đến
+5s là bao nhiêu cm/s?
+(kết quả làm tròn đến 1 chữ số thập phân, theo đơn
+vị s)
+Đáp 2 , 4
+án:
+Câu 8: Một vật được thả rơi tự do không vận tốc đầu từ độ cao h biết
+trong 7s cuối cùng vật rơi được 385m cho g = 10m/s2. Xác định độ cao h
+theo đơn vị m?
+Đáp 4 0 5
+án:
+4 Tự luận (3,0 điểm)
+Câu 1. (1 điểm)
+Số liệu về độ dịch chuyển và thời gian của một vật chuyển động được
+ghi trong bảng sau:
+Độ dịch chuyển 0 20 40 60 60 60
+(cm)
+Thời gian (s) 0 1 2 3 4 5
+a) Tính độ lớn vận tốc trung bình của vật trong 3 s đầu.
+b) Vẽ đồ thị độ dịch chuyển - thời gian của chuyển động này.
+Câu 2. (2 điểm)

@@ -1,0 +1,29 @@
+Câu 1: (SBT-KNTT) Một người chuyển động thẳng có độ dịch
+chuyển d tại thời điểm t và độ dịch chuyển d tại thời điểm t . Vận tốc
+1 1 2 2
+trung bình của vật trong khoảng thời gian từ t đến t là:
+1 2
+( )
+d −d d −d d +d 1 d d
+A. v = 1 2 . B. v = 2 1 . C. v = 1 2 . D. v = 1+ 2 .
+tb t +t tb t −t tb t −t tb 2 t t
+1 2 2 1 2 1 1 2
+<Đáp án: >
+
+Câu 2: (SBT-KNTT) Tính chất nào sau đây là của vận tốc, không
+phải của tốc độ của một chuyển động?
+A. Đặc trưng cho sự nhanh chậm của chuyển động.
+B. Có đơn vị là km/h.
+C. Không thể có độ lớn bằng 0.
+D. Có phương xác định.
+<Đáp án: D>
+
+Câu 3: ( SBT-CTST) Tốc độ là đại lượng đặc trưng cho
+A. tính chất nhanh hay chậm của chuyển động.
+B. sự thay đổi hướng của chuyển động.
+C. khả năng duy trì chuyển động của vật.
+D. sự thay đổi vị trí của vật trong không gian.
+<Đáp án: A>
+
+Câu 4: Chuyển động thẳng đều là chuyển động thẳng trong đó
+<Đáp án: >

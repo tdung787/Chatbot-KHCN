@@ -1,0 +1,41 @@
+A. Vận tốc không đổi B. vận tốc bằng 0 C. Vận tốc tăng
+D. Vận tốc giảm
+Câu 7: Chọn câu sai khi nói về tính chất của chuyển động thẳng đều.
+A. Độ dịch chuyển là một hàm số bậc nhất theo thời gian.
+B. Vận tốc là một hằng số.
+C. Vận tốc trung bình bằng vận tốc tức thời trên đọan đường bất
+kì.
+D. Đồ thị độ dịch chuyển – thời gian là đường thẳng nằm ngang
+Câu 8: Chọn phát biểu sai:
+A. Đồ thị vận tốc theo thời gian của chuyển động thẳng đều là đường
+song song với trục hoành Ot.
+B. Trong chuyển động thẳng đều, đồ thị theo thời gian của độ dịch
+chuyển và của vận tốc đều là những đường thẳng.
+C. Đồ thị độ dịch chuyển theo thời gian của chuyển động thẳng bao giờ
+cũng là một đường thẳng.
+D. Đồ thị độ dịch chuyển theo thời gian của chuyển động thẳng đều là
+một đường thẳng xiên góc.
+Câu 9: Đồ thị độ dịch chuyển − thời gian trong chuyển động thẳng của
+một chất điểm có dạng như hình vẽ. Trong thời gian nào xe chuyển động
+thẳng đều?
+A. Trong khoảng thời gian từ 0 đến t .
+1 x
+B. Trong khoảng thời gian từ 0 đến t .
+C. Trong khoảng thời gian từ t đến t
+1 2
+D. Không có lúc nào xe chuyển động thẳng đều.
+O t t t
+1 2
+Câu 10: Đồ thị vận tốc – thời gian của chuyển động thẳng đều có
+dạng:
+A. Đường thẳng qua gốc toạ độ. B. Parabol.
+C. Đường thẳng song song trục vận tốc. D. Đường thẳng song song
+trục thời gian.
+Câu 11: Đồ thị biểu diễn vận tốc theo thời gian trong chuyển động
+thẳng đều trong hệ tọa độ vuông goc Otv (trục Ot biểu diễn thời gian,
+trục Ov biểu diễn vận tốc của vật) có dạng như thế nào?
+A. Hướng lên trên nếu v > 0. B. Hướng xuống dưới nếu v
+< 0.
+C. Song song với trục vận tốc Ov. D. Song song với trục
+thời gian Ot.
+Câu 12: Đồ thị nào sau đây đúng cho chuyển động thẳng đều?

@@ -1,0 +1,44 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
++ Tiến hành thí nghiệm: Đo khảng cách của máng thép thẳng, sau
+đó thả viên bi rơi trong máng thép, bấm đồng hồ từ lúc bắt đầu vật rơi
+cho đến khi vật chạm đất.
+Phân tích ưu, nhược điểm giữa phương án gợi ý và phương án đề xuất
+Phương án gợi ý Phương án đề xuất
+Thời gian đo chính
+Ưu điểm Dễ chuẩn bị, giá thành thấp
+xác, sai số ít
+Nhược Sai số nhiều do sự phản xạ
+Giá thành cao
+điểm bấm đồng hồ của người dùng.
+Câu 7: Dựa vào số liệu, lập luận để trình bày phương án và tiến hành xử
+lí số liệu để xác định gia tốc rơi tự do và sai số của phép đo.
+Bảng 8.1. Bảng số liệu đo độ dịch chuyển – thời gian trong chuyển động
+rơi
+Độ Thời gian rơi t (s) Thời gian Sai số Gia tốc
+dịch Lần Lần Lần Lần Lần rơi trung thời rơi tự
+chuyể 1 2 3 4 5 bình gian rơi do
+n t(s) t (s) g (m/s2)
+d(m)
+Hướng dẫn giải:
+- Các bước tiến hành thí nghiệm:
+Bước 1: Bố trí thí nghiệm như hình 8.2
++ Lắp nam châm điện ở đầu trên của
+thanh nhôm, nối với cổng A của đồng hồ
+điện tử thông qua công tắc điện.
++ Cổng quang điện ở dưới, cách nam
+châm điện một đoạn d và được nối vào
+cổng B của đồng hồ.
+Bước 2: Điều chỉnh cho giá đỡ thẳng
+đứng bằng các vít ở đế sao cho quả nặng
+của dây dọi sẽ nằm ở tâm lỗ tròn. Thiết lập
+đồng hồ thời gian hiện số chế độ A ↔ B để
+đo thời gian từ lúc thả đến khi vật chắn
+cổng quang điện.
+Bước 3: Đặt vật rơi vào vị trí nam châm
+điện, dùng êke vuông ba chiều để xác định
+vị trí ban đầu của vật. Ấn nút RESET trên
+mặt đồng hồ để đưa chỉ thị số về giá trị
+0.000. Nhấn công tắc điện để kích thích
+vật rơi và khởi động đồng hồ đo thời gian
+376

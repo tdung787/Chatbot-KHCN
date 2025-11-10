@@ -1,0 +1,50 @@
+g.t2
+Δh= −g.¿¿, thay số ta được Δh=300m
+Câu 2:
+gt2
+a. [Đ] Áp dụng công thức h= , ta được h=48,05m
+b. [S ] Áp dụng công thức v=√2gh, thay số ta được v= 31m/s
+g.t2 10.22
+c. [Đ] Áp dụng công thức h = = =20m
+2 2 2
+g.22 g.12
+d. [Đ] Δh=h −h = − =15m
+2 1 2 2
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câ Đáp Câ Đáp
+u án u án
+1 45 5 20
+2 3,38 6 80
+3 69 7 34,3
+4 4 8 9,8
+Hướng dẫn chi tiết:
+Câu 1:
+g.t2 g.t'2
+Ta có h= ;h'=
+2 2
+h t2 0,52 1
+Lập tỉ số = = = →h'=9.h=9.5=45m
+h' t'2 1,52 9
+√
+2h
+Câu 2: Áp dụng công thức: t= =3,38s
+g
+Câu 3:
+√
+2h
+- Gọi t là thời gian hòn đá rơi tự do: t =
+1 1 g
+h
+- Gọi t là thời gian âm truyền trong không khí: t =
+2 2 330
+t2
+Lập tỉ số: 1= =67,3(1), mà t +t =3,96(2)
+t2 g 1 2
+g.t2
+Từ (1)và(2) suy ra t = 3,75s, h= 1=69m
+1 2
+Câu 4:
+Ta có v=v −g.t→t =2s
+0 1

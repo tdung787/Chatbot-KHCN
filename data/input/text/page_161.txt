@@ -1,0 +1,61 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+đứng một góc 45o. Biết vận tốc rơi của các giọt
+nước mưa so với mặt đất là 5m/s. Tính vận tốc
+của ô tô.
+Hướng dẫn giải
+ Gọi: + ⃗v là vận tốc của giọt mưa so với xe
+12
++ ⃗v là vận tốc của xe với đường
+23
++ ⃗v là vận tốc của giọt mưa so với
+13
+đường
+ Áp dụng công thức cộng vận tốc:
+⃗v = ⃗v + ⃗v
+13 12 23
+Vì α = 450 và ⃗v vuông góc với ⃗v nên nửa
+13 23
+hình bình hành là tam giác vuông cân. Suy
+ra: v =5m/s và có phương làm với phương
+ôtô
+chuyển động của giọt nước mưa để lại mặt
+kính một góc 135o.
+Câu 13. (SBT-KNTT) Một ca nô chạy ngang qua một
+dòng sông, xuất phát từ hướng mũi về Sau ca nô cập bờ bên
+A, B. 100s,
+kia ở điểm cách Nếu người lái hướng mũi ca nô theo hướng
+C B 200m. AD
+và vẫn giữ tốc độ máy như cũ thì ca nô sẽ cập bờ bên kia tại đúng điểm
+Tìm:
+B.
+a. Vận tốc của dòng nước so với bờ sông.
+b. Vận tốc của ca nô so với dòng nước.
+c. Chiều rộng của sông.
+Hướng dẫn giải
+a.  Gọi: + ⃗v là vận tốc của ca nô so với nước
+12
++ ⃗v là vận tốc của nước so với bờ
+23
++ ⃗v là vận tốc của thuyền so với bờ
+13
+ Áp dụng công thức cộng vận tốc:
+⃗v = ⃗v + ⃗v
+13 12 23
+Vận tốc của nước so với bờ: v = BC/t = 200/100 = 2
+23
+m/s
+b. Khi ca nô hướng về D thì:
+⃗v ' = ⃗v ' + ⃗v '
+13 12 23
+Ta có: góc BÂD = 30o và ⃗v ' vuông góc với ⃗v' nên
+13 23
+nửa hình bình hành là nửa tam giác đều. Suy ra: v’ =
+12
+2.v = 4 m/s.
+23
+c. Xét trường hợp A, ta có: v = 4 m/s; t = 100s. Suy
+12
+ra, chiều rộng của sông: AB = v .t = 400 m
+12
+161

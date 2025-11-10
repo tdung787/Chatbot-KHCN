@@ -1,0 +1,25 @@
+Câ Đáp Câ Đáp
+u án u án
+1 C 7 D
+2 D 8 C
+3 C 9 C
+4 A 10 D
+5 D 11 A
+6 D 12 A
+Hướng dẫn chi tiết các câu cần suy luận:
+Câu 5. Chọn D
+Quãng đường mà người đó đi được kể từ khi phanh gấp là
+s > 15 m => Xe phanh không kịp
+Câu 7. Chọn D
+Nếu chọn nhà em làm gốc tọa độ và chiều dương hướng từ nhà em đến
+bưu điện.
+Độ dịch chuyển của em trong trường hợp đi từ tiệm tạp hóa đến bưu
+điện rồi quay về nhà là
+d = vị tri cuối – vị trí đầu = 0 – 750 =-750 m
+Câu 9. Chọn C
+Sự rơi tự do là sự rơi chỉ dưới tác dụng của trọng lực
+- Nếu vật rơi trong không khí mà độ lớn của lực cản không khí không
+đáng kể so với trọng lượng của vật thì cũng coi là rơi tự do.
+- Ta thấy hạt bụi, hạt mưa, chiếc lá đều có khối lượng rất nhỏ nên trọng
+lượng của chúng cũng rất nhỏ so lực cản của không khí nên chuyển
+động của hạt bui, hạt mưa và chiếc lá không được coi là rơi tự do.

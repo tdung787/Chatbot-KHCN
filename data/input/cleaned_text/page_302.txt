@@ -1,0 +1,41 @@
+Câu 13: Đồ thị vận tốc − thời gian của một
+vật chuyển động được biểu diễn như hình vẽ.
+Quãng đường vật đi được từ thời điểm t = 0,
+đến thời điểm t = 60 s là
+A. 2,2 km. B. 1,1 km.
+C. 440 m D. 1,2 km.
+Câu 15: Một vật chuyển động thẳng biến
+đổi đều có đồ thị vận tốc v theo thời gian t
+như hình vẽ. Phương trình vận tốc của vật là:
+A. v = 15 – t(m/s) B. v = t + 15(m/s
+C. v = 10 – 5t(m/s)D. v = 10 – 15t(m/s)
+Câu 16: Một chất điểm chuyển động với đồ thị vận tốc theo – thời gian
+được cho như hình vẽ. Kết luận nào sau đây là đúng?
+A. Vận tốc của vật trong khoảng thời
+v(m/s)
+gian từ 0 đến 130 s là 10 m/s. 20
+B. Từ 0 s đến 20 s vật chuyển động
+nhanh dần.
+C. Từ 50 s đến 130 s vật chuyển động t(s
+nhanh dần. O 20 50 130 )
+D. quãng đường mà chất điểm đi được
+trong 130 s là 1000 m.
+Câu 17: Đồ thị vận tốc – thời gian của một
+v(m/s)
+chất điểm chuyển động được cho như hình vẽ.
+Quãng đường mà chất điểm đi được sau 3 s là.
+A. 10 m. B. 20 m.
+t(s
+C. 30 m. D. 40 m.
+O 1 2 3 )
+Câu 18: Đồ thị vận tốc theo thời gian của
+v(m/s)
+một vật chuyển động được biểu diễn như
+hình vẽ. Quãng đường vật đi được từ thời
+điểm t = 0, đến thời điểm t = 60s là
+A. 2,2km. t(s
+B. 1,1km. O 20 60 80)
+C. 440m.
+D. 1,2km.
+Câu 19: Một vật chuyển động thẳng biến đổi đều có đồ thị vận tốc v
+theo thời gian t như hình vẽ. Phương trình vận tốc của vật là

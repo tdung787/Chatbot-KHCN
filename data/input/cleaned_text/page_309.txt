@@ -1,0 +1,36 @@
+Câu 5 : Dựa vào đồ thị (v - t) của vật
+chuyển động trong Hình bên
+a. Từ B đến D, vật không chuyển động . ⎕
+b. Gia tốc của vật từ 0 s đến 40 s là 2cm/s2 ⎕
+c. Độ dịch chuyển của vật từ 0 s đến 40 s là 3,2cm ⎕
+d. Quãng đường vật đi được sau 160s là 12,8cm ⎕
+Hướng dẫn giải
+a. [S] Từ B đến D, vật chuyển động thẳng
+đều với v = 120 cm/s
+b. [Đ] Gia tốc của vật từ 0 s đến 40s là
+2cm/s2
+v −v 120−40
+a = 1 0= =2 cm/s2
+1 t −t 40
+1 0
+c. [S] Độ dịch chuyển của vật từ 0 s đến
+40 s là
+1 1
+d = (OA+BC).OC= .160.40 = 3200 (cm)
+1 2 2
+d. [Đ] Quãng đường vật đi được sau 160s là
+(40+120).40 (40+120).120
+S=S +S = + =12800cm
+OABC BDFC 2 2
+Câu 6 : Đồ thị vận tốc – thời gian của ba
+chuyển động thẳng biến đổi đều
+a. Biểu thức tính độ dịch chuyển: d = v . t + ½at2 ⎕
+o
+b. Gia tốc = độ dốc của đồ thị ⎕
+c. Gia tốc của ba chuyển động lần lượt là ⎕
+a =0,1m/s2,a =0,2m/s2,a =−0,2m/s2
+1 2 3
+d. Độ dịch chuyển của chuyển động (III) là 400m ⎕
+Hướng dẫn giải
+a. [Đ]Biểu thức tính độ dịch chuyển: d = v . t + ½at2
+o

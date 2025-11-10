@@ -1,0 +1,33 @@
+Câu 2:
++ Chọn chiều dương là chiều chuyển động của xe máy, gốc tọa độ tại vị
+trí hãm phanh, gốc thời gian là lúc hãm hanh
+Ta có v = =15m/s xe dừng lại sau 10s nên v =0m/s
+0 3,6 1
+v −v 0−15
+a.v =v +at ⇒ a= 1 0= =−1,5(m/s2)
+1 0 t 10
+b. Vận tốc của ôtô sau khi hãm phanh được 6s v =v +at ⇒v =15−1,5.6=6m/s
+6 0 6 6
+c. Khi dừng lại hẳn thì v =0
+Áp dụng công thức: v2 – v 2 = 2.a.d
+v2−v2 0−152
+⇒d= 3 0= =75m
+2.a 2.(−1,5)
+Chủ đề 5 GIA TỐC – CHUYỂN ĐỘNG THẲNG BIẾN ĐỔI
+ĐỀUĐƯỢCĐƯỢCĐƯỢC
+Dạng 2 Tính quãng đường vật đi được trong giây thứ n và
+trong n giây cuối
+I BÀI TẬP MẪU
+Ví dụ 1. Một vật chuyển động thẳng biến đổi đều với vận tốc ban đầu v
+= 2 m/s. Quãng đường vật đi được trong giây thứ 3 là 4,5 m. Tìm quãng
+đường vật đi được trong giây thứ 4.
+Hướng dẫn giải
+ Quãng đường vật đi được trong 2 giây:
+s =v .t + .a.t 2=2.2+2a=4+2a(1)
+2 0 2 2 2
+Quãng đường vật đi được trong 3 giây:
+s =v .t + .a.t 2=2.3+4,5a=6+4,5a(2)
+3 0 3 2 3
+⇒Quãng đường vật đi trong giây thứ 3:
+Δs =s −s =(6+4,5a)−(4+2a)=4,5⇒a=1m/s2
+3 3 2

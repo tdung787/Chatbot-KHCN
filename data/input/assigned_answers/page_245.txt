@@ -1,0 +1,47 @@
+CÂU 115: Để xuống một độ sâu 180m, người ta dùng một thang máy
+khởi hành v = 0, 2/3 quãng đường đầu tiên thang máy chuyển động
+nhanh dần đều với gia tốc 0,6m/s2, 1/3 quãng đường còn lại thang máy
+chuyển động chậm dần đều tới đáy thì dừng lại.
+I. Vận tốc lớn nhất của thang máy đạt được là:
+A. 22m/s B. 10m/s C. 12m/s D. 30m/s
+<Đáp án: C>
+
+II. Gia tốc chuyển động ở giai đoạn 1/3 quãng đường còn lại:
+A. 1,2m/s2 B. -1,2m/s2 C. 12m/s2 D. -1,8m/s2
+<Đáp án: B>
+
+III. Thời gian thang máy đi từ trên xuống dưới đáy:
+A. 25s B. 30s C. 40s D. 35s
+<Đáp án: B>
+
+Câu 116: Một chuyển động thẳng nhanh dần đều đi được những đoạn
+đường s = 24cm và s = 64m trong khoảng thời gian liên tiếp bằng
+1 2
+nhau là 4s. Xác định vận tốc ban đầu và gia tốc của vật.
+A. 1m/s; 2,5m/s2 B. 1m/s; 0,25m/s2
+C. 1,5m/s; 2,5m/s2 D. 1,5m/s; 0,25m/s2
+<Đáp án: A>
+
+Câu 117: (*) Một chất điểm chuyển động thẳng biến đổi đều đi qua 4
+v +v
+điểm A, B, C, D biết AB = BC = CD = 50cm. Vận tốc tại C là v = B D
+C √2
+= 20cm/s. Tìm gia tốc của chất điểm
+A. 2m/s2 B. -2m/s2 C. 4m/s2 D. -4m/s2
+<Đáp án: D>
+
+Câu 118: (*) Trên mặt phẳng nghiêng góc 300
+có một dây không giãn. Một đầu dây gắn vào
+tường ở A, đầu kia buộc vào một vận B có khối
+lượng m. Mặt phẳng nghiêng chuyển động
+trên phương nằm ngang với gia tốc 4 m/s2 như
+hình vẽ. Gia tốc của B khi nó còn ở trên mặt
+phẳng nghiêng bằng
+A. 2,75 m/s2. B. 2,51m/s2.
+C. 4,00 m/s2. D. 2,07 m/s2.
+<Đáp án: D>
+
+Câu 1: Một quả cầu bắt đầu lăn từ đỉnh một dốc dài 100 m, sau 10 s thì
+2 Câu trắc nghiệm đúng sai
+nó đến chân dốc. Sau đó nó tiếp tục chuyển động trên mặt ngang được 50
+m thì dừng lại. Chọn chiều dương là chiều chuyển động của quả cầu.

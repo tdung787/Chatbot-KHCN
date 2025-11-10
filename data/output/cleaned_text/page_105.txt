@@ -1,0 +1,44 @@
+Câu 8: Một vật bắt đầu chuyển động từ điểm O đến điểm A, sau đó
+chuyển động về điểm B (hình vẽ). Quãng
+đường và độ dời của vật tương ứng bằng
+A. 2m; -2m. B. 8m; -2m.
+C. 2m; 2m. D. 8m; -8m.
+<Đáp án: C>
+
+Câu 9: Một người lái ô tô đi thẳng 6 km theo hướng Tây, sau đó rẽ trái
+đi thẳng theo hướng Nam 4 km rồi quay sang hướng Đông đi 3 km.
+Quãng đường đi được và độ dịch chuyển của ô tô lần lượt là
+A. 13 km; 5km. B. 13 km; 13 km. C. 4 km; 7 km. D. 7
+km; 13km.
+<Đáp án: A>
+
+Câu 10: Một người bơi ngang từ bờ bên này sang bờ bên kia của một
+dòng sông rộng 50 m có dòng chảy theo hướng từ Bắc xuống Nam. Do
+nước sông chảy mạnh nên khi sang đến bờ bên kia thì người đó đã trôi
+xuôi theo dòng nước 50 m. Độ dịch chuyển của người đó là
+A. 50m. B. 50√2 m. C. 100 m. D. 100√2 m
+<Đáp án: >
+
+Câu 11: Có 3 điểm nằm dọc theo trục Ox (có chiều từ A đến B) theo thứ
+tự là A, B và C. Cho AB = 200 m, BC = 300 m. Một người xuất phát từ A
+qua B đến C rồi quay lại B và dừng lại ở B. Hỏi quãng đường và độ lớn
+độ dịch chuyển của người này trong cả chuyến đi là bao nhiêu? Chọn
+gốc tọa độ tại A.
+A. s = 800 m và d = 200 m. B. s = 200 m và d =
+200 m.
+C. s = 500 m và d = 200 m. D. s = 800 m và d =
+300 m.
+<Đáp án: A>
+
+Câu 12: Hai người đi xe đạp từ A đến C, người thứ nhất đi theo đường từ
+A đến B, rồi từ B đến C; người thứ hai đi thẳng từ A đến C (Hình vẽ). Cả
+hai đều về đích cùng một lúc. Hãy chọn kết luận sai.
+A. Người thứ nhất đi được quãng đường 8
+km.
+B. Độ dịch chuyển của người thứ nhất và
+người thứ hai bằng nhau.
+C. Độ dịch chuyển và quãng đường đi được
+của người thứ nhất bằng nhau.
+D. Độ dịch chuyển của người thứ nhất là 5,7
+km, hướng 450 Đông – Bắc.
+<Đáp án: C>

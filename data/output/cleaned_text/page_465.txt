@@ -1,0 +1,21 @@
+Câu 1:
+Độ lớn vận tốc trung bình của bạn A trong
+cả chuyến đi.
+Câu 2:
+Câu 3:
+Xét vật A :
+Xét vật B:
+Khi 2 vật cùng vận tốc
+Câu 4:
+ Gọi: + ⃗v là vận tốc của máy bay so với gió
++ ⃗v là vận tốc của gió so với đường bay
++ ⃗v là vận tốc của máy bay so với đường bay
+ Áp dụng công thức cộng vận tốc: ⃗v = ⃗v +
+13 12
+⃗v
+Suy ra vận tốc tổng hợp của máy bay lúc này
+là:
+√ m
+v = v2 +v2 =201( )
+13 12 23 s
+Câu 5:

@@ -1,0 +1,33 @@
+Câu 2: Đề xuất phương án và đo gia tốc rơi tự do
+với bộ dụng cụ: Giá, bi thép, nam châm điện, 2
+cổng quang điện, công tắc điều khiển, đồng hồ
+đo thời gian hiện số. Đánh giá sơ bộ nguyên nhân
+ảnh hưởng đến kết quả trong thí nghiệm.
+Hướng dẫn giải:
+* Phương án thí nghiệm:
+- Lắp các dụng cụ thành bộ như hình trên.
+(1) Nam châm điện (2) Viên bi thép
+(3) Cổng quang điện (4) Công tắc điều khiển
+(5) Đồng hồ đo thời gian (6) Giá
+- Tiến hành:
++ Đặt bi thép dính vào phía dưới nam châm
++ Nhấn công tắc cho bi thép rơi
++ Đọc số chỉ thời gian rơi trên đồng hồ
++ Lặp lại thao tác với khoảng cách từ vị trí vật bắt đầu rơi đến cổng
+quang điện khác nhau.
+* Đánh giá nguyên nhân sơ bộ ảnh hưởng đến kết quả trong thí
+nghiệm:
+- Do tay nhấn công tắc thả viên bi thép giữa các lần đo không đều
+nhau
+- Do yếu tố môi trường
+Câu 3: Thảo luận về phương án thí nghiệm dựa
+trên hoạt động sau: Thả trụ thép rơi qua cổng
+quang điện trên mảng đứng và trả lời câu hỏi.
+a. Xác định gia tốc rơi tự do của trụ thép theo
+công thức nào?
+b. Để xác định gia tốc rơi tự do của trụ thép cần
+đo đại lượng nào?
+c. Làm thế nào để trụ thép rơi qua cổng quang
+điện?
+d. Cần đặt chế độ đo của đồng hồ ở vị trí nào để
+đo được đại lượng cần đo?

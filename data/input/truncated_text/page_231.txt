@@ -1,0 +1,45 @@
+A. Gia tốc của chuyển động không đổi.
+B. Chuyển động có vectơ gia tốc không đổi.
+C. Vận tốc của chuyển động tăng đều theo thời gian.
+D. Vận tốc của chuyển động là hàm bậc nhất của thời gian.
+Câu 14: Chọn câu trả lời sai. Chuyển động thẳng nhanh dần đều là
+chuyển động có:
+A. Quãng đường đi được của vật luôn tỉ lệ thuận với thời gian vật đi.
+B. Quỹ đạo là đường thẳng.
+C. Vectơ gia tốc của vật có độ lớn là một hằng số.
+D. Vận tốc có độ lớn tăng theo hàm bậc nhất đối với thời gian.
+Câu 15: Chuyển động thẳng chậm dần đều là chuyển động có
+A. Vận tốc giảm đều, gia tốc giảm đều. B. Vận tốc giảm đều, gia tốc
+không đổi.
+C. Vận tốc không đổi, gia tốc giảm đều. D. Vận tốc không đổi, gia tốc
+không đổi.
+Câu 16: Chuyển động nhanh dần đều là chuyển động có:
+A. Vận tốc tăng theo thời gian. B. Tích số a.v > 0.
+C. Tích số a.v < 0. D. Gia tốc a > 0.
+Câu 17: Chọn câu đúng. Phương trình độ dịch chuyển của chuyển
+động thẳng nhanh dần đều là:
+A. s = v + at2/2 (a, v cùng dấu). B. s = v + at2/2 (a, v trái
+0 0 0 0
+dấu).
+C. d = v t + at2/2 (a, v cùng dấu). D. d = v t + at2/2 (a, v trái
+0 0 0 0
+dấu).
+Câu 18: Vận tốc của vật chuyển động thẳng có giá trị âm hay dương
+phụ thuộc vào:
+A. Chiều chuyển động. B. Chiều dương được chọn.
+C. Chuyển động là nhanh hay chậm. D. Câu A và B.
+Câu 19: Điều nào sau đây là đúng khi nói đến đơn vị gia tốc?
+A. m/s2 B. cm/phút C. km/h D. m/s
+Câu 20: Viết công thức liên hệ giữa độ dịch chuyển, vận tốc và gia tốc
+của vật chuyển động thẳng chậm dần đều .
+A. v2 – v 2 = ad (a và v cùng dấu). B. v2 – v 2 = 2ad (a và v trái
+0 0 0 0
+dấu).
+C. v – v = 2ad (a và v cùng dấu). D. v2 – v 2 = 2ad (a và v cùng
+0 0 0 0
+dấu).
+Câu 21: Chọn phát biểu đúng:
+A. Vận tốc trong chuyển động chậm dần đều luôn luôn âm.
+B. Chuyển động thẳng nhanh dần đều có gia tốc luôn luôn âm.
+C. Chuyển động thẳng nhanh dần đều có gia tốc luôn cùng chiều với
+vận tốc.

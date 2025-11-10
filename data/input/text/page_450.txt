@@ -1,0 +1,47 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+- Chuyển động của vận động viên nhảy cầu có trọng lượng lớn hơn rất
+nhiều so với lực cản không khí nên có thể coi vận động viên nhảy cầu là
+rơi tự do.
+Câu 10. Chọn D
+Vì người này đi bộ trên một con đường thẳng và không đổi chiều nên
+Vận tốc trung bình trên cả quãng đường
+Câu 11. Chọn A
+Gọi: + ⃗v là vận tốc của thuyền so với nước
+12
++ ⃗v là vận tốc của nước so với bờ
+23
++ ⃗v là vận tốc của thuyền so với bờ
+13
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+− Vận tốc của thuyền so với bờ: v = 9 km/h
+13
+− Vận tốc của nước so với bờ: v = v =
+23 gỗ
+Vì đi ngược dòng nên: v = v – v  v = v + v = 9+3= 12 km/h
+13 12 23 12 13 23
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 2. Trong mỗi ý a), b), c), d) ở mỗi câu,
+thí sinh chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Câu Lệnh Đáp án Câu Lệnh hỏi Đáp án
+haỏ)i (ĐS/S) a) (ĐĐ/S)
+b) Đ b) Đ
+1 2
+c) Đ c) S
+d) Đ d) Đ
+Hướng dẫn chi tiết các câu cần suy luận:
+Câu 1.
+a. [S]
+Hai xe chuyển động thẳng không đổi chiều nên d = s, d = v t = 40.20
+A A A
+= 800 m.
+=>Chọn Sai
+b.[Đ] Gia tốc xe B:
+=>Chọn Đúng.
+450

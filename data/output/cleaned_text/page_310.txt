@@ -1,0 +1,27 @@
+b. [Đ]Gia tốc = độ dốc của đồ thị
+c. [S]Gia tốc của ba chuyển động lần lượt là
+- Vật 1: - Vật 2: - Vật 3:
+∆ v 4−2 ∆ v 2−0 ∆ v 0−4
+a = 1= =0,1m/s2 a = 2= =0,1m/s2 a = 3= =−0,2m/s2
+1 ∆t 20−0 2 ∆t 20−0 3 ∆t 20−0
+1 2 3
+d. [S]
+v =v +a t=4−0,2t ;
+3 03 3
+d =v t+½a t2=4t−0,1t2
+3 03 3
+Độ dịch chuyển của chuyển động (III):
+d =4t−0,1t2=4.20−0,1.202=40 m
+3 Câu trắc nghiệm trả lời ngắn
+Câu 1 : Một xe đạp đang chuyển động với vận tốc 5 m/s thì hãm phanh
+chuyển động thẳng chậm dần đều. Hình 3.1 là đồ thị vận tốc – thời gian
+của xe đạp. Quãng đường xe đạp đi được từ lúc hãm phanh cho đến lúc
+dừng lại theo đơn vị m là bao nhiêu?( kết quả lấy đến 0 chữ số phần thập
+phân)
+Đáp 2 5
+án:
+Hướng dẫn giải
+Từ đồ thị, sau t = 10 s, vận tốc giảm từ v = 5 m/s xuống v = 0
+Quãng đường xe đạp đi được từ lúc hãm phanh cho đến lúc dừng lại là:
+Câu 2 : Một người chạy xe máy theo một đường thẳng và có vận tốc
+theo thời gian được biểu diễn bởi đồ thị như hình. Xác định độ dịch

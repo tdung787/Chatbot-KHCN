@@ -1,0 +1,52 @@
+Câu 1.
+a) Cổng quang điện dùng để đo khoảng thời gian chuyển động của viên
+bi giữa hai cổng quang điện
+Chọn Sai.
+S
+b) Biểu thức tính tốc độ của vật v= nên ta cần đo thời gian chuyển động
+t
+giữa hai cổng quang và khoảng cách giữa hai cổng quang
+Chọn Đúng.
+c) Sai số tuyệt đối của phép đo thời gian là 0,001(s)
+Chọn Đúng.
+d) Tốc độ chuyển động trung bình giữa hai cổng quang là
+S 20
+v= = =80cm/s
+t 0,25
+Sai số của phép đo là
+Δv ΔS Δt ΔS Δt 0,05 0,001
+= + →Δv=( + )v=( + ).80=0,52
+v S t S t 20 0,25
+Vây kết quả phép đo là v=80,00±0,52(s)
+Chọn Đúng.
+Câu 2.
+a)[Đ] Kết quả của thời gian là Δt=t ̄±Δt=0,402±0,005(s)
+t +t +t
++¯t= 1 2 3=0,4017s
+}
+¿ Δt =¯t −t =0,0037 s
+1 1 Δt +Δt +Δt
++¿ Δt =¯t −t =0,0027 s Δt= 1 2 3=0,0042s
+2 2 3
+¿ Δt =t −¯t=0,0063s
+3 3
++Δt=Δt+Δt =0,0042+0,0005=0,0047s≈0,005 s
+dh
+Kết quả của thời gian: Δt=¯t ± Δt=0,402±0,005(s)
+b)[S] Phép đo thời gian là trực tiếp dựa vào đồng hồ.
+2s
+c) [Đ] Cho s = 798 ± 1mm và g= . Giá trị trung bình của gia tốc trọng
+t2
+trường
+2¯s 2.798
+¯g= = =9876mm/s2
+¯t2 0,4022
+d)[Đ] Kết quả của gia tốc trọng trường: Δg=¯g± Δg
+Δg Δs Δt
+δg=δs+2.δt ⇔ = +2
+¯g ¯s ¯t
+( Δs Δt ) ( 1 0,005)
+Δg= +2 .¯g= +2 .9876=258≈260mm/s2
+¯s ¯t 798 0,402
+Kết quả của gia tốc g: : Δg=¯g± Δg=9876±260(mm/s2)
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)

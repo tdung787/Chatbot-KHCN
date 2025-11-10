@@ -1,0 +1,28 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Sai số tuyệt đối trung bình của phép đo:
+Sai số tuyệt đối của phép đo:
+Câu 7 :
+Gọi (1): thuyền
+(2): nước
+(3): bờ
+- Ta có:
+- Độ lớn:
+mà
+nên
+Câu 11 :
+Đổi
+Xe A:
+Xe B:
+Vậy xe A ra khỏi hầm trước xe B
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 2. Trong mỗi ý a), b), c), d) ở mỗi câu,
+thí sinh chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Câu Lệnh Đáp án Câu Lệnh hỏi Đáp án
+hỏi (Đ/S) (Đ/S)
+462

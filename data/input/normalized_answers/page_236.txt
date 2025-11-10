@@ -1,0 +1,6 @@
+C. Vectơ vận tốc tức thời.  
+A. Trong các chuyển động thẳng nhanh dần đều, vận tốc có giá trị dương.  
+C.
+B. Hướng không đổi, độ lớn không đổi.  
+C. Sự thay đổi vận tốc sau những khoảng thời gian như nhau là không đổi.  
+D. Chuyển động thẳng nhanh dần đều gia tốc có thể có trị âm, dương hay giá.

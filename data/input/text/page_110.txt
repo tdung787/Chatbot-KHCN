@@ -1,0 +1,32 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Coi độ rộng của bể bơi bằng độ rộng của con sông và
+bằng OA = 50 m. Do quãng đường người đó bơi trên sông
+gấp 2 lần khi bơi trong bể bơi có nước đứng yên nên: OB
+= 2.OA = 100 m
+Suy ra, độ dịch chuyển d = 100 m theo hướng hợp với bờ
+sông một góc
+α = 300 (vì tam giác AOB là nửa tam giác đều)
+Vị trí điểm tới cách điểm đối diện với điểm khởi hành của
+người bơi chính là điểm B.
+Nên AB = √ 1002−502 ≈ 86,6 m
+Câu 7: Quãng đường người thứ hai đi thẳng từ A đến C, cần tính AC
+bằng định lý Pythagore:
+AC= √ A B2+B C2= √ 52+122=√25+144=√169=13 km
+Câu 8: Độ dịch chuyển của người thứ nhất là khoảng cách từ điểm xuất
+phát A đến điểm cuối C, chính là đoạn thẳng AC: Δd =AC=13 km
+1
+4 Tự luận (3,0 điểm)
+Câu 1:
+a. Quãng đường đi được trong cả chuyến đi: s=s +s =6+20=26km.
+1 2
+b. Độ dịch chuyển tổng hợp của người đó: d= √ d 2+d 2= √ 62+202=20,88km.
+1 2
+Câu 2:
+a. Do quãng đường người đó bơi trên sông gấp 2 lần khi bơi
+trong bể bơi có nước đứng yên nên OB=2.OA=2.50=100m.
+Ta có: d=OB=100mtheo hướng làm với bờ sông một góc
+α=900−600=300.
+b. AB= √ 1002−502≈86,6m
+Chủ đề 2 TỐC ĐỘ - VẬN TỐC
+110

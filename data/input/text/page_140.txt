@@ -1,0 +1,47 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Gọi (1): tàu
+(2): dòng nước
+(3): bờ
+v v v 40 (1)
+- Khi tàu đi xuôi dòng: 13 12 23
+v ' v  v 30 (2)
+- Khi tàu đi ngược dòng: 13 12 23
+v 35km / h, v 5km / h
+Từ (1) và (2) suy ra: 12 23
+Ví dụ 6.
+Một người chèo thuyền qua một
+con sông rộng 400 m. Muốn cho
+thuyền đi theo đường AB, người đó
+phải luôn hướng mũi thuyền theo
+hướng AC (hình vẽ). Biết thuyền
+qua sông hết 8 phút 20s và vận tốc
+chảy của dòng nước là 0,6 m/s.
+Tìm vận tốc của thuyền so với dòng nước.
+Hướng dẫn giải
+Gọi (1): thuyền
+(2): nước
+(3): bờ
+⃗ ⃗ ⃗
+v v v
+- Ta có:
+13 12 23
+v2 v2 v2
+- Độ lớn:
+12 13 23
+AB
+v  0,8m / s
+mà 13 t
+v 0,6m / s v 1m / s
+23 nên 12
+II BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1: (SBT-KNTT) Trong các phát biểu sau đây, phát biểu nào là
+đúng?
+(1) Chuyển động có tính chất tương đối.
+(2) Hệ quy chiếu đứng yên là hệ quy chiếu gắn với vật làm gốc được quy
+ước là đứng yên.
+(3) Độ lớn của vận tốc tuyệt đối luôn lớn hơn tổng độ lớn của vận tốc
+tương đối và vận tốc kéo theo.
+140

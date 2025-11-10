@@ -1,0 +1,30 @@
+Người bơi ngang từ bờ bên
+này sang bên kia theo dự định
+là AB = 50 m.
+Thực tế, do nước sông chảy
+mạnh nên vị trí của người đó ở
+vị trí C, ta có BC = 50 m
+ Độ dịch chuyển:
+AC= √ AB2+BC2
+√
+¿ 502+502=70,7(m)
+Câu 12: (SBT-KNTT) Em của An chơi trò chơi tìm
+kho báu ở ngoài vườn với các bạn của mình. Em của
+An giấu kho báu của mình là một chiếc vòng nhựa vào
+trong một chiếc giày rồi viết mật thư tìm kho báu như
+sau: Bắt đầu từ gốc cây ổi, đi 10 bước về phía bắc,
+sau đó 4 bước về phía tây, 15 bước về phía nam, 5
+bước về phía đông và 5 bước về phía bắc là tới chỗ
+giấu kho báu.
+a) Hãy tính quãng đường phải đi (theo bước) để tìm ra kho báu.
+b) Kho báu được giấu ở vị trí nào?
+c) Tính độ dịch chuyển (theo bước) để tìm ra kho báu.
+Hướng dẫn giải
+a. Quãng đường phải đi theo
+bước:
+s = 10 + 4 + 15 + 5 + 5 =
+39 bước.
+b. Vị trí kho báu cách cây ổi
+1 bước theo hướng đông.
+c. Độ dịch chuyển d = 1
+bước (theo hướng đông).

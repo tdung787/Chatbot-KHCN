@@ -1,0 +1,44 @@
+
+a) Phép đo chiều dày cuốn sách là phép đo gián tiếp
+
+b) Sai số tuyệt đối trung bình của 4 lần đo là 0,05 cm
+
+c) Sai số tỉ đối của phép đo là 2,08%
+
+d) Kết quả phép đo: A=2,4±0,1 cm
+Hướng dẫn giải
+a) [S] Phép đo chiều dày cuốn sách là phép đo trực tiếp
+b) [Đ]
+Giá trị trung bình của chiều dày cuốn sách:
+2,3+2,4+2,5+2,4
+A= =2,4 cm
+Sai số tuyệt đối (∆ A ¿ ứng với mỗi lần đo:
+i
+∆ A =|A−A |=0,1cm; ∆ A =|A−A |=0cm
+1 1 2 2
+∆ A =|A−A |=0,1cm; ∆ A =|A−A |=0cm
+1 1 2 2
+Sai số tuyệt đối trung bình của n lần đo được xác định theo công
+thức:
+∆ A +∆ A +...+∆ A 0,1+0+0,1+0
+∆ A= 1 2 n= =0,05cm
+n 4
+c) [Đ] Sai số tỉ đối δA=∆ A/ A = 2,08%
+d) [Đ] Sai số tuyệt đối ∆ A: ∆ A=∆ A+∆ A =0,1cm
+dc
+Kết quả phép đo: A=2,4±0,1 cm
+3 Câu trắc nghiệm trả lời ngắn
+Câu 1: Bảng 1. Ghi thời gian một quả banh rơi 3 lần liên tiếp
+Thời gian rơi (s)
+Lần 1 Lần 2 Lần 3
+2,15 2,25 2,35
+Giá trị trung bình của thời gian rơi là bao nhiêu giây?
+Đáp 2 , 2 5
+án:
+Hướng dẫn giải
+Giá trị trung bình của thời gian rơi
+t +t +t 2,15+2,25+2,35
+t= 1 2 3= =2,25s.
+3 3
+Câu 2: Hãy xác định sai số dụng cụ của cây bút chì trong trường hợp
+dưới đây theo đơn vị cm:

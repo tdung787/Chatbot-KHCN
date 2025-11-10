@@ -1,0 +1,47 @@
+Vận tốc tức thời: Tốc độ tức thời:
+t = 2 d 2 d 2
+v= = =1(m/s) v= = =1(m/s)
+s t 2 t 2
+t = 4 d 4 d 4
+v= = =1(m/s) v= = =1(m/s)
+s t 4 t 4
+t = 6 d 4−4 d 4−4
+v= = ≈0(m/s) v= = ≈0(m/s)
+s t 8−4 t 8−4
+t = d 10−4 d 10−4
+v= = =1,5(m/s) v= = =1,5(m/s)
+10 s t 12−8 t 12−8
+t = d 4−10 d |4−10|
+v= = =−1(m/s) v= = =1(m/s)
+16 s t 18−12 t 18−12
+Câu 9. Hình 7.2 là đồ thị độ dịch chuyển – thời gian của một người đang
+bơi trong một bể bơi dài 50 m.
+a. Đồ thị này cho biết những gì về
+chuyển động của người đó?
+b. Trong 25 giây đầu mỗi giây người đó
+bơi được bao nhiêu mét? Tính vận tốc
+của người đó ra m/s.
+c. Từ giây nào đến giây nào người đó
+không bơi?
+d. Từ giây 35 đến giây 60 người đó bơi
+theo chiều nào?
+e. Trong 20 giây cuối cùng, mỗi giây
+người đó bơi được bao nhiêu mét? Tính
+vận tốc của người đó ra m/s.
+f. Xác định độ dịch chuyển và vận tốc của người đó khi bơi từ B đến C.
+g. Xác định độ dịch chuyển và vận tốc của người đó trong cả quá trình
+bơi.
+h. Hãy xác định vận tốc và tốc độ của người bơi từ giây 45 đến giây 60
+bằng đồ thị ở Hình 7.2
+Hướng dẫn giải
+a. Từ đồ thị ta thấy người này chuyển động không đều. Lúc đầu theo
+chiều dương, lúc sau đổi chiều, theo chiều âm.
+b. Từ đồ thị ta thấy, trong 25s đầu người đó chuyển động thẳng từ O –
+A và không đổi chiều, độ dịch chuyển trong 25 s đầu là 50 m.
+Suy ra: Mỗi giây người đó bơi được: 50/25 = 2 (m)
+Vận tốc của người đó là: v = d/t = 50/25 = 2 (m/s)
+c. Từ A – B: người đó không bơi  Người đó không bơi từ giây 25 đến
+giây 35.
+d. Từ giây 35 đến giây 60 người đó bơi ngược chiều dương.
+e. Từ đồ thị ta thấy:
+- Giây thứ 40 có d = 45 m

@@ -1,0 +1,46 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Lúc Tokyo là 9 giờ thì Việt Nam là 7h nên lúc Tokyo là 7h45 phút thì ở
+Việt Nam là 5h45 phút
+Thời gian di chuyển của máy bay này là: t = 5h45’-0h20’=5h25’= 325
+phút.
+Câu 2: Một người đi xe máy từ nhà đến bến xe bus cách nhà 5 km về
+phía đông. Đến bến xe, người đó lên xe bus đi tiếp 12 km về phía bắc.
+Độ dịch chuyển tổng hợp của người đó là bao nhiêu km?
+Đáp 1 3
+án:
+Hướng dẫn giải
+d= √ 52+122=13 km.
+Câu 3: Biết d⃗ là độ dịch chuyển 10 m về phía đông còn d⃗ là độ dịch
+1 2
+chuyển 6 m về phía tây. Xác định độ dịch chuyển tổng hợp d⃗ trong
+trường hợp d⃗=⃗d +3d⃗ theo đơn vị m?
+1 2
+Đáp 8
+án:
+Hướng dẫn giải
+Ta có độ dịch chuyển tổng hợp: d⃗=⃗d +d⃗
+1 2
+d⃗ và d⃗ ngược chiều nên d = 3d – d = 8 m hướng về phía tây.
+1 2 2 1
+Câu 4: Một ô tô chuyển động trên đường thẳng. Tại thời điểm t , ô tô ở
+1
+cách vị trí xuất phát 15 km. Tại thời điểm t , ô tô ở cách vị trí xuất phát
+2
+30 km Từ t đến t , độ dịch chuyển của ô tô đã thay đổi một đoạn là bao
+1 2
+nhiêu km?
+Đáp 1 5
+án:
+Hướng dẫn giải
+Do ô tô chuyển động trên một đường thẳng nên d=30-15=15km.
+Câu 5: Một người đi từ nhà tới cơ quan cách nhà 4 km. Trước đó người
+này đi theo hướng ngược lại 200 m để mua đồ ăn sáng. Cho rằng cả ba
+địa điểm này đều nằm trên một đường thẳng. Độ dịch chuyển của người
+đó khi đi từ nhà tới cơ quan là bao nhiêu km?
+Đáp 4
+án:
+Hướng dẫn giải
+Độ dịch chuyển có độ lớn bằng khoảng cách từ vị trí đầu tới vị trí cuối.
+Vì vậy độ dịch chuyển của người này là 4 km (tính từ nhà tới cơ quan).
+96

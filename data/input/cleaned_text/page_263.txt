@@ -1,0 +1,57 @@
+cho đến khi dừng hẳn. Biết ô tô bắt đầu giảm vận tốc cho đến khi dừng
+hẳn là 10s. Hỏi quãng đường của ô tô đã chạy.
+Hướng dẫn giải
++ Áp dụng công thức v = v + at  24 = 16 + 2.t  t = 4s là thời gian
+0 1 1 1
+tăng tốc độ.
+Vậy thời gian giảm tốc độ: t = t – t = 6s
+2 1
+Quãng đường đi được khi ô tô tăng tốc độ:
+1 1
+s =v t + at2⇒ S =16.4+ .2.42=80m
+1 0 1 2 1 1 2
+v −v 0−24
+Gia tốc của ô tô khi giảm tốc độ : a = 3 2= =−4m/s2
+2 t 6
+Quãng đường đi được từ khi bắt đầu giảm tốc độ đến khi dừng hẳn:
+v2−v2 0−242
+⇒ s = 3 2= =72m
+2 2.a 2.(−4)
+ s = s + s = 80 + 72 = 152m
+1 2
+Câu 25: Phương trình độ dịch chuyển của một vật: d = 2t2 + 10t (m, s)
+a. Xác định vận tốc đầu và gia tốc của vật và nhận xét loại chuyển động?
+b. Tìm vận tốc lúc 2s của vật?
+c. Xác định vị trí của vật khi có vận tốc 30m/s
+d. Tính vận tốc và quãng đường vật đi được trong 3s.
+e. Tính độ dịch chuyển vật đi được từ t = 2s đến t = 5s và tốc độ trung
+1 2
+bình trong khoảng thời gian đó?
+Hướng dẫn giải
++ Chọn chiều dương là chiều chuyển động của vật
+a. x = 100m; v = 10 m/s; a = 4 m/s2
+o o
+vì a.v > 0 nên vật chuyển động nhanh dần đều.
+b. Áp dụng công thức: v = v + a.t =10 +4.2 = 18 (m/s)
+1 o 1
+v −v 30−10
+c. Ta có: t = 2 0= =5(s)
+2 a 4
+ x = 100 + 10.5 + 2.52 = 200 (m)
+d. t = 3 s: v = v + a.t = 10 + 4.3 = 22 (m/s)
+3 3 o
+s=v t+ .a.t2=10.3+2.32=48(m)
+o 2
+e. t = 2s  x = 128m; t = 5s  x = 200m
+1 1 2 2
+Độ dịch chuyển d = x – x = 72 m
+2 1
+Tốc độ trung bình:
+d 72 m
+v = = =24( )
+tb ∆t 5−2 s
+Câu 26: Một vận động viên điền kinh tăng tốc từ vận
+tốc 3 m/s lên đến vận tốc 5 m/s trên quãng đường dài
+100 m. Tính :
+a. Gia tốc trung bình của người đó.
+b. Thời gian người đó chạy trên đọan đườn nói trên.

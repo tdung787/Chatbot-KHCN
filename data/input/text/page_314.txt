@@ -1,0 +1,48 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 7: Tính độ dịch chuyển của xe A trong 20 s theo đơn vị m. (kết quả
+lấy đến 0 chữ số phần thập phân)
+Đáp 8 0 0
+án:
+Câu 8: Tính gia tốc của xe B trong 20 s theo đơn vị m/s2. (kết quả lấy
+đến 2 chữ số phần thập phân)
+Đáp 1 , 2 5
+án:
+Câu 9: Sau bao nhiêu s thì xe B đuổi kịp xe A.
+Đáp 2 5
+án:
+Câu 10: Tính quãng đường mỗi xe đi được trong 40 s và khi hai xe gặp
+nhau theo đơn vị m
+Đáp 1 7 5 0
+án:
+Câu 11: Tính quãng đường mỗi xe đi được khi hai xe gặp nhau theo đơn
+vị m
+Đáp 1 0 0 0
+án:
+Hướng dẫn giải
+Câu 7: Độ dịch chuyển của xe A trong 20 s là d =v t =40.20=800m.
+A A A
+Δv 50−25
+Câu 8: Gia tốc của xe B trong 20 s là a= B= =1,25m/s2.
+Δt 20
+Câu 9: Khi B đuổi kịp A thì d =d
+A B
+1 1
+d =v t=40t(1)d =d +d d =v t + at 2=25.20+ .1,25.202=750m.
+A A B B1 B2 B1 0B B 2 B 2
+d =v (t−20)=50(t−20)d =750+50(t−20)(2)
+B2 B B
+Từ (1) và (2)
+⇒ 40t=750+50(t−20)⇒t=25s
+Câu 10: Quãng đường mỗi xe đi được trong 40 s là
+d =40.40=1600m.
+A
+d =750+50(40−20)=1750m.
+B
+Câu 11: Khi hai xe gặp nhau: d =d =1000m.
+A B
+4 Tự luận
+Câu 1: Đồ thị ở Hình 8.2 mô tả sự thay đổi vận tốc theo thời gian trong
+chuyển động của một ô tô thể thao đang chạy thử về phía Bắc. Tính gia
+tốc của ô tô:
+314

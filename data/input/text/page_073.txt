@@ -1,0 +1,44 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Câu 1: Trong giờ thực hành đo tốc độ trung bình của viên bi chuyển
+động trên máng nằm ngang khoảng cách giữa hai cổng quang điện và
+thời gian là S=20,00±0,05(cm) và t=0,250±0,001(s)
+a) Cổng quang điện dùng để đo quãng đường chuyển động của viên bi
+b) Để đo tốc độ của vật ta đo thời gian chuyển động giữa hai cổng
+quang và khoảng cách giữa hai cổng quang
+c) Sai số tuyệt đối của phép đo thời gian là 0,01(s)
+d) Kết quả đo được tốc độ chuyển động của viên bi giữa hai cổng quang
+là v=80,00±0,52(s)
+Câu 2: Một học sinh muốn xác định gia tốc trọng trường g bằng cách
+thả rơi một quả bóng từ độ cao s và dùng đồng hồ để bấm thời gian rơi t
+của quả bóng, thu được bảng số liệu sau: (Độ chia nhỏ nhất của đồng
+hồ là 0,001s)
+n t (s)
+1 0,398
+2 0,399
+3 0,408
+
+a) Kết quả của thời gian là Δt=t ̄±Δt=0,402±0,005(s)
+b) Phép đo thời gian là gián tiếp dựa vào đồng hồ.
+
+2s
+c) Gia tốc trọng trường được xác định bằng biểu thức g= .Cho
+t2
+s = 798 ± 1mm thì giá trị trung bình của gia tốc trọng trường
+9876mm/s2
+
+d) Kết quả của gia tốc trọng trường: Δg=¯g± Δg=9876±260(mm/s2)
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câu 1: Bảng 1. Ghi thời gian một quả banh rơi 3 lần liên tiếp
+Thời gian rơi (s)
+Lần 1 Lần 2 Lần 3
+2,15 2,25 2,35
+Giá trị trung bình của thời gian rơi là bao nhiêu giây?
+73

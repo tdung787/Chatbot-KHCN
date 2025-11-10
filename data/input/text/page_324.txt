@@ -1,0 +1,59 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 17: (SBT-KNTT) Dựa vào bảng ghi sự thay đổi vận tốc theo thời
+gian của một ô tô chạy trên quãng đường thẳng dưới đây:
+Vận tốc
+0 10 30 30 30 10 0
+(m/s
+Thời gian
+0 5 10 15 20 25 30
+(s)
+a) Vẽ đồ thị vận tốc - thời gian của chuyển động.
+b) Tính gia tốc của ô tô trong 10 s đầu và kiểm tra kết quả tính được
+bằng đồ thị.
+c) Tính gia tốc của ô tô trong 10 s cuối.
+Hướng dẫn giải
+a) Đồ thị vận tốc – thời gian của chuyển
+động.
+b) Gia tốc của ô tô trong 5 s đầu:
+∆ v 10−0
+a = 1= =2m/s2
+1 ∆t 5−0
+1
+Dựa vào đồ thị tính độ dốc của đoạn đồ
+thị trong 5 s đầu: a = tanα = 10/5 = 2
+1 1
+c) Gia tốc của ô tô trong 5 s cuối là:
+∆ v 0−10
+a = 2= =−2m/s2
+2 ∆t 5−0
+2
+Câu 18: (SBT-KNTT) Hình 9.1 là đồ thị
+vận tốc – thời gian của ba chuyển động thẳng
+biến đổi đều
+a) Viết công thức tính vận tốc và độ dịch
+chuyển của mỗi chuyển động.
+b) Tính độ dịch chuyển của chuyển động
+(III).
+Hướng dẫn giải
+a) Áp dụng: + Biểu thức tính vận tốc: v = v + at
+0
++ Biểu thức tính độ dịch chuyển: d = v t + ½at2
+0
++ Lưu ý: Gia tốc = độ dốc của đồ thị
+- Vật 1: - Vật 2: - Vật 3:
+∆ v 4−2 ∆ v 2−0 ∆ v 0−4
+a = 1= =0,1m/s2 a = 2= =0,1m/s2 a = 3= =−0,2m/s2
+1 ∆t 20−0 2 ∆t 20−0 3 ∆t 20−0
+1 2 3
+v =v +a t=2+0,1t ; v =v +a t=0,1t; v =v +a t=4−0,2t ;
+1 01 1 2 02 2 3 03 3
+d =v t+½a t2 d =v t+½a t2=0,05t2 d =v t+½a t2=4t−0,1t2
+1 01 1 2 03 2 3 03 3
+¿2t+0,05t2
+b) Độ dịch chuyển của chuyển động (III):
+d =4t−0,1t2=4.20−0,1.202=40 m
+3
+Câu 19: Quan sát đồ thị (v – t) mô tả chuyển động thẳng của tàu hỏa
+trong Hình 7.3 và trả lời các câu hỏi sau:
+324

@@ -1,0 +1,6 @@
+B. MODE A: Xác định thời điểm vật chắn cổng quang điện nối với ổ A.
+B_ MODE A 4 B: Đo thời gian vật chuyển động từ cổng quang điện nối với ổ A tới cổng quang điện nối với ổ B.
+B. Nút RESET: Đặt lại chỉ số của đổng hổ vể giá trị 0.000.
+A_ MODE: Điểu chỉnh thời gian chạy của viên bi
+C. MODE B: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng quang điện nối với ổ B.
+A MODE A: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng quang điện nối với ổ A.

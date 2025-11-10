@@ -1,0 +1,34 @@
+Câu 2: Hãy nghĩ cách dùng êke tam giác vuông cân và dây dọi để
+kiểm tra xem sàn lớp mình có phẳng hay không.
+Hướng dẫn giải
+Dùng dây dọi để kiểm tra bức tường có phẳng hay không
+Đặt êke ở góc vuông của mặt sàn với bức tường, do bề mặt bức tường là
+mặt phẳng thẳng đứng nên nếu để được êke ở góc vuông đó thì mặt sàn
+phẳng, nếu không để được thì mặt sàn không phẳng.
+Câu 3: Các thí nghiệm (TN) sau đây sẽ giúp chúng ta kiểm tra dự
+đoán của mình về sự rơi trong không khí.
+TN 1: Thả rơi một TN 2: Thả rơi tờ giấy TN 3: Thả rơi hai
+quả bóng và một giống nhau, nhưng một viên bi có cùng kích
+chiếc lá. tờ được vo tròn, một tờ thước, một bằng sắt
+để nguyên. và một bằng thủy
+tinh.
+a. Từ những thí nghiệm trên, rút ra nhận xét về sự rơi trong không khí.
+b. Theo em, nếu loại bỏ được sức cản của không khí, các vật sẽ rơi như
+thế nào?
+c. Trong TN 1, tại sao quả bóng rơi nhanh hơn chiếc lá?
+d. Trong TN 2, hai tờ giấy giống nhau, nặng như nhau, tại sao tờ giấy vo
+tròn lại rơi nhanh hơn?
+e. Trong TN 3, trọng lượng bi sắt lớn hơn bi thủy tinh, tại sao hai viên bi
+rơi nhanh như nhau?
+Hướng dẫn giải
+a. Các thí nghiệm trên cho thấy sự rơi nhanh hay chậm của vật phụ
+thuộc vào độ lớn của lực cản không khí tác dụng lên vật. Lực cản càng
+nhỏ so với trọng lực tác dụng lên vật thì vật sẽ rơi càng nhanh và ngược
+lại.
+b. Nhà bác học Newton đã làm thí nghiệm cho viên bi chì và lông chim
+rơi trong ống hút chân không, kết quả là hai vật rơi nhanh như nhau.
+Vì vậy, nếu loại bỏ được sức cản của không khí, các vật sẽ rơi nhanh
+như nhau.
+c. Trong TN 1, ta thấy quả bóng có lực cản nhỏ hơn trọng lực của quả
+bóng, còn chiếc lá có lực cản lớn hơn rất nhiều so với trọng lực của
+chiếc lá, nên quả bóng rơi xuống trước chiếc lá

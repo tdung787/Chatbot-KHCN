@@ -1,0 +1,41 @@
+II BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1: (SBT-KNTT) Dựa vào đồ thị dịch chuyển – thời gian của một
+chuyển động thẳng đều có thể xác định được vận tốc của chuyển động
+bằng biểu thức
+d +d d −d d +d d −d
+A. v= 1 2 .B. v= 2 1 . C. v= 1 2 .D. v= 2 1 .
+t +t t −t t −t t −t
+1 2 2 1 2 1 1 2
+Câu 2: (SBT-KNTT) Theo đồ thị ở Hình 7.1
+vật chuyển động thẳng đều trong khoảng thời
+gian
+A. từ 0 đến t B. từ t đến t
+2 1 2
+C. từ 0 đến t và từ t đến t D. từ 0 đến t .
+1 2 3. 3
+Câu 3: (SBT-KNTT) Cặp đồ thị nào ở hình dưới đây là của chuyển động
+thẳng đều?
+A. I và III . B. I và IV . C. II và III . D. II và
+IV .
+Câu 4: (SBT-CTST) Đồ thị vận tốc – thời gian của chuyển động thẳng
+đều là một đường thẳng
+A. đi qua gốc tọa độ. B. song song với trục hoành.
+C. bất kì. D. song song với trục
+tung.
+Câu 5: (SBT-CTST) Cho đồ thị dịch
+chuyển – thời gian của một vật như
+hình 4.1. Trong những khoảng thời
+gian nào vật chuyển động thẳng đều?
+A. Trong khoảng thời gian từ 0 đến t
+và từ t đến t .
+1 2
+B. Trong khoảng thời gian từ từ t đến
+t .
+C. Trong khoảng thời gian từ 0 đến t .
+D. Trong khoảng thời gian từ 0 đến t
+và từ t đến t
+2 3.
+Câu 6: Trong đồ thị vận tốc, đường biểu diễn song song với trục OX cho
+biết

@@ -1,0 +1,39 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+thời điểm vecto vận tốc hợp với phương thẳng đứng một góc600. Khoảng
+cách từ M đến mặt đất là bao nhiêu m?(Kết quả lấy đến 1 chữ số có
+nghĩa).
+Đáp
+án:
+Dữ kiện sau cho câu 7,8
+Từ một vách đá cao 10 m so với mặt nước biển, một người ném ngang
+một hòn đá nhỏ với tốc độ 5 m/s. Bỏ qua sức cản của không khí và lấy g
+= 9,8 m/s2.
+Câu 7. Xác định tọa độ theo trục Ox của hòn đá sau 1 giây.
+Đáp
+án:
+Câu 8. Tốc độ của hòn đá ngay trước khi hòn đá chạm mặt nước
+biển là bao nhiêm m/s. Kết quả lấy 1 chữ số sau dấu phẩy thập phân
+Đáp
+án:
+4 Tự luận (3,0 điểm)
+Một người đang chơi ở đỉnh tòa nhà cao 45m cầm một vật có khối lượng
+m ném theo phương ngang với vận tốc ban đầu là 20 m/s xuống đất, bỏ
+qua lực cản của không khí. Cho g = 10m/s2.
+a. Viết phương trình quỹ đạo của vật.
+b. Tính khoảng thời gian vật chạm đất.
+c. Tính khoảng cách từ nhà đến vị trí rơi.
+HƯỚNG DẪN GIẢI
+ĐỀ
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câ Đáp Câ Đáp
+u án u án
+1 C 7 B
+2 B 8 A
+3 B 9 C
+4 A 10 C
+5 B 11 D
+407

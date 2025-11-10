@@ -1,0 +1,57 @@
+2 11,1 6 135
+3 90 7 40
+4 97,5 8 2
+∆d 90
+Câu 1: Dựa vào độ thị, ta có vận tốc trung bình của xe v= = =45km/h
+∆t 2
+Câu 2: Chuyển động của xe 2: Trong khoảng thời gian từ 0 đến 2 h, xe
+chuyển động đều theo chiều âm với tốc độ:
+∆s 80−0 (km ) 40
+v= = =40 →v= =11,1m/s
+∆t 2−0 h 3,6
+Câu 3: Vật có tọa độ x=80 ⇒−10+60t=80 ⇒t=1,5(h) là
+uãng đường vật đi được là
+Q s=v.t=60.1,5=90(km)
+Câu 4: Gọi h là độ sâu của mực nước biển ta có quãng đường truyền âm
+s=2h
+s 2h υ.t 1500.0,13
+υ= = ⇒h= = =97,5m
+Tốc độ truyền âm trong nước là t t 2 2
+Câu 5: Phương trình độ dịch chuyển của hai ôtô: d =54t(km),d =10+48t(km)
+1 2
+5 5
+Vị trí 2 ô tô gặp nhau: d =d ↔54t=10+48t →t= (h)→d =54. =90km
+1 2 3 1 3
+Câu 6: Vận tốc của mỗi chuyển động
+d −d 180−0
+Đồ thị (I): v = 2 1= =60km/h
+1 t −t 3−0
+2 1
+d −d 0−180
+Đồ thị (II): v = 2 1= =−60km/h
+2 t −t 3−0
+2 1
+d −d 60−0
+v = 2 1= =20km/h
+Đồ thị (III): 3 t −t 3−0
+2 1
+Phương trình độ dịch chuyển – thời gian của mỗi chuyển động
+d =60t (km);d =180−60t(km);d =20t(km).
+1 2 3
+Khi chuyển động (II) và (III ) gặp nhau d =d ⇒t=2h15 phut
+2 3
+Câu 7- câu 8:
+Phương trình chuyển động của xe A là x =20t
+A
+- Phương trình chuyển động của xe B là x =100−30t
+B
+Khi hai xe gặp nhau: x =x
+A B
+⇒20t=100−30t⇒t=2(h)
+- Khi đó: x =x =20.2=40km
+A B
+Vậy hai xe gặp nhau tại vị trí cách A 40 km sau 2 (h) chuyển động.
+4 Tự luận (3,0 điểm)
+Câu 1: - Phương trình chuyển động của xe máy: x =v .t=40t
+1 1
+- Phương trình chuyển động của xe ô tô: x =20+80(t−2)=−140+80t

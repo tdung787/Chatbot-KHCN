@@ -1,0 +1,51 @@
+|⃗v | = 15 m/s, hướng Tây ⇒ v = -15 m/s
+2 2
+Độ thay đổi vận tốc: Δv = v − v = -40 m/s
+2 1
+Gia tốc của quả bóng trong thời gian tiếp xúc với tường:
+∆v −40
+a= = =−800m/s2
+∆t 0,05
+Câu 5 :
++ Chọn chiều dương là chiều chuyển động, gốc thời gian là lúc xuất
+phát, gốc tọa độ tại vị trí xuất phát với v =0(m/s)
++ Theo bài ra ta có : s −s =0,09(m)(1)
+2 1
+1 1
++ Mà : s =v t+ at2=0.1,5+ .a.1,52=1,125a(2)
+1 0 2 2
+s =vt+ at2
+2 2
+Với v=v +at=0+a.1,5=1,5a(m/s) ⇒ s =1,5a.1,5+1,125a=3,375a(3)
+0 2
+Thay ( 2 ) và ( 3 ) vào ( 1 ) ta có :
+3,375a−1,125a=0,09⇒2,25a=0,09⇒a=0,04(m/s2)
+Câu 6 :
++ Áp dụng công thức d=v t+ at2
+0 2
++ Trong 100m đầu tiên : 100=v .5+12,5a(1)
++ Trong một 100m tiếp theo chuyển động hết 3s tức là 200m xe chuyển
+động hết 8s :
+200=v .8+32a(2)
++ Từ ( 1 ) và ( 2 ) ta có:
+{
+¿12,5a+5v =100 10
+01 ⇒a= (m/s2)
+¿32a+8v =200 3
+Câu 7,8 :
+Ta có:
+{
+¿v=v +at { {
+0 ¿ v +10a=0 ¿v =10m/s
+1 ⇔ 0 ⇔ 0
+¿s=v t+ at2 ¿10 v +50 a=50 ¿ a=−1m/s2
+0 2 0
+4 Tự luận (3,0 điểm)
+Câu 1:
+a) Ta có: v =100m.s;a=−4m/s2;v=0
+v−v 0−100
+v=v +at→t= 0= =25 s.
+0 a −4
+b) Ta có độ dời tối thiểu để máy bay hạ cánh:
+d=v t+ at2=1250m=1,25km>1km
+0 2

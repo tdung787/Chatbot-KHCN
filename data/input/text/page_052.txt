@@ -1,0 +1,41 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 60: Để xác định gia tốc của một chuyển
+động thẳng biến đổi đều, một học sinh đã sử
+dụng đồng hồ bấm giờ và thước mét để xác định
+thời gian t và đo quãng đường L, sau đó xác định
+t2
+a bằng công thức L=a . Kết quả cho thấy
+2
+L=(2±0,005)m,t=(4,2±0,2)s. Gia tốc a bằng:
+A. (0,23±0,01) m/s2 B.(0,23±0,02) m/s2
+C.(0,23±0,03) m/s2 D.(0,23±0,04) m/s2
+Câu 61: Đo chiều dài của một vật hình trụ bằng
+thước kẹp có du xích thu được các kết quả sau 8 lần đo
+như sau: 3,29cm, 3,28cm, 3,29cm, 3,31cm, 3,28cm,
+3,27cm, 3,29cm, 3,30cm. Bỏ qua sai số dụng cụ. Tính
+sai số tuyệt đối:
+A. 0,1% B. 0,2%
+C. 0,3% D. 0,4%
+Câu 62: Thả rơi tự do một vật từ đỉnh tháp thì thời gian vật chạm đất
+được xác định bằng (2,0±0,1)s. Nếu lấy gia tốc trọng trường tại nơi thả vật
+chính xác g = 10m/s2 thì chiều cao của tháp là (Biết chiều cao tháp được
+tính theo công thức h = ½ gt2)
+A. (20±0,1)m B.(20±0,5)m C. (20±1)m D.(20±2)m
+Câu 63: Khối lượng và mật độ khối lượng của một vật rắn hình cầu đã
+đo được là (12,4±0,1)kg và (4,6±0,2)kg/m3 . Thể tích của hình cầu là
+A. (2,69±0,14)m3 B. (2,69±0,21)m3
+C.(2,48±0,14)m3 D.(2,48±0,21)m3
+Câu 64: Để xác định thể tích của một vật hình trụ, một người đã sử
+dụng thước đo chiều dài có độ dài chia nhỏ nhất 0,1cm để đo chiều dài
+của vật và dùng một thước kẹp du xích với độ chia nhỏ nhất bằng
+0,01cm để đo đường kính của nó. Kết quả đo chiều dài của vật bằng 5cm
+và bán kính bằng 2cm. Sai số tỉ đối của phép đo thể tích của vật bằng
+A. 1% B. 2% C. 3%
+D. 4%
+Câu 65: Trong bài thực hành đo gia tốc RTD tại phòng thí nghiệm,
+một học sinh đo quãng đường vật rơi là h = 798 ± 1 (mm) và thời gian
+rơi là t = 0,404 ± 0,005 (s). Gia tốc RTD tại phòng thí nghiệm bằng:
+(Biết gia tốc RTD được tính theo công thức g = 2h/t2)
+A. g = 9,78 ± 0,26 m/s2. B. g = 9,87 ± 0,026 m/s2.
+52

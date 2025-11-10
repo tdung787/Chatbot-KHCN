@@ -1,0 +1,66 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. Với quãng đường 0,400 m:
+t +t +t +t +t
+t = 1 2 3 4 5=0,2852(s)
+1 5
+∆t =|t −t|=0,0002(s);∆t =|t −t|=0,0008(s);∆t =|t −t|=0,0012(s);
+1 1 2 2 3 3
+∆t =|t −t|=0,0002(s);∆t =|t −t|=0,0008(s);
+4 4 5 5
+t +t +t +t +t
+t = 1 2 3 4 5=0,0006(s)
+1 5
+∆t =t +t =0,0006+0,0005≈0,001(s)
+1 1 dc
+∆s=s =0,0005(m)
+dc
+2s m
+g = 1=9,835( )
+1 t2 ss
+1
+Sai số tỉ đối: g = s + 2.t
+Δg Δs Δt m
+1= +2 1 g =0,081( )
+g s t 1 s2
+1 1 1
+ Tương tự, với quãng đường 0,600 m:
+( )
+2s m m
+t=0,3494(s);∆t=0,001(s);g = =9,830 ;g =0,064( )
+2 t2 ss 2 s2
+ Tương tự, với quãng đường 0,800 m:
+( )
+2s m m
+t=0,4038(s);∆t=0,001(s);g = =9,813 ;g =0,055( )
+3 t2 ss 3 s2
+ Tương tự, với quãng đường 1,000 m:
+( )
+2s m m
+t=0,4512(s);∆t=0,001(s); g = =9,824 ;g =0,048( )
+4 t2 ss 4 s2
+ Tương tự, với quãng đường 1,200 m:
+( )
+2s m m
+t=0,494(s);∆t=0,001(s);g = =9,835 ;g =0,044( )
+5 t2 ss 5 s2
+ Giá trị trung bình và sai số của phép đo gia tốc rơi tự do:
+g +g +g +g +g ( m )
+g= 1 2 3 4 5=9,827
+5 s2
+g +g +g +g +g m
+g= 1 2 3 4 5=0,058( )
+5 s2
+ Giá trị gia tốc rơi tự do: g = (9,827  0,058) (m/s2)
+∆g
+ Sai số tỉ đối: δg= .100%=¿ 0,6%
+g
+b. - Trong thí nghiệm, người ta dùng trụ thép làm vật rơi nhằm mục đích
+khi thả vật rơi thì xác suất phương rơi của vật chắn tia hồng ngoại ở
+cổng quang điện cao, giúp ta thực hiện thí nghiệm dễ dàng hơn.
+- Khi thả viên bi, viên bi có chuyển động xoáy nên xác suất khi thả rơi
+viên bi có phương rơi không chắn được tia hồng ngoại cao hơn khi dùng
+trụ thép, nếu làm thí nghiệm với viên bi ta cần căn chỉnh và thả theo
+đúng phương của dây rọi.
+c. Xử lí số liệu để vẽ đồ thị mô tả mối quan hệ s và t2.
+379

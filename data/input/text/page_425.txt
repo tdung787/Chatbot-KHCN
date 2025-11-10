@@ -1,0 +1,50 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Chọn hệ quy chiếu Oxy như hình vẽ
+Thời điểm ban đầu
+Chiếu lên trục ox có
+x =0;v =v cosα=14,1(m/s)
+0 0x 0
+Chiếu lên trục oy có
+y =1,6(m);v =v sin α=5,13(m/s)
+0 0y 0
+Xét tại thời điểm t có a =0;a =−g
+x y
+Chiếu lên trục ox cóv =14,1(m/s);x=14,1t (m)
+x
+Chiếu lên trục Oy có
+v =5,13−10t (m/s); y=1,6+5,13t−5t2(m)
+y
+Khi lên đến độ cao max thì: v =0⇒0=5,13−10t ⇒ t=0,513(s)
+y
+Câu 5: Từ mặt đất một quả cầu được ném theo phương hướng lên
+hợp với phương ngang một góc 600 với vận tốc 30m/s. Tầm ném xa của
+quả cầu là bao nhiêu mét ? Kết quả lấy sau dấu phẩy 1 chữ số thập
+phân.
+Đáp 7 7 , 9
+án:
+Hướng dẫn giải
+Tầm ném xa của quả cầu:
+v 2.sin2α 302.sin1200
+L = 0 = = 77,9 (m)
+❑ g 10
+Câu 6: Từ mặt đất một vật được ném xiên lệch với phương ngang
+một góc α=450 với vận tốc ban đầu là 20m/s. Lấy g=10m/s2. Tầm bay cao
+của vật là bao nhiêu mét?
+Đáp 1 0
+án:
+Hướng dẫn giải
+Tầm bay cao của vật:
+1 v 2.sin2α 1 202.sin2450
+h 0 = . =10 (m)
+2 g 2 10
+max
+Dữ kiện áp dụng cho câu 7,8,9:
+Một hòn đá được ném từ độ cao 2,1 m so với mặt đất với góc ném α=450
+so với mặt phẳng ngang. Hòn đá rơi đến cách chỗ ném theo phương
+ngang một khoẳng 42m. Tính:
+Câu 7: Vận tốc của hòn đá khi ném là bao nhiêu m/s (Kết quả lấy sau
+dấu phẩy 0 chữ số thập phân)
+Đáp 2 0
+án:
+425

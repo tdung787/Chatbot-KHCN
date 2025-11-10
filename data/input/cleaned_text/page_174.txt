@@ -1,0 +1,41 @@
+C. MODE A + B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+D. MODE A↔B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+Câu 10. Chọn câu sai về chức năng của động hồ đo thời gian hiện số:
+A. MODE A: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng
+quang điện nối với ổ A.
+B. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.
+C. MODE A + B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+D. MODE A + B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+Câu 11. Chọn câu đúng về chức năng của động hồ đo thời gian hiện số:
+A. MODE A: Đo thời gian vật chắn cổng quang điện nối với ổ A.
+B. MODE A + B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+C. Nút RESET: Đặt lại vật về vị trí nam châm điện.
+D. MODE T: Đo khoảng thời gian vật đi hết máng ngang.
+Câu 12. Chọn câu sai về chức năng của động hồ đo thời gian hiện số:
+A. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.
+B. MODE A  B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+C. MODE A↔B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+D. MODE T: Đo khoảng thời gian T của từng chu kì dao động.
+Câu 13. Chọn câu đúng về chức năng của động hồ đo thời gian hiện số:
+A. MODE A: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng
+quang điện nối với ổ A.
+B. MODE A + B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+C. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.
+D. MODE A  B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+Câu 14. Chọn câu sai về chức năng của động hồ đo thời gian hiện số:
+A. MODE: Chọn kiểu làm việc cho máy đo thời gian
+B. MODE A: Đo thời gian vật chắn cổng quang điện nối với ổ A.
+C. MODE T: Đo khoảng thời gian T của từng chu kì dao động.
+D. Nút RESET: Đặt vật lên vị trí nam châm điện
+Câu 15. Chọn câu đúng về chức năng của động hồ đo thời gian hiện số:
+A. MODE A: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng
+quang điện nối với ổ A.

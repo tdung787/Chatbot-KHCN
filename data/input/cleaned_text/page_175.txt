@@ -1,0 +1,42 @@
+B. MODE A + B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+C. MODE B: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng
+quang điện nối với ổ B.
+D. MODE A + B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+Câu 16. Chọn câu đúng về chức năng của động hồ đo thời gian hiện số:
+A. MODE: điều khiển tốc độ của viên bi
+B. Nút RESET: Đặt lại vật về vị trí nam châm điện.
+C. MODE A  B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+D. MODE T: Đo khoảng thời gian T của từng chu kì dao động.
+Câu 17. Chọn câu đúng. Những dụng cụ chính để đo thời gian viên bi
+chuyển động gồm:
+A. Đồng hồ đo thời gian hiện số B. cổng quang điện
+C. Máng ngang D. Tất cả các dụng cụ trên
+Câu 18. Chọn câu đúng. Những dụng cụ chính để đo tốc độ trung bình
+của viên bi gồm:
+A. Đồng hồ đo thời gian hiện số, cổng quang điện, viên bi, máng và
+thước thẳng.
+B. Đồng hồ đo thời gian hiện số, cổng quang điện, viên bi, máng và
+thước kẹp.
+C. Đồng hồ đo thời gian hiện số, cần rung, viên bi, máng và thước kẹp.
+D. Đồng hồ đo thời gian hiện số, cần rung, viên bi, máng và thước thẳng.
+Câu 19. Chọn câu đúng. Những dụng cụ chính để đo tốc độ tức thời
+trung bình của viên bi gồm:
+A. Đồng hồ đo thời gian hiện số, cổng quang điện, viên bi, máng và
+thước thẳng.
+B. Đồng hồ đo thời gian hiện số, cổng quang điện, viên bi, máng và
+thước kẹp.
+C. Băng giấy, cổng quang điện, viên bi, máng và thước kẹp.
+D. Băng giấy, cổng quang điện, viên bi, máng và thước thẳng.
+Câu 20. Chọn câu đúng. Thiết bị đo thời gian bằng cần rung cần phải
+có:
+A. Cần rung và cổng quang điện. B. Đồng hồ đo thời gian hiện
+số và cần rung.
+C. Băng giấy và cần rung. D. Cần rung và cổng quang điện.
+Câu 21: Điền khuyết các từ khóa thích hợp vào chỗ trống: Khi cắm cổng
+quang điện vào ổ cắm A, B cần chú ý xoay đúng …………………., cắm
+thẳng ……………………, không rung, lắc chân cắm.
+A. máng, thước. B. khe định vị, thanh trụ.
+C. Băng giấy, cần rung. D. khe định vị, giắc cắm.

@@ -1,0 +1,24 @@
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câu 1: Một người chạy xe máy theo một đường thẳng và có vận tốc theo
+thời gian được biểu diễn bởi đồ thị như hình. Xác định độ dịch chuyển
+của người này từ khi bắt đầu chạy đến thời điểm 4s?
+( kết quả làm tròn đến 0 chữ số phần thập phân, theo đơn vị cm)
+Đáp 1 1
+án:
+Câu 2: Một quả cầu bắt đầu lăn từ đỉnh một dốc dài 100 m, sau 10 s thì
+nó đến chân dốc. Sau đó nó tiếp tục chuyển động trên mặt ngang được 50
+m thì dừng lại. Tìm thời gian quả cầu lăn trên mặt ngang?
+(kết quả làm tròn đến 0 chữ số thập phân, theo đơn vị s?
+Đáp 5
+án:
+Câu 3: Hai ô tô khởi hành cùng một lúc từ hai địa điểm cách nhau 40km.
+Nếu chúng đi ngược chiều thì sau 24 phút sẽ gặp nhau. Nếu chúng đi cùng
+chiều thì sau 2h sẽ gặp nhau. Tính vận tốc ô tô thứ nhất so với mặt đường
+là bao nhiêu?
+(kết quả làm tròn đến 0 chữ số thập phân, theo đơn vị km/h)
+Đáp 6 0
+án:
+Câu 4: Một tường thành cổ có đường bao quanh
+có dạng hình chữ nhật ABCD bới AB = 900 m và

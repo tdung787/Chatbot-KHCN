@@ -1,0 +1,59 @@
+Câu 3: Ai được mệnh danh là “cha đẻ” của phương pháp thực nghiệm:
+A. Newton 
+B. Aristotle 
+C. Galilei 
+D. Einstein
+<Đáp án: C>
+
+Câu 4: Trong các hoạt động dưới đây
+1. Dùng tay ướt cắm điện vào nguồn điện.
+2. Mang đồ ăn, thức uống, chạy nhảy, vui đùa khi vào phòng thí nghiệm.
+3. Bỏ chất thải thí nghiệm vào đúng nơi quy định trong phòng thí nghiệm.
+4. Rửa sạch da khi tiếp xúc với hóa chất.
+5. Buộc tóc gọn gàng, tránh để tóc tiếp xúc với hóa chất và dụng cụ thí nghiệm.
+6. Thực hiện thí nghiệm nhanh và mạnh.
+Những hoạt động đảm bảo an toàn khi vào phòng thí nghiệm là:
+A. 3, 4, 5 
+B. 1, 3, 5 
+C. 2, 4, 6 
+D. 1, 2, 7 
+<Đáp án: A>
+
+Câu 5: Trong các phép đo dưới đây, đâu là phép đo trực tiếp?
+(1) Dùng thước đo chiều dài.
+(2) Dùng cân đo khối lượng.
+(3) Dùng cân và bình có vạch chia thể tích đo khối lượng riêng của nước.
+A.(1),(2). 
+B.(1),(3) 
+C.(2),(3) 
+D.(3)
+<Đáp án: A>
+
+Câu 6: Gọi là giá trị trung bình, là sai số dụng cụ, là sai số ngẫu nhiên trung bình, là sai số tuyệt đối. Sai số tuyệt đối của phép đo đại lượng là:
+A. . 
+B. . 
+C. . 
+D. .
+<Đáp án: >
+
+Câu 7: Khi đo chiều dài của chiếc bàn học, một học sinh viết được kết quả:
+(cm). Sai số tỉ đối của phép đo đó bằng
+A. 8%. 
+B. 1 %. 
+C. 5%. 
+D. 10%.
+<Đáp án: B>
+
+Câu 8: Để xác định tốc độ của một vật chuyển động đều, một người đã đo quãng đường vật đi được bằng (16,0± 0,4) m trong khoảng thời gian là (4,0±0,2) s. Sai số tỉ đối của phép đo tốc độ của vật là
+A.7,5%. 
+B.8,5%. 
+C.9,5 %. 
+D. 6,5 %.
+<Đáp án: A>
+
+Câu 9: Một vật chuyển động thẳng đều với quãng đường đi được trong thời gian . Biết tốc độ của vật chuyển động thẳng đều được tính bằng công thức . Kết quả của phép đo là
+A. . 
+B. . 
+C. . 
+D. .
+<Đáp án: >

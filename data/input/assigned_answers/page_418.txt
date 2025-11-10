@@ -1,0 +1,28 @@
+Câu 28:Một vật được ném từ một điểm M ở độ cao h = 45 m với vận tốc
+ban đầu v = 20 m/s lên trên theo phương hợp với phương nằm ngang
+một góc 450. Lấy g = 10 m/s2, bỏ qua lực cản của không khí. Quỹ đạo
+của vật, độ cao cực đại vật đạt được so với mặt đất và thời gian vật bay
+trong không khí lần lượt là:
+A. Quỹ đạo là 1 parabol, 55m, 3,73s
+B. Quỹ đạo là 1 parabol, 55m, 4,73s
+C. Quỹ đạo là 1 parabol, 65m, 1,73s
+D. Quỹ đạo là 1 parabol, 35m, 2,73s
+<Đáp án: B>
+
+Câu 29:Một vật được ném từ độ cao 10 m so với mặt đất với góc ném α
+= 600 so với mặt phẳng ngang. Vật rơi đến đất cách chỗ ném theo
+phương ngang một khoảng 100 m. Vận tốc của vật khi ném là
+A. 33 m/s. B. 50 m/s. C. 18m/s. D. 27
+m/s.
+<Đáp án: A>
+
+Câu 1. Trong một trận bóng đá, thủ môn phát bóng đi từ cầu môn.
+Trái bóng bay đi từ mặt đất, nghiêng một góc 600 so với mặt đất, với vận
+tốc đầu có độ lớn 25 m/s. Cho g = 10 m/s2.
+a. Phương trình chuyển động của quả bóng là √3 x+ x2 ⎕
+b. Độ cao lớn nhất mà quả bóng đạt được là 23,4 m ⎕
+c. Thời gian kể từ khi quả bóng được đá đi cho đến khi chạm đất
+⎕
+là 5 s
+d. Vận tốc của quả bóng khi chạm đất là 25 m/s ⎕
+<Đáp án: >

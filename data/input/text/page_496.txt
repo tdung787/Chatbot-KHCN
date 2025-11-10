@@ -1,0 +1,42 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Đáp 0 , 2
+án:
+Câu 2: Đồ thị vận tốc – thời gian của hai xe A và B chuyển động trên
+một đường thẳng như hình vẽ bên (xe B tới vị trí xe A thì xe A bắt đầu
+chuyển động). Quãng đường mà xe A đi được từ thời điểm t = 0 đến t =
+60s là bao nhiêu?
+(kết quả làm tròn đến 0 chữ số thập phân, theo đơn vị m?
+Đáp 5
+án:
+Câu 3: Dùng một đồng hồ đo thời gian có độ chia nhỏ nhất 0,001 s để
+đo thời gian rơi tự do của một vật. Kết quả đo cho trong bảng sau:
+Lần đo t (s) ∆t (s)
+1 0,399 -
+2 0,399 -
+3 0,408 -
+4 0,410 -
+5 0,406 -
+6 0,405 -
+7 0,402 -
+Trung
+- -
+bình
+Tính sai số tỉ đối của phép đo?
+(kết quả làm tròn đến 2 chữ số thập phân, theo đơn vị %)
+Đáp 1 , 2 3
+án:
+Câu 4: Một xe chuyển động chậm dần đều với tốc độ 36 km/h. Trong giây
+thứ 6 xe đi được 7,25 m. Tính quãng đường xe đi được trong giây thứ 8
+theo đơn vị m?
+(kết quả làm tròn đến 2 chữ số thập phân, theo đơn vị m)
+Đáp 6 , 2 5
+án:
+Câu 5: Hai bến sông A và B cách nhau 18km. Tính khoảng thời gian t để
+một ca nô xuôi dòng nước từ A đến B rồi lại ngay lập tức chạy ngược
+dòng trở về A. Cho biết vận tốc của ca nô đối với dòng nước là 16,2 km/h
+và vận tốc dòng nước đối với bờ sông là 1,5m/s
+(kết quả làm tròn đến 1 chữ số thập phân, theo đơn vị giờ)
+Đáp 2 , 5
+án:
+496

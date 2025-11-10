@@ -1,0 +1,42 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+b. – Độ lớn: d= √ 62+82=10m.
+- Hướng:
+6
+cosα= ⇒α=530
+10
+Vậy, hướng của độ dịch chuyển là hướng 530 đông – bắc.
+Ví dụ 7. Hai người đi xe đạp từ A đến C, người
+thứ nhất đi theo đường từ A đến B rồi từ B đến
+C, người thứ hai đi thẳng từ A đến C (hình vẽ).
+Hãy tính quãng đường đi được và độ dịch
+chuyển của người thứ nhất và người thứ 2.
+Hướng dẫn giải
+ Người thứ nhất:
+- Quãng đường đi được: s = AB + BC = 3 + 4 = 7 km
+1
+- Độ dịch chuyển: ⃗d =⃗AC
+1
++ Hướng:
+AB 3
+Ta có: cos ^BAC= = ⇒ ^BAC ≈530
+AC 5
+⇒ Hướng của độ dịch chuyển là hướng 900−530=370 Đông – Bắc.
++ Độ lớn: d =AC= √ A B2+BC2= √ 32+42=5km.
+1
+ Người thứ hai:
+- Quãng đường đi được: s =AC=5km
+2
+- Độ dịch chuyển: ⃗d =⃗AC
+2
++ Hướng: 370 Đông – Bắc.
++ Độ lớn: d =AC=5km.
+2
+II BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1: (SBT-KNTT) Chọn phát biểu đúng
+A. Véc tơ độ dịch chuyển thay đổi phương liên tục khi vật chuyển động.
+B. Véc tơ độ dịch chuyển có độ lớn luôn bằng quãng đường đi được của
+chất điểm.
+83

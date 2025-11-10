@@ -1,0 +1,63 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+s
+t = =0,5h
+B v
+12
+b) Quãng đường mà xe máy A đã đi được đến khi xe máy B đuổi kịp là:
+s =v ×t =v (Δt+t )=20km
+A A A A B
+Câu 6. Một chiếc thuyền chuyển động thẳng đều với v = 10m/s so với
+mặt biển, con mặt biển tĩnh lặng. Một người đi đều trên sàn thuyền có v
+= 1m/s so với thuyền. Xác định vận tốc của người đó so với mặt nước
+biển khi:
+a. Người và thuyền chuyển động cùng chiều.
+b. Người và thuyền chuyển động ngược chiều.
+c. Người và thuyền tàu chuyển động vuông góc với
+nhau.
+Hướng dẫn giải
+Gọi + ⃗v là vận tốc của người so với mặt nước biển.
+13
++ ⃗v là vận tốc của người so với thuyền
+12
++ ⃗v là vận tốc của thuyền so với mặt nước biển.
+23
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+a. Khi cùng chiều: v = v + v = 1 + 10 = 11m/s
+13 12 23
+b. Khi ngược chiều: v = v – v = 10 – 1 = 9m/s
+13 23 12
+√ √
+c. Khi vuông góc: v = v2 +v 2= 102+12=10,05m/s
+13 12 23
+Câu 7. Một chiếc thuyền buồm chạy ngược dòng sông, sau 1
+giờ đi được 10 km. Một khúc gỗ trôi theo dòng sông sau 1
+phút trôi được 100/3 m. Vận tốc của thuyền buồm so với
+nước bằng bao nhiêu?
+Lời giải:
+ Gọi: + ⃗v là vận tốc của thuyền so với nước
+12
++ ⃗v là vận tốc của nước so với bờ
+23
++ ⃗v là vận tốc của thuyền so với bờ
+13
+ Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+− Vận tốc của thuyền so với bờ: v = 10 km/h
+13
+Đổi 1 phút = 1/60 h; 100/3 m = 1/30 km
+− Vận tốc của nước so với bờ: v = v = 2 km / h
+23 gỗ
+Vì đi ngược dòng nên: v = v - v  v = v + v = 12 km/h
+13 12 23 12 13 23
+Câu 8. Một chiếc máy bay đang bay từ Thành phố
+Hồ Chí Minh đến Thủ đô Hà Nội với tốc độ 525
+km/h. Trong hôm đó, gió thổi về hướng Nam với
+tốc độ 36 km/h. Xem như máy bay chuyển động
+thẳng đều theo hướng Bắc và quãng đường bay từ
+Thành phố Hồ Chí Minh đến Thủ đô Hà Nội là
+1160 km. Hãy xác định thời gian bay của máy bay
+trên quãng đường đó.
+Hướng dẫn giải
+158

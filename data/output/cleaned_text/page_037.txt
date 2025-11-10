@@ -1,0 +1,37 @@
+1 B 11 A
+2 B 12 B
+3 B 13 A
+4 A 14 D
+5 D 15 A
+6 D 16 C
+7 A 17 D
+8 B 18 A
+9 C 19 C
+10 A 20 D
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ 2 câu. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh
+chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Lệnh Đáp án Đáp án
+Câu Câu Lệnh hỏi
+hỏi (Đ/S) (Đ/S)
+A) S A) Đ
+B) Đ B) S
+1 2
+C) Đ C) Đ
+D) S D) S
+Câu 1 :
+Cách xử lí thuỷ ngân đổ ra ngoài đúng cách để đảm bảo an toàn
+a. Báo cho giáo viên tại phòng thí nghiệm
+b. Sơ tán các bạn học sinh ở khu vực gần đó, tắt quạt và đóng hết cửa sổ
+để tránh việc thủy ngân phát tán trong không khí
+c. Người dọn dẹp phải sử dụng găng tay và khẩu trang để dọn sạch thủy
+ngân
+d. Tuyệt đối không được tiếp xúc trực tiếp với thủy ngân bằng tay.
+Câu 2 :
+a. Điều chỉnh kim đo, thang đo trên đồng hồ vạn năng bằng cách vặn
+núm điều chỉnh ở giữa đồng hồ về vị trí cần tìm

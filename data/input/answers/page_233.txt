@@ -1,0 +1,6 @@
+C_ Tích số gia tốc và vận tốc a.v > 0.
+A a = (v Vo)/(t to).
+A- Gia tốc là một đại lượng vô hướng.
+A- Vận tốc biến thiên được những lượng bằng nhau trong những khoảng thời gian bằng nhau bất kì.
+B. ngược chiêu dương
+C. Gia tốc là đại lượng đặc trung cho sự biến đổi nhanh hay chậm của vận tốc theo thời gian.

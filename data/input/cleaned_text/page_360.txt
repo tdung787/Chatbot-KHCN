@@ -1,0 +1,33 @@
+Câu 4: (SBT-KNTT) Chuyển động của vật nào dưới đây sẽ được coi là
+rơi tự do nếu được thả rơi?
+A. Một chiếc B. Một sợi chỉ. C. Một chiếc lá
+khăn voan nhẹ. cây rụng. Một viên
+sỏi.
+Câu 5: Chuyển động của vật rơi tự do không có tính chất nào sau đây?
+A. Vận tốc của vật tăng đều theo thời gian.
+B. Gia tốc của vật tăng đều theo thời gian
+C. Càng gần tới mặt đất vật rơi càng nhanh.
+D. Quãng đường vật đi được là hàm số bậc hai theo thời gian.
+Câu 6: Dạng đồ thị vận tốc – thời gian nào dưới đây mô tả chuyển động
+rơi tự do của vật ở gần mặt đất.
+A. Đồ thị (1) B. Đồ thị (2) C. Đồ thị (3) D. Đồ thị (4)
+Câu 7: Chọn phát biểu sai.
+A. Khi rơi tự do tốc độ của vật tăng dần.
+B. Vật rơi tự do khi lực cản không khí rất nhỏ so với trọng lực.
+C. Vận động viên nhảy dù từ máy bay xuống mặt đất sẽ rơi tự do.
+D. Rơi tự do có quỹ đạo là đường thẳng.
+Câu 8. Đặc điểm nào dưới đây không phải là đặc điểm của chuyển
+động rơi tự do của các vật?
+A. Chuyển động theo phương thẳng đứng, chiều từ trên xuống.
+B. Chuyển động thẳng nhanh dần đều.
+C. Ở cùng một nơi và gần mặt đất, mọi vật rơi tự do như nhau.
+D. Lúc t = 0 thì vận tốc của vật luôn khác 0.
+Câu 9: Nhận xét nào sau đây là sai?
+A. Vectơ gia tốc rơi tự do có phương thẳng đứng, hướng xuống.
+B. Tại cùng một nơi trên Trái Đất gia tốc rơi tự do không đối.
+C. Gia tốc rơi tự do thay đối theo vĩ độ.
+D. Gia tốc rơi tự do là 9,81 m/s2 tại mọi nơi.
+Câu 10: Vật rơi tự do
+A. khi từ nơi rất cao xuống mặt đất.
+B. khi họp lực tác dụng vào vật hướng thẳng xuống mặt đất.
+C. chỉ dưới tác dụng của trọng lực

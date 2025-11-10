@@ -1,0 +1,54 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 6: Một quả cầu được ném theo phương ngang từ độ cao 80m. Sau
+khi chuyển động 3s, vận tốc quả cầu hợp với phương ngang một góc 450.
+a. Thời gian chạm đất của quả cầu là t=4s ⎕
+b. Vị trí tiếp đất của quả cầu là 40m. ⎕
+c. Vận tốc chạm đất là 50 m/s. ⎕
+d. Vận tốc ban đầu của quả cầu là 10 m/s. ⎕
+Hướng dẫn giải
+√
+2h
+a) [Đ] Thời gian chạm đất: t = =4s
+g
+b) [S] Khi chạm đất: d 0(m) (m/s)
+y xmax
+√ √
+c) [Đ] Tốc độ chạm đất : v= v2+v2= 402+302=50m/s
+y x
+d) [S] Khi vận tốc của vật hợp với phương thẳng đứng một góc 450.
+v v
+Ta có: tan 450= x = 0 ⇒ v =10t=10.3=30(m/s)
+v 10t 0
+y
+3 Câu trắc nghiệm trả lời ngắn
+Câu 1: Một hòn bi lăn dọc theo một cạnh của một mặt bàn hình chữ
+nhật nằm ngang cao h = 1,25m. Lấy g = 10m/s2. Thời gian rơi của viên
+bi là bao nhiêu giây?
+Đáp 0 , 5
+án:
+Hướng dẫn giải
+√ √
+2h 2.1,25
+Khi vật chạm đất: t= = =0,5 s.
+g 10
+Câu 2: Một vật được ném ngang từ độ cao h = 9m, vận tốc ban đầu
+v Vật bay xa 18m, lấy g = 10m/s2. Tính v theo đơn vị m/s? (Kết quả lấy
+o. o
+đến 1 chữ số có nghĩa).
+Đáp 1 3 , 4
+án:
+Hướng dẫn giải
+√
+g
+Vận tốc v =L =13,4 m/s.
+0 2h
+Câu 3: Một quả cầu được ném theo phương ngang từ độ cao 80 m so
+với mặt đất với v =30m/s. Bỏ qua sức cản của không khí. Lấy g=10 m/s2.
+0
+Xác định góc (tính theo đơn vị độ) giữa vận tốc chạm đất của vật hợp với
+phương ngang? (Kết quả lấy đến 1 chữ số có nghĩa).
+Đáp 5 3 , 1
+án:
+Hướng dẫn giải
+395

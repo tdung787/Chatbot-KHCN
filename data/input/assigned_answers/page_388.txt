@@ -1,0 +1,44 @@
+Câu 26: Một pháo sáng được thả ra từ máy bay đang bay
+đều theo phương thẳng nằm ngang. Bỏ qua sức cản của không khí, pháo
+sáng sẽ chuyển động ra sao?
+A. Bay phía sau máy bay trên cùng mặt
+ngang.
+B. Giữ thẳng đứng dưới máy bay
+C. Di chuyển phía trước máy bay trên cùng
+mặt ngang
+D. Phụ thuộc vào độ nhanh theo mặt ngang
+của máy bay.
+<Đáp án: B>
+
+Câu 27: Vật A được thả rơi tự do, cùng lúc ném vật B theo
+phương ngang cùng độ cao h thì:
+A. vật A chạm đất trước
+B. vật B chạm đất trước
+C. vật A chạm đất với vận tốc lớn hơn vật B
+D. vật B chạm đất với vận tốc lớn hơn vật A
+<Đáp án: D>
+
+Câu 28: Gia tốc của hòn đá ném thẳng đứng lên sẽ?
+A. nhỏ hơn gia tốc của hòn đá ném xuống C. giảm dần
+B. bằng gia tốc của hòn đá ném xuống D. bằng 0 khi lên độ
+cao tối đa
+<Đáp án: B>
+
+Câu 29: Chọn phát biểu sai cho chuyển động ném ngang.
+A. Chuyển động của các hình chiếu M , M dọc các trục toạ độ là các
+x y
+chuyển động thành phần.
+B. Vận tốc tại mỗi thời điểm là tổng vectơ các vận tốc chuyển động
+thành phần.
+C. Vectơ vận tốc ⃗v tại mỗi điểm trùng với tiếp tuyến quỹ đạo tại điểm đó.
+D. Tầm ném xa tỉ lệ với vận tốc ban đầu và độ cao ban đầu.
+<Đáp án: D>
+
+Câu 30: Chọn phát biểu sai cho chuyển động ném ngang.
+A. Gia tốc trong chuyển động ném ngang luôn không đổi cả về phương,
+chiều và độ lớn. Đó chính là gia tốc trọng trường ⃗g.
+B. Vì gia tốc luôn không đổi nên đó là chuyển động thẳng biến đổi đều.
+C. Độ lớn vận tốc tăng dần theo thời gian.
+D. Thời gian chuyển động ném ngang bằng thời gian rơi tự do từ cùng
+độ cao ban đầu.
+<Đáp án: B>

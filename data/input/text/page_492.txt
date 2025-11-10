@@ -1,0 +1,52 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+v−v 0,25 +
+a. Tính gia tốc: v=v +a.t ⟹a= 0=0,5(m/s2)
+0 t 0,25
+Câu 2
+b. Tính quãng đường:
+(1 điểm) 0,25 +
+1 1
+s=d=v t+ at2=0.30+ .0,5.302=225(m) 0,25
+0 2 2
+Lần đo m (kg) ∆m (kg)
+1 5,5 0
+2 5,6 0,1
+3 5,4 0,1
+4 5,4 0,1
+5 5,6 0,1
+∆m=¿0,08
+Câu 3 Trung bình m=¿ 5,5 (0,2đ)
+(0,2đ)
+(1 điểm)
+Sai số tuyệt ∆m=∆m+∆m =0,08+0,05=0,13
+dc
+đối ≈0,1kg (0,2đ)
+∆m 0,13
+Sai số tương δm= .100%= .100%=2,4 %
+m 5,5
+đối
+(0,2đ)
+Kết quả phép m=m±∆m=5,5±0,1(kg)
+đo (0,2đ)
+ĐỀ THI GIỮA HK1- ĐỀ
+5
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câu 1: Lĩnh vực nghiên cứu nào sau đây là của Vật lí?
+A. Nghiên cứu về sự thay đổi của các chất khi kết hợp với nhau.
+B. Nghiên cứu sự phát minh và phát triển của các vi khuẩn.
+C. Nghiên cứu về các dạng vận động của vật chất và năng lượng.
+D. Nghiên cứu về sự hình thành và phát triển của các tầng lớp, giai cấp
+trong xã hội.
+Câu 2: Cho các dữ kiện sau:
+1.Tiến hành thí nghiệm kiểm tra giả thuyết
+2. Đưa ra dự đoán, giả thuyết
+3. Rút ra kết luận.
+4. Quan sát, thu thập thông tin
+5. Xác định vấn đề cần nghiên cứu.
+Sắp xếp lại đúng thứ tự các bước của phương pháp thực nghiệm trong
+nghiên cứu Vật lí.
+492

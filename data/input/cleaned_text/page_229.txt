@@ -1,0 +1,43 @@
+- Phương trình chuyển động của xe đi từ B: x =200−1,4t2
+- Khi hai xe gặp nhau:
+x =x ⇒3t+t2=200−1,4t2⇒2,4t2+3t−200=0
+1 2
+[
+¿t=8,525s
+⇒
+¿t=−9,775s(loai)
+Thay t = 8,525 s vào phương trình
+chuyển động của xe A hoặc xe B ta
+tìm được vị trí gặp nhau.
+x =x =3.8,525+8,5252=98,25m
+1 2
+Vậy hai xe gặp nhau tại vị trí cách A 98,25 m.
+II BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1: Véctơ gia tốc a⃗ có tính chất nào kể sau?
+A. Đặc trưng cho sự biến thiên của vận tốc.
+B. Cùng chiều với ⃗v nếu chuyển động nhanh dần.
+C. Ngược chiều với ⃗v nếu chuyển động chậm dần.
+D. Các tính chất A, B, C.
+Câu 2: Gia tốc là một đại lượng
+A. Đại số, đặc trưng cho sự biến đổi nhanh hay chậm của chuyển
+động.
+B. Đại số, đặc trưng cho tính không đổi của vận tốc.
+C. Vectơ, đặc trưng cho sự biến đổi nhanh hay chậm của chuyển động.
+D. Vectơ, đặc trưng cho sự biến đổi nhanh hay chậm của vận tốc.
+Câu 3: Trong chuyển động thẳng nhanh dần đều:
+A. Vận tốc tăng đến cực đại rồi giảm dần.
+B. Vận tốc cuả vật tỷ lệ với bình phương thời gian.
+C. Gia tốc tăng đều theo thời gian.
+D. Vận tốc tăng đều theo thời gian.
+Câu 4: Trong chuyển động biến đổi đều thì
+A. Gia tốc là một đại lượng không đổi.
+B. Gia tốc là đại lượng biến thiên theo thời gian.
+C. Vận tốc là đại lượng không đổi.
+D. Vận tốc là đại lượng biến thiên theo thời gian theo quy luật hàm
+bậc hai.
+Câu 5: (8.2 SBT) Chuyển động nào sau đây là chuyển động biến đổi?
+A. Chuyển động có độ dịch chuyển tăng đều theo thời gian.
+B. Chuyển động có độ dịch chuyển giảm đều theo thời gian.
+C. Chuyển động có độ dịch chuyển không đổi theo thời gian.

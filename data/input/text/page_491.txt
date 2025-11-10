@@ -1,0 +1,39 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Thời gian vật rơi 10 m cuối cùng trước khi chạm đất là
+Câu 5:
+Chuyển động của mô tô bay được
+coi như chuyển động ném xiên góc
+300 so với phương nằm ngang, với
+vận tốc ban đầu v = 14 m/s.
+0
+Thời gian từ khi xe rời đỉnh dốc tới khi đạt độ cao cực đại:
+Câu 6:
+Tầm xa của mô tô bay tính từ vị trí xe rời đỉnh dốc:
+Vậy mô tô có thể bay qua nhiều nhất 5 xe ô tô (vì mỗi xe ô tô dài 3,2 m).
+Câu 7:
+√ √ √
+2h 2h' 2.16h
+t = ,t = =
+1 g 2 g g
+√
+t h 1
+1= = →t =4.t =8s
+t 16h 4 2 1
+Lập tỉ số: 2
+Câu 8:
+Điểm đạn rơi xuống cách điểm bắn theo
+phương ngang là
+4 Tự luận (3,0 điểm)
+Câu Hướng dẫn chấm Điểm
+v=v +at 0,25
+0
+1 0,25
+d=v t+ at2
+Câu 1 0 2
+(1 điểm) 1 0,25
+x=x +v t+ at2
+0 0 2
+v2−v2=2ad 0,25
+0
+491

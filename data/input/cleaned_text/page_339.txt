@@ -1,0 +1,32 @@
+- Phương trình chuyển động của vật ném lên:
+a) Khi hai vật gặp nhau:
+Độ cao gặp nhau:
+b) Vận tốc vật thả rơi tự do:
+- Vận tốc vật ném lên:
+- Độ lớn vận tốc hai vật bằng nhau:
+Ví dụ 4. Tính khoảng thời gian rơi tự do t của một viên đá. Cho biết
+trong giây cuối cùng trước khi chạm đất, vật đã rơi được đoạn đường dài
+24,5 m. Lấy gia tốc rơi tự do g = 9,8 m/s2.
+Hướng dẫn giải
+Gọi:
+- s là quãng đường viên đá đi được sau khoảng thời gian t kể từ khi bắt
+đầu rơi tới khi chạm đất.
+- s là quãng đường viên đá đi được trước khi chạm đất 1 s, tức là khoảng
+thời gian rơi t = t -1.
+Ta có:
+1 1
+s= gt2s = g¿
+2 1 2
+- Quãng đường viên đá đi được trong 1 s cuối trước khi chạm đất là
+1 1
+Δs=s−s = gt2− g¿
+1 2 2
+−g
+Lại có: Δs=24,5m⇔> =24,5⇒t=3s (với g = 9,8
+II BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1: (SBT-KNTT) Chuyển động của vật nào dưới đây sẽ được coi là
+rơi tự do nếu được thả rơi?
+A. Một chiếc B. Một sợi chỉ. C. Một chiếc lá D. Một viên sỏi.
+khăn voan nhẹ. cây rụng.

@@ -1,0 +1,65 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Đổi: v = 36 km/h = 10 m/s.
+0
+Quãng đường xe đi được trong giây thứ 6 bằng hiệu quãng đường xe đi
+được trong 6 giây trừ đi quãng đường xe đi được trong 5 giây.
+1 1
+ΔS =S −S =(v .6+ .a.62)−(v .5+ .a.52)=7,25→a=−0,5m/s2
+6 6 5 0 2 0 2
+Quãng đường xe đi được trong giây thứ 8 bằng hiệu quãng đường xe đi
+được trong 8 giây trừ đi quãng đường xe đi được trong 7 giây.
+1 1
+ΔS =S −S =(v .8+ .a.82)−(v .7+ .a.72)
+8 8 7 0 2 0 2
+Thay số v =10m/s,a=−0,5m/s2→ ΔS =6,25m=625cm
+0 8
+Câu 2:
+Vì vật chuyển động biến đổi đều không vận tốc ban đầu nên v =0(m/s)
+0
+1 1
+Áp dụng công thức : s= at2= a.32=4,5a
+2 2
+Gọi t là thời gian vật đi trong 1/9 quãng đường đầu.
+1
+1 S 1
+Ta có: s'= at2⇒ = at2⇒t =1s
+2 1 9 2 1 1
+Thời gian vật đi trong 8/9 quãng đường cuối: t =t−t =3−1=2s
+2 1
+Câu 3:
+Đổi v = 18km/h = 5m/s
+0
+1
+Quãng đường vật đi được S=v .t+ at2
+0 2
+1
+Quãng đường vật đi được trong 5 giây đầu là S =5.5+ a52=25+12,5a
+5 2
+1
+Quãng đường vật đi được trong 6 giây là S =5.6+ a62=30+18 a
+6 2
+Quãng đường vật đi được trong giây thứ 6 là
+ΔS =S −S =21,5↔30+18a−(25+12,5a)=21,5→a=3m/s2=300cm/s2
+6 6 5
+1
+Quãng đường vật đi được trong 20 giây là S =5.20+ .3.202=700m
+20 2
+Câu 4:
+Quãng đường mà vật nhỏ trượt được trên dốc sau 10s được xác
+định từ hệ thức độc lập
+v2−v2 −v2
+S2= 0= 0
+2a 2a
+1
+Vận tốc khi bắt đầu trượt đoạn đường cuối là v
+4 1
+0−v 0−v v v
+Mặt khác: a= 0= 1 → 0 = 0 →t =5s
+t t 10 2t 1
+1 1
+Câu 5:
+1
+Quãng đường vật đi được S=v .t+ at2
+0 2
+295

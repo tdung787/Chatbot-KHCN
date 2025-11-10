@@ -1,0 +1,47 @@
+Đổi: v = 720 km/h = 200m/s.
+Áp dụng công thức tầm ném xa ta có:
+√
+2h
+L=d =v t=v =903,5m
+xmax 0 0 g
+Câu 7: Quãng đường rơi theo phương thẳng đứng và chuyển động theo
+phương nằm ngang của quả bóng thứ hai trên hình 2.8 được ghi ở bảng
+2.3.
+Sử dụng số liệu ở bảng 2.3 vẽ đồ thị với trục thẳng đứng là khoảng cách
+theo phương thẳng đứng, trục nằm ngang là khoảng cách theo phương
+nằm ngang. Chọn chiều dương hướng thẳng đứng xuống dưới và từ trái
+sang phải.
+Hình dạng đồ thị này giống hình dạng đồ thị nào đã học?
+Bảng 2.3.
+Khoảng cách
+0,00 0,03 0,07 0,12 0,19 0,28 0,38
+theo phương 0
+8 1 1 6 6 3 3
+thẳn đứng (m)
+Khoảng cách
+theo phương 0 0,1 0,2 0,3 0,4 0,5 0,6 0,7
+ngang (m)
+Hướng dẫn giải
+- Dạng đồ thị này giống hình
+dạng đồ thị của một nhánh
+prabol.
+- Mô tả chuyển động của quả
+bóng:
++ Quả bóng thứ nhất rơi theo
+phương thẳng đứng, quả bóng
+thứ hai được đẩy sang bên phải
+theo phương ngang. Hai quả
+bóng rơi đồng thời và chạm đất
+cùng một lúc.
++ Thời gian rơi theo phương
+thẳng đứng của quả bóng thứ
+nhất bằng thời gian của quả
+bóng thứ hai.
+Câu 8: Từ một vách đá cao 10 m so với mặt nước biển, một bạn ném
+ngang một hòn đá nhỏ với tốc độ 5 m/s. Bỏ qua lực cản của không khí và
+lấy g = 9,81 m/s2 .
+a. Lập các phương trình độ dịch chuyển của hòn đá theo hai phương.
+b. Xác định tọa độ của hòn đá sau 1 giây.
+c. Xác định vị trí và tốc độ của hòn đá ngay trước khi hòn đá chạm mặt
+nước biển.
+Hướng dẫn giải

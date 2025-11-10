@@ -1,0 +1,53 @@
+Câu 20: Một vật được ném với vận tốc 12 m/s từ mặt đất với góc ném
+(α = 300 so với mặt phẳng ngang. Lấy g = 10 m/s2. Hòn đá rơi đến đất
+cách chỗ ném theo phương ngang một khoảng 200 m. Thời gian hòn đá
+rơi là
+A. 24,5 s. B. 19,2 s. C. 14,6 s. D. 32,8 s.
+<Đáp án: B>
+
+Câu 21: Một vật được ném xiên từ mặt đất lên với vận tốc ban đầu là
+v = 10m/s theo phương hợp với phương nằm ngang góc 300. Lấy g = 10
+m/s2. Độ cao cực đại và tầm xa mà vật đạt được lần lượt là
+A. 1,25 m; 8,66 m. B. 8,66 m; 1,25 m.
+C. 1,25 m; 22,5 m. D. 22,5 m; 8,66 m.
+<Đáp án: A>
+
+Câu 22: Từ độ cao 7,5 m người ta ném một quả cầu với vận tốc ban
+đầu 10 m/s, ném xiên góc 450 so với phương ngang. Vật chạm đất tại vị
+trí cách vị trí ban đầu
+A. 5m. B. 15m. C. 9m. D. 18m.
+<Đáp án: B>
+
+Câu 23: Từ độ cao 15 m so với mặt đất, một vật được ném chếch lên
+với vectơ vận tốc đầu 20 m/s hợp với phương nằm ngang một góc 300. Độ
+cao lớn nhất (so với mặt đất) mà vật đạt được.
+A. 5m. B. 15m. C. 20m. D. 10m.
+<Đáp án: D>
+
+Câu 24: Từ độ cao 15 m so với mặt đất, một vật được ném chếch lên
+với vectơ vận tốc đầu 20 m/s hợp với phương nằm ngang một góc 300.
+Lấy g = 10 m/s2. Tầm bay xa của vật là
+A. 63m. B. 52m. C. 26m. D. 45m.
+<Đáp án: B>
+
+Câu 25: Từ một đỉnh tháp cao 12m so với mặt đất, người ta ném một
+hòn đá với vận tốc ban đầu v =15m/s, theo phương hợp với phương nằm
+ngang một góc α=450. Khi chạm đất, hòn đá có vận tốc bằng bao nhiêu?
+Lấy g = 9,8 m/s2.
+A. 18,6 m/s. B. 24,2 m/s. C. 28,8 m/s.
+D. 21,4 m/s.
+<Đáp án: D>
+
+Câu 26: Một vật được ném lên từ mặt đất theo phương xiên góc hợp
+với phương ngang một góc α. Khi lên đến độ cao cực đại cách mặt đất
+15m thì vận tốc bằng một nửa vận tốc ban đầu. Lấy g = 10 m/s2. Tính độ
+lớn vận tốc ban đầu.
+A. 18 m/s. B. 20 m/s. C. 15 m/s. D. 25 m/s.
+<Đáp án: B>
+
+Câu 27: Một vật được ném lên từ mặt đất theo phương xiên góc hợp
+với phương ngang một góc α = 450, với vận tốc ban đầu là 5m/s. Bỏ qua
+mọi lực cản. Lấy g = 10 m/s2. Độ cao cực đại của vật là
+A. 0,25 m. B. 0,5 m. C. 0,625 m. D. 1,25
+m.
+<Đáp án: C>

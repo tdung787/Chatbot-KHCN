@@ -1,0 +1,39 @@
+Câu 15: Đo chiều dài của một vật hình trụ bằng thước kẹp
+có du xích thu được các kết quả sau 8 lần đo như sau:
+3,29cm, 3,28cm, 3,29cm, 3,31cm, 3,28cm, 3,27cm, 3,29cm,
+3,30cm. Bỏ qua sai số dụng cụ. Chiều dài của vật bằng
+A. 0,1% B. 0,2%
+C. 0,3% D. 0,4%
+CâCuâ u1 61:7: Thả rơi tự do một vật từ đỉnh tháp thì thời gian
+vật chạm đất được xác định bằng (2,0±0,1)s. Nếu lấy gia
+tốc trọng trường tại nơi thả vật chính xác bằng 10m/s2 thì
+chiều cao của tháp là
+A. (20±0,1)m B.(20±0,5)m
+C. (20±1)m D.(20±2)m
+Câu 18: Đường kính của một quả bóng bằng (5,2±0,2)cm.
+Sai số tỉ đối của phép đo thể tích quả bóng gần bằng giá trị
+nào sau đây
+A. 11% B. 4% C. 7%
+D. 9%
+Câu 19: Để xác định thể tích của một vật
+hình trụ, một người đã sử dụng thước đo chiều
+dài có độ dài chia nhỏ nhất 0,1cm để đo chiều
+dài của vật và dùng một thước kẹp du xích với
+độ chia nhỏ nhất bằng 0,01cm để do đường
+kính của nó. Kết quả đo chiều dài của vật bằng
+5cm và bán kính bằng 2cm. Sai số tỉ đối của
+phép đo thể tích của vật bằng
+A. 1% B. 2% C. 3%
+D. 4%
+Câu 20: Dùng một thước có chia độ đến milimét
+đo 5 lần khoảng cách d giữa hai điểm A và B đều
+cho cùng một giá trị là 1,345 m. Lấy sai số dụng cụ
+là một độ chia nhỏ nhất. Kết quả đo được viết là
+A. d =(1345±2) (mm). B. d =(1,345±0,001) (m).
+C. d =(1345±3) (mm). D. d =(1,345±0,0005) (m).
+Câu 21: Dùng một thước chia độ đến milimét để đo khoảng cách l
+giữa hai điểm A, B và có kết quả đo là 600 mm. Lấy sai số dụng cụ là
+một độ chia nhỏ nhất. Cách ghi nào sau đây không đúng với số chữ số
+có nghĩa của phép đo?
+A. ℓ = (6,00 ± 0,01) dm. B. ℓ = (0,6 ± 0,001) m.
+C. ℓ = (60,0 ± 0,1) cm. D. ℓ = (600 ± 1) mm.

@@ -1,0 +1,38 @@
+nhạy của nhiệt kế này?
+A. Làm cho ống nhiệt kế hẹp lại. B. Khi đo phải hiệu chỉnh
+cẩn thận.
+C. Làm cho các vạch chia gần nhau hơn. D. Làm cho ống nhiệt kế dài
+hơn.
+Câu 42: SBT-CD) Một bánh xe có bán kính là R=10,0±0,5cm. Sai số
+tương đối của chu vi bánh xe là
+A. 0,05%. B. 5%. C. 10%. D. 25%.
+Lời giải:
+ΔR 0,5
+Sai số tương đối của bán kính δR= = =5%.
+R¯ 10,0
+Chu vi hình tròn: p=2.π .R
+Suy ra: δp=δR=5%.
+Câu 43: Hình vẽ mô tả cách đo thể tích
+của một vật rắn không thấm nước bằng
+một bình chia độ. Thể tích của vật đó
+bằng
+A. 38 cm3. B. 50 cm3.
+C. 12 cm3. D. 51 cm3.
+Câu 44: Hình vẽ mô tả
+cách đo thể tích của một vật
+rắn không thấm nước bằng
+bình tràn kết hợp với bình
+chia độ. Thể tích của vật đó
+bằng
+A. 10,2 cm3. B.
+10,50 cm3.
+C. 10 cm3. D. 10,25
+cm3.
+Câu 45: Một hộp quả cân có các quả cân loại 2
+g, 5 g, 10 g, 50 g, 200 g, 200 mg, 500 g, 500 mg.
+Để cân một vật có khối lượng 257,5 g thì có thể
+sử dụng các quả cân nào?
+A. 200 g, 200 mg, 50 g, 5 g, 50 g.
+B. 2 g, 5 g, 50 g, 200 g, 500 mg.
+C. 2 g, 5 g, 10 g, 200 g, 500 g.
+D. 2 g, 5 g, 10 g, 200 mg, 500 mg.

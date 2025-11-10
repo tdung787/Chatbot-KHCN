@@ -1,0 +1,34 @@
+c) [S] Quãng đường đi được của ô tô là: 6 + 4 + 3 = 13 (km)
+d)[Đ] + Độ dịch chuyển:
+Ta có: BH = CD = 3 km; HD = BC = 4 km;
+AH = AB - BH = 6 - 3 = 3 kmAD= √ AH2+HD2= √ 32+42=5(km)
+Câu 4 : Một con kiến chuyển động từ điểm A đến B
+rồi lại quay lại điểm C (C là điểm chính giữa AB). Biết
+AB bằng 100 cm. Chọn trục Ox trùng với AB, gốc O
+trùng với A, chiều dương hướng từ A đến B.
+a) Quãng đường khi con kiến đi từ A đến B là 100cm.
+b) Quãng đường con kiến đi từ A đến B rồi về C là 50cm.
+c) Độ dời của con kiến khi đi từ A đến B rồi về C là 150cm.
+d) Độ dời của con kiến khi đi từ A đến B rồi quay lại về A là 200cm.
+Hướng dẫn giải
+a) [Đ] Quãng đường khi con kiến đi từ A đến B là 100cm.
+b) [S] Quãng đường con kiến đi từ A đến B rồi về C là 150cm.
+c) [S] Độ dời của con kiến khi đi từ A đến B rồi về C là 50cm.
+d) [S] Độ dời của con kiến khi đi từ A đến B rồi quay lại về A là 0cm.
+Câu 5 : Em của An chơi trò tìm kho báu ở ngoài vườn với
+các bạn của mình. Em của An giấu kho báu của mình là
+một chiếc vòng nhựa vào trong một chiếc giày rồi viết
+mật thư tìm kho báu như sau: Bắt đầu từ gốc cây ổi, đi
+10 bước về phía bắc, sau đó đi 4 bước về phía tây, 15
+bước về phía nam, 5 bước về phía đông và 5 bước về phía
+bắc là tới chỗ giấu kho báu.
+a) Quãng đường phải đi (theo bước) để tìm ra kho báu
+là 15 bước.
+b) Vị trí kho báu cách cây ổi 1 bước theo hướng đông.
+c) Độ dịch chuyển để tìm ra kho báu là d = 39 bước
+(theo hướng đông).
+d) Quãng đường phải di chuyển để tìm được kho báu
+và trở về vị trí bắt đầu là 40 bước.
+Hướng dẫn giải
+a) Quãng đường phải đi (theo bước) để tìm ra kho
+báu là s = 10 + 4 + 15 + 5 + 5 = 39 bước

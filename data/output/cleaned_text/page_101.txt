@@ -1,0 +1,35 @@
+a) Khi đi từ tầng G xuống tầng hầm.
+Quãng đường s = 5m;
+độ dịch chuyển d = 5m (xuống dưới).
+b) Khi đi từ tầng hầm lên tầng cao nhất.
+Quãng đường s = 5 + 50 = 55 m;
+độ dịch chuyển d = 5 + 50 = 55 m (lên
+trên).
+c) Trong cả chuyến đi.
+Quãng đường s = 5 + 5 + 50 = 60 m;
+độ dịch chuyển d = 5 – 5 + 50 = 50 m
+(lên trên).
+Câu 10: Một người lái xe ô tô đi thẳng 6 km theo
+hướng Tây, sau đó rẽ trái đi thẳng theo hướng Nam 4
+km rồi quay sang hướng Đông đi 3 km. Xác định quãng
+đường đi được và độ dịch chuyển của ô tô.
+Hướng dẫn giải
++ Quãng đường đi được của ô
+tô là:
+6 + 4 + 3 = 13 (km)
++ Độ dịch chuyển: AD
+Ta có: BH = CD = 3 km; HD =
+BC = 4 km;
+AH = AB - BH = 6 - 3 =
+3 km
+AD= √ AH2+HD2
+√
+¿ 32+42=5(km)
+Câu 11: Một người bơi ngang từ bờ bên
+này sang bờ bên kia của một dòng sông
+rộng 50 m có dòng chảy theo hướng từ
+Bắc xuống Nam. Do nước sông chảy mạnh
+nên khi sang đến bờ bên kia thì người đó
+đã trôi xuôi theo dòng nước 50 m. Xác
+định độ dịch chuyển của người đó.
+Hướng dẫn giải

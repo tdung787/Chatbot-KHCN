@@ -1,0 +1,32 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+g. [S]
+Từ giây 4 đến giây 8:
++ Tốc độ: v = s/t = 4/4 = 1 (m/s)
+∆d 0−4 (m )
++ Vận tốc: v= = =−1
+∆t 8−4 s
+h. [S]
+Từ đồ thị, ta thấy quãng đường đi được của xe sau 10 giây chuyển động
+là:
+s = 4 + 4 + 1 = 9 (m)
+Độ dịch chuyển của xe sau 10 giây là: d = −1 − 0 = −1 (m)
+ Quãng đường và độ dịch chuyển của xe sau 10 giây không giống nhau
+vì xe chuyển động theo 2 chiều.
+Câu 2 :
+Chọn hệ tọa độ Oxy với O là vị trí bắn viên bi, chiều dương của trục Oy là
+chiều từ dưới lên và chiều dương trục Ox là chiều từ trái sang phải, gốc
+thời gian là thời điểm bắt đầu ném.
+a.[Đ]
+Vận tốc của viên bi theo phương ngang tại thời điểm ban đầu:
+.
+Vận tốc của viên bi theo phương thẳng đứng tại thời điểm ban đầu:
+.
+Thời gian viên bi đạt tầm cao H:
+b.[S]
+Tầm cao H là
+c.[Đ]
+Thời gian viên bi chạm sàn là .
+d.[S]
+Tầm xa của viên bi là
+500

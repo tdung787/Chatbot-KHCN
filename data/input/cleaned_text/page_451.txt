@@ -1,0 +1,36 @@
+c. [Đ]Khi 2 xe gặp nhau: d =d
+A B
+với d = 40.t(1)
+A
+d = d +d ,
+B B1 B2
+Từ (1),(2) 40t=750+50t-1000 suy ra t=25s
+=>Chọn Đúng.
+d.[Đ] Khi 2 xe gặp nhau d =d = 40.25=1000m
+A B
+=>Chọn Đúng.
+Câu 2:
+Quãng đường mà vật rơi tự do đi được sau khoảng thời gian t tính công
+thức:
+gt2
+s=
+a. [Đ]
+Quãng đường mà vật rơi tự do đi được sau khoảng thời gian t = 3 s là:
+g32
+s = =4,5 g=44,1 m
+3 2
+=>Chọn Đúng.
+b. [Đ]
+Vận tốc của vật sau 2s: v = gt = 19,6m/s
+=>Chọn Đúng.
+c. [S]
+Quãng đường mà vật rơi tự do đi được sau khoảng thời gian t = 4 s là :
+g42
+s = =8 g= 78,4 m
+4 2
+Quãng đường mà vật rơi tự do đi được trong giây thứ tư là
+Δs = s - s = 8 g - 4,5 g = 3,5 g = 3,5.9,8 = 34,3 m
+4 3
+=>Chọn Sai
+d.[Đ]
+Vận tốc của vật rơi tự do tính theo công thức : v = gt

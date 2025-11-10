@@ -1,0 +1,64 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Hướng dẫn giải
+Δt 0,13
+Độ sâu mực nước biển: h=υ. =1500. ≈97,5m
+2 2
+Câu 8: Cho một xe ô tô chạy trên một quãng
+đường trong 5h. Biết 2h đầu xe chạy với tốc độ
+trung bình 60km/h và 3h sau xe chạy với tốc độ
+trung bình 40km/h. Tính tốc trung bình của xe
+trong suốt thời gian chuyển động.
+Hướng dẫn giải
++ Ta có tốc trung bình của xe trong suốt thời gian chuyển động là:
+s +s
+v = 1 2
+tb t +t
+1 2
++ Quãng đường đi trong 2h đầu: s = v .t = 120 km
+1 1 1
+quãng đường đi trong 3h sau: s = v .t = 120 km
+2 2 2
+s +s 120+120 km
+v = 1 2= =48( )
+tb t +t 2+3 h
+1 2
+Câu 9: Một ôtô đi trên con đường bằng phẳng trong thời gian 10 phút
+với v = 60 km/h, sau đó lên dốc 3 phút với v = 40km/h. Coi ôtô chuyển
+động thẳng đều. Tính quãng đường ôtô đã đi trong cả giai đoạn.
+Hướng dẫn giải
+1 1
++ Theo bài ra ta có. t = (h);t = (h)
+1 6 2 20
+1
+Mà S =v .t =60. =10(km); S =v .t =2km  S = S + S = 10 + 2 = 12 ( km )
+1 1 1 6 2 2 2 1 2
+Câu 10: Một người đi xe máy chuyển động theo 3 giai đoạn: Giai đoạn
+1 chuyển động thẳng đều với v = 30 km/h trong 10km đầu tiên; giai
+1
+đoạn 2 chuyển động với v = 40km/h trong 30 phút; giai đoạn 3 chuyển
+2
+động trên 4km trong 10 phút. Tính tốc độ trung bình trên cả đoạn
+đường.
+Hướng dẫn giải
+S 10 1
+xe máy chuyển động giai đoạn đầu t = 1= = (h) ;
+1 v 30 3
+1
+1
++ Quãng đường giai đoạn hai chuyển động S =v t =40. =20(km)
+2 2 2 2
++ Tổng quãng đường và thời gian vật chuyển động
+S=S +S +S =10+20+4=34(km)
+1 2 3
+1 1 1
+t=t +t +t = + + =1h
+1 2 3 3 2 6
+S 34
+⇒ v = = =34(km/h)
+tb t 1
+Câu 11: Trong 1 lần thử xe ôtô, người ta đo được vị trí của xe sau
+những khoảng thời gian bằng nhau. (xem bảng) Hãy xác định tốc độ
+trung bình của ôtô trong:
+x 0 2,3 9,2 20,7 36,8 57,5
+127

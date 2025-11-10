@@ -1,0 +1,43 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Câu 7. Một vật được ném từ một điểm M ở độ cao h = 45 m với vận
+tốc ban đầu v = 20 m/s lên trên theo phương hợp với phương nằm
+0
+ngang một góc 450. Lấy g = 10 m/s2, bỏ qua lực cản của không khí.
+1
+a. Viết phương trình quỹ đạo của vật là x− x2 ⎕
+40
+b. Quỹ đạo của vật có dạng là đường Parabol ⎕
+c. Thời gian vật bay trong không khí là 2s ⎕
+d. Tầm bay xa của vật là 66,9 m ⎕
+Câu 8. Từ một mái nhà cao 50m, một viên pháo được bán đi với vận
+tốc có độ lớn 20 m/s, nghiêng 600 so với phương ngang. Cho g = 10 m/s2.
+1
+a. Phương trình quỹ đạo của viên pháo là 50+√3 x− x2 ⎕
+20
+b. Thời gian bay của viên pháo kể từ khi được bắn cho đến khi
+⎕
+chạm đất là 5,34 s
+c. Viên pháo chạm đất cách điểm bắn một khoảng so với phương
+⎕
+ngang là 35 m
+d. Vận tốc của viên pháo khi chạm đất là 37,5 m/s ⎕
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câu 1: Một vật được ném xiên từ mặt đất với vận tốc ban đầu có độ lớn
+v0 = 50m/s. Khi lên tới điểm cao nhất, vận tốc của vật có độ lớn là
+40m/s. Bỏ qua sức cản của không khí, lấy g = 10 m/s2. Tầm xa của vật là
+bao nhiêu m?
+Đáp
+án:
+Câu 2: Một diễn viên biểu diễn mô tô bay đang phóng xe trên mặt
+dốc nằm nghiêng 300 để bay qua các ô tô như trong hình 12.3. Biết vận
+tốc của xe mô tô khi rời khỏi đỉnh dốc là 14 m/s. Chiều cao của ô tô
+bằng chiều cao của dốc, chiều dài của ô tô là 3,2 m. Lấy g = 10 m/s2.
+Mô tô có thể bay qua được nhiều nhất là bao nhiêu ô tô?
+434

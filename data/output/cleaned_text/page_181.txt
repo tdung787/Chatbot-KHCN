@@ -1,0 +1,50 @@
+Hướng dẫn giải
+- Giá trị trung bình của thời gian:
+t +t +t
+t= 1 2 3=0,778(s)
+ Sai số tuyệt đối mỗi lần đo:
+∆t =|t −t|=0,001(s);∆t =|t −t|=0,002(s);∆t =|t −t|=0,002(s);
+1 1 2 2 3 3
+ Sai số tuyệt đối trung bình:
+t +t +t
+t= 1 2 3=0,002(s)=t
+- Δs bằng nửa ĐCNN của thước đo nên: Δs = 0,0005 (s)
+- Tốc độ trung bình:
+s 0,5
+v= = =0,643m/s
+t 0,778
+Câu 2. Thí nghiệm đo tốc độ của viên bi thép, số liệu thu được như bảng
+Đường kính của viên bi: d = 0,02 (m); sai số: 0,02 mm = 0,00002 (m)
+Giá trị trung
+Lần đo
+bình
+Lần 1 Lần 2 Lần 3
+Thời gian …………
+0,033 0,032 0,031
+s
+t
+i
+Sai số tuyệt đối của phép đo tốc độ tức thời là bao nhiêu 10-2m/s (kết
+quả lấy đến 2 chữ số sau dấu phẩy thập phân)
+Đáp 0 , 1
+án:
+Hướng dẫn giải
+- Giá trị trung bình của thời gian:
+t +t +t
+t= 1 2 3=0,032(s)
+ Sai số tuyệt đối mỗi lần đo:
+∆t =|t −t|=0,001(s);∆t =|t −t|=0,000(s);∆t =|t −t|=0,001(s);
+1 1 2 2 3 3
+ Sai số tuyệt đối trung bình:
+t +t +t
+t= 1 2 3=0,001(s)=t
+- Tốc độ tức thời:
+d 0,02 m
+v= = =0,625( )
+t 0,032 s
+∆v ∆ d ∆t ∆v 0,00002 0,001
+- Sai số: v = d + t  = +  = + v=0,001m/s
+v d t 0,6 0,02 0,032
+Câu 3. Đường kính của một hòn bi đo bởi thước kẹp trong 5 lần đo bằng
+2,620cm; 2,625cm; 2,630cm; 2,628cm và 2,626cm. Bỏ qua sai số dụng
+cụ. Sai số tỉ đối bằng bao nhiêu %?

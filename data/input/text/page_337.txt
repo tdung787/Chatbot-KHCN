@@ -1,0 +1,48 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+0−4
++ Gia tốc: a = =−0,2m/s2
+3 20
++ Vận tốc: v =v +a .t=4−0,2t
+3 03 3
+1
++ Độ dịch chuyển: d =v t+ a t2=4t−0,1t2
+3 03 2 3
+Thay t = 1s được d = 3,9m
+3
+4 Tự luận (3,0 điểm)
+a) Xét vật A:
+Gia tốc:
+∆ v 0−40
+a = A= =−2m/s2
+A ∆ t 20−0
+A
+Phương trình vận tốc của vật A: v = 40
+A
+− 2t (m/s)
+Xét vật B:
+Gia tốc
+∆ v 20−0
+a = B= =1m/s2
+B ∆t 20−0
+B
+Phương trình vận tốc của vật B: v = t
+B
+(m/s)
+Hai vật có cùng vận tốc khi: v = v ⇔ 40 − 2t = t ⇔ t = 13,3 s
+1 2
+Vậy hai vật có cùng vận tốc tại thời điểm t = 13,3 s.
+b) Chuyển động của vật A: d = v t + ½.a t2 = 40t − t2 (1)
+1 0A A
+Chuyển động của vật B: d = v t + ½.a t2 = 0,5t2 (2)
+2 0B B
+c) Hai vật gặp nhau khi d - d = 78 ⇒ 40t − t2 − 0,5t2 = 78  − 1,5t2 +
+1 2
+40t – 78 = 0
+Phương trình (3) cho hai nghiệm t = 2,12 s và t’ = 24,5 s (loại vì t’ > 20
+s)
+Thay t vào (1) ta được d = 80,3 m.
+1
+Hai vật gặp nhau cách vị trí ban đầu của A là 80,3 m.
+Chủ đề 6 SỰ RƠI TỰ DO
+337

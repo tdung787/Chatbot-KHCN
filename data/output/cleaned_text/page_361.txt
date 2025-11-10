@@ -1,0 +1,35 @@
+Câu 11. (SBT-KNTT) Thả một hòn sỏi từ độ cao h xuống đất. Hòn sỏi
+rơi trong 2 s. Nếu thả hòn sỏi từ độ cao 2 h xuống đất thì hòn sỏi sẽ rơi
+trong bao lâu?
+A. 2 s. B. 2√2 s. C. 4 s.
+D. 4√2 s.
+<Đáp án: D>
+
+Câu 12 (SBT-KNTT) Thả vật rơi tự do từ độ cao h xuống đất. Công
+thức tính vận tốc của vật khi chạm đất là:
+A. v=2√gh B. v = gh C. v = 2gh D. v=√gh
+<Đáp án: A>
+
+Câu 1: Một vật rơi không vận tốc đầu từ đỉnh tòa nhà chung cư có độ
+cao 320m xuống đất. Cho g = 10m/s2.
+a. Vận tốc lúc vừa chạm đất là 80m/s ⎕
+b. Thời gian của vật rơi là 80s ⎕
+c. Quãng đường vật rơi được trong 6s là 160m ⎕
+d. Quãng đường vật rơi được trong 6s cuối cùng là 300m ⎕
+<Đáp án: A>
+
+Câu 2: Một người thả rơi một hòn bi từ trên cao xuống đất và đo được
+thời gian rơi là 3,1 s. Bỏ qua sức cản không khí. Lấy g = 10 m/s2 .
+a. Độ cao của nơi thả hòn bi so với mặt đất là 48,05m ⎕
+b. Vận tốc lúc hòn bi chạm đất là 31,5 m/s ⎕
+c. Quãng đường vật rơi được trong 2 giây là 20m ⎕
+d. Quãng đường vật rơi được trong giây thứ 2 là 15m ⎕
+<Đáp án: A>
+
+Câu 1. Thả một hòn đá từ độ cao h = 5 xuống mặt đất, hòn đá rơi
+trong 0,5s. Nếu thả hòn đá từ độ cao h’ xuống đất mất
+1,5s thì h’ bằng bao nhiêu?
+(kết quả lấy đến 0 chữ số thập phân, theo đơn vị
+m)
+Đáp
+án:

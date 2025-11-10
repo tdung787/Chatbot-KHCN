@@ -1,0 +1,9 @@
+D. Nhanh dần đều vectơ gia tốc cùng chiều chuyển động.  
+A. Vectơ gia tốc ngược chiều với vectơ vận tốc.  
+C. Vận tốc đầu khác không.  
+D. D = V₀t + at²/2.  
+C. A = 0.  
+A. D > 0; a > 0; v > V₀.  
+B. Muốn tính đường đi của chuyển động thẳng đều ta lấy vận tốc nhân với thời gian.  
+B. Vận tốc có giá trị (-); gia tốc có giá trị (-).  
+B. Có độ lớn không đổi.

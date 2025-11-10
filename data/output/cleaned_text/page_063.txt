@@ -1,0 +1,40 @@
+Sai số tuyệt đối của phép đo là bao nhiêu kg ?( Kết quả lấy đến 1 chữ số
+sau dấu phẩy thập phân).
+Đáp 0 , 2
+án:
+Hướng dẫn giải
+Giá trị trung bình khối lượng của túi trái cây là:
+m +m +m +m 4,2+4,4+4,4+4,2
+m= 1 2 3 4= =4,3kg
+4 4
+Sai số tuyệt đối ứng với mỗi lần đo là:
+Δm =|m−m |=|4,3−4,2|=0,1kg
+1 1
+Δm =|m−m |=|4,3−4,4|=0,1kg
+2 2
+Δm =|m−m |=|4,3−4,4|=0,1kg
+3 3
+Δm =|m−m |=|4,3−4,2|=0,1kg
+4 4
+Sai số tuyệt đối trung bình của phép đo:
+Δm +Δm +Δm +Δm 0,1+0,1+0,1+0,1
+Δm= 1 2 3 4 = =0,1kg
+4 4
+Sai số tuyệt đối của phép đo là:
+∆m=∆m+∆m =0,1+0,1=0,2kg
+dc
+Câu 12: Đường kính của một sợi dây đo bởi thước pame trong 5 lần đo
+bằng 2,620cm; 2,625cm; 2,630cm; 2,628c và 2,626cm. Bỏ qua sai số
+dụng cụ. Sai số tỉ đối bằng bao nhiêu %? (Kết quả lấy đến 1 chữ số sau
+dấu phẩy thập phân).
+Đáp 0 , 1
+án:
+Hướng dẫn giải
+Giá trị đường kính trung bình:
+2,620+2,625+2,630+2,628+2,626
+d= =2,6258cm≈2,626cm
+Sai số tuyệt đối của phép đo: Δd=Δd+Δd mà bỏ qua sai số dụng cụ nên
+dc
+|2,626−2,620|+|2,626−2,625|+|2,626−2,630|+|2,626−2,628|+|2,626−2,626|
+Δd=Δd= =0,0026
+cm.

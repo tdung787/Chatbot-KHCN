@@ -1,0 +1,51 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+s =v ×t=24km và s =v ×t=16 km
+A 13 B 23
+Câu 2: Một chiếc thuyền chuyển động thẳng đều với vận tốc 10m/s so
+với mặt biển, còn mặt biển tĩnh lặng. Một người đi đều trên sàn thuyền
+có vận tốc 1m/s so với thuyền.
+a. Gọi + ⃗v là vận tốc của người so với mặt nước biển. ⎕
+13
++ ⃗v là vận tốc của người so với thuyền
+12
++ ⃗v là vận tốc của thuyền so với mặt nước biển.
+23
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+23 12 13
+b. Vận tốc của người đó so với mặt nước biển khi người và thuyền ⎕
+chuyển động cùng chiều là 11m/s
+c. Vận tốc của người đó so với mặt nước biển khi người và thuyền ⎕
+chuyển động ngược chiều là 8 m/s
+d. Vận tốc của người đó so với mặt nước biển khi người và thuyền ⎕
+chuyển động vuông góc là 12 m/s
+Hướng dẫn giải
+a. [ S]
+Gọi + ⃗v là vận tốc của người so với mặt nước biển.
+13
++ ⃗v là vận tốc của người so với thuyền
+12
++ ⃗v là vận tốc của thuyền so với mặt nước biển.
+23
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+b. [Đ] Khi cùng chiều: v = v + v = 1 + 10 = 11m/s
+13 12 23
+c. [ S] Khi ngược chiều: v = v – v = 10 – 1 = 9m/s
+13 23 12
+d. [ S] Khi vuông góc: v = √ v2 +v 2= √ 102+12=10,05m/s
+13 12 23
+Câu 3: Một người đi bằng thuyền với tốc độ 2,0 m/s về
+phía đông. Sau khi đi được 2,2 km, người này lên ô tô đi về
+phía bắc trong 15 phút với tốc độ 60 km/h.
+a. Tổng quãng đường người đó đã đi là 15km ⎕
+b. Độ lớn độ dịch chuyển tổng hợp là 15,16 km ⎕
+c. Tổng thời gian người đó đi là 16,1 phút ⎕
+d. Tốc độ trung bình của người này là 8,6 m/s ⎕
+Hướng dẫn giải
+a.[ S]
+Quãng đường người đó đi về phía bắc là: s = v .t = 60.15/60 = 15 (km)
+2 2 2
+Tổng quãng đường đã đi là: s = s + s = 2,2 + 15 = 17,2 (km)
+1 2
+149

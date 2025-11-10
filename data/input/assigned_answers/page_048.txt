@@ -1,0 +1,64 @@
+Câu 35: Trước khi đo thời gian của một hoạt động ta thường ước lượng
+khoảng thời gian của hoạt động đó để
+A. lựa chọn đồng hồ đo phù hợp. 
+B. đặt mắt đúng cách. 
+C. đọc kết quả đo chính xác. 
+D. hiệu chỉnh đồng hồ đúng cách
+<Đáp án: A>
+
+Câu 36: Cho các bước đo thời gian của một hoạt động gồm:
+(1) Đặt mắt nhìn đúng cách.
+(2) Ước lượng thời gian hoạt động cần đo để chọn đồng hồ thích hợp.
+(3) Hiệu chỉnh đồng hồ đo đúng cách.
+(4) Đọc, ghi kết quả đo đúng quy định.
+(5) Thực hiện phép đo thời gian.
+Thứ tự đúng các bước thực hiện để đo thời gian của một hoạt động là:
+A. (1), (2), (3), (4), (5) 
+B. (3), (2), (5), (4), (1) 
+C. (2), (3), (1), (5), (4) 
+D. (2), (1), (3), (5), (4).
+<Đáp án: C>
+
+Câu 37: Nguyên nhân nào sau đây gây ra sai số khi đo thời gian của
+một hoạt động?
+A. Không hiệu chỉnh đồng hồ. 
+B. Đặt mắt nhìn lệch. 
+C. Đọc kết quả chậm. 
+D. Cả ba nguyên nhân trên.
+<Đáp án: D>
+
+Câu 38: Nhiệt kết thủy ngân không thể đo nhiệt độ nào trong các
+nhiệt độ sau?
+A. Nhiệt độ của nước đá. 
+B. Nhiệt độ cơ thể người. 
+C. Nhiệt độ khí quyển. 
+D. Nhiệt độ của một lò luyện
+kim.
+<Đáp án: D>
+
+Câu 39: Cho các bước sau:
+(1) Thực hiện phép đo nhiệt độ. 
+(2) Ước lượng nhiệt độ của
+vật.
+(3) Hiệu chỉnh nhiệt kế. 
+(4) Lựa chọn nhiệt kế phù
+hợp.
+(5) Đọc và ghi kết quả đo.
+Các bước đúng khi thực hiện đo nhiệt độ của một vật là:
+A. (2), (4), (3), (1), (5) 
+B. (1), (4), (2), (3), (5) 
+C. (1), (2), (3), (4), (5) 
+D. (3), (2), (4), (1), (5).
+<Đáp án: A>
+
+Câu 40: Dung nói rằng, khi sử dụng nhiệt kết thủy ngân phải chú ý
+bốn điểm sau. Dung đã nói sai ở điểm nào ?
+A. Giới hạn đo và độ chia nhỏ nhất của nhiệt kế. 
+B. Không cầm vào bầu nhiệt kế khi đo nhiệt độ. 
+C. Hiệu chỉnh về vạch số 0. 
+D. Cho bầu nhiệt kế tiếp xúc với vật cần đo nhiệt độ.
+<Đáp án: C>
+
+Câu 41: Hình vẽ bên mô
+tả nhiệt kế dùng chất lỏng.
+Làm thế nào để tăng độ

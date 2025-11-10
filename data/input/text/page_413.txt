@@ -1,0 +1,49 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+3. a) Vận tốc của viên bi có độ lớn cực tiểu ở vị trí nào ?
+b) Viên bi có vận tốc cực tiểu vào thời điểm nào ?
+4. a) Khi nào viên bi chạm sàn ?
+b) Xác định vận tốc của viên bi khi chạm sàn.
+c) Xác định tầm xa L của viên bi
+Hướng dẫn giải
+Chọn hệ tọa độ Oxy với O là vị trí bắn viên bi, chiều dương của trục Oy là
+chiều từ dưới lên và chiều dương trục Ox là chiều từ trái sang phải, gốc
+thời gian là thời điểm bắt đầu ném.
+1)
+ Vận tốc của viên bi theo phương ngang tại thời điểm:
+- Ban đầu: v =v .cosα=4.cos450=2√2m/s.
+0x 0
+- Sau 0,1s và 0,2s: v =v =2√2m/s (theo phương ngang viên bi chuyển
+x 0x
+động đều).
+ Vận tốc của viên bi theo phương thẳng đứng tại thời điểm:
+- Ban đầu: v =v .sin α=4.sin450=2√2m/s.
+0 y 0
+- Sau 0,1s: v =v −¿=2√2−9,8.0,1≈1,85m/s.
+y 0y
+- Sau 0,2s: v =v −¿=2√2−9,8.0,2≈0,87m/s.
+y 0y
+2)
+v 2√2
+a. Thời gian viên bi đạt tầm cao H: t= 0 y= ≈0,29s
+g 9,8
+v2 (2√2)2
+b. Tầm cao H là H= 0y = ≈0,4 m
+2.g 2.9,8
+c. Gia tốc của viên bi ở tầm cao H: a=g=9,8m/s2.
+3)
+a. Vận tốc của viên bi có độ lớn cực tiểu khi vật đạt tầm cao H.
+b. Viên bi có vận tốc cực tiểu khi chạm sàn.
+4)
+a. Thời gian viên bi chạm sàn là t '=2.t=2.0,29=0,58s.
+b. Vận tốc của viên bi khi chạm sàn là
+√
+v= v2+v2
+x y
+v =v =2√2m/s
+x 0x
+v =v −g.t=2√2−9,8.0,58≈−2,86m/s
+y 0y
+⇒ v= √ v2+v2= √ (2√2)2+(−2,86)2≈4,02m/s
+x y
+413

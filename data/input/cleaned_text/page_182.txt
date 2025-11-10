@@ -1,0 +1,42 @@
+Đáp 0 , 1
+án:
+Hướng dẫn giải
+d +d +…+d
+d= 1 2 5=2,626cm
+d +d +…+d
+d= 1 2 5=¿0,003cm
+d
+d= =0,1%
+d
+Câu 4: Để xác định tốc độ của một vật chuyển động đều, một người đã
+đo quãng đường vật đi được bằng (16,0± 0,4)m trong khoảng thời gian là
+(4,0±0,2) s. Tốc độ trung bình của vật là bao nhiêu m/s?
+Đáp 4
+án:
+Hướng dẫn giải
+s
+v= =4m/s
+t
+Câu 5. Một vật chuyển động đều với quãng đường vật đi được
+d=(13,8±0,2)m trong khoảng thời gian t=(4,0±0,3)s. Phép đo vận tốc có sai
+số tỉ đối gần đúng bằng bao nhiêu m/s? (kết quả lấy đến 1 chữ số sau
+dấu phẩy thập phân)
+Đáp 8 , 9
+án:
+Hướng dẫn giải
+d t
+δv=δd+δt= + = 8,9%
+d t
+Câu 6: Dùng một thước chia độ đến milimét để đo khoảng cách l giữa
+hai điểm A, B và có kết quả đo là 600 mm. Lấy sai số dụng cụ là một độ
+chia nhỏ nhất. Cách ghi đúng với số chữ số có nghĩa của phép đo là: ℓ =
+(..... ± 0,1) cm. Điền vào dấu .....
+Đáp 6 0
+án:
+Hướng dẫn giải
+ℓ = (60,0 ± 0,1) cm.
+4 Tự luận
+Câu 1: Tìm hiểu thang đo thời gian và
+chức năng của các chế độ đo (MODE)
+trên đồng hồ đo thời gian hiện số (Hình
+6.1)

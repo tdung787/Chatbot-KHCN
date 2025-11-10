@@ -1,0 +1,50 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 44: Một vật được ném theo phương ngang với vận tốc
+⃗v từ độ cao h so với mặt đất. Chọn hệ trục toạ độ Oxy sao cho gốc O
+0
+trùng với vị trí ném, Ox theo phương vận tốc ban đầu, Oy hướng thẳng
+đứng xuống dưới, gốc thời gian là lúc ném. Độ lớn vận tốc của vật tại
+thời điểm t xác định bằng biểu thức:
+A. v = v + gt B. v = √ v2+g2t2 C. v = √v +¿ D. v = gt
+0 0 0
+Câu 45: Một hòn bi lăn dọc theo một cạnh của một mặt bên
+hình chữ nhật nằm ngang cao 1,25m. Khi ra khỏi mép, nó rơi xuống nền
+nhà tại điểm cách mép bàn 1,50m (theo phương ngang). Lấy g = 10m/s2.
+Thời gian chuyển động và tốc độ của bi lúc rời bàn?
+A. 0,35s; 4,28m/s B. 0,125s; 12m/s C. 0,5s; 3m/s D. 0,25s;
+6m/s
+Câu 46: Một quả bóng được ném theo phương ngang với
+vận tốc ban đầu v = 25m/s và rơi xuống đất sau t = 3s. Bỏ qua lực cản
+0
+của không khí và lấy g = 9,8m/s2. Hỏi quả bóng đã được ném từ độ cao
+nào và tầm bay xa của quả bóng là bao nhiêu?
+A. 49m; 72m. B. 45m; 75m. C. 44,1m; 75m. D. 50m;
+75m.
+Câu 47: Một vật được ném ngang từ độ cao z = 9m. Vận tốc
+ban đầu v . Vật bay xa 18m. Tính v , cho g = 10m/s2.
+0 0
+A. 10m/s. B. 20m/s. C. 13,4m/s. D.
+3,18m/s.
+Câu 48: Một máy bay, bay với vận tốc không đổi v theo
+0
+phương ngang ở độ cao h so với mặt đất và thả rơi một vật. Nếu h =
+3000m; v = 100 m/s. Hãy xác định thời gian rơi và tầm ném xa của vật.
+0
+A. t = 24,7 s; L = 2470 m
+B. t = 2,47 s; L = 2470 m
+C. t = 24,7 s; L = 247 m
+D. t = 2,47 s; L = 247 m
+Câu 49: Một máy bay, bay với vận tốc không đổi v theo
+0
+phương ngang ở độ cao h so với mặt đất và thả rơi một vật. Khi h =
+1500m. Xác định v để quãng đường mà vật đi được theo phương ngang
+0
+kể từ lúc thả ra cho đến khi chạm đất bằng 2000m. Lấy g = 9,8 m/s2.
+A. v = 114,33 m/s B. 200m/s. C. 113,4m/s. D. 318m/s.
+0
+Câu 50: Một viên bi được ném theo phương ngang với vận
+tốc 2 m/s từ độ cao 5 m so với mặt đất. Lấy g = 10 m/s2. Tầm ném xa của
+viên bi là
+A. 2,82 m. B. 1 m. C. 1,41 m. D. 2 m.
+391

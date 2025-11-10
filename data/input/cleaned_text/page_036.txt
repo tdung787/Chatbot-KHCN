@@ -1,0 +1,24 @@
+b. Vặn núm quay về bên trái để đo cường ⎕
+độ dòng điện
+c. Vặn núm về bên trái để đo hiệu điện ⎕
+thế
+d. AC là đo dòng một chiều, DC là đo dòng ⎕
+xoay chiều.
+3 Tự luận (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 3. Mỗi câu 2 ý.
+Mỗi ý trả lời đúng thí sinh được 0,5 điểm
+Câu 1: Em hãy quan sát một số hình ảnh về các thí nghiệm trong hình
+và dự đoán có những nguy cơ cháy nổ nào có thể xảy ra trong phòng
+thực hành?
+Câu 2: Giới hạn đo của ampe kế ở hình 2.5 là
+bao nhiêu? Nếu sử dụng ampe kế để đo dòng
+điện vượt quá giới hạn đo thì có thể gây ra nguy
+cơ gì?
+HƯỚNG DẪN GIẢI
+ĐỀ
+1 Câu trắc nghiệm nhiều phương án lựa chọn (5 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câ Đáp Câ Đáp
+u án u án

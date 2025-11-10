@@ -1,0 +1,42 @@
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+d. Nút RESET: Đặt lại chỉ số của đồng hồ về giá trị 1s ⎕
+Hướng dẫn giải
+a. Đúng. MODE: Núm này dùng để chọn chế độ làm việc của đồng hồ.
+b. Đúng. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.
+c. Sai. MODE A↔B: Đo thời gian vật chuyển động từ cổng quang điện
+nối với ổ A tới cổng quang điện nối với ổ B.
+d. Sai. Nút RESET: Đặt lại chỉ số của đồng hồ về giá trị 0.000.
+Câu 4: Nhận định sau là đúng hay sai:
+a. Có thể đo tốc độ bằng bộ cổng quang điện và thời gian hiện ⎕
+số hoặc dùng xe kĩ thuật số
+b. Đồng hồ bấm giây: Nhanh, đơn giản, dễ thực hiện và độ ⎕
+chính xác cao
+c. Cổng quang điện: Kết quả không chính xác do không phụ ⎕
+thuộc vào người thực hiện
+d. Súng bắn tốc độ: Đo trực tiếp tốc độ tức thời với độ chính xác ⎕
+cao nhưng giá thành cao.
+Hướng dẫn giải
+a. Đúng. Có thể đo tốc độ bằng bộ cổng quang điện và thời gian hiện
+số hoặc dùng xe kĩ thuật số
+b. Sai. Đồng hồ bấm giây: Nhanh, đơn giản, dễ thực hiện nhưng Kém
+chính xác do phụ thuộc vào phản xạ của người bấm đồng hồ
+c. Sai. Cổng quang điện: Kết quả chính xác hơn do không phụ thuộc vào
+người thực hiện nhưng lắp đặt phức tạp, chỉ đo được cho các vật có kích
+thước phù hợp để có thể đi qua được cổng quang điện
+d. Đúng. Súng bắn tốc độ: Đo trực tiếp tốc độ tức thời với độ chính xác
+cao nhưng giá thành cao.
+3 Câu trắc nghiệm trả lời ngắn
+Câu 1. Thí nghiệm đo tốc độ của viên bi thép, số liệu thu được như bảng
+Quãng đường: s = 0,5 (m)
+Giá trị trung
+Lần đo
+Đại lượng bình
+Lần 1 Lần 2 Lần 3
+………
+Thời gian 0,777 0,780 0,776
+t
+i
+Tốc độ trung bình của biên bi là bao nhiêu m/s (kết quả lấy đến 2 chữ số
+sau dấu phẩy thập phân)
+Đáp 0 , 6 4
+án:

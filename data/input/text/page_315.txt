@@ -1,0 +1,47 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. Trong 4 s đầu.
+b. Từ giây thứ 4 đến giây thứ
+12.
+c. Từ giây thứ 12 đến giây thứ
+20.
+d. Từ giây thứ 20 đến giây thứ
+28.
+Hướng dẫn giải
+a. Trong 4 s đầu: Δv = 20 (m/s); Δt = 4(s)
+Δv 20
+⇒a= = =5(m/s2)
+Δt 4
+b. Từ giây thứ 4 đến giây thứ 12: Δv = 20 – 20 = 0 (m/s); Δt = 12 – 4
+= 8 (s)
+Δv
+⇒a= =0(m/s2)
+Δt
+c. Từ giây thứ 12 đến giây thứ 20: Δv = 0 – 20 = −20 (m/s); Δt = 20 –
+12 = 8(s)
+Δv −20
+⇒a= = =−2,5(m/s2)
+Δt 8
+d. Từ giây thứ 20 đến giây thứ 28: Δv = −20 – 0 = −20 (m/s); Δt = 28
+– 20 = 8(s)
+Δv −20
+⇒a= = =−2,5(m/s2)
+Δt 8
+Câu 2: Từ các đồ thị trong
+hình 9.1. Hãy viết công
+thức về mối liên hệ giữa v
+với a và t của từng chuyển
+động ứng với từng đồ thị
+trong hình 9.1. Chuyển
+động nào là chuyển động
+nhanh dần đều, chậm dần
+đều.
+Hướng dẫn giải
+- Đồ thị a: v = at
+- Đồ thị b: v = v + at (a > 0)
+0
+- Đồ thị c: v = v + at (a < 0)
+0
+- Chuyển động nhanh dần đều là: đồ thị a và b
+- Chuyển động chậm dần đều: đồ thị c
+315

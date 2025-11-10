@@ -1,0 +1,41 @@
+Câu 37: Một ô tô chạy trên đường thẳng. Ở 1/3 đoạn đầu của đường
+đi, ô tô chạy với tốc độ 40 km/h, ở 2/3 đoạn sau của đường đi, ô tô chạy
+với tốc độ 60 km/h. Tốc độ trung bình của ô tô trên cả đoạn đường là
+A. 120/7 km/h. B. 360/7 km/h. C. 55 km/h. D. 50 km/h.
+Câu 38: Tốc kế của một ôtô đang chạy chỉ
+70km/h tại thời điểm t. Để kiểm tra xem đồng hồ
+tốc kế đó chỉ có đúng không, người lái xe giữ
+nguyên vận tốc, một người hành khách trên xe nhìn
+đồng hồ và thấy xe chạy qua hai cột cây số bên
+đường cách nhau 1 km trong thời gian 1min. Số chỉ
+của tốc kế
+A. Bằng vận tốc của của xe
+C. Nhỏ hơn vận tốc của xe
+B. Lớn hơn vận tốc của xe
+D. Bằng hoặc nhỏ hơn vận tốc của xe
+Câu 39: Một ô tô chạy trên một đoạn đường thẳng từ địa điểm A đến
+địa điểm B phải mất một khoảng thời gian t. Tốc độ của ô tô trong một
+phần ba đầu của khoảng thời gian này là 30 km/h, trong một phần ba
+tiếp theo của khoảng thời gian này là 60 km/h. Tốc độ trung bình trong
+cả quá trình đi từ A đến B là 50 km/h. Tốc độ của ô tô trong một phần ba
+còn lại của khoảng thời gian t là
+A. 43 km/h. B. 100 km/h. C. 60 km/h.
+D. 47 km/h.
+Câu 40: Một người đi xe đạp trên một đoạn thẳng
+AB. Trên 1/3 đoạn đường đầu đi với vận tốc v = 20
+km/h, 1/3 đoạn giữa đi với vận tốc v = 15 km/h và
+đoạn cuối với vận tốc v = 10 km/h. Tốc độ trung
+bình của xe đạp trên cả đoạn đường AB gần giá trị
+nào nhất
+A. 18 km/h B. 9 km/h
+C. 15 km/h D. 14 km/h
+Câu 41: Một máy bay cất cánh từ Hà Nội đi
+Bắc Kinh vào hồi 9 giờ 30 phút theo giờ Hà
+Nội và đến Bắc Kinh vào lúc 14 giờ 30 phút
+cùng ngày theo giờ địa phương. Biết rằng giờ
+Bắc Kinh nhanh hơn giờ Hà Nội 1 giờ. Biết tốc
+độ trung bình của máy bay là 1000 km/h. Coi
+máy bay bay theo đường thẳng. Khoảng cách
+từ Hà Nội đến Bắc Kinh là
+A. 4000 km. B. 6000 km. C. 3000 km.
+D. 5000 km.

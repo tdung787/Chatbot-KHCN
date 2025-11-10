@@ -1,0 +1,65 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Đáp 4 8
+án:
+Hướng dẫn giải
++ Ta có tốc trung bình của xe trong suốt thời gian chuyển động là:
+s +s
+v = 1 2
+tb t +t
+1 2
++ Quãng đường đi trong 2h đầu: s = v .t = 120 km
+1 1 1
+quãng đường đi trong 3h sau: s = v .t = 120 km
+2 2 2
+s +s 120+120 km
+v = 1 2= =48( )
+tb t +t 2+3 h
+1 2
+Câu 2: Một người đi xe máy từ địa điểm A đến địa
+điểm B cách nhau 4,8km. Nửa quãng đường đầu, xe mấy
+đi với v , nửa quãng đường sau đi với v bằng một phần
+1 2
+hai v . Xác định v sao cho sau 15 phút xe máy tới địa
+1 1
+điểm B. Kết quả theo đơn vị m/s
+Đáp 8
+án:
+Hướng dẫn giải
+S S 4800 2400
++ Ta có S =v .t ⇒t = 1= = =
+1 1 1 1 v 2.v 2.v v
+1 1 1 1
+S S S 4800
+S =v .t ⇒t = 2= = =
++ 2 2 2 2 v v v v
+2 2. 1 1 1
+2
+2400 4800 ( m)
++ Mặt khác: t +t =900⇒ + =900⇒ v =8
+1 2 v v 1 s
+1 1
+Câu 3: Một người đi xe máy chuyển động theo 3 giai đoạn: Giai đoạn
+1 chuyển động thẳng đều với v = 30 km/h trong 10km đầu tiên; giai
+1
+đoạn 2 chuyển động với v = 40km/h trong 30 phút; giai đoạn 3 chuyển
+2
+động trên 4km trong 10 phút. Tính tốc độ trung bình trên cả đoạn đường
+theo đơn vị km/h
+Đáp 3 4
+án:
+Hướng dẫn giải
+S 10 1
++ Thời gian xe máy chuyển động giai đoạn đầu t = 1= = (h) ;
+1 v 30 3
+1
+1
++ Quãng đường giai đoạn hai chuyển động S =v t =40. =20(km)
+2 2 2 2
++ Tổng quãng đường và thời gian vật chuyển động
+S=S +S +S =10+20+4=34(km)
+1 2 3
+1 1 1
+t=t +t +t = + + =1h
+1 2 3 3 2 6
+123

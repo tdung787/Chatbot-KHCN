@@ -1,0 +1,42 @@
++ Từ 0h đến 3,25h: + Từ 0h đến 5,5h:
+∆d −30−0 ( km ) ∆d 80−0 ( km )
+Vậntốc:v= = =−9,2 Vậntốc:v= = =14,5
+∆t 3,25−0 h ∆t 5,5−0 h
+∆s 2.80+30 ( km) ∆s 3.80+2.30 ( km )
+Tốcđộ:v= = =58 Tốcđộ:v= = =54,5
+∆t 3,25−0 h ∆t 5,5−0 h
+Câu 12: Dựa vào đồ thị ở hình sau, xác định:
+a. Vận tốc của mỗi chuyển động.
+b. Phương trình của mỗi chuyển động.
+c. Vị trí và thời điểm các chuyển động gặp
+nhau.
+Hướng dẫn giải
+a)
+180−0 0−180 60−0
+v = =60km/hv = =−60km/hv = =20km/h
+1 3 2 3 3 3
+b) Phương trình chuyển động:
+d =60t(km)d =180−60t(km)d =20t(km)
+1 2 3
+c) (I) và (II) gặp nhau tại thời điểm t = 1,5 h cách điểm khởi hành của (I)
+là 90 km.
+(II) và (III) gặp nhau tại thời điểm t = 2,25 h cách điểm khởi hành của
+(III) là 45 km.
+Câu 13: Hình dưới là đồ thị độ dịch
+chuyển – thời gian của chuyển động của
+một xe máy đi giao hàng online chạy trên
+đường thẳng. Xe khởi hành từ địa điểm
+cách nới nhận hàng 200 m về phía bắc.
+1. a. Trong khoảng thời gian nào xe đi về
+phía bắc?
+b. Trong khoảng thời gian nào xe đi về phía nam?
+c. Trong khoảng thời gian nào xe dừng lại?
+2. Tính tốc độ trung bình và vận tốc trung bình của xe trong 60 s.
+Hướng dẫn giải
+1.
+a. Từ 0 đến 25 s: xe đi về hướng bắc.
+b. Từ 30 s đến 45 s: xe đi về hướng nam.
+c. Từ 25 s đến 30 s và từ 45 s đến 60 s: xe không chuyển động.
+2. Tốc độ trung bình: υ= =15m/s
+−300
+Vận tốc trung bình: v= =−5m/s

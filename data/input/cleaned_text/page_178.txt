@@ -1,0 +1,38 @@
+Câu 25. Để xác định tốc độ của một vật chuyển động đều, một người đã
+đo quãng đường vật đi được bằng (16,0± 0,4)m trong khoảng thời gian là
+(4,0±0,2) s. Tốc độ của vật là
+A. (4,0±0,3) m/s B. (4,0±0,6) m/s
+C. (4,0±0,2) m/s D. (4,0±0,1) m/s
+Câu 26. Một vật chuyển động đều với quãng đường vật đi được
+d=(13,8±0,2)m trong khoảng thời gain t=(4,0±0,3)s. Phép đo vận tốc có sai
+số tỉ đối gần đúng bằng
+A. ±2% B. ±3% C. ±6% D. ±9%
+Câu 27. Đường kính của một quả bóng bằng (5,2±0,2)cm. Sai số tỉ đối của
+phép đo thể tích quả bóng gần bằng giá trị nào sau đây
+A. 11% B. 4% C. 7%
+D. 9%
+Câu 28. Dùng thước thẳng có giới hạn đo là 20cm và độ chia nhỏ nhất là
+0,5cm để đo chiều dài chiếc bút máy. Nếu chiếc bút có độ dài cỡ 15cm
+thì phép đo này có sai số tuyệt đối và sai số tỷ đối là
+A. l = 0,25cm; Δl/¯l=1,67% B. l = 0,5cm; Δl/¯l=3,33%
+C. l = 0,25cm; Δl/¯l=1,25% D. l = 0,5cm; Δl/¯l=2,5%
+Câu 29. Dùng một thước chia độ đến milimét để đo khoảng cách l giữa
+hai điểm A, B và có kết quả đo là 600 mm. Lấy sai số dụng cụ là một độ
+chia nhỏ nhất. Cách ghi nào sau đây không đúng với số chữ số có nghĩa
+của phép đo?
+A. ℓ = (6,00 ± 0,01) dm. B. ℓ = (0,6 ± 0,001) m.
+C. ℓ = (60,0 ± 0,1) cm. D. ℓ = (600 ± 1) mm.
+2 Câu trắc nghiệm đúng sai
+Câu 1: Các phát biểu sau là đúng hay sai khi tiến hành đo tốc độ chuyển
+động của viên bi thép:
+a. Để đo tốc độ trong phòng thí nghiệm, ta cần đo diện tích và ⎕
+thời gian chuyển động của vật đó.
+b. Những dụng cụ chính để đo tốc độ tức thời gồm: Đồng hồ đo ⎕
+thời gian hiện số và cổng quang điện, viên bi, máng và thước
+thẳng
+c. Những dụng cụ chính để đo tốc độ tức thời trung bình gồm: ⎕
+Đồng hồ đo thời gian hiện số và cổng quang điện, viên bi, máng
+và thước thẳng có độ chia nhỏ nhất 1mm.
+d. Khi cắm cổng quang điện vào ổ cắm A, B cần chú ý xoay đúng ⎕
+khe định vị, cắm thẳng giác cắm, không rung, lắc chân cắm.
+Hướng dẫn giải

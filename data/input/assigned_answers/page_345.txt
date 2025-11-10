@@ -1,0 +1,50 @@
+Câu 43: Một vật được thả rơi tự do không vận tốc đầu từ độ cao h so
+với mặt đất. Thời gian vật rơi 10 m cuối cùng trước khi chạm đất là 0,2s.
+Tính độ cao h, tốc độ của vật khi chạm đất. Cho g = 10m/s2.
+A. 120,05m; 50m/s B. 130,05m; 51m/s
+C. 110,05m; 52m/s D. 110,05m; 21m/s
+<Đáp án: B>
+
+Câu 44: Một vật rơi tự do không vận tốc đầu tại nơi có gia tốc trọng
+trường g. Trong giây thứ 3, quãng đường rơi được là 25m và tốc độ của
+vật khi vừa chạm đất là 40m/s. Tính g và độ cao nơi thả vật.
+A. 10m/s2; 80m B. 10m/s2; 70m
+C. 10m/s2; 60m D. 10m/s2; 50m
+<Đáp án: A>
+
+Câu 45: Một vật được thả rơi tự do không vận tốc đầu từ độ cao h so
+với mặt đất tại nơi có gia tốc trọng trường g = 10m/s2. Quãng đường vật
+rơi trong nửa thời gian sau dài hơn quãng đường vật rơi trong nửa thời
+gian đầu 40m. Tính độ cao h và tốc độ của vật khi chạm đất.
+A. 70m; 40m/s B. 80m; 50m/s C. 70m; 40m/s
+D. 80m; 40m/s
+<Đáp án: D>
+
+Câu 46: Ở một tầng tháp cách mặt đất 45m, một người thả rơi một
+vật. Một giây sau, người đó ném vật thứ hai xuống theo hướng thẳng
+đứng. Hai vật chạm đất cùng lúc. Tính vận tốc ném vật thứ hai. ( g =
+10m/s2)
+A. 15/3 m/s B. 25/3 m/s C. 35/3 m/s
+D. 20/3 m/s
+<Đáp án: B>
+
+Câu 47: Một viên bi A được thả rơi từ độ cao 30m. Cùng lúc đó, một
+viên bi B được bắn theo phương thẳng đứng từ dưới đất lên với vận tốc
+25m/s tới va chạm vào bi A. Cho g = 10m/s2. Bỏ qua sức cản không khí.
+Tính thời điểm 2 viên bi gặp nhau.
+A. 1,2s B. 2,1s C. 3,1s D. 1,3s
+<Đáp án: A>
+
+Câu 48: Một viên bi A được thả rơi từ độ cao 30m. Cùng lúc đó, một
+viên bi B được bắn theo phương thẳng đứng từ dưới đất lên với vận tốc
+25m/s tới va chạm vào bi A. Cho g = 10m/s2. Bỏ qua sức cản không khí.
+Vận tốc mỗi viên bi khi gặp nhau.
+A. – 11m/s B. – 12m/s C. – 15m/s D. – 13m/s
+<Đáp án: D>
+
+Câu 49: Người ta thả rơi tự do hai vật A và B ở cùng một độ cao. Vật B
+được thả rơi sau vật A một thời gian là 0,1s. Hỏi sau bao lâu kể từ lúc
+thả vật A thì khoảng cách giữa chúng là 1m. Lấy g = 10m/s.
+A. 1,04s B. 1,01s C. 1,05s D.
+1,03s
+<Đáp án: C>

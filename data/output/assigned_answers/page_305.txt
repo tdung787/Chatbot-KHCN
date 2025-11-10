@@ -1,0 +1,47 @@
+a. Quãng đường mà xe A đi được từ thời
+điểm t = 0 đến t = 60s là
+A. 30 m B. 360 m
+C. 1800 m D. 3600 m
+<Đáp án: C>
+
+b. Sau bao lâu từ thời điểm t = 0 thì xe A
+đuổi kịp xe B
+A. 10 s B. 20 s
+C. 30 s D. 60 s
+<Đáp án: D>
+
+c. Khoảng thời gian và xe đã đi được quãng
+đường lớn nhất là
+A. từ t = 0 đến t = 30s, xe A B. từ t = 30
+đến t = 60s, xe A
+C. từ t = 0 đến t = 30s, xe B D. từ t = 30
+đến t = 60s, xe B
+<Đáp án: B>
+
+d. Dạng đồ thị nào dưới đây mô tả quãng đường mà xe B đi được theo
+thời gian khi xe B chuyển động từ t = 30 đến t = 60s
+A. Đồ thị (1) B. Đồ thị (2) C. Đồ thị (3) D. Đồ thị (4)
+<Đáp án: C>
+
+Câu 28: Dựa vào đồ thị vận tốc - thời gian v(m/s)
+của hình bên. Gọi a , a và a lần lượt là gia
+1 2 3 A B
+tốc chuyển động của chất điểm trên đoạn 1
+OA, AB và BC. Giá trị a + a + a bằng:
+1 2 3
+A. 1m/s2 B. 0 m/s2 C
+t(s)
+O 5 1 2
+C. 2 m/s2 D. -1m/s2
+<Đáp án: A>
+
+Câu 29: Đồ thị vận tốc – thời gian của một chiếc xe tải và
+một chiếc xe khách chuyển động cùng chiều dọc theo một đường thẳng
+được thể hiện như ở hình dưới. Gốc thời gian t = 0 được chọn khi hai xe
+ở cùng một vị trí. Nhận xét đúng về 2 xe từ thời điểm t = 0 đến thời
+điểm t = t là
+A. Quãng đường hai xe đã đi được là như nhau
+B. Xe khách đã không di chuyển
+C. Xe tải đã đi được quãng đường lớn hơn xe khách
+D. Xe khách đã đi được quãng đường lớn hơn xe tải
+<Đáp án: D>

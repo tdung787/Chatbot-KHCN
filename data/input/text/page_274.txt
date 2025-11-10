@@ -1,0 +1,47 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+1 -10 5 0,04
+2 12,5 6 3,33
+3 20 7 10
+4 -800 8 -1
+Hướng dẫn chi tiết:
+Câu 1 : Chọn chiều (+) là chiều chuyển động của người đi xe máy.
+v2−v 2 02−102
+v2−v 2=2as⇒ a= 0 = =−10m/s2
+0 2s 2.5
+Câu 2 : Đổi: 18km/h=5m/s
+- Chọn gốc thời gian là lúc vật ở chân dốc, chiều dương cùng chiều
+chuyển động.
+v2−v 2 32−52
+- Ta có: v2−v 2=2as⇒ a= 0 = =−0,16m/s2
+0 2s 2.50
+- Thời gian chuyển động lên dốc:
+v−v v−v 3−5
+a= o ⇒t= o= =12,5s
+t a −0,16
+Câu 3 : Chọn gốc tọa độ O ≡ A, chiều dương hướng từ A đến B. Gốc thời
+gian lúc 2 xe xuất phát.
+Người thứ nhất Người thứ hai
+{ {
+¿ x =0 ¿x =130m
+01 02
+¿ v =18km/h=5m/s ¿v =−5,4 km/h=−1,5m/s
+01 02
+¿a =−0,2m/s2 ¿a =−0,2m/s2
+1 2
+⇒Phương trình chuyển động của người thứ nhất:
+1
+x =x +v .t+ .a .t2=5t−0,1t2
+1 01 01 2 1
+Phương trình chuyển động của người thứ hai:
+1
+x =x +v .t+ .a .t2=130−1,5t−0,1t2
+2 02 02 2 2
+Khi hai xe gặp nhau, ta có: x =x
+1 2
+⇒5t−0,1t2=130−1,5t−0,1t2⇒t=20s
+Câu 4 :
+Chiều từ tây sang đông là chiều dương.
+|⃗v | = 25 m/s, hướng Đông ⇒ v = 25 m/s
+1 1
+274

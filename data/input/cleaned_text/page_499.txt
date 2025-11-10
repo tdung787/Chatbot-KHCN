@@ -1,0 +1,35 @@
+Sai số tỉ đổi:
+Sai số tuyệt đối:
+Tốc độ của vật:
+Kết quả đo tốc độ của vật:
+Câu 11:
+Sơ đồ vận tốc của giọt mưa đối với xe cho trên như
+hình vẽ
+Trong đó v là vận tốc của xe, bằng 50km/h; v là vận
+1 2
+tốc của giọt mưa đối với ô tô
+Vậy vận tốc giọt mưa đối với xe là 57,73km/h
+vận tốc giọt mưa đối với mặt đất là 28,87km/h
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ 2 câu. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh
+chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Lệnh Đáp án Đáp án
+Câu Câu Lệnh hỏi
+hỏi (Đ/S) (Đ/S)
+A) S A) Đ
+B) Đ B) S
+1 2
+C) S C) Đ
+D) S D) S
+Câu 1 :
+e. [S]
+Từ giây thứ 4 đến giây thứ 9: xe chuyển
+động thẳng theo chiều ngược lại.
+f. [Đ]
+Ở giây thứ 4: xe ở vị trí cách điểm xuất
+phát 4 m

@@ -1,0 +1,30 @@
+Câu 11: (SBT-CD) Cuối một cuộc chạy đua, một người chạy tăng tốc
+với gia tốc 0,3 m/s2 trong 12 s để đạt tốc độ 6,6 m/s. Tìm vận tốc của
+người chạy khi bắt đầu tăng tốc.
+A. 3 m/s B. 4 m/s C. 5 m/s D. 6 m/s
+<Đáp án: A>
+
+Câu 12: (SBT-CD) Một ô tô khởi hành từ lúc đứng yên, đi được quãng
+đường 50 m trong thời gian 6,0 s. Tìm vận tốc cuối cùng của ô tô.
+A. 16,67 m/s B. 17,87 m/s C. 19,38 m/s
+D. 20,06 m/s
+<Đáp án: A>
+
+Câu 1: Một chất điểm chuyển động biến đổi đều với v = 18km/h, quãng
+đường nó đi đuợc trong giây thứ sáu là 4,5m
+a. Gia tốc của chất điểm là 0,1 m/s2 ⎕
+b. Chất điểm chuyển động chuyển động chậm dần rồi nhanh dần ⎕
+c. Vận tốc ban đầu của vật là 5 m/s ⎕
+d. Quãng đường chất điểm chuyển động được sau 7s là 32,795m ⎕
+<Đáp án: C>
+
+Câu 2: Một ôtô đang chạy trên đường cao tốc với vận tốc không đổi
+72km/h thì người lái xe thấy chướng ngại vật và bắt đầu hãm phanh cho
+ôtô chạy chậm dần đều. Sau khi chạy được 50m thì vận tốc ôtô còn là
+36km/h.
+a. Gia tốc của ô tô là 0,1 m/s2 ⎕
+b. Ôtô chạy được 60m kể từ lúc hãm phanh thì đạt vận tốc là 6,32 ⎕
+m/s
+c. Thời gian từ lúc ô tô hãm phanh đến khi dừng lại là 7,6 s ⎕
+d. Quãng đường ô tô đi được trong giây thứ 3 là 15m ⎕
+<Đáp án: A>

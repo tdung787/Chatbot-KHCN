@@ -1,0 +1,223 @@
+{
+  "TH1_Q_eq_A": {
+    "bat_dau_Cau": {
+      "files": [
+        "page_002.txt",
+        "page_003.txt",
+        "page_045.txt",
+        "page_085.txt",
+        "page_087.txt",
+        "page_118.txt",
+        "page_144.txt",
+        "page_269.txt",
+        "page_340.txt",
+        "page_341.txt",
+        "page_343.txt",
+        "page_344.txt",
+        "page_360.txt",
+        "page_370.txt",
+        "page_386.txt",
+        "page_391.txt",
+        "page_456.txt",
+        "page_482.txt",
+        "page_494.txt"
+      ],
+      "count": 19
+    },
+    "khong_bat_dau_Cau": {
+      "files": [
+        "page_001.txt",
+        "page_016.txt",
+        "page_022.txt",
+        "page_023.txt",
+        "page_033.txt",
+        "page_043.txt",
+        "page_072.txt",
+        "page_086.txt",
+        "page_089.txt",
+        "page_091.txt",
+        "page_114.txt",
+        "page_115.txt",
+        "page_141.txt",
+        "page_142.txt",
+        "page_163.txt",
+        "page_164.txt",
+        "page_173.txt",
+        "page_194.txt",
+        "page_199.txt",
+        "page_218.txt",
+        "page_232.txt",
+        "page_235.txt",
+        "page_240.txt",
+        "page_244.txt",
+        "page_268.txt",
+        "page_278.txt",
+        "page_300.txt",
+        "page_329.txt",
+        "page_339.txt",
+        "page_359.txt",
+        "page_366.txt",
+        "page_368.txt",
+        "page_369.txt",
+        "page_404.txt",
+        "page_405.txt",
+        "page_416.txt",
+        "page_417.txt",
+        "page_433.txt",
+        "page_481.txt"
+      ],
+      "count": 39
+    },
+    "count": 58
+  },
+  "TH2_Q_eq_A_minus_1": {
+    "bat_dau_Cau": {
+      "files": [
+        "page_117.txt",
+        "page_147.txt",
+        "page_242.txt",
+        "page_304.txt"
+      ],
+      "count": 4
+    },
+    "khong_bat_dau_Cau": {
+      "files": [
+        "page_017.txt",
+        "page_024.txt",
+        "page_034.txt",
+        "page_047.txt",
+        "page_049.txt",
+        "page_051.txt",
+        "page_071.txt",
+        "page_090.txt",
+        "page_104.txt",
+        "page_116.txt",
+        "page_130.txt",
+        "page_143.txt",
+        "page_175.txt",
+        "page_177.txt",
+        "page_195.txt",
+        "page_201.txt",
+        "page_231.txt",
+        "page_234.txt",
+        "page_238.txt",
+        "page_241.txt",
+        "page_290.txt",
+        "page_301.txt",
+        "page_303.txt",
+        "page_330.txt",
+        "page_388.txt",
+        "page_443.txt",
+        "page_469.txt",
+        "page_493.txt"
+      ],
+      "count": 28
+    },
+    "count": 32
+  },
+  "TH3_Q_less_than_A_minus_2": {
+    "bat_dau_Cau": {
+      "files": [
+        "page_046.txt"
+      ],
+      "count": 1
+    },
+    "khong_bat_dau_Cau": {
+      "files": [
+        "page_044.txt",
+        "page_146.txt",
+        "page_200.txt",
+        "page_245.txt",
+        "page_280.txt",
+        "page_305.txt",
+        "page_390.txt"
+      ],
+      "count": 7
+    },
+    "count": 8
+  },
+  "TH4_Q_greater_than_A": {
+    "bat_dau_Cau": {
+      "files": [
+        "page_004.txt",
+        "page_015.txt",
+        "page_032.txt",
+        "page_050.txt",
+        "page_052.txt",
+        "page_088.txt",
+        "page_092.txt",
+        "page_119.txt",
+        "page_131.txt",
+        "page_145.txt",
+        "page_148.txt",
+        "page_176.txt",
+        "page_178.txt",
+        "page_196.txt",
+        "page_198.txt",
+        "page_219.txt",
+        "page_236.txt",
+        "page_237.txt",
+        "page_243.txt",
+        "page_279.txt",
+        "page_281.txt",
+        "page_291.txt",
+        "page_302.txt",
+        "page_306.txt",
+        "page_331.txt",
+        "page_342.txt",
+        "page_345.txt",
+        "page_367.txt",
+        "page_371.txt",
+        "page_389.txt",
+        "page_392.txt",
+        "page_418.txt",
+        "page_444.txt",
+        "page_483.txt"
+      ],
+      "count": 34
+    },
+    "khong_bat_dau_Cau": {
+      "files": [
+        "page_014.txt",
+        "page_021.txt",
+        "page_025.txt",
+        "page_035.txt",
+        "page_042.txt",
+        "page_048.txt",
+        "page_084.txt",
+        "page_105.txt",
+        "page_113.txt",
+        "page_129.txt",
+        "page_172.txt",
+        "page_174.txt",
+        "page_193.txt",
+        "page_197.txt",
+        "page_220.txt",
+        "page_229.txt",
+        "page_230.txt",
+        "page_233.txt",
+        "page_239.txt",
+        "page_289.txt",
+        "page_299.txt",
+        "page_328.txt",
+        "page_361.txt",
+        "page_384.txt",
+        "page_385.txt",
+        "page_387.txt",
+        "page_414.txt",
+        "page_415.txt",
+        "page_432.txt",
+        "page_442.txt",
+        "page_445.txt",
+        "page_457.txt",
+        "page_458.txt",
+        "page_468.txt",
+        "page_470.txt",
+        "page_492.txt"
+      ],
+      "count": 36
+    },
+    "count": 70
+  },
+  "total_files_processed": 168
+}

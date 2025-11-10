@@ -1,0 +1,38 @@
+Câu 2: (SBT-KNTT) Chuyển động nào dưới đây có thể coi như là
+chuyển động rơi tự do?
+A. Chuyển động của một viên bi sắt được ném theo phương nằm
+ngang.
+B. Chuyển động của một viên bi sắt được ném theo phương xiên góc.
+C. Chuyển động của một viên bi sắt được thả rơi.
+D. Chuyển động của một viên bi sắt được ném lên cao.
+Câu 3: Rơi tự do là một chuyển động
+A. thẳng đều. B. chậm dần đều. C. nhanh dần. D.
+nhanh dần đều.
+Câu 4: Chọn phát biểu sai.
+A. Khi rơi tự do tốc độ của vật tăng dần.
+B. Vật rơi tự do khi lực cản không khí rất nhỏ so với
+trọng lực
+C. Vận động viên nhảy dù từ máy bay xuống mặt
+đất sẽ rơi tự do.
+D. Rơi tự do có quỹ đạo là đường thẳng.
+Câu 5: Chọn ý sai. Vật rơi tự do
+A. có phương chuyển động là phương thẳng đứng.
+C. chuyển động thẳng nhanh dần đều.
+B. có chiều chuyển động hướng từ trên xuống dưới
+D. khi rơi trong không khí.
+Câu 6: Chuyển động nào dưới đây được xem là rơi tự do?
+A. Một cánh hoa rơi.
+B. Một viên phấn rơi không vận tốc đầu từ mặt bàn.
+C. Một hòn sỏi được ném lên theo phương thẳng đúng.
+D. Một vận động viên nhảy dù.
+Câu 7: Đặc điểm nào dưới đây không phải là đặc điểm của chuyển
+động rơi tự do của các vật?
+A. Chuyển động theo phương thẳng đúng, chiều từ trên xuống.
+B. Chuyển động thẳng nhanh dần đều.
+C. Ở cùng một nơi và gần mặt đất, mọi vật rơi tự do như nhau.
+D. Lúc t = 0 thì vận tốc của vật luôn khác 0.
+Câu 8: Chuyển động của vật rơi tự do không có tính chất nào sau đây?
+A. Vận tốc của vật tăng đều theo thời gian.
+B. Gia tốc của vật tăng đều theo thời gian
+C. Càng gần tới mặt đất vật rơi càng nhanh.
+D. Quãng đường vật đi được là hàm số bậc hai theo thời gian.

@@ -1,0 +1,50 @@
+Hướng dẫn giải
++ Chọn chiều dương là chiều chuyển động của xe máy, gốc tọa độ tại vị
+trí tăng tốc, gốc thời gian là lúc tăng tốc.
+Ta có v = 3m/s ; v =5m/s; s = 100m.
+o 1
+a. Áp dụng công thức: v2 – v 2 = 2.a.s
+v2−v2 52−32
+⇒a= 1 0= =0,08m/s2
+2.s 2.100
+b. Áp dụng công thức: v=v +a.t
+v −v 5−3
+⇒t = 2 0= =25s
+2 a 0,08
+Câu 27: Cho một máng nghiêng, lấy một
+viên bi lăn nhanh dần đều từ đỉnh một máng
+với không vận tốc ban đầu, bỏ qua ma sát
+giữa vật và máng, biết viên bi lăn với gia tốc
+1m/s2. Biết vận tốc khi chạm đất 4m/s. Tính
+chiều dài máng và thời gian viên bi chạm
+đất.
+Hướng dẫn giải
++ Ta có v = 4m/s mà v2 – v 2 = 2.a.d
+2 0
+v 2− v 2 42−0
+⇒d= 2 0 = =16m
+2.a 2.1
++ Áp dụng công thức v = v + at
+2 0 2
+v −v 4−0
+⇒t = 2 0= =4 s
+2 a 1
+Câu 28: Một người đứng ở sân ga nhìn
+thấy đoàn tàu bắt đầu chuyển động.
+Người này nhìn thấy toa thứ nhất chạy
+qua trước mắt mình trong 10 s. Hãy tính
+thời gian toa thứ chín chạy qua người
+này. Giả sử chuyển động của tàu hỏa là
+nhanh dần đều và xem khoảng cách giữa
+các toa tàu là không đáng kể.
+Hướng dẫn giải
+Chọn gốc tọa độ và gốc thời gian là lúc xe bắt đầu xuất phát  x = 0;
+v = 0
+Gọi chiều dài 1 toa tàu là s  Chiều dài của 9 toa tàu là 9.s
+Thời gian người nhìn thấy toa thứ nhất đi qua là 10 giây nên ta có:
+s= .a.102=50.a
+ Thời gian đi hết toa thứ 9 là:
+√ √ √
+2.s 2.9.s 2.9.50.a
+t= 9= = =√2.9.50=30(s)
+a a a

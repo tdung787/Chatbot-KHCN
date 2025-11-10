@@ -1,0 +1,53 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+án:
+Chọn chiều dương là chiều chuyển động của đĩa thức ăn.
+v2−v 2 22−02
+Gia tốc của đĩa thức ăn là: a= 0 = =0,4 m/s2.
+2s 2.5
+Tốc độ tối đa của li cocktail có thể đạt được để không bị đổ là:
+v 2−v 2=2as⇔v 2−02=2.0,5.5⇒ v ≈2,24m/s
+max 0 max max
+Câu 5: Cho một máng nghiêng, lấy một viên
+bi lăn nhanh dần đều từ đỉnh một máng với
+không vận tốc ban đầu, bỏ qua ma sát giữa
+vật và máng, biết viên bi lăn với gia tốc
+1m/s2. Biết vận tốc khi chạm đất 4m/s. Tính
+chiều dài máng theo đơn vị cm?
+(kết quả lấy 0 chữ số sau dấu phẩy thập
+phân)
+Đáp 1 6
+án:
+Hướng dẫn giải
+Ta có v = 4m/s
+2
+v 2− v 2 42−0
+d= 2 02 = =16m
+2.a 2.1
+Câu 6: Một người đứng ở sân ga nhìn
+thấy đoàn tàu bắt đầu chuyển động.
+Người này nhìn thấy toa thứ nhất chạy
+qua trước mắt mình trong 10 s. Hãy tính
+thời gian toa thứ chín chạy qua người
+này, theo đơn vị phút? Giả sử chuyển
+động của tàu hỏa là nhanh dần đều và
+xem khoảng cách giữa các toa tàu là không đáng kể.
+(kết quả lấy 1 chữ số sau dấu phẩy thập phân)
+Đáp 3 0
+án:
+Hướng dẫn giải
+Chọn gốc tọa độ và gốc thời gian là lúc xe bắt đầu xuất phát  x = 0;
+0
+v = 0
+0
+Gọi chiều dài 1 toa tàu là s  Chiều dài của 9 toa tàu là 9.s
+Thời gian người nhìn thấy toa thứ nhất đi qua là 10 giây nên ta có:
+1
+s= .a.102=50.a
+2
+ Thời gian đi hết toa thứ 9 là:
+√ √ √
+2.s 2.9.s 2.9.50.a
+t= 9= = =√2.9.50=30(s)
+a a a
+251

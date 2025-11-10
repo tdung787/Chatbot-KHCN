@@ -1,0 +1,42 @@
++ số 3 là vật đứng yên được chọn làm gốc của hệ quy chiếu đứng yên.
+Câu 2:  Gọi: + ⃗v là vận tốc của xe A so với B
++ ⃗v là vận tốc của xe B với đường
++ ⃗v là vận tốc của xe A so với đường
+ Áp dụng công thức cộng vận tốc:
+⃗v = ⃗v + ⃗v
+13 12 23
+ Chọn chiều dương là chiều xe A đi:
+Vì hai xe chuyển động ngược chiều nhau nên: v = v - v
+13 12 23
+ Vận tốc của xe A so với B: v = v + v = 50 km/h
+12 13 23
+a) Thời gian từ lúc hai xe xuất phát đến khi gặp nhau:
+AB
+t= =0,8h
+v
+b) Quãng đường của hai xe xuất phát từ A và B đi được khi hai xe gặp
+nhau lần lượt là:
+s =v ×t=24km và s =v ×t=16 km
+A 13 B 23
+Chủ đề 3 THỰC HÀNH: ĐO TỐC ĐỘ CỦA VẬT CHUYỂN
+ĐƯỢCĐƯỢCĐƯỢC
+BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1. Chọn câu đúng, để đo tốc độ trong phòng thí nghiệm, ta cần:
+A. Đo thời gian và quãng đường chuyển động của vật. B. Máy bắn tốc
+độ.
+C. Đồng hồ đo thời gian D. thước đo
+quãng đường
+Câu 2. Chọn câu sai về chức năng của động hồ đo thời gian hiện số:
+A. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.
+B. MODE A  B: Đo tổng của hai khoảng thời gian vật chắn cổng
+quang điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
+C. MODE A↔B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
+D. MODE T: Đo khoảng thời gian vật chuyển động từ cổng quang điện
+A tới cổng quang điện B.
+Câu 3. Chọn câu đúng về chức năng của động hồ đo thời gian hiện số:
+A. MODE A: Đo thời gian từ lúc vật chuyển động đến khi vật chắn cổng
+quang điện nối với ổ A.
+B. MODE: Chọn kiểu làm việc cho máy đo thời gian.

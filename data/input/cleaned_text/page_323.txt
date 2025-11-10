@@ -1,0 +1,45 @@
+1 1
+= (0,5+2,5).4+ (2+4).2=12(m)
+2 2
+Câu 15: Chất điểm chuyển động có
+đồ thị vận tốc theo thời gian như hình
+7P.1
+a. Mô tả chuyển động của chất điểm.
+b. Tính quãng đường mà chất điểm đi
+được từ khi bắt đầu chuyển động
+cho tới khi dừng lại.
+Lời giải:
+a. Mô tả chuyển động của chất điểm:
++ Từ 0 – 2 s, vật chuyển động thẳng nhanh dần đều.
++ Từ 2 – 7 s, vật chuyển động thẳng đều.
++ Từ 7 – 8 s, vật chuyển động thẳng chậm dần đều.
+b. Quãng đường vật đi được trong 2 s đầu là:
+5−0 ( m ) 52−02
+a = =2,5 =¿s = =6,25(m)
+1 2 s2 1 2.2
+Quãng đường vật đi được từ 2 – 7 s là:
+s =5.(7−2)=25(m)
+Quãng đường vật đi được từ 7 – 8 s là:
+0−5 ( m ) 02−52
+a = =−5 =¿s = =2,5(m)
+13 8−7 s2 3 2.(−5)
+Quãng đường mà chất điểm đi đượctừ lúc bắt đầu đến khi dừng
+hẳn là:
+S = 6,25 +25 +2,5 = 33,75 (m)
+Câu 16: ( SBT-KNTT) Hình 8.1 là đồ thị vận
+tốc - thời gian của một thang máy khi đi từ tầng 1
+lên tầng 3 của toà nhà chung cư.
+a) Mô tả chuyển động của thang máy.
+b) Tính gia tốc của thang máy trong các giai
+đoạn.
+Hướng dẫn giải
+a) Từ 0 s đến 0,5 s: thang máy chuyển động nhanh dần đều từ dưới lên.
+Từ 0,5 s đến 2,5 s: thang máy chuyển động đều.
+Từ 2,5 s đến 3 s: thang máy chuyển động chậm dần đều và dừng lại.
+b) Chia chuyển động thành ba giai đoạn như ý a) thì gia tốc trong mỗi
+giai đoạn lần lượt là:
++ Từ 0 s đến 0,5 s: + Từ 0,5 s đến 2,5 s: + Từ 2,5 s đến 3 s:
+∆ v 2−0 ∆ v 2−2 ∆v 0−2
+a = 1= =4m/s2 a = 2= =0m/s2 a = 3= =−4m/s2
+1 ∆t 0,5 2 ∆t 2,5−0,5 3 ∆t 3−2,5
+1 2 3

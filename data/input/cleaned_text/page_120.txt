@@ -1,0 +1,42 @@
+2 Câu trắc nghiệm đúng sai
+Câu 1: Bạn A đi học từ nhà đến trường theo lộ trình ABC (Hình vẽ).
+Biết bạn A đi đoạn đường AB = 400 m hết 6 phút, đoạn đường BC = 300
+m hết 4 phút.
+a. Độ dài quãng đường từ nhà đến trường là 600m ⎕
+b. Tốc độ trung bình của bạn A kh đi từ nhà đến trường là ⎕
+1,167m/s
+c. Độ dịch chuyển của bạn A là 700m ⎕
+d. Vận tốc trung bình của bạn A khi đi từ nhà đến trường là 0,83 ⎕
+m/s
+Hướng dẫn giải
+a. [S] - Độ dài quãng đường từ nhà đến trường là:
+s = AB + BC = 400 + 300 = 700 (m)
+b. [Đ]- Thời gian đi từ nhà đến trường là:
+t = 6 + 4 = 10 (phút)
+- Tốc độ trung bình của bạn A khi đi từ nhà đến trường là:
+s 700 ( m ) m
+v= = =70 ≈1,167( )
+t 10 phút s
+c. [S] - Độ dịch chuyển của bạn A là:
+d = AC = √ AB2+BC2 = √ 4002+3002 = 500 (m)
+c. [Đ] - Vận tốc trung bình của bạn A khi đi từ nhà đến trường là:
+d 500 ( m ) m
+v= = =50 ≈0,83( )
+t 10 phút s
+Câu 2: Một người bơi dọc trong bể dài 50m. Bơi từ
+đầu bể tới cuối bể hết 20 s, bơi tiếp từ cuối bể về đầu bể
+hết 22s. Chọn chiều dương của độ dịch chuyển là chiều
+từ đầu bể bơi đến cuối bể bơi.
+a. Độ dịch chuyển của người khi bơi từ đầu bể tới cuối bể rồi về ⎕
+đầu bể là 100m.
+b. Tốc độ trung bình khi bơi từ đầu bể đến cuối bể là 2,5 m/s. ⎕
+c. Tốc độ trung bình trong quãng đường cả bơi đi lẫn về là 2,38 ⎕
+m/s.
+d. Vận tốc trung bình trong quãng đường cả bơi đi lần về là 0. ⎕
+Hướng dẫn giải
+a. [S] d = 0.
+b. [Đ] v = s/t = 50/20 = 2,5 m/s.
+tb
+c. [Đ] v = s/t = 100/42 = 2,38 m/s.
+tb
+d. [Đ] v=d/t = 0.

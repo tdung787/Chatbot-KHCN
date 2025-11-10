@@ -1,0 +1,23 @@
+Hướng dẫn chi tiết:
+Câu 1:
+Chuyển động của xe 2:
+Trong khoảng thời gian từ 0 đến 2 h, xe
+chuyển động đều theo chiều âm với tốc độ:
+∆s 80−0 (km )
+v= = =40
+∆t 2−0 h
+Câu 2:
+Quãng đường phải đi (theo bước) để tìm kho
+báu là 39 bước
+Câu 3:
+Gọi:
+- h là độ cao của điểm từ đó bắt đầu thả hòn sỏi.
+- t là thời gian rơi.
+- h là quãng đường vật rơi trong thời gian t -1.
+Ta có:
+Suy ra:
+Câu 4:
+Quãng đường vật đi được
+Quãng đường vật đi được S với thời gian là
+Lập tỉ số (1)/(2):
+Câu 5:

@@ -1,0 +1,41 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Một xe ô tô chuyển động thẳng nhanh dần đều với vận tốc đầu 18km/h.
+Trong giây thứ tư kể từ lúc bắt đầu chuyển động nhanh dần, xe đi được
+12m.
+a. Hãy tính gia tốc của vật
+b. Vật chuyển động nhanh dần đều trong 10s. Tính quãng đường đi được
+sau 10s và trong giây thứ 10.
+c. Tính quãng đường đi được trong 4s cuối.
+HƯỚNG DẪN GIẢI
+ĐỀ
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câ Đáp Câ Đáp
+u án u án
+1 A 7 B
+2 C 8 C
+3 B 9 A
+4 C 10 B
+5 C 11 A
+6 D 12 A
+2 Câu trắc nghiệm đúng sai (2,0 điểm)
+Thí sinh trả lời từ 2 câu. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh
+chọn đúng hoặc sai.
+Điểm tối đa của 01 câu hỏi là 1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được 0,1 điểm.
+- Thí sinh chỉ lựa chọn chính xác 02 ý trong 1 câu hỏi được 0,25 điểm.
+- Thí sinh chỉ lựa chọn chính xác 03 ý trong 1 câu hỏi được 0,50 điểm.
+- Thí sinh lựa chọn chính xác cả 04 ý trong 1 câu hỏi được 1 điểm.
+Lệnh Đáp án Đáp án
+Câu Câu Lệnh hỏi
+hỏi (Đ/S) (Đ/S)
+A) S A) Đ
+B) S B) Đ
+1 2
+C) Đ C) S
+D) Đ D) S
+Câu 1:
+293

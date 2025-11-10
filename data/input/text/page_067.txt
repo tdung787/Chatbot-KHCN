@@ -1,0 +1,54 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
++ Dùng thước đo quãng đường từ vạch xuất phát đến điểm ô tô dừng
+lại.
+a. Để đo tốc độ chuyển động của chiếc xe cần đo các đại lượng là:
+Thời gian (t) và quãng đường (s).
+s
+b. Xác định tốc độ chuyển động của chiếc xe bằng công thức: v= .
+t
+c. Phép đo thời gian và quãng đường là phép đo trực tiếp vì chúng lần
+lượt được đo bằng dụng cụ đo là đồng hồ và thước. Kết quả của phép đo
+được đọc trực tiếp trên dụng cụ đo.
+d. Phép đo tốc độ là phép đo gián tiếp vì nó được xác định thông qua
+công thức liên hệ với các đại lượng được đo trực tiếp là quãng đường và
+thời gian.
+e. - Sai số hệ thống: Sai số do dung cụ đo (thước, đồng hồ), Sai số do
+đặt chưa đúng mức 0 trước khi đo.
+- Sai số ngẫu nhiên: Do cách bấm đồng hồ, cách đặt thước đo, cách
+nhìn thước chưa chuẩn, bề mặt đường, thời tiết…
+Câu 12: Hai người cùng đo chiều dài của cánh cửa sổ, kết quả thu
+được như sau:
+- Người thứ nhất: d=120±1 cm
+- Người thứ hai: d=120±2 cm
+Trong hai người, ai là người đo chính xác hơn ? Vì sao ?
+Hướng dẫn giải:
+- Sai số tỷ đối của phép đo của người thứ nhất:
+Δd 1
+δ = 1 .100%= .100%=0,83%
+1 d 120
+1
+- Sai số tỷ đối của phép đo của người thứ hai:
+Δd 2
+δ = 2 .100%= .100%=1,67%
+2 d 120
+2
+- Do δ <δ nên người thứ nhất đo chính xác hơn người thứ hai
+1 2
+Câu 13: Đo chiều dày của một cuốn sách, , được kết
+quả: 2,3 cm; 2,4 cm; 2,5 cm; 2,4 cm. Tính giá trị trung
+bình chiều dày cuốn sách. Sai số tuyệt đối trung bình của
+phép đo này là bao nhiêu? Viết kết quả đo?
+Hướng dẫn giải:
+ Giá trị trung bình của chiều dày cuốn sách:
+2,3+2,4+2,5+2,4
+A= =2,4 cm
+4
+ Sai số tuyệt đối (∆ A ¿ ứng với mỗi lần đo:
+i
+∆ A =|A−A |=0,1cm; ∆ A =|A−A |=0cm
+1 1 2 2
+∆ A =|A−A |=0,1cm; ∆ A =|A−A |=0cm
+1 1 2 2
+ Sai số tuyệt đối trung bình của n lần đo được xác định theo công thức:
+67

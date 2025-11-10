@@ -1,0 +1,56 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Hướng dẫn giải
+Độ dịch chuyển mô tả trên Hình 4.5 là:
++ d = 200 m (Bắc) + d = 200 m (Đông Bắc)
+1 2
++ d = 300 m (Đông) + d = 100 m (Tây).
+3 4
+Câu 7: (SBT-KNTT) Hai anh em bơi trong bể bơi
+thiếu niên có chiều dài 25 m. Hai anh em xuất phát
+từ đầu bể bơi đến cuối bể bơi thì người em dừng lại
+nghỉ, còn người anh quay lại bơi tiếp về đầu bể mới
+nghỉ.
+a) Tính quãng đường bơi được và độ dịch chuyển
+của hai anh em.
+b) Từ bài tập này, hãy cho biết sự khác nhau giữa
+quãng đường đi được và độ dịch chuyển.
+Hướng dẫn giải
+a) Quãng đường bơi được của anh là: s = l + l = 25 + 25 = 50 (m)
+1
+Độ dịch chuyển của người anh là: d = 0 – 0 = 0 (m)
+1
+Quãng đường bơi được của người em là: s = l = 25 (m)
+2
+Độ dịch chuyển của người em là: d = 25 – 0 = 25 (m)
+2
+b) + Trong chuyển động thẳng không đổi chiều s = d.
++ Trong chuyển động thẳng có đổi chiều s≠d.
++ Nếu chuyển động trở lại vị trí ban đầu thì d = 0; s > 0.
+Câu 8: (SBT)-KNTT Biết d⃗ là độ dịch chuyển 3 m về phía đông còn d⃗
+1 2
+là độ dịch chuyển 4 m về phía bắc.
+a) Hãy vẽ các vectơ độ dịch chuyển d⃗ ,d⃗ và vectơ độ dịch chuyển tổng
+1 2
+hợp d⃗ .
+b) Hãy xác định độ lớn, phương và chiều của độ dịch chuyển d⃗ .
+Hướng dẫn giải
+a) Hình vẽ b) Khi d⃗ và d⃗ vuông góc:
+1 2
+√
+d= d2+d 2=5m
+1 2
+Hướng về phía đông – bắc với góc
+hợp với hương Đông sao cho: tan =
+d /d = 4/3
+2 1
+  = 53o
+Câu 9: (SBT-KNTT) Một người đi thang máy từ
+tầng G xuống tầng hầm cách tầng G 5 m, rồi lên tới
+tầng cao nhất của tòa nhà cách tầng G 50 m. Tính độ
+dịch chuyển và quãng đường đi được của người đó:
+a) Khi đi từ tầng G xuống tầng hầm.
+b) Khi đi từ tầng hầm lên tầng cao nhất.
+c) Trong cả chuyến đi.
+Hướng dẫn giải
+100

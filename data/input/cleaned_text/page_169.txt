@@ -1,0 +1,48 @@
+b.[Đ]
+  
+v v v
+- Ta có: 13 12 23
+ 
+v v v  v2 v2
+- Vì 12 23 nên 13 12 23
+c.[S]
+Vận tốc tối đa ca nô có thể đạt được so với bờ sông là
+v 18km / h 5m / s v 5m / s
+- Ta có: 12 ; 23
+v = √ v2 +v2 = √ 52+52=5√2m/s=7,07m/s
+13 12 23
+d.[Đ]
+
+ABC  BAC 450
+Vì AB = BC nên vuông cân tại C .
+
+v
+Vậy hướng của 13 nghiêng 450 theo hướng Đông – Nam.
+Câu 2:
+a.[S]
+v = 8 m/s là vận tốc của đoàn tàu với học
+sinh
+b.[S]
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12
+Người soát vé đi với tốc độ 1,5 m/s về phía đuôi tàu: v = 1,5 m/s
+Vận tốc của người soát vé đối với học sinh là:
+v = - v + v = - 1,5 + 8 = 6,5 m/s
+13 12 23
+c.[S]
+Người soát vé đi với tốc độ 1,5 m/s về phía đầu tàu: v = 1,5 m/s
+Vận tốc của người soát vé đối với học sinh là:
+v = v + v = 1,5 + 8 = 9,5 m/s
+13 12 23
+d.[Đ]
+Người soát vé đứng yên trên tàu nên v = 0 m/s
+ Vận tốc của người soát vé đối với học sinh là v = v + v = 8 m/s.
+13 12 23
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câ Đáp Câ Đáp
+u án u án
+1 2 5 100
+2 12 6 7,17
+3 1 7 4

@@ -1,0 +1,46 @@
+Câu 38: Hai vật được đồng thời ném từ mặt đất lên với vận
+tốc ban đầu như Hình vẽ. Nếu bỏ qua sức cản của không khí thì câu nào
+sau đây không đúng?
+A. Hai vật chạm đất cùng một lúc.
+B. Hai vật cùng có tầm bay xa.
+C. Vật 2 có tầm bay xa lớn hơn.
+D. Hai vật có cùng tầm bay cao.
+<Đáp án: C>
+
+Câu 39: Một vật được ném ngang với vận tốc v = 30m/s, ở
+độ cao h = 80m. Lấy g = 10m/s2. Tầm bay xa và vận tốc của vật khi
+chạm đất là
+A. S = 120m; v = 50m/s. B. S = 50m; v = 120m/s.
+C. S = 120m; v = 70m/s. D. S = 120m; v = 10m/s.
+<Đáp án: A>
+
+Câu 40: Một hòn bi lăn dọc theo một cạnh
+của một mặt bàn hình chữ nhật nằm ngang cao h =
+1,25m. Khi ra khỏi mép bàn, nó rơi xuống nền nhà tại
+điểm cách mép bàn L = 1,5m theo phương ngang. Lấy g
+= 10m/s2.
+I. Tìm thời gian rơi của bi:
+A. 0,35s B. 0,25s
+C. 0,125s D. 0,5s.
+II. Tốc độ của viên bi lúc rời khỏi bàn:
+A. 4,28m/s B. 3m/s. C. 12m/s D. 6m/s
+<Đáp án: D>
+
+Câu 41: Một vật được ném theo phương ngang ở độ cao
+20m phải có vận tốc đầu là bao nhiêu để khi sắp chạm đất vận tốc của
+nó bằng 25m/s. Lấy g = 10m/s2 và bỏ qua sức cản của không khí.
+A. 15m/s. B. 12m/s C. 10m/s D. 9m/s
+<Đáp án: A>
+
+Câu 42: Ném một vật theo phương ngang ở độ cao h =
+78,4m. Lấy g = 9,8m/s2. Thời gian chuyển động của vật là:
+A. 16s B. 4s C. 0,25s
+D. không biết được vì không biết vận tốc đầu
+<Đáp án: B>
+
+Câu 43: Một vật được ném ngang từ độ cao h = 9m, vận tốc
+ban đầu v Vật bay xa 18m, lấy g = 10m/s2. Tính v ?
+o. o
+A. 3,16m/s B. 10m/s C. 13,4m/s D.
+19m/s
+<Đáp án: C>

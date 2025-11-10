@@ -1,0 +1,44 @@
+- Từ giây thứ 9 đến giây thứ 10: xe dừng lại.
+b. - Ở giây thứ 2: xe ở vị trí cách điểm xuất phát 4 m.
+- Ở giây thứ 4: xe ở vị trí cách điểm xuất phát 4 m
+- Ở giây thứ 8: xe trở về vị trí xuất phát
+- Ở giây thứ 10: xe ở vị trí cách điểm xuất phát 1 m theo chiều âm
+c. Xác định tốc độ và vận tốc của xe:
+- Trong 2 giây đầu, xe chuyển động thẳng, không đổi chiều nên tốc độ
+bằng vận tốc:
+v = d/t = 4/2 = 2 (m/s)
+- Từ giây 2 đến giây 4: xe đứng yên nên vận tốc và tốc độ của xe đều
+bằng 0.
+- Từ giây 4 đến giây 8:
++ Tốc độ: v = s/t = 4/4 = 1 (m/s)
+∆d 0−4 (m )
++ Vận tốc: v= = =−1
+∆t 8−4 s
+d. - Từ đồ thị, ta thấy quãng đường đi được của xe sau 10 giây chuyển
+động là:
+s = 4 + 4 + 1 = 9 (m)
+- Độ dịch chuyển của xe sau 10 giây là: d = −1 − 0 = −1 (m)
+ Quãng đường và độ dịch chuyển của xe sau 10 giây không giống
+nhau vì xe chuyển động theo 2 chiều.
+Câu 11. Đồ thị độ dịch chuyển - thời gian của một chuyển động thẳng
+được vẽ trong hình 7.4
+a) Hãy mô tả chuyển động.
+b) Xác định tốc độ và vận tốc của
+chuyển động trong các khoảng
+thời gian:
+- Từ 0 đến 0,5 giờ.
+- Từ 0.5 đến 2,5 giờ.
+- Từ 0 đến 3,25 giờ.
+- Từ 0 đến 5,5 giờ.
+Hướng dẫn giải
+a) Dựa vào đồ thị:
++ Từ 0 đến 0,5 giờ: vật chuyển động thẳng đều theo chiều dương.
++ Từ 0,5 đến 3,25 giờ: vật chuyển động thẳng đều theo chiều âm.
++ Từ 3,25 đến 4,25 giờ: vật đứng yên.
++ Từ 4,25 đến 5,5 giờ: vật chuyển động thẳng đều theo chiều dương.
+b)
++ Từ 0h đến 0,5h: + Từ 0,5h đến 2,5h:
+∆d 80−0 ( km) ∆d −30−80 ( km)
+Vậntốc:v= = =160 Vậntốc:v= = =−40
+∆t 0,5−0 h ∆t 3,25−0,5 h
+Tốc độ: v = 160 km/h Tốc độ: v = 40 km/h

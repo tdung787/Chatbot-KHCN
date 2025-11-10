@@ -1,0 +1,64 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Trong 100m đầu tiên: 100=v .5+12,5a(1)
+01
+Trong 100m tiếp theo chuyển động hết 3s, tức là 200m xe chuyển động
+hết 8s
+200=v .8+32a(2)
+01
+{
+¿12,5a+5v =100 10
+Từ (1) và (2) 01 →a= =3,3m/s2
+¿32a+8v =200 3
+01
+Câu 6:
+Xe chuyển động thẳng nhanh dần đều từ trạng thái nghỉ (vo= 0) nên
+1
+quãng đường đi được của xe sau thời gian t = 10 s là: S= at 2
+1 2 1
+1
+Thời gian xe chạy được 1/4 đoạn đường đầu (S = S ) là t .
+2 4 1 2
+S at2 1 at2 t
+Ta có:S = 1 ↔ 2= . 1 →t = 1=5s
+2 4 2 4 2 2 2
+Câu 7:
+1 1
++ Quãng đường vật đi được trong 10s: s =v t + a.t2 =0.10+ .2.102=100(m)
+10 0 10 2 10 2
+Câu 8:
+1 1
++ Quãng đường vật đi được trong 8s : s =v t + a.t2=0.8+ .2.82=64(m)
+8 0 8 2 8 2
++ Quãng đường vật đi trong 2s cuối: s = s – s = 36 (m)
+10 8
+4 Tự luận (3,0 điểm)
++ Ta có v =18km/h=5(m/s)
+0
+1
+a. Quãng đường chuyển động s=v t+ at2
+0 2
+1
++ Trong 4s đầu s =5.4+ .a.42=20+8a
+4 2
+1
++ Trong 3s đầu s =5.3+ .a.32=15+4,5a
+3 2
++ Trong giây thứ tư kể từ lúc bắt đầu chuyển động nhanh dần, xe đi
+được 12m nên
+12=s −s ⇒20+8a−15−4,5a=12⇒5+3,5a=12 ⇒a=2(m/s2)
+4 3
+1
+b. Quãng đường đi được sau 10s : s =5.10+ .2.102=150m
+10 2
+1
+Tính quãng đường đi được trong 9 giây: s =5.9+ .2.92=126m
+9 2
+Tính quãng đường đi được trong giây thứ 10: s=s −s =150−126=24 m
+10 9
+1
+c. Tính quãng đường vật đi trong (10– 4) giây: s =5.6+ .2.62=66m
+6 2
+Quãng đường đi được trong 4s cuối: ∆s = s −s =150−66=84m
+10 6
+296

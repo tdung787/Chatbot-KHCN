@@ -1,0 +1,60 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 1: Một xe chuyển động chậm dần đều với tốc độ đầu 36km/h. Trong
+giây thứ 6 xe đi được 7,25 m. Tính quãng đường xe đi được trong giây
+thứ 8.
+Hướng dẫn giải
+Đổi: v = 36 km/h = 10 m/s.
+0
+Quãng đường xe đi được trong giây thứ 6 bằng hiệu quãng đường xe đi
+được trong 6 giây trừ đi quãng đường xe đi được trong 5 giây.
+s = v .6 + ½.a.62 − v .5 − ½.a.52 = 7,25m
+6 0 0
+Suy ra a = - 0,5 m/s2.
+Quãng đường xe đi được trong giây thứ 8 bằng hiệu quãng đường xe đi
+được trong 8 giây trừ đi quãng đường xe đi được trong 7 giây.
+s = v .8 + ½.a.82 − v .7 − ½.a.72 = 6,25m
+8 0 0
+Câu 2: Một ôtô chuyển động thẳng nhanh dần đều
+với vận tốc đầu là 18km/h. Trong giây thứ 6 xe đi
+được quãng đường 21,5m.
+a.Tính gia tốc của xe.
+b.Tính quãng đường xe đi trong 20s đầu tiên.
+Hướng dẫn giải
+18
+a. Ta có: v = km/h=5m/s
+0 3,6
+1
++ Ta có quãng đường đi trong 5s đầu: s =v t + a.t2⇒ s =5.5+12,5a
+5 0 5 2 5 5
+1
++ Quãng đường đi trong 6s: s =v t + a.t2⇒ s =5.6+18a
+6 0 6 2 6 6
++ Quãng đường đi trong giây thứ 6: s = s - s = 21,5 ⇒ a = 3m/s2
+6 5
+1 1
+b. Ta có: s =v t + a.t2 ⇒ s =5.20+ .3.202=700(m)
+20 0 20 2 20 20 2
+Câu 3: Một xe chuyển động nhanh dần đều với v = 18km/h. Trong giây
+thứ 5 xe đi được 5,45m.
+a. Tính gia tốc của xe.
+b. Tính quãng đường đi được trong 10 giây và trong giây thứ 10.
+c. Tính quãng đường đi được trong 6 giây đầu.
+Hướng dẫn giải
+18
+a. Ta có v = km/h=5m/s
+0 3,6
+1
+Ta có quãng đường đi trong 5s đầu: s =5.5+ a.52
+5 2
+1
++ Quãng đường đi trong 4s: s =5.4+ a.42
+4 2
++ Quãng đường đi trong giây thứ 5:
+1 1
+s −s =(5.5+ a.52)−(5.4+ a.42)=5,45⇒a=0,1m/s2
+5 4 2 2
+1
+b. Tính quãng đường đi được trong 10 giây: s =5.10+ .0,1.102=55m
+10 2
+287

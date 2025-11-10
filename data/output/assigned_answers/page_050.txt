@@ -1,0 +1,69 @@
+Câu 46: Một học sinh tiến hành đo gia tốc rợi tự do tại phòng thí
+nghiệm theo hướng dẫn của SGKVL 10CB. Phép đo gia tốc RTD học sinh
+này cho giá trị trung bình sau nhiều lần đo là ¯g = 9,7166667m/s2 với sai
+số tuyệt đối tương ứng là Δ¯g = 0,0681212 m/s2. Kết quả của phép đo
+được biễu diễn bằng
+A. g = 9,72 ± 0,068 m/s2 
+B. g = 9,7 ± 0,1 m/s2 
+C. g = 9,72 ± 0,07 m/s2 
+D. g = 9,717 ± 0,068 m/s2 
+<Đáp án: C>
+
+Câu 47: Đường kính của một sợi dây
+đo bởi thước pame trong 5 lần đo bằng
+2,620cm; 2,625cm; 2,630cm; 2,628c và
+2,626cm. Bỏ qua sai số dụng cụ. Sai số
+tỉ đối bằng
+A. 0,1% 
+B. 0,2%
+C. 0,3% 
+D. 0,4% 
+<Đáp án: A>
+
+Câu 48: Để xác định tốc độ của một vật chuyển động đều, một người
+đã đo quãng đường vật đi được bằng (16,0± 0,4)m trong khoảng thời
+gian là (4,0±0,2) s. Tốc độ của vật là
+A. (4,0±0,3) m/s 
+B. (4,0±0,6) m/s 
+C. (4,0±0,2) m/s 
+D. (4,0±0,1) m/s 
+<Đáp án: A>
+
+Câu 49: Nhiệt độ đầu và nhiệt độ cuối của một lượng nước được ghi
+bởi một người quan sát trên nhiệt kế là ¿ . Bỏ qua sai số dụng cụ, nhiệt
+độ của nước đã tăng
+A. ¿ 
+B. ¿ 
+C. ¿ 
+D. ¿ 
+<Đáp án: >
+
+Câu 50: Cạnh của một hình lập phương đo được là
+a=(2,00±0,01)cm. Thể tích và diện tích bề mặt của nó bằng
+A. (8,00±0,12)cm3,(24,0±0,24)cm2 
+B.(8,00±0,01)cm3,(24,0±0,1)cm2 
+C.(8,00±0,04)cm3,(24,0±0,06)cm2 
+D.(8,00±0,0)cm3,(24,0±0,02)cm2 
+<Đáp án: >
+
+Câu 51: Một vật chuyển động đều với quãng đường vật đi được
+d=(13,8±0,2)m trong khoảng thời gian t=(4,0±0,3)s. Phép đo vận tốc có sai
+số tỉ đối gần đúng bằng
+A. ±2% 
+B. ±3% 
+C. ±6% 
+D. ±9% 
+<Đáp án: A>
+
+Câu 52: Lực F tác dụng lên một tiết diện hình vuông cạnh L. Nếu sai
+số tỉ đối trong xác định L là 2%. Xác định F là 4% thì sai số tỉ đối của
+phép đo áp suất là
+A. 8% 
+B. 6% 
+C. 4% 
+D. 2% 
+<Đáp án: A>
+
+Câu 53: Thể tích của hai vật đo được bằng V =(1,02±0,02)cm3 và
+V =(6,4±0,01)cm3. Tổng thể tích của hai vật trên sẽ có giá trị bằng
+<Đáp án: >

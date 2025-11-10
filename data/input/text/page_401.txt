@@ -1,0 +1,60 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. + Trên trục Ox ta có : a = 0 ; v = v
+x x o
+; x = v t
+o
++ Trên trục Oy ta có:
+1
+a = - g ; v = gt;d = gt2=5t2
+y y y 2
+b. Khi chạm đất thì d =80
+y
+⇒d =5t2⇒t=4(s)
+y
+Vận tốc của vật khi chạm đất:
+√ √
+v= v2+v2 ⇒v= (¿) 2+v2
+x y 0
+Để vận tốc chạm đất là 50 (m/s)
+√
+50= (10.4)2+v2⇒ v =30(m/s)
+0 0
+c. Tầm xa của vật L=v .t=30.4=120(m)
+0
+Câu 12: Từ sân thượng cao 80m một người đã ném một hòn
+đá theo phương ngang với v = 30 m/s. Lấy g = 10 m/s2.
+0
+a. Viết phương trình chuyển động của hòn sỏi theo trục Ox, Oy.
+b. Xác định quỹ đạo của hòn sỏi.
+c. Tính vận tốc theo phương Ox và Oy lúc t = 2s
+Hướng dẫn giải
+Chọn hệ quy chiếu Oxy với O là vị trí ném
+a. + Trên trục Ox ta có : a = 0 ; v = v = 30
+x x o
+( m/s ) ;
+x = v t = 30t
+o
++ Trên trục Oy ta có : a = - g ; v = -gt = -
+y y
+10t
+b. Quỹ đạo của hòn sỏi:
+1 x2
+y=h− gt2=80−5t2 ⇒ y=80−
+2 180
+ Quỹ đạo của vật là một phần parabol
+c. Tính vận tốc theo phương Ox và Oy lúc t =
+2s
+v = v = 30 ( m/s )
+x o
+v = -10t = -20 (m/s)
+y
+Câu 13: Từ đỉnh một ngọn tháp cao 125m, một quả cầu
+được ném theo phương ngang với vận tốc đầu 20m/s.
+a. Viết phương trình toạ độ của quả cầu. Xác định toạ độ của quả cầu
+sau khi ném 2s.
+b. Viết phương trình quỹ đạo của quả cầu. Quỹ đạo này là đường gì?
+c. Quả cầu chạm đất ở vị trí nào? Vận tốc khi chạm đất là bao nhiêu?
+Hướng dẫn giải
+Chọn hệ quy chiếu Oxy với O là vị trí ném
+401

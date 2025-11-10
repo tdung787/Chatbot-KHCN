@@ -1,0 +1,35 @@
+a. Trong 2 giây đầu xe chuyển động vói vận tốc tăng dần đều ⎕
+d (km)
+b. Từ giây thứ 2 đến giây thứ 4 xe dừng lại. 150 B ⎕
+c. Từ giây thứ 4 đến giây thứ 9 xe đổi chiều chuyển động theo ⎕
+hướng ngược lại với vận tốc nhỏ hơn lúc đi. 60
+d. Từ giây thứ 9 đến giây thứ 10 xe quay về đú3n0g Avị trí xuất phátt( h) ⎕
+rồi dừng lại. O 1 2 3 4 5
+Hướng dẫn giải
+a. [S] Trong 2 giây đầu xe chuyển động vói vận tốc không đổi.
+b. [Đ] Từ giây thứ 2 đến giây thứ 4 xe dừng lại.
+c. [Đ] Từ giây thứ 4 đến giây thứ 9 xe đổi chiều chuyển động theo
+hướng ngược lại với vận tốc nhỏ hơn lúc đi.
+d. [S] Từ giây thứ 9 đến giây thứ 10 xe dừng lại.
+Câu 6: Hình vẽ bên là đồ thị độ dịch
+chuyển − thời gian của một chiếc xe ô
+tô chạy từ A đến B trên một đường
+thẳng. Vận tốc của xe bằng
+a. Xe chuyển động thẳng đều từ A đến B ⎕
+b. Quãng đường xe đi từ A đến B là 150 km ⎕
+c. Thời gian xe đi từ A đến B là 5 giờ ⎕
+d. Vận tốc của xe bằng 30km/h ⎕
+Hướng dẫn giải
+a. [Đ]
+b. [S] Quãng đường xe đi từ A đến B là : s =120 km.
+c. [S] Thời gian xe đi từ A đến B là 4 giờ
+d. [S] Vận tốc của xe bằng: v = s/t = 30 km/h.
+3 Câu trắc nghiệm trả lời ngắn
+Câu 1: Phương trình chuyển động của các vật có dạng d = 10t – 10
+(m,s). Vận tốc của vật theo đơn vị km/h là bao nhiêu?(kết quả lấy đến 0
+chữ số thập phân)
+Đáp 3 6
+án:
+Hướng dẫn giải
+Ta có phương trình chuyển động d = 10t-10(m,s)
+Suy ra d =−10 m,v=10m/s=36km/h

@@ -1,0 +1,37 @@
+xuất phát là 200m.
+b. Tốc độ trung bình khi bơi dọc theo hết bể rồi quay lại chỗ xuất ⎕
+phát là 1,53 m/s.
+c. Quãng đường của người đó khi bơi dọc theo bể rồi quay lại chỗ ⎕
+xuất phát là 0.
+d. Vận tốc trung bình khi người bơi dọc theo bể rồi quay lại chỗ ⎕
+xuất phát là 0.
+Hướng dẫn giải
+a. [S] Độ dịch chuyển: d = 0.
+b. [Đ] v = s/t = 200/130 = 1,53 m/s.
+tb
+c. [S] s = 200 m.
+d. [Đ] v =d/t =0.
+Câu 6: Trái Đất quay một vòng quanh Mặt Trời trong thời gian 365
+ngày 6 giờ. Xem chuyển động này gần đúng là chuyển động tròn và
+khoảng cách từ Trái Đất đến Mặt Trời khoảng 1,5.1011m.
+a. Độ dịch chuyển của Trái Đất khi nó hoàn thành một vòng ⎕
+quanh Mặt Trời là 3π.1011 m.
+b. Quãng đường của Trái Đất quanh Mặt Trời là 3π.108 km. ⎕
+c. Tốc độ trung bình của Trái Đất khi quay một vòng quanh ⎕
+Mặt Trời là 107,5.103km/h.
+d. Vận tốc trung bình của Trái Đất khi quay một vòng quanh ⎕
+Mặt Trời là 0.
+Hướng dẫn giải
+a. [S] Độ dịch chuyển: d = 0.
+b. [Đ] Quãng đường chính là chu vi quĩ đạo s =2π R = 2π.1,5.108 =
+3π.108 km.
+c. [Đ] Tốc độ trung binh v = s/t = 3π.108/(365.24 +6) = 107,5.103
+tb
+km/h.
+d. [Đ] Vận tốc trung bình: v =d/t = 0.
+3 Câu trắc nghiệm trả lời ngắn
+Câu 1: Cho một xe ô tô chạy trên một quãng
+đường trong 5h. Biết 2h đầu xe chạy với tốc độ
+trung bình 60km/h và 3h sau xe chạy với tốc độ
+trung bình 40km/h. Tính tốc trung bình của xe
+trong suốt thời gian chuyển động theo đơn vị km/h

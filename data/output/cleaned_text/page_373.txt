@@ -1,0 +1,38 @@
+a. Gia tốc rơi tự do của trụ thép theo công thức
+2S
+g=
+t2
+b. Để xác định gia tốc rơi tự do của trụ thép cần đo đại lượng: quãng
+đường rơi của trụ thép và thời gian rơi.
+c. Để trụ thép rơi qua cổng quang điện cần đặt trụ thép tại vị trí tiếp
+xúc với nam châm điện điện và bị giữ lại ở đó. Nhấn nút của hộp công
+tắc kép để ngắt điện vào nam châm điện, trụ thép rơi xuống và chuyển
+động đi qua cổng quang điện.
+d. Đặt MODE đồng hồ đo thời gian hiện số ở chế độ thích hợp để đo
+được đại lượng cần đo. Ví dụ trường hợp này, đo thời gian từ lúc thả rơi
+đến lúc vật rơi hết quãng đường s nên ta đặt chế độ A -> B
+3 Tự luận
+Câu 1: Hãy căn cứ vào số liệu trong bảng 10.1 để:
+Bảng 10.1. Quãng đường vật rơi tự do theo thời gian từ kết quả chụp
+ảnh hoạt nghiệm
+Thời gian rơi (s) 0,1 0,2 0,3 0,4 0,4
+Quãng đường rơi
+0,049 0,197 0,441 0,785 1,227
+(m)
+a. Chứng tỏ chuyển động rơi tự do là nhanh dần đều.
+b. Tính gia tốc của chuyển động rơi tự do.
+Hướng dẫn giải:
+a. Nếu là chuyển động nhanh dần đều với v = 0 thì: s = .a.t2 tức s ~
+s
+t2 hay =const
+t2
+Dựa vào bảng 10.1, ta thấy rằng
++ Sau + Sau + Sau + Sau + Sau
+0,1s: 0,2s: 0,3s: 0,4s: 0,5s:
+s s s s s
+=4,9 =4,925 =4,9 =4,906 =4,908
+t2 t2 t2 t2 t2
+Thông qua các số liệu trên, ta thấy cùng trong một khoảng thời gian,
+quãng đường vật rơi được càng dài, chứng tỏ vật rơi tự do.
+b. Gia tốc của chuyển động rơi tự do: a = 2s/t2 = 2.0.049/0,12 = 9,8
+(m/s2)

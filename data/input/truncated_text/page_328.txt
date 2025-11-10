@@ -1,0 +1,41 @@
+Trong 4 s đầu: d = ½.a t2 = ½.2.42 = 16m
+1 1 1
+Trong 4 s tiếp theo: d = v t2 + ½.a t2 = 8.4 + 12.1.42 = 40m
+2 0 2 2
+Trong các giây tiếp theo: d = v t = 12t
+3 3 3 3
+Nếu gọi thời điểm hai xe gặp nhau là t thì t = t ± (t + t ) ⇒ t = t ± 8
+3 1 2 3
+Chọn dấu “-” vì trong 8 s đầu xe bus mới đi được d + d = 56 m, còn xe
+1 2
+máy đã đi được
+d = v t = 8.8 = 64m > 56m
+m m m
+Độ dịch chuyển của xe máy trong thời gian t là d = v t = 8t (1)
+m m
+Độ dịch chuyển của xe bus trong thời gian t là
+d = 16 + 40 + 12t = 16 + 40 + 12(t - 8) = 12t - 40 (2)
+b 3
+Khi hai xe gặp nhau d = d ⇒ 12t – 40 = 8t ⇒ t = 10s
+m b
+Hai xe gặp nhau tại thời điểm t = 10 s.
+d) Khi đó xe máy chạy được d = v t = 8t = 8.10 = 80 m
+m m
+e) Vận tốc trung bình của xe bus trong 8 s đầu
+d +d 16+40
+d = 1 2= =7m/s
+tb t +t 8
+1 2
+III ĐỀ TỰ LUYỆN
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câu 1 : Trong đồ thị vận tốc (Ot, Ov) đường biểu diễn dốc lên ứng với
+chuyển động có :
+A. Vận tốc theo chiều dương B. Vận tốc không đổi
+C. Vận tốc tăng D. Vận tốc giảm
+Câu 2 : ( SBT-KNTT) Đồ thị nào sau đây là của chuyển động biến đổi?
+A. Đồ thị 1. B. Đồ thị 2. C. Đồ thị 3. D. Đồ thị 4.
+Câu 3 : Đồ thị gia tốc – thời gian của một vật chuyển động từ trạng thái
+nghỉ ở hình bên.

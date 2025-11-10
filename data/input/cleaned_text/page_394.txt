@@ -1,0 +1,61 @@
+cao 45,0 m so với mặt đất. Vận tốc của viên đạn khi vừa ra khỏi nòng
+súng có độ lớn là 250 m/s. Lấy g = 9,8 m/s2.
+a. Viên đạn sau khi bay khỏi nóng súng chuyển động thẳng chậm
+⎕
+dần đều
+b. Thời gian từ lúc bắt đầu chuyển động đến khi chạm đất của
+⎕
+viên đạn 3,03s.
+c. Viên đạn rơi xuống đất cách điểm bắn theo phương nằm ngang
+⎕
+3125m.
+d. Ngay trước khi chạm đất, vận tốc của viên đạn có độ lớn bằng
+⎕
+252m/s
+Hướng dẫn giải
+a) [S] Viên đạn sau khi bay khỏi nóng súng chuyển động ném ngang.
+b) [Đ] Thời gian từ lúc bắt đầu chuyển động đến khi chạm đất của viên
+đạn:
+√
+2h
+t= =3,03s
+g
+c) [S] Tầm xa: L = v t = 250.3,03 = 757,5 m
+o
+d) [Đ] Vận tốc của viên đạn khi chạm đất có 2 thành phần:
+Thành phần theo phương thẳng đứng: v = gt = 9,8.3,03 = 29,7m/s
+y
+Thành phần theo phương ngang: v = v = 250m/s
+x o
+Vận tốc khi chạm đất:
+√
+v= v2+v2=252m/s
+x y
+Câu 5: Bỏ qua sức cản của không khí. Nếu từ độ cao h=30
+m, ném đồng thời hai vật theo phương ngang (cùng hướng) với khối
+lượng và tốc độ lần lượt là m =1 kg, v =20m/s và m =2 kg, v =10m/s thì.
+1 01 2 02
+Cho g=10m/s2 thì:
+a. Gia tốc của hai vật tại một vị trí bất kì luôn có hướng theo
+⎕
+phương thẳng đứng, chiều từ trên xuống.
+b. Tốc độ chạm đất của hai vật là như nhau. ⎕
+c. Vật 1 chạm đất trước vật 2 ⎕
+d. Vị trí hai vật chạm đất cách nhau 10m ⎕
+Hướng dẫn giải
+a) [Đ] Gia tốc của hai vật tại một vị trí bất kì luôn có hướng theo phương
+thẳng đứng, chiều từ trên xuống.
+√
+b) [S] Tốc độ chạm đất : v= v2+2gh
+Vì v > v nên tốc độ chạm đất của vật 1 lớn hơn vật 2.
+01 02
+√
+2h
+c) [S] Thời gian rơi của hai vật như nhau đều bằng t = = √6s
+g
+d) [S] Hai vật được ném cùng hướng. Vị trí chạm đất của hai vật cách
+nhau:
+√
+2h
+L = ( v −v ¿t =( v −v ¿ = 10 √6m.
+01 02 01 02 g

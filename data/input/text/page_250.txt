@@ -1,0 +1,51 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Δv 0−10
+Gia tốc trung bình của xe là a= = ≈−3,3m/s2
+Δt 3
+Câu 2: Sau khi khởi hành được 50 m, xe đạt vận tốc 5 m/s. Hỏi sau khi đi
+hết 50 m tiếp theo xe có vận tốc là bao nhiêu m/s? Biết xe chuyển động
+thẳng nhanh dần đều.
+(kết quả lấy 2 chữ số sau dấu phẩy thập phân)
+Đáp 7 , 0 7
+án:
+Hướng dẫn giải
+Chọn chiều dương là chiều chuyển động của xe.
+v 2−v 2 25
+Gia tốc xe: a= 1 0 = =0,25m/s2
+2s 100
+1
+Vận tốc xe sau khi đi được 50 m tiếp theo:
+v 2−v 2=2.a.s ⇔v 2−52=2.0,25.50⇒ v =7,07m/s
+2 1 2 2 2
+Câu 3: Xe chạy chậm dần lên một dốc có độ dài là S.
+Tốc độ ở chân dốc 54km/h, ở đỉnh dốc là 36km/h. Chọn
+gốc tọa độ tại chân dốc, chiều dương là chiều chuyển
+động. Sau khi lên được nửa dốc thì tốc độ xe bằng cm/s?
+(kết quả lấy 0 chữ số sau dấu phẩy thập phân)
+Đáp 1 2 7 5
+án:
+Hướng dẫn giải
+với v=36km/h=10m/sv =54km/h=15m/sS=50m
+0
+→a=−1,25m/s2
+S
+Sau khi lên nửa dốc thìS = 1=25m
+2 2
+√ √
+v 2−v2=2aS →v = v2+2aS = 152+2(−1,25).25=12,75m/s=1275cm/s
+1 0 1 1 0 1
+Câu 4: Trong một quán ăn có hệ thống đưa thức ăn
+tự động bằng băng chuyền, một khách hàng đặt một
+món ăn qua hệ thống tự động. Sau đó, đĩa thức ăn
+được di chuyển từ khu vực bếp đến vị trí khách hàng
+cách nhau 5 m từ trạng thái nghỉ. Giả sử chuyển
+động của đĩa thức ăn là nhanh dần đều và biết tốc độ
+của đĩa thức ăn đến khách hàng là 2 m/s. Nếu trường
+hợp khách hàng đặt một li cocktail, vì chiều cao li và mặt đế của li nhỏ nên
+li sẽ bị đổ khi gia tốc của nó vượt quá 0,5 m/s2. Tìm tốc độ tối đa mà li có
+thể đạt được để không bị đổ theo đơn vị cm/s?
+(kết quả lấy 2 chữ số sau dấu phẩy thập phân)
+Hướng dẫn giải
+Đáp 2 , 2 4
+250

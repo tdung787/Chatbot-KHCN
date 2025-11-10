@@ -1,0 +1,50 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+- Đổi
+- Chọn hệ tọa độ Oxy với O là vị trí ném, chiều dương là chiều từ trên
+xuống (Oy) và chiều từ trái sang phải (Ox), gốc thời gian là thời điểm bắt
+đầu ném.
+a. Phương trình chuyển động của quả bóng chày:
++ theo trục Ox: x=v .t=25.t
+0
+1 1
++ theo trục Oy: y= gt2= .9,8.t2=4,9t2
+2 2
+√ √
+2h 2.1,75
+b. Tầm xa: L=v . =25. ≈14,94 m
+0 g 9,8
+Tốc độ của nó ngay trước khi chạm đất:
+√ √
+v= v 2+2gh= 252+2.9,8.1,75≈25,68m/s
+0
+II BÀI TẬP TRÊN
+LỚP
+1 Câu trắc nghiệm nhiều phương án lựa chọn
+Câu 1: Vật A có khối lượng gấp hai lần vật B. Ném hai vật
+theo phương ngang với cùng tốc độ đầu ở cùng một vị trí. Nếu bỏ qua
+mọi lực cản thì
+A. vị trí chạm đất của vật A xa hơn vị trí chạm đất của vật B.
+B. vị trí chạm đất của vật B xa hơn vị trí chạm đất của vật A.
+C. vật A và B rơi cùng vị trí.
+D. chưa đủ dữ kiện để đưa ra kết luận về vị trí của hai vật.
+Câu 2: Trong tiết học Vật lí, ba bạn Mi, Hiếu và Đức tranh
+luận về thời gian rơi của vật chuyển động ném ngang so với vật thả rơi
+tự do khi ở cùng một độ cao và bỏ qua mọi lực cản. Bạn Mi cho rằng
+“Khi ném một vật theo phương ngang thì vật sẽ chuyển động lâu hơn so
+với việc thả vật rơi tự do vì khi ném ngang, vật sẽ đi quãng đường dài
+hơn”.
+Bạn Hiếu lại có ý kiến khác: “Thời gian rơi của hai
+vật là bằng nhau vì trong cả hai trường hợp, tính
+chất chuyển động của vật theo phương thẳng đứng
+là như nhau”. Còn bạn Đức thì cho rằng: “Thời
+gian rơi khi vật chuyển động ném ngang còn phụ
+thuộc vào vận tốc ban đầu nên không thể kết luận
+về thời gian rơi trong hai trường hợp”. Theo em,
+bạn nào đã đưa ra ý kiến đúng?
+A. Bạn Mi. B. Bạn Hiếu.
+C. Bạn Đức. D. Cả ba bạn đều không chính xác.
+Câu 3: Bi A có khối lượng lớn gấp 4 lần bi B. Tại cùng một lúc và ở cùng
+một độ cao, bi A được thả rơi còn bi B được ném theo phương nằm
+ngang. Nếu coi sức cản của không khí là không đáng kể thì
+384

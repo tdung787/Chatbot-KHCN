@@ -1,0 +1,16 @@
+b. Vặn núm quay về bên phải để đo cường độ dòng điện
+c. Vặn núm về bên trái để đo hiệu điện thế
+d. DC là đo dòng một chiều, AC là đo dòng xoay chiều.
+4 Tự luận (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 3. Mỗi câu 2 ý.
+Mỗi ý trả lời đúng thí sinh được 0,5 điểm
+Câu 1 :
+a. Để các kẹp điện gần nhau: có thể gây ra chập điện
+b. Để chất dễ cháy gần thí nghiệm mạch điện: rất dễ làm các tia điện
+bén vào gây cháy nổ
+c. Không đeo găng tay cao su khi làm thí nghiệm với nhiệt độ cao: có
+nguy cơ bị bỏng.
+Câu 2 :
+- Giới hạn đo của ampe kế ở hình 2.5 là 3A.
+- Nếu sử dụng ampe kế để đo dòng điện vượt quá giới hạn đo thì có thể
+làm cho ampe kế bị hư hỏng.

@@ -1,0 +1,28 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+1 20,9 5 0,7
+2 17,5 6 5
+3 1275 7 8
+4 0,26 8 600
+Hướng dẫn chi tiết:
+Câu 1:
+Độ dịch chuyển tổng hợp của bạn A trong cả
+chuyến đi là
+Câu 2:
+Đồ thị vận tốc – thời gian của xe
+máy:
+Từ 0 đến 10s chuyển động
+nhanh dần đều
+Từ 10s đến15s chuyển động
+thẳng đều
+Từ 15s đến 30s chuyển động
+chậm dần đều rồi dừng lại
+Từ đồ thị tính được độ dịch
+chuyển chính là diện tích hình OABC
+d= 0,5.10.30+ 5.30+0,5.15.30= 525m
+Vận tốc trung bình của xe trên cả đoạn đường
+Câu 3:
+Ta có , với
+Sau khi lên nửa dốc thì
+Câu 4:
+490

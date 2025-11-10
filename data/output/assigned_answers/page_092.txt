@@ -1,0 +1,54 @@
+Câu 52: Một người bơi từ bờ này sang bờ kia của một
+con sông rộng 50 m theo hướng vuông góc với bờ
+sông. Do nước sông chảy mạnh nên quãng đường
+người đó bơi gấp √2 lần so với khi bơi trong bể bơi.
+Hãy xác định độ dịch chuyển của người này khi bơi
+sang bờ sông bên kia.
+A. 50√2 m hợp với bờ sông 450. 
+B. 100 m hợp với bờ sông 600.
+C. 100 m hợp với bờ sông 300. 
+D. 50√2 m hợp với bờ sông 300.
+<Đáp án: A>
+
+Câu 53:Một người bơi từ bờ này sang bờ kia của một con sông rộng 50
+m theo hướng vuông góc với bờ sông. Do nước sông chảy mạnh nên
+quãng đường người đó bơi gấp √2 lần so với khi bơi trong bể bơi. Vị trí
+điểm tới cách điểm đối diện với điểm khởi hành của người bơi là bao
+nhiêu mét?
+A. 86,6 m 
+B. 100 m 
+C. 50 m 
+D. 150 m.
+<Đáp án: >
+
+Câu trắc nghiệm đúng sai
+Câu 1 : Nhận định sau là đúng hay sai ?
+a) Nếu các độ dịch chuyển d⃗ và d⃗ vuông góc nhau (d⃗ ⊥d⃗ ) thì d= √ d2−d2.
+1 2 1 2
+b) Một người đi bộ 3 km theo hướng nam rồi 2 km theo hướng tây. Độ
+dịch chuyển tổng hợp là d = 2,2 km, hướng của độ dịch chuyển lệch
+về phía tây 450 so với hướng nam.
+c) Biết d⃗ là độ dịch chuyển 3m về phía Đông, còn d⃗ là độ dịch chuyển
+1 2
+4m về
+phía Bắc. Độ lớn, phương, chiều của độ dịch chuyển tổng hợp là 5m,
+hướng đông - bắc 53°.
+d) Biết ⃗d là độ dịch chuyển 10 m về phía đông còn ⃗d là độ dịch
+1 2
+chuyển 6m
+về phía tây. Độ dịch chuyển tổng hợp là 4m.
+Hướng dẫn giải
+a) [S] Nếu các độ dịch chuyển d⃗ và d⃗ vuông góc nhau (d⃗ ⊥d⃗ ) thì
+1 2 1 2
+√
+d= d2+d2
+1 2
+b) [S] Độ dịch chuyển tổng hợp :
+d= √ d2+d2=√ 32+22=3,6km
+1 2
+tanα= ⇒α=33,70 , độ dịch chuyển tổng hợp có hướng lệch
+về phía tây 33,70 so với hướng nam.
+c) [Đ] Biết d⃗ là độ dịch chuyển 3m về phía Đông, còn d⃗ là
+1 2
+độ dịch chuyển 4m về phía Bắc. Độ lớn, phương, chiều của độ dịch
+chuyển là

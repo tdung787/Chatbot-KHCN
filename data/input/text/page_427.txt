@@ -1,0 +1,48 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+4 Tự luận
+Câu 1: (SBT-KNTT) Một người ngồi
+trong chiếc xe đang chuyển động sang
+phải với tốc độ không đổi như hình 9.3.
+Người này ném một quả táo thẳng đứng
+lên trên trong khi chiếc xe tiếp tục di
+chuyển với tốc độ không đổi. Nếu bỏ qua
+lực cản không khí, liệu quả táo sẽ rơi về lại
+tay người ném sau khi chuyển động lên
+không trung hay không, hay rơi về phía
+trước hoặc phía sau của xe ? Giải thích tại
+sao.
+Hướng dẫn giải
+Đối với người quan sát trên mặt đất,
+ngoài thành phần vận tốc theo
+phương thẳng đứng, quả táo còn
+chuyển động trên phương ngang với
+cùng tốc độ với xe. Do đó, quả táo
+chuyển động như vật bị ném xiên và
+rơi lại vào tay của người ném do
+người và quả táo có cùng vận tốc theo
+phương ngang.
+Câu 2: Từ mặt đất một quả cầu được ném theo phương hướng lên
+hợp với phương ngang một góc 600 với vận tốc 20m/s.
+a. Viết phương trình quỹ đạo của quả cầu.
+b. Tính độ cao cực đại vật đạt được so với mặt đất và thời gian vật bay
+trong không khí?
+c. Tầm bay xa của vật, vận tốc của vật khi chạm đất lần lượt là
+d. Xác định tọa độ và vận tốc của quả cầu lúc 2s
+Hướng dẫn giải
+Chọn hệ quy chiếu Oxy như hình vẽ
+Thời điểm ban đầu
+a. Chiếu lên trục Ox có:
+1
+v =v cosα=20. =10(m/s)
+0x 0 2
+Chiếu lên trục Oy có y =0
+0
+√3
+v =v sin α=20. =10√3(m/s)
+0 y 0 2
+Xét tại thời điểm t có a =0;a =−g
+x y
+Chiếu lên trục Ox: v =10;d =10t
+x x
+427

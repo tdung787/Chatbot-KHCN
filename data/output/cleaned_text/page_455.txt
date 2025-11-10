@@ -1,0 +1,20 @@
+Câu 2:
+a) Đổi đơn vị:
+Ta có công thức:
+b) Do vật chuyển động thẳng, không đổi chiều nên độ dịch chuyển d
+bằng quãng đường đi được s của vật.
+Quãng đường vật đi được sau 8s là
+Quãng đường vật đi được sau 7s là
+Quãng đường vật đi được trong giây thứ 8 là
+Câu 3:
++ Gọi thời gian rơi của hòn sỏi xuống đất từ độ cao H là:
++ Độ cao của điểm bắt đầu thả hòn sỏi xuống đất là:
++ Trong hòn sỏi đi được quãng đường là:
++ Quãng đường đi được của hòn sỏi trong giây cuối cùng là:
++ Giải phương trình ta được,
++ Độ cao của điểm bắt đầu thả là:
+ĐỀ THI GIỮA HK1- ĐỀ
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)

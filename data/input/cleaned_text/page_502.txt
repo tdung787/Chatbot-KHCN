@@ -1,0 +1,15 @@
+- Thời gian rơi trung bình:
+- Sai số tuyệt đối ứng với mỗi lần đo:
+- Sai số tuyệt đối trung bình:
+- Sai số tuyệt đối của phép đo:
+- Sai số tỉ đối của phép đo:
+Câu 4:
+Quãng đường xe đi được trong giây thứ 6:
+Quãng đường xe đi được trong giây thứ 8:
+Câu 5:
+Biết v = 16,2 km/h, v = 1,5 m/s= 5,4 km/h
+12 23
+Thời gian ca nô đi xuôi dòng:
+Thời gian ca nô đi ngược dòng:
+Thời gian ca nô cả đi và về là t = t + t = 2,5 h
+1 2

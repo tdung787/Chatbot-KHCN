@@ -1,0 +1,49 @@
+c. [Đ] Khi chạm đất, đất là nguyên nhân làm cho quả bóng bị cản lại, gia
+tốc a = -g.
+Vận tốc của bóng ngay khi bắt đầu bật lên là:
+v = v – gt = 4,85- 9,8.0,16 = 3,28m/s
+d. [S ] Khi bóng bật lên độ cao 0,8m, tại đó vận tốc v = 0
+Gia tốc của quả bóng khi nó tiếp xúc với đất và bật lên:
+v2−v2
+a= 2 1= - 6,724m/s2
+2S
+Câu 4: Một vật rơi tự do tại một địa điểm có độ cao 500m biết g =
+10m/s2.
+a. Vận tốc vận trước khi chạm đất là 100m ⎕
+b. Thời gian vật rơi hết quãng đường là 10s ⎕
+c. Quãng đường vật rơi được trong 5s đầu tiên là 120m ⎕
+d. Quãng đường vật rơi trong giây thứ 5 là 40m ⎕
+Hướng dẫn giải
+a. [S] Vận tốc v=√2gh=¿100m/s
+√ √
+1 2h 2.500
+b.[Đ] Áp dụng công thức h= gt2⇒t= = =10(s)
+2 g 10
+1 1
+c.[Đ]Quãng đường vật rơi trong 5s đầu: h = gt2= .10.52=125m
+5 2 5 2
+1 1
+d. [S] Quãng đường vật rơi trong 4s đầu: h = gt2= .10.42=80m
+4 2 4 2
+Quãng đường vật rơi trong giây thứ 5: Δh=h −h =125−80=45(m)
+5 4
+Câu 5: Một vật được thả rơi tự do từ độ cao h, lấy gia tốc rơi tự do g =
+9,8 m/s2.
+a. Quãng đường mà vật rơi tự do đi được sau khoảng thời gian t ⎕
+= 3 s là 44,1m
+b. Vận tốc của vật sau 2s là 19,6m/s ⎕
+c. Quãng đường mà vật rơi tự do đi được trong giây thứ tư là ⎕
+43,3m
+d. Trong giây thứ tư, vận tốc của vật đã tăng lên một lượng bằng ⎕
+9,8 m/s
+Quãng đường mà vật rơi tự do đi được sau khoảng thời gian t tính công
+thức:
+gt2
+s=
+Hướng dẫn giải
+a. [Đ]Quãng đường mà vật rơi tự do đi được sau khoảng thời gian t = 3 s
+là:
+g32
+s = =4,5 g=44,1 m
+3 2
+b. [Đ] Vận tốc của vật sau 2s: v = gt = 19,6m/s

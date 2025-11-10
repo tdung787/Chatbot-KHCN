@@ -1,0 +1,46 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+b)[S] Sai số tỷ đối của phép đo của người thứ nhất là
+Δd 1
+δ = 1 .100%= .100%=0,83%
+1 d 120
+1
+c)[Đ] Sai số tỷ đối của phép đo của người thứ hai là
+Δd 2
+δ = 2 .100%= .100%=1,67%
+2 d 120
+2
+d)[S] Do δ <δ nên người thứ nhất đo chính xác hơn người thứ hai.
+1 2
+Câu 3: Đo chiều dày của một cuốn sách bằng thước đo như hình ,
+được kết quả: 2,3 cm; 2,4 cm; 2,5 cm; 2,4 cm. Tính giá trị trung bình
+chiều dày cuốn sách.
+a) Giá trị trung bình của phép đo này là 2,4 cm 
+b) Sai số tuyệt đối trung bình của 4 lần đo được là 0,07 cm 
+c) Sai số tuyệt đối d là 0,02cm 
+d) Kết quả đo: A=(2,4±0,1)cm 
+Hướng dẫn giải
+d +d +d +d
+a)[Đ] Giá trị trung bình của phép đo này là d¯= 1 2 3 4=2,4 cm
+4
+b)[S] Sai số tuyệt đối các lần đo
+Δd =¯d−d =0,1
+1 1
+Δd =¯d−d =0
+2 2
+Δd =¯d−d =0,1
+3 3
+Δd =¯d−d =0
+4 4
+Sai số tuyệt đối trung bình của 4 lần đo được
+∆ d +∆ d +...+∆d 0,1+0+0,1+0
+∆d= 1 2 4= =0,05cm
+n 4
+c) [S] Sai số tuyệt đối d là ∆d=∆d+∆d =0,1cm
+dc
+d)[Đ] Kết quả đo: d=(2,4±0,1)cm
+Câu 4: Một học sinh muốn xác định gia tốc trọng trường g bằng cách
+thả rơi một quả bóng từ độ cao s và dùng đồng hồ để bấm thời gian rơi t
+của quả bóng, thu được bảng số liệu sau: (Độ chia nhỏ nhất của đồng
+hồ là 0,001s)
+54

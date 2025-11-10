@@ -1,0 +1,9 @@
+C. Được phép tiến hành thí nghiệm khi đã mang đồ bảo hộ.  
+D. Phải vệ sinh, sắp xếp gọn gàng các thiết bị và dụng cụ thí nghiệm, bỏ chất thải thí nghiệm vào đúng nơi quy định sau khi tiến hành thí nghiệm.  
+A. Dòng điện một chiều.  
+B. Dòng điện xoay chiều.  
+C. Cực dương.  
+D. Cực âm.  
+A. Đầu vào.  
+B. Đầu ra.  
+C. Dụng cụ đặt đứng.

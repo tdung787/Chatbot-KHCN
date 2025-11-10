@@ -1,0 +1,36 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Hướng dẫn giải
+- Thang đo: Bên nút thang đo có ghi giới hạn đo (GHĐ) và độ chia nhỏ
+nhất (ĐCNN) của đồng hồ là: 9,999 s – 0,001 s và 99,99 s – 0,01 s.
+- MODE: Núm này dùng để chọn chế độ làm việc của đồng hồ.
++ MODE A: Đo thời gian vật chắn cổng quang điện nối với ổ A.
++ MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.
++ MODE A + B: Đo tổng của hai khoảng thời gian vật chắn cổng quang
+điện nối với ôt A và vật chắn cổng quang điện nối với ổ B.
++ MODE A↔B: Đo thời gian vật chuyển động từ cổng quang điện nối
+với ổ A tới cổng quang điện nối với ổ B.
++ MODE T: Đo khoảng thời gian T của từng chu kì dao động.
++ Nút RESET: Đặt lại chỉ số của đồng hồ về giá trị 0.000.
+Câu 2: Quan sát Hình 6.3, tìm hiểu và trình bày phương pháp đo tốc độ
+trung bình và tốc độ tức thời dựa vào những thiết bị trên. Đánh giá ưu và
+nhược điểm của mỗi phương pháp đo.
+Hướng dẫn giải
+* Phương pháp đo của các thiết bị trên
+- Đồng hồ bấm giây:
++ Dùng thước đo độ dài của quãng đường s. Xác định vạch xuất phát
+và vạch đích
++ Dùng đồng hồ bấm giây đo thời gian t từ khi vật bắt đầu chuyển
+động từ vạch xuất phát tời vạch đích.
++ Dùng công thức v = S/t để tính tốc độ trung bình và v = d/t để tính
+tốc độ tức thời.
+- Cổng quang điện:
++ Lấy quãng đường trên thiết bị đo
++ Khởi động thiết bị và cho vật đi quan cổng quang điện
++ Đọc kết quả thời gian hiên trên thiết bị và sử dụng công thức để
+tính tốc độ trung bình và tốc độ tức thời
+- Súng bắn tốc độ:
++ Khởi động súng
++ Thực hiện, trên máy sẽ hiện lên tốc độ
+* Ưu và nhược điểm của các thiết bị
+183

@@ -1,0 +1,49 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+(m)
+Hãy xác định vận tốc và tốc độ tức thời tại thời điểm 10 s:
+A. 1 m/s; -0,3 m/s B. 1 m/s; -0,7 m/s
+C. 0,7 m/s; 0,7 m/s D. 1,5 m/s; 1,5 m/s
+Câu 29: (SBT-CTST) Nhà của Bách và
+trường nằm trên cùng một con đường nên
+hằng ngày Bách đều đi học bằng xe đạp
+từ nhà đến trường với tốc độ không đổi
+bằng 4 m/s (khi trời lặng gió). Trong một
+lần Bách đạp xe từ nhà đến trường, có
+một cơn gió thổi ngược chiều trong
+khoảng thời gian 90 s. Hình 5.1 mô tả đồ
+thị độ dịch chuyển - thời gian của Bách
+trong 5 phút đầu tiên. Tốc độ của gió so
+với mặt đất là bao nhiêu?
+A. 1,2 m/s. B. 1,5 m/s. C. 2 m/s. D. 2,5 m/s.
+Hướng dẫn giải
+- Gọi ⃗v , ⃗v , ⃗v lần lượt là vận tốc của Bách so với đất (khi không
+13 23 12
+có gió); của gió so với đất và của Bách so với gió.
+- Từ đồ thị ta có:
+∆d 620−440
+υ = = =2m/s
+12 ∆t 200−110
+- Ta có ⃗v =⃗v +⃗v ⇒ v =v −v υ =υ −υ =2−4=−2m/s
+13 12 23 13 12 23 23 12 13
+- Như vậy, tốc độ gió là 2 m/s và thổi ngược chiều so với chiều
+chuyển động của Bách.
+Câu 30: Phương trình chuyển động của một chất điểm dọc theo trục
+Ox có dạng: x = 5 + 60t (x đo bằng kilomét và t đo bằng giờ). Chất điểm
+đó xuất phát từ điểm nào và chuyển động với vận tốc bằng bao nhiêu?
+A. Từ điểm O, với vận tốc 5km/h.
+B. Từ điểm O, với vận tốc 60km/h.
+C. Từ điểm M, cách O là 5km, với vận tốc 5 km/h.
+D. Từ điểm M, cách O là 5km, với vận tốc 60km/h.
+Câu 31: Phương trình chuyển động của một chất điểm dọc theo Ox có
+dạng: x = 5t – 12 (km), với t đo bằng giờ. Độ dời của chất điểm từ 2h đến
+4h là
+A. 8km. B. 6 km. C. 10 km. D. 2 km.
+Câu 32: Phương trình chuyển động của một chất điểm dọc theo trục
+Ox có dạng: x = 4 -10t (x đo bằng kilomét và t đo bằng giờ). Quãng
+đường đi được của chất điểm sau 2h chuyển động là:
+A. -20 km. B. 20 km. C. -8 km. D. 8km.
+Câu 33: Trong các phương trình chuyển động thẳng đều sau đây,
+phương trình nào biểu diễn chuyển động không xuất phát từ gốc toạ độ
+và ban đầu hướng về gốc toạ độ?
+199

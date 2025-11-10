@@ -1,0 +1,57 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+ Quãng đường vật rơi được trong 0,5 s cuối là: 47,089 – 33,124 =
+13,965 (m)
+Câu 7: Một vật rơi không vận tốc đầu từ đỉnh tòa nhà chung cư có độ
+cao 320m xuống đất. Cho g = 10m/s2.
+a. Tìm vận tốc lúc vừa chạm đất và thời gian của vật rơi.
+b. Tính quãng đường vật rơi được trong 2s đầu tiên và 2s cuối cùng.
+Hướng dẫn giải
+√
+1 2.h
++ Áp dụng công thức h= g.t2⇒t=
+2 g
++ Ta có v = gt = 10.8 = 80m/s
+1
+b. + Quãng đường vật đi trong 6s đầu: h = .10.62=180m
+2 2
++ Quãng đường đi trong 2s cuối cùng: S’ = S – S = 320 – 180 = 160m
+1
+Câu 8: Một quả bóng được thả rơi tự do từ độ cao 1,2
+m. Sau khi chạm đất, quả bóng bật lên ở độ cao 0,80 m.
+Thời gian tiếp xúc giữa bóng và mặt đất là 0,16 s. Lấy g
+= 9,81 m/s2 . Bỏ qua sức cản của không khí. Tìm:
+a. Tốc độ của quả bóng ngay trước khi chạm đất.
+b. Tốc độ của quả bóng ngay khi bắt đầu bật lên.
+c. Độ lớn và phương gia tốc của quả bóng khi nó tiếp xúc
+với mặt đất.
+Hướng dẫn giải
+m
+a. Tốc độ của vật rơi tự do ngay trước khi chạm đất là: v=√2gh=4,85( )
+s
+b. Tốc độ của quả bóng ngay khi bắt đầu bật lên là: v = g.t = 9,81.0,16
+= 1,57 (m/s)
+c. Độ lớn gia tốc:
+v−v 1,57−4,85
+a= 0= =20,5(m/s2)
+t 0,16
+Gia tốc có phương thẳng đứng.
+Câu 9: Cho một vật rơi tự do từ độ cao h. Trong 2s cuối cùng trước
+khi chạm đất, vật rơi được quãng đường 60m. Tính thời gian rơi và độ
+cao h của vật lúc thả biết g = 10 m/s2.
+Hướng dẫn giải
++ Gọi t là thời gian vật rơi cả quãng đường.
+1
++ Quãng đường vật rơi trong t giây: h= gt2
+2
+1
++ Quãng đường vật rơi trong ( t – 2 ) giây đầu tiên: h = g¿
+t−2 2
++ Quãng đường vật rơi trong 2 giây cuối:
+1 1
+Δh=h−h ⇒60= gt2− g¿
+t−2 2 2
+1 1
++ Độ cao lúc thả vật: h= gt2= .10.42=80m
+2 2
+355

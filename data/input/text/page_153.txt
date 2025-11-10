@@ -1,0 +1,56 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 2: Một máy bay đang bay theo hướng Bắc với
+vận tốc 200 m/s thì bị gió từ hướng Tây thổi vào với
+vận tốc 20 m/s. Xác định vận tốc tổng hợp của máy
+bay lúc này.
+(kết quả lấy 0 chữ số sau dấu phẩy thập phân)
+Đáp 2 0 1
+án:
+Hướng dẫn giải
+ Gọi: + ⃗v là vận tốc của máy bay so với gió
+12
++ ⃗v là vận tốc của gió so với đường bay
+23
++ ⃗v là vận tốc của máy bay so với đường bay
+13
+ Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+Suy ra vận tốc tổng hợp của máy bay lúc này là:
+√ m
+v = v2 +v2 =201( )
+13 12 23 s
+Câu 3: (SBT-CTST) Một xe tải chạy
+với tốc độ 40 km/h và vượt qua một xe
+gắn máy đang chạy với tốc độ 30 km/h.
+Vận tốc của xe máy so với xe tải bằng
+bao nhiêu km/h?
+(kết quả lấy 0 chữ số sau dấu phẩy
+thập phân)
+Đáp - 1 0
+án:
+Hướng dẫn giải
+Quy ước:
+Xe máy – số 1 – Vật chuyển động
+Xe tải – số 2 – Hệ quy chiếu chuyển động
+Mặt đường – số 3 – Hệ quy chiếu đứng yên
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+Vận tốc của xe máy so với xe tải là: v = v – v =30-40=-10km/h
+12 13 23
+Câu 4: Một chiếc thuyền chuyển động ngược chiều dòng nước với vận
+tốc là 5,5km/h, vận tốc chảy của dòng nước đối với bờ là 1,5km/h. Tính
+vận tốc của thuyền so với nước theo đơn vị km/h?
+(kết quả lấy 0 chữ số sau dấu phẩy thập phân)
+Hướng dẫn giải
+Gọi: + ⃗v là vận tốc của thuyền so với nước
+12
++ ⃗v là vận tốc của nước so với bờ
+23
++ ⃗v là vận tốc của thuyền so với bờ
+13
+Áp dụng công thức cộng vận tốc: ⃗v = ⃗v + ⃗v
+13 12 23
+Với v = 5,5 km/h, v = 1,5 km/h
+13 23
+153

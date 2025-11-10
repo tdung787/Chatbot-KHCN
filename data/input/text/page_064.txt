@@ -1,0 +1,52 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Sai số tỉ đối của phép đo:
+Δd 0,0026
+= .100%≈0,1%
+d 2,626
+4 Tự luận
+Câu 1: (SBT-KNTT) Hình 3.1 thể hiện nhiệt kế đo nhiệt độ t (0C) và t
+1 2
+(0C) của một dung dịch trước và sau khi đun. Hãy xác định và ghi kết
+quả độ tăng nhiệt độ t của dung dịch này:
+20 25 60 65
+30 70
+a) b)
+Hình 3.1. Nhiệt kế: a) trước; b) sau khi
+đun dung dịch
+Hướng dẫn giải
+Từ hình vẽ, ta đọc được t =24,0±0,50vàt =68,0±0,50C .
+1 2
+Suy ra ¯t=t −t =68,0−24,0=44,00C.
+2 1
+Sai số tuyệt đối: Δt=Δt +Δt =0,5+0,5=1,00C .
+2 1
+Vậy độ tăng nhiệt độ của dung dịch là: t=¯t ± Δt=44,0±1,00C .
+Câu 2: (SBT-KNTT) Hãy xác định số chữ số có nghĩa (CSCN) của các
+số sau đây: 123,45; 1,990; 3,110.10−9; 1 907,21; 0,002099;12768000.
+Hướng dẫn giải
+123,45 – 5 CSCN; 1,990 – 4 CSCN; 3,110.10-9 – 4 CSCN;
+1 907,21– 6 CSCN; 0,002099 – 4 CSCN; 12 768 000 – 5 CSCN.
+Câu 3: (SBT-KNTT) Viên bi hình cầu có bán kính r đang chuyển động
+với tốc độ v trong dầu. Viên bi chịu tác dụng của lực cản có độ lớn được
+cho bởi biểu thức F=c.r.v , trong đó c là một hằng số. Xác định đơn vị của
+c theo đơn vị của lực, chiều dài và thời gian trong hệ SI.
+Hướng dẫn giải
+Theo đề bài: F=c.r.v, ta được:
+F
+c=
+r.v
+Suy ra đơn vị của c là N.m-2.s.
+Câu 4: (SBT-KNTT) Một vật có khối lượng m và thể tích V, có khối
+m
+lượng riêng ρ được xác định bằng công thức ρ= . Biết sai số tương đối
+V
+của m và V lần lượt là 12% và 5%. Hãy xác định sai số tương đối của ρ.
+Hướng dẫn giải
+m
+Vì ρ= nên δp=δm+δV =12%+5%=17%.
+V
+Câu 5: (SBT-KNTT) Một học sinh muốn xác định gia tốc rơi tự do g
+bằng cách thả rơi một quả bóng từ độ cao h và dùng đồng hồ để bấm
+thời gian rơi t của quả bóng. Sau đó, thông qua quá trình tìm hiểu, bạn
+64

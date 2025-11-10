@@ -1,0 +1,47 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Quãng đường mà quả bóng bay
+được sau 20 s kể từ lúc bắt đầu
+chuyển động được tính bằng diện
+tích của phần đồ thị được tô màu
+xanh.
+s = s + s = ½.5.15 + ½.15.10
+1 2
+= 37,5 + 75 = 112,5 m
+Câu 23: Đồ thị vận tốc – thời
+gian trong Hình 9.3 là của một
+xe bus và một xe máy chạy cùng
+chiều trên một đường thẳng. Xe
+bus đang đứng yên, bắt đầu
+chuyển động thì xe máy đi tới.
+a) Tính gia tốc của xe bus trong 4 s đầu và 4 s tiếp theo.
+b) Khi nào thì xe bus bắt đầu chạy nhanh hơn xe máy?
+c) Khi nào thì xe bus đuổi kịp xe máy?
+d) Xe máy đi được bao nhiêu mét thì xe bus đuổi kịp?
+e) Tính vận tốc trung bình của xe bus trong 8 s đầu.
+Hướng dẫn giải
+a) Gia tốc của xe bus trong
+4 s đầu:
+∆ v 8−0
+a = 1= =2m/s2
+1 ∆t 4−0
+1
+Gia tốc của xe bus trong 4 s
+tiếp theo:
+∆ v 12−8
+a = 2= =1m/s2
+2 ∆t 8−4
+2
+b) Sau giây thứ 4 thì vận tốc của xe bus lớn hơn vận tốc của xe máy.
+c) Dựa vào đồ thị, diện tích hình giới hạn bởi đường biểu diễn trong đồ
+thị vận tốc - thời gian có độ lớn bằng độ lớn độ dịch chuyển (quãng
+đường đi được). Khi hai xe gặp nhau, thì diện tích hình giới hạn bởi
+đường biểu diễn cho hai xe bằng nhau.
+Ta thấy, diện tích hình chữ nhật OAHI giới hạn bởi đường biểu diễn v – t
+cho xe máy bằng với diện tích hình OCKLI giới hạn bởi đường biểu diễn v
+– t cho xe bus cùng bằng 10 ô. Do đó, tại thời điểm t = 10 s thì d = d ,
+1 2
+nghĩa là xe bus đuổi kịp xe máy.
+Kiểm tra bằng phương trình chuyển động:
+Đối với xe bus:
+327

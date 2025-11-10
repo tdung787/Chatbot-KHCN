@@ -1,0 +1,32 @@
+2 Câu trắc nghiệm đúng sai
+Câu 1: Một vật chuyển động thẳng có
+đồ thị (d – t) được mô tả như Hình
+4.11. Hãy xác định tốc độ tức thời của
+vật tại các vị trí A, B và C
+a. Tại A, vật chuyển động thẳng đều, cùng chiều dương ⎕
+b. Tốc độ tức thời ở vị trí A là 1m/s ⎕
+c. Tại vị trí B, vật không chuyển động ⎕
+d. Tại vị trí C, vật chuyển động thẳng chậm dần đều với tốc độ ⎕
+tức thời là 2m/s
+Hướng dẫn giải
+a. [Đ] Tại vị trí A, vật đang chuyển động thẳng đều do đồ thị là
+đường thẳng, hướng lên
+b. [S] Tốc độ tức thời tại vị trí A:
+∆ d 2
+v = A= =2(m/s)
+A ∆t 1
+A
+c. [Đ] Tại vị trí B: trên đoạn này đồ thị có dạng đường nằm
+ngang, song song với trục thời gian, tức là độ dịch chuyển
+không thay đổi theo thời gian, suy ra vật không chuyển động.
+d. [S] Tại vị trí C, vật chuyển động thẳng đều do đồ thị là
+đường thẳng, hướng xuống, tuy nhiên chuyển động theo chiều
+ngược lại.
+Tốc độ tức thời tại vị trí C:
+∆d |2−4|
+v = C= ≈2(m/s)
+C ∆t 4−3
+C
+Câu 2: Hình bên mô tả đồ thị tọa độ
+- thời gian của hai chiếc xe trong
+cùng một khoảng thời gian.

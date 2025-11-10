@@ -1,0 +1,48 @@
+b) Viết phương trình chuyển động và vẽ đồ thị độ dịch chuyển - thời
+gian.
+c) Xác định vận tốc của vật ngay trước khi chạm đất.
+Hướng dẫn giải
+a) Tầm xa:
+√ √
+2h g
+L=v v =L =5m/s
+0 g 0 2h
+b) Muốn xác định được quỹ đạo chuyển
+động của vật ta phải xác định được mối
+quan hệ giữa độ dịch chuyển theo
+phương thẳng đứng y và độ dịch
+chuyển theo phương nằm ngang x:
+x
+x=v t ⇒t=
+0 v
+1 g
+y=h− gt2=h− d 2=4,9−0,196d 2
+2 2v2 x x
+Lập bảng biến thiên với 6 giá trị của x
+và y:
+x (m) 0 2 3 4 5
+4, 4, 4, 3, 1,
+y (m) 0
+9 7 1 1 8
+Quỹ đạo là một nửa đường parabol.
+c) Thành phần vận tốc theo phương ngang: v = v = 5m/s
+x 0
+Thành phần vận tốc theo phương thẳng đứng: v = gt = √2gh = 9,8 m/s
+y
+Vận tốc khi chạm đất:
+√ m
+v= v2+v2=11
+x y s
+v
+tanα= y =1,96=630
+v
+x
+Vận tốc của vật ngay trước khi chạm đất có độ lớn là 11 m/s, hướng
+xuống dưới 63° so với phương nằm ngang.
+III ĐỀ TỰ LUYỆN
+1 Câu trắc nghiệm nhiều phương án lựa chọn (3,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một
+phương án.
+(Mỗi câu trả lời đúng thí sinh được 0,25điểm)
+Câu 1: Bi A có trọng lượng lớn gấp đôi bi B. Cùng một lúc tại một mái
+nhà ở cùng độ cao, bi A được thả còn bi B được ném theo phương ngang

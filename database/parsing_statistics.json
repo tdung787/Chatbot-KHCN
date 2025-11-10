@@ -1,0 +1,10 @@
+{
+  "total_files": 168,
+  "success_files": 168,
+  "failed_files": 0,
+  "total_questions": 780,
+  "total_chars": 252912,
+  "split_questions": 228,
+  "timestamp": "2025-11-06T09:46:44.186562",
+  "output_file": "database/parsed_questions.json"
+}

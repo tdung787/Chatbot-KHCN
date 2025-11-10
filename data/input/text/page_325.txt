@@ -1,0 +1,49 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a) Tại thời điểm nào, vận tốc
+tàu hỏa có giá trị lớn nhất?
+b) Vận tốc tàu hỏa không đổi
+trong khoảng thời gian
+nào?
+c) Tàu chuyển động thẳng
+nhanh dần đều trong
+khoảng thời gian nào?
+Hướng dẫn giải
+a. Dựa vào đồ thị ta thấy, tại thời điểm t = 50 s vận tốc có giá trị lớn
+nhất.
+b. Trong khoảng thời gian từ 90 s đến 110 s, đồ thị có dạng là đường
+thẳng song song với trục thời gian nên trong khoảng thời gian này tàu
+hỏa chuyển động với vận tốc không đổi. Cụ thể là tàu đang đứng yên vì v
+= 0.
+c. Trong khoảng thời gian từ 0 đến 40 s, đồ thị là đường thẳng có độ dốc
+dương nên tàu chuyển động thẳng nhanh dần đều trong khoảng thời
+gian này.
+Câu 20: Một xe tải đang chuyển động đều với tốc độ cho phép trên
+đường cao tốc trong khoảng thời gian Δt . Khi nhìn thấy biển báo “Đoạn
+đường hay xảy ra tai nạn”, tài xế quyết định giảm tốc độ. Sau khoảng
+thời gian Δt , tài xế quan sát thấy một tai nạn đột ngột xảy ra ở phía
+1
+trước. Do đó tài xế hãm phanh gấp để dừng lại trong khoảng thời gian
+ngắn Δt để tránh va chạm. Giả sử trong suốt quá trình chuyển động, xe
+2
+tải luôn chạy trên đường thẳng.
+a) Vẽ đồ thị vận tốc – thời gian biểu diễn quá trình chuyển động của
+xe tải.
+b) Độ dốc của đồ thị trong trường hợp nào lớn nhất?
+Hướng dẫn giải
+a) Giai đoạn 1: chuyển động thẳng
+đều.
+Giai đoạn 2: chuyển động chậm
+dần với gia tốc nhỏ.
+Giai đoạn 3: chuyển động chậm
+dần với gia tốc lớn.
+b) Trong thời gian hãm phanh gấp
+(Δt ) thì độ dốc của của đồ thị từ thời
+2
+điểm Δt+Δt đến thời điểm Δt+Δt +Δt là
+1 1 2
+lớn nhất.
+Câu 21: (SBT-KNTT) Xét một người đi xe máy trên một đoạn đường
+thẳng. Tốc độ của xe máy tại mỗi thời điểm được ghi lại trong bảng dưới
+đây.
+325

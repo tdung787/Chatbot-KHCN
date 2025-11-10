@@ -1,0 +1,48 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Câu 17: Thí nghiệm của nhà bác học Galilê ở tháp nghiêng thành Pida
+và thí nghiệm với ống của nhà bác học Niutơn chứng tỏ. Kết quả nào sau
+đây là đúng
+A. Mọi vật đều rơi theo phương thẳng đứng
+B. Rơi tự do là chuyển động nhanh dần đều
+C. Các vật nặng nhẹ rơi tự do nhanh như nhau
+D. Cả 3 kết luận A, B,C
+Câu 18: Một quả cầu ném thẳng đứng lên trên. Tại điểm cao nhất của
+quỹ đạo phát biểu nào sau đây là đúng:
+A. Vận tốc bằng 0, gia tốc bằng 0 B. Vận tốc bằng 0, gia
+tốc khác 0
+C. Vận tốc khác 0, gia tốc khác 0 D. Vận tốc khác 0, gia
+tốc bằng 0
+Câu 19: Từ công thức về rơi tự do không vận tốc đầu, ta suy ra vận
+tốc của vật rơi thi:
+A. Tỷ lệ với căn số bậc 2 của đoạn đường rơi B. Tỷ lệ nghịch với
+đoạn đường rơi
+C. Tỷ lệ thuận với đoạn đường rơi D. Tỷ lệ bình phương của
+đoạn đường rơi
+Câu 20: Một học sinh đứng lan can tầng bốn ném quả cầu thẳng
+đứng lên trên, tiếp theo đó ném tiếp quả cầu thẳng đứng xuống dưới với
+cùng tốc độ. Bỏ qua sức cản của không khí, quả cầu nào chạm mặt đất
+có tốc độ lớn hơn?
+A. Qủa cầu ném lên C. Cả hai quả cầu chạm đất có cùng tốc
+độ
+B. Qủa cầu ném xuống C. Không xác định được vân tốc quả
+cầu vì thiếu độ cao
+Câu 21: (10.3 SBT) Thả một hòn sỏi từ độ cao h xuống đất. Hòn sỏi
+rơi trong 2s. Nếu thả hòn sỏi từ độ cao 2h xuống đất thì hòn sỏi sẽ rơi
+trong bao lâu?
+A. 2 s. B. 2√2 s C. 4 s D. 4√2 s
+Câu 22: (10.5 SBT) Một vật được thả rơi từ độ cao 9,8 m xuống đất.
+Bỏ qua lực cản của không khí. Lấy gia tốc rơi tự do g = 9,8 m/s2. Vận tốc
+v của vật trước khi chạm đất bằng
+A. 9,8√2 m/s B. 9,8 m/s. C. 98 m/s D. 6,9 m/s
+Câu 23: (SBT-KNTT) Hai vật được thả rơi tự do đồng thời từ hai độ
+cao khác nhau h và h . Khoảng thời gian rơi của vật thứ nhất gấp đôi
+1 2
+thời gian rơi của vật thứ hai. Bỏ qua lực cản của không khí. Tỉ số các độ
+cao h /h là:
+1 2
+h h h h
+A . 1=2.B . 1=0,5.C. 1=4.D. 1=1.
+h h h h
+2 2 2 2
+342

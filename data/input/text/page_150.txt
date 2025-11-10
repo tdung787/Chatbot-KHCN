@@ -1,0 +1,47 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+b. [Đ] Độ lớn độ dịch chuyển tổng hợp là:
+√
+d= d2+d2=15,16(km)
+1 2
+c. [ S] Thời gian người đó đi về phía đông là:
+s 2,2.103
+t = 1 = =1100(s)=18,33( phút)
+1 v 2,0
+1
+Tổng thời gian đi của người này là:
+t = t + t = 18,33 + 15 = 33,33 (phút)
+1 2
+d. [ Đ] Tốc độ trung bình là:
+s +s m
+v= 1 2=8,6( )
+t +t s
+1 2
+Câu 4: Một người đi xe đạp với vận tốc 14,4 km/h, trên một đoạn đường
+song hành với đường sắt. Một đoạn tàu dài 120 m chạy ngược chiều và
+vượt người đó mất 6 giây kể từ lúc đầu tàu gặp người đó
+Chọn chiều dương là chiều chuyển động của tàu
+a. Vận tốc của tàu so với xe đạp là 20m/s ⎕
+b. Vận tốc của xe đạp so với đất là 4m/s ⎕
+c. Khi tàu chạy ngược chiều với người đi xe đạp thì vận tốc của ⎕
+tàu là 24 m/s
+d. Khi tàu chạy cùng chiều với người đi xe đạp thì vận tốc của tàu ⎕
+là 16m/s
+Hướng dẫn giải
+L 120
+a.[ Đ] Vận tốc của tàu so với xe đạp là v =v = = =20m/s
+tx 12 t 6
+b. [Đ] Vận tốc của xe đạp so với đất làv = v = 4 km/h = 4 m/s
+xd 23
+c. [ S] Khi tàu chạy ngược chiều với người đi xe đạp thì vận tốc của tàu
+là
+v =v −v →v =v −v =20−4=16m/s
+td tx xd 13 12 23
+d. [ S] Khi tàu chạy cùng chiều với người đi xe đạp thì vận tốc của tàu là
+v =v +v →v =v +v =20+4=24m/s
+td tx xd 13 12 23
+Câu 5 : Tại một thời điểm, ở vị trí M trên đoạn đường thẳng có xe máy A
+chạy qua với tốc độ 30km/h. Sau 10 phút, cũng tại vị trí M, có xe máy B
+chạy qua với tốc độ 40km/h để đuổi theo xe máy A. Giả sử hai xe máy
+chuyển động với tốc độ xem như không đổi.
+150

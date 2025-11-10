@@ -1,0 +1,48 @@
+A. Đứng yên.
+B. Chạy lùi về phía sau.
+C. Tiến về phía trước.
+D. Tiến về phía trước rồi sau đó lùi về phía
+sau.
+Câu 8: Một chiếc xe lửa đang chuyển động, quan sát chiếc va li đặt trên
+giá để hàng hóa, nếu nói rằng: 1. Va li đứng yên so với thành toa; 2. Va li
+chuyển động so với đầu máy; 3. Va li chuyển động so với đường ray. thì
+nhận xét nào ở trên là đúng?
+A. 1 và 2. B. 2 và 3. C. 1 và 3. D. 1, 2 và 3.
+Câu 9: Một người đạp xe coi như đều. Đối với
+người đó thì đầu van xe đạp chuyển động như thế
+nào?
+A. Chuyển động thẳng đều
+B. Chuyển động thẳng biến đổi đều.
+C. Chuyển động tròn đều.
+D. Vừa chuyển động tròn, vừa chuyển động tịnh
+tiến.
+Câu 10: Từ công thức ⃗v =⃗v +⃗v . Kết luận nào sau đây là sai:
+13 12 23
+A. Ta luôn có v ≥ v – v .
+13 12 23
+B. Nếu⃗v ↑↓⃗v và |⃗v |>|⃗v | thì v = v - v .
+12 23 12 23 13 12 23
+C. Nếu ⃗v ↑↑⃗v thì v = v + v .
+12 23 13 12 23
+√
+D. Nếu ⃗v ⊥ ⃗v thì v = v2 +v2 .
+12 23 13 12 23
+Câu 11: (SBT-KNTT) Một xe tải
+chạy với tốc độ 40 km/h và vượt qua một
+xe gắn máy đang chạy với tốc độ 30 km/h
+. Vận tốc của xe máy so với xe tải bằng
+bao nhiêu?
+A. 5 km/h. B. 10 km/h. C. -5 km/h. D. -10
+km/h.
+Câu 12: Ôtô A và B chạy cùng chiều
+trên một đoạn đường với vận tốc là
+50km/h và 40km/h. Vận tốc của ôtô A
+so với B là:
+A. 70 km/h B. 90 km/h C. 10 km/h
+D. - 10 km/h
+Câu 13: Hai đầu máy xe lửa
+chạy ngược chiều trên một đọan
+đường sắt thẳng với vận tốc
+40km/h và 60km/h. Vận tốc của
+đầu máy thứ nhất so với đầu máy
+thứ hai là?

@@ -1,0 +1,41 @@
+1 1
+d= (OC+AB).BC= (4+1).4=10(m)
+2 2
+d 10
+c. [S] Vận tốc trung bình khi đó: v= = =2,5m/s
+t 4
+d.[Đ] Độ dịch chuyển = Diện tích hình thang OAEG + Diện tích
+tam giác EDF
+1 1 1 1
+d= (OG+AE).EG+ EF .ED= (10+4).4+ 2.3=31m
+2 2 2 2
+Chất điểm chuyển động thẳng không đổi chiều nên S = d
+s 31
+Tốc độ trung bình khi đó: v= = =3,1m/s
+t 10
+Câu 4 : Cho đồ thị (v - t) vẽ ở
+Hình bên.
+Biết mỗi cạnh của ô vuông nhỏ
+trên trục tung ứng với 2 m/s,
+trên trục hoành ứng với 1 s.
+a. Vật chuyển thẳng chậm dần đều với vận tốc ban đầu là 4m/s ⎕
+b. Vận tốc của vật tại thời điểm t là 20 m/s ⎕
+A
+c. Độ dịch chuyển của chuyển động là 60m ⎕
+d. Giá trị của gia tốc là 2m/s2 ⎕
+Hướng dẫn giải
+a. [S] Vật chuyển thẳng nhanh dần đều với vận tốc ban đầu là 4 m/s
+b. [S] Vận tốc của vật tại thời điểm t là 10 m/s
+A
+c. [Đ] Độ dịch chuyển có độ lớn bằng diện tích của hình thang vuông có
+đường cao là t và các đáy có độ lớn v , v.
+Từ đồ thị ta có: v = 4 (m/s); v = 16 (m/s) t = 6(s)
+ Độ dịch chuyển là: d = (4 + 16).6/2 = 60 (m)
+d. [Đ] Ta có: Gia tốc: a = Δv/Δt
+Từ đồ thị ta thấy: Độ biến thiên vận tốc các khoảng thời gian bằng nhau
+là 2 m/s.
+Xét giữa 2 thời điểm A và B:
+∆ v v −v 12−10
+a= = B A= =2(m/s2)
+∆t t −t 4−3
+A B

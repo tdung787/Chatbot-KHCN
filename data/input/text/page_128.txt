@@ -1,0 +1,62 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+(m)
+t (s) 0 1,0 2,0 3,0 4,0 5,0
+a. giây đầu tiên? b. suốt thời gian quan sát? c. 3 giây
+cuối cùng?
+Hướng dẫn giải
++ Tốc độ trung bình của ô tô
+s 2,3
+a. Trong giây đầu tiên: v = 1= =2,3m/s
+tb t 1
+1
+s 57,5
+b. Trong suốt thời gian quan sát: v = = =11,5m/s
+tb t 5
+|x −x | 57,5−9,2
+c. Trong 3 giây cuối cùng: v = 5 2 = =16,1m/s
+tb t −t 5−2
+5 2
+Câu 12: (SBT-CTST) Một ô tô chạy từ địa
+điểm A đến địa điểm B với tốc độ 40 km/h, sau đó
+ô tô quay trở về A với tốc độ 60 km/h. Giả sử ô tô
+luôn chuyển động thẳng đều.
+a. Tính tốc độ trung bình của ô tô trên cả đoạn
+đường đi và về.
+b. Tính vận tốc trung bình của ô tô trên cả đoạn đường đi và về.
+Hướng dẫn giải
+a) Tốc độ trung bình trên cả đoạn đường đi và về:
+s 2. AB 2. AB 2v v
+v = = = = 1 2=48km/h
+tb t t +t AB AB v +v
+1 2 + 1 2
+v v
+1 2
+b) Vận tốc trung bình trên cả đoạn đường đi và về:
+d 0
+v = = =0km/h
+tb t t +t
+1 2
+Câu 13: Một ôtô chạy trên đoạn đường thẳng từ A đến B phải mất
+khoảng thời gian t. Trong nửa đầu của khoảng thời gian này ô tô có tốc
+độ là 60km/h. Trong nửa khoảng thời gian cuối ô tô có tốc độ là 40km/h.
+Tính tốc độ trung bình trên cả đoạn AB.
+Hướng dẫn giải
+t
++ Trong nửa thời gian đầu: S =v .t =60. =30t
+1 1 1 2
+t
++ Trong nửa thời gian cuối: S =v .t =40. =20t
+2 2 2 2
+S S +S 30t+20t
++ Mà ta có: v = = 1 2= =50(km/h)
+tb t t +t t
+1 2
+Câu 14: Một ô tô đi trên quảng đường thẳng, trong 2/3 thời gian đầu
+đi với tốc độ 12m/s; trong thời gian còn lại đi với tốc độ 8m/s, tính tốc độ
+trung bình của ô tô trên cả quảng đường.
+Hướng dẫn giải
++ Gọi t là tổng thời gian vật chuyển động: t = 2t/3; t = t/3
+1 2
++ Ta có tốc độ trung bình của xe trong suốt thời gian chuyển động là:
+128

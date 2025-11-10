@@ -1,0 +1,49 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+a. Khi lên đến điểm cao nhất thì v =0⇒ v=v =v .cosα
+y x 0
+⇔40=50.cosα⇒α ≈36,870
+b.
+v2.sin2α 502.sin236,87
+c. Tầm cao: H= 0 = =45m
+2g 2.10
+v2.sin 2α (¿2.36,87)
+Tầm xa: L= 0 =502.sin =240m¿
+g 10
+Ví dụ 2.
+Một người nhảy xa với vận tốc ban đầu 7,5 m/s theo phương xiên 300
+với phương nằm ngang. Bỏ qua sức cản của không khí và lấy g = 9,8
+m/s2. Tính:
+a. Vận tốc ban đầu của người nhảy theo phương thẳng đứng và theo
+phương nằm ngang.
+b. Tầm cao H.
+c. Thời gian từ khi bắt đầu nhảy tới khi đạt tầm cao.
+d. Thời gian từ lúc bắt đầu nhảy lên tới lúc rơi xuống hố nhảy,
+e. Tầm xa L?
+Hướng dẫn giải
+Chọn hệ tọa độ Oxy với O là vị trí trên mặt đất mà người đó đặt chân vào
+để nhảy lên, chiều dương là chiều từ dưới lên (Oy) và chiều từ trái sang
+phải (Ox), gốc thời gian là thời điểm nhảy.
+a) Vận tốc ban đầu:
+v =v .sin 300=3,75m/s (từ dưới lên)
+0 y 0
+v =v .cos300=6,5m/s (trái sang phải)
+0x 0
+b) Khi đạt tầm cao H thì vận tốc của người nhảy theo phương thẳng đứng
+v =0:
+y
+v2
+v2−v2 =2.a.H=−2.g.H⇒ H= 0y =0,717m
+y 0y 2.g
+c) Thời gian từ lúc bắt đầu nhảy đến khi đạt tầm cao:
+v 3,75
+v =v −g.t⇒t= 0y = =0,383 s
+y 0y g 9,8
+c) Thời gian từ lúc bắt đầu nhảy đến khi rơi xuống hố nhảy:
+t’ = 2.t = 2. 0,383 = 0,766 s.
+d) Tầm xa
+L=d =v .t'=6,5.0,766=4,98m
+xmax 0x
+Ví dụ 3. Một tàu cướp biển đang neo đậu cách bờ một khoảng cách
+560m. Trên bờ một khẩu súng đại bác bắn một viên đạn với tốc độ ra
+411

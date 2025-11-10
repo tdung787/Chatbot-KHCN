@@ -1,0 +1,45 @@
+∆a ∆b 1 1
+c. [Đ] F = a x b  δF=δa+δb= + = + ≈0.04=4%
+a b 51 49
+∆a ∆b 1 1
+d. [S] F = a/b  δF=δa+δb= + = + ≈0.04=4%
+a b 51 49
+Câu 7: Bảng thể hiện kết quả đo đường kính của một viên bi thép
+bằng thước kẹp có sai số dụng cụ là 0,02 mm.
+Lần đo d (mm)
+1 6,32
+2 6,32
+3 6,32
+4 6,32
+5 6,34
+6 6,34
+7 6,32
+8 6,34
+9 6,32
+
+a) Giá trị trung bình của đường kính viên bi thép là 6,33 m
+
+b) Sai số tuyệt đối trung bình của phép đo 0,01 mm
+
+c) Sai số tỉ đối của phép đo là 0,03 mm
+
+d) Kết quả của phép đo là d=(6,33±0,03) mm
+Hướng dẫn giải
+a) [S] Giá trị trung bình của đường kính viên bi thép:
+d +d +d +d +d +d +d +d +d
+d= 1 2 3 4 5 6 7 8 9 ≈6,33mm
+b) [Đ] Sai số tuyệt đối trung bình của phép đo:
+∆d =|d−d |=|6,33−6,32|=0,01mm=∆d =∆d =∆ d =∆d =∆ d
+1 1 2 3 4 7 9
+∆d =|d−d |=|6,33−6,34|=0,01mm=∆d =∆ d
+5 5 6 8
+Sai số tuyệt đối trung bình của phép đo:
+∆ d +∆d +…+d
+∆d= 1 2 9=0,01mm
+c) [S] Sai số tuyệt đối của phép đo là:
+∆d=∆d+∆d =0,01+0,02=0,03mm
+dc
+d) [Đ] Kết quả của phép đo là d=(6,33±0,03) mm
+Câu 8: Đo chiều dày của một cuốn sách, , được kết quả: 2,3 cm; 2,4
+cm; 2,5 cm; 2,4 cm. Sai số dụng cụ của thước đo chiều dày của cuốn
+sách là 0,05 cm.

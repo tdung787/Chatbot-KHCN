@@ -1,0 +1,33 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Hãy xác định độ dịch chuyển của bạn Nhật trong các trường hợp:
+a. Bạn Nhật đi từ nhà đến trạm xe buýt.
+b. Bạn Nhật đi từ nhà đến trường học.
+Bạn Nhật đi từ trường học về trạm xe buýt.
+Hướng dẫn giải
+Ví dụ 5. Biết ⃗d là độ dịch chuyển 10 m về phía đông còn ⃗d là độ dịch
+1 2
+chuyển 6 m về phía tây. Hãy xác định độ dịch chuyển tổng hợp d⃗ trong
+2 trường hợp sau:
+a.
+d⃗=⃗d +⃗d
+1 2
+b. . d⃗=⃗d +3⃗d
+1 2
+Hướng dẫn giải
+a. d=d −d =10−6=4m
+1 2
+→ Độ dịch chuyển tổng hợp 4 m về phía đông.
+b. d=d −3d =10−3.6=−8m
+1 2
+→ Độ dịch chuyển tổng hợp 8 m về phía tây.
+Ví dụ 6. Biết ⃗d là độ dịch chuyển 6 m về phía đông còn ⃗d là độ dịch
+1 2
+chuyển 8 m về phía bắc.
+a. Hãy vẽ các vectơ độ dịch chuyển ⃗d , ⃗d và vectơ độ dịch chuyển
+1 2
+tổng hợp d⃗.
+b. Hãy xác định độ lớn, phương và chiều của độ dịch chuyển d⃗.
+Hướng dẫn giải
+a. .
+82

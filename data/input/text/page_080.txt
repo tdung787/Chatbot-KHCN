@@ -1,0 +1,22 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Δd +Δd +...+Δd 0,03+0,07+0,01+0,01+0,04
+ΔT= 1 2 5= =0,03 s
+5 5
+- Sai số tuyệt đối của phép đo:
+ΔT=ΔT+ΔT =0,03+0,02=0,05 s
+dc
+- Sai số tỷ đối của của phép đo:
+ΔT 0,05
+δ= .100%= .100%=2,45%
+T 2,04
+c) Kết quả đo chu kì: T=T¯ ± ΔT=2,04±0,05(s)
+Chuyên đề
+ĐỘNG HỌC
+2
+Chủ đề 1 ĐỘ DỊCH CHUYỂN VÀ QUÃNG ĐƯỜNG ĐI ĐƯỢCĐƯỢCĐƯỢC
+I BÀI TẬP MẪU
+Ví dụ 1. (SBT-CTST) Xét quãng đường AB dài 1000 m với A là vị trí
+nhà của em và B là vị trí của bưu điện (Hình vẽ). Tiệm tạp hóa nằm tại
+vị trí C là trung điểm của AB. Nếu chọn nhà em làm gốc tọa độ và
+80

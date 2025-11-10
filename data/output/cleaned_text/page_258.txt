@@ -1,0 +1,39 @@
+Hướng dẫn giải
+a. Gia tốc của ô tô là: a = Δv/Δt = 10/1 = 10 (m/s2)
+( )
+∆ v 10 m
+a= = =10
+∆t 1 s2
+- Gia tốc của người chạy bộ là:
+( )
+∆ v 4−6 m
+a= = =−2
+∆t 1−0 s2
+b. Chuyển động thẳng biến đổi đều là chuyển động thẳng mà vận tốc có
+độ lớn tăng hoặc giảm đều theo thời gian.
+ Các chuyển động trong hình vẽ ở đầu bài là chuyển động thẳng biến
+đổi đều.
+Câu 12: (SBT-CTST) Một chiếc ô tô đang chạy với
+vận tốc 23m/s thì chạy chậm dần. Sau 10 s, vận tốc của ô
+tô chỉ còn 11m/s. Tính gia tốc của ô tô. Gia tốc này có gì
+đặc biệt?
+Hướng dẫn giải
+Gia tốc của ô tô là:
+( )
+∆ v 11−23 m
+a= = =−1,2
+∆t 10 s2
+Gia tốc a có giá trị âm không đổi trong khi các vận tốc có giá trị dương
+vì chuyển động là chậm dần đều
+Câu 13: (SBT-CTST) Tại hiện trường một vụ
+tai nạn trên đường quốc lộ ngoài đô thị, cảnh sát
+phát hiện vết trượt kéo dài 50m. Qua các đo đạc
+trên mặt đường, cảnh sát kết luận gia tốc của ô
+tô trong quá trình giảm tốc có độ lớn 6,5m/s2.
+Nếu tốc độ giới hạn trên làn đường được quy
+định là 80km/h thì ô tô này có vượt quá tốc độ
+cho phép không? Giả sử trong quá trình giảm
+tốc, ô tô chuyển động chậm dần đều.
+Hướng dẫn giải
+Áp dụng công thức: v2 − v2 = 2a.s
+Suy ra: 02 − v2 = 2.(−6,5).50 ⇒ v = √650=¿25,5 (m/s) = 91,78 (km/h)

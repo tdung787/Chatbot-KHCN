@@ -1,0 +1,61 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+v = s/t = (s +s )/(t + t ) = 43,75 km/h.
+tb 1 2 1 2
+b. [Đ] Độ dịch chuyển: d = √ 302+402=50km
+c. [S] Thời gian đi: t = 1 +0,6 = 1,6 h.
+d. [Đ] v = d/t = 31,25 km/h.
+Câu 2:
+a. [Đ] t = 1+2+3= 6h.
+b. [S] Vận tốc trung bình là 50 km/h
+c. [Đ] s = s + s + s = 1.50 + 2.40 + 3.20 = 190 km.
+1 2 3
+d. [S] v = d/t = 190/6 = 31,7 km/h.
+tb
+3 Câu trắc nghiệm trả lời ngắn (2,0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 8
+Mỗi câu trả lời đúng thí sinh được 0,25 điểm
+Câ Đáp Câ Đáp
+u án u án
+1 12 5 975
+2 18,2 6 1600
+3 24 7 3
+4 3,4 8
+Hướng dẫn chi tiết:
+Câu 1:
++ Gọi s là tổng thời gian vật chuyển động: s = 2s/3; s = s/3
+1 2
++ Ta có tốc độ trung bình của xe trong suốt thời gian chuyển động là:
+s +s s s 1 km
+v = 1 2= = = =12 .
+tb t +t s s 2s s 2 1 h
+1 2 1 + 2 + +
+v v 3.10 3.20 3.10 3.20
+1 2
+Câu 2:
+S S
++ Theo bài ra ta có S =v .t ⇒t = 1=
+1 1 1 1 v 75
+1
+S 2S
++S =v .t ⇒t = 2=
+2 2 2 2 v 3v
+2 2
+S S S
+v = = =20km/h⇒ =20(km/h())
++ Theo bài ra ta có tb t t +t S 2S
+1 2 +
+75 3v
+2
+⇒225v =60 v +3000⇒ v =18,2(km/h)
+2 2 2
+Câu 3:
+Ta có: t = t = 1.5/2 = 0,75 h.
+1 2
+Mà s + s = 45
+1 2
+→ v .0,75 + 2/3.v .0,75 = 45
+1 1
+→ v = 24 km/h.
+1
+135

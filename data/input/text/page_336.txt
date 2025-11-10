@@ -1,0 +1,61 @@
+ Cô Nhung Cute 0972.46.48.52 VẬT LÍ
+10
+Gia tốc của xe bus trong 4s đầu:
+v −v 8−0 1 1
+a = 1 0= =2m/s2,d = .a .t2= .2.42=16m
+1 t 4 1 2 1 1 2
+Gia tốc của xe bus trong 4s tiếp theo:
+v −v 12−8 1 1
+a = 2 0= =1m/s2,d =v .t + .a .t2=8.4+ .1.42=40m
+2 t 8−4 2 0 2 2 2 2 2
+d +d 16+40
+Vận tốc trung bình của xe buýt trong 8 giây đầu: v = 1 2= =7m/s
+tb t +t 8
+1 2
+Câu 3 :
+Xét vật A:
+Gia tốc:
+∆v 0−40
+a = A= =−2m/s2
+A ∆ t 20−0
+A
+Xét vật B:
+Gia tốc
+∆v 20−0
+a = B= =1m/s2
+B ∆t 20−0
+B
+Chuyển động của vật A: d = v t + ½.a t2 = 40t − t2 (1)
+1 0A A
+Chuyển động của vật B: d = v t + ½.a t2 = 0,5t2 (2)
+2 0B B
+Hai vật gặp nhau khi d - d = 78 ⇒ 40t − t2 − 0,5t2 = 78  − 1,5t2 + 40t
+1 2
+– 78 = 0
+Phương trình (3) cho hai nghiệm t = 2,12 s và t’ = 24,5 s (loại vì t’ > 20
+s)
+Thay t vào (1) ta được d = 80,3 m.
+1
+Hai vật gặp nhau cách vị trí ban đầu của A là 80,3 m.
+Câu 4 :
+10−0
+Dựa vào độ thị, ta có a = =2m/s2a =0
+1 5−0 2
+0−10
+a = =−1m/s2→a +a +a =1m/s2=100cm/s2
+3 20−10 1 2 3
+Câu 5 :
+Vận tốc tàu hỏa có giá trị lớn nhất tại thời điểm t =50s
+Câu 6 :
+Δv 0−2
+Từ 2,5 s đến 3 s: a = 3= =−4m/s2
+3 Δt 0,5
+3
+Câu 7:
+Chuyển động (I):
+4−2
+Gia tốc: a = =0,1m/s2
+1 20
+Câu 8:
+Chuyển động (III):
+336
