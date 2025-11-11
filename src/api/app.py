@@ -14,6 +14,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from src.tools.quiz_storage import QuizStorage
+from src.tools.submission_manager import SubmissionManager
 
 
 # ==================== FASTAPI APP ====================
@@ -34,6 +35,7 @@ app.add_middleware(
 
 # Initialize storage
 storage = QuizStorage()
+submission_manager = SubmissionManager()
 
 
 # ==================== HEALTH CHECK ====================
@@ -218,12 +220,12 @@ def get_daily_count(
                 daily_stats[date] = {
                     "date": date,
                     "count": 0,
-                    "date_counts": [],
+                    "daily_counts": [],
                     "subjects": []
                 }
             
             daily_stats[date]["count"] += 1
-            daily_stats[date]["date_counts"].append(quiz["date_count"])
+            daily_stats[date]["daily_counts"].append(quiz["daily_count"])
             daily_stats[date]["subjects"].append(quiz.get("subject"))
         
         # Convert to list and sort by date descending
@@ -278,8 +280,8 @@ def get_quizzes_by_date(
             if q["date"].startswith(date)
         ]
         
-        # Sort by date_count
-        quizzes_on_date.sort(key=lambda x: x["date_count"])
+        # Sort by daily_count
+        quizzes_on_date.sort(key=lambda x: x["daily_count"])
         
         return {
             "success": True,
@@ -287,6 +289,212 @@ def get_quizzes_by_date(
             "student_id": student_id,
             "count": len(quizzes_on_date),
             "data": quizzes_on_date
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+    
+# ==================== SUBMISSION ENDPOINTS ====================
+
+@app.get("/api/quiz/current-status")
+def get_current_quiz_status(
+    student_id: str = Query(..., description="Student ID (required)")
+) -> Dict:
+    """
+    Check if student has pending quiz
+    
+    Returns:
+        Quiz info if pending, or null
+    """
+    try:
+        pending_quiz = storage.get_latest_pending_quiz(student_id)
+        
+        if pending_quiz:
+            return {
+                "success": True,
+                "has_pending": True,
+                "quiz": {
+                    "id": pending_quiz["id"],
+                    "subject": pending_quiz.get("subject"),
+                    "topic": pending_quiz.get("topic"),
+                    "difficulty": pending_quiz.get("difficulty"),
+                    "created_at": pending_quiz.get("date")
+                }
+            }
+        else:
+            return {
+                "success": True,
+                "has_pending": False,
+                "quiz": None
+            }
+            
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+
+@app.post("/api/submission/submit")
+def submit_quiz(
+    quiz_id: str = Query(..., description="Quiz ID"),
+    student_id: str = Query(..., description="Student ID"),
+    answers: str = Query(..., description="Student answers in format: 1-A,2-B,3-C,...")
+) -> Dict:
+    """
+    Submit quiz and auto-grade
+    
+    Args:
+        quiz_id: Quiz ID to submit
+        student_id: Student ID
+        answers: Format "1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B"
+        
+    Returns:
+        Submission result with score
+    """
+    try:
+        # 1. Check if quiz exists
+        quiz = storage.get_quiz(quiz_id)
+        if not quiz:
+            raise HTTPException(status_code=404, detail=f"Quiz not found: {quiz_id}")
+        
+        # 2. Check if quiz belongs to student
+        if quiz["student_id"] != student_id:
+            raise HTTPException(status_code=403, detail="Quiz does not belong to this student")
+        
+        # 3. Check if quiz is pending
+        if quiz.get("status") != "pending":
+            raise HTTPException(status_code=400, detail="Quiz already submitted")
+        
+        # 4. Check if already submitted
+        if submission_manager.check_quiz_submitted(quiz_id, student_id):
+            raise HTTPException(status_code=400, detail="Quiz already submitted")
+        
+        # 5. Validate answers format
+        if not answers or len(answers.split(',')) != 10:
+            raise HTTPException(status_code=400, detail="Answers must have exactly 10 items (1-A,2-B,...)")
+        
+        # 6. Get answer key from quiz
+        answer_key = quiz.get("answer_key")
+        if not answer_key:
+            raise HTTPException(status_code=500, detail="Quiz missing answer key")
+        
+        # 7. Submit and grade
+        result = submission_manager.submit_quiz(
+            quiz_id=quiz_id,
+            student_id=student_id,
+            student_answers=answers,
+            answer_key=answer_key
+        )
+        
+        if not result["success"]:
+            raise HTTPException(status_code=500, detail=result.get("error", "Submission failed"))
+        
+        # 8. Update quiz status to completed
+        storage.update_quiz_status(quiz_id, "completed")
+        
+        return {
+            "success": True,
+            "message": "Đã nộp bài và chấm điểm thành công!",
+            "submission_id": result["submission_id"],
+            "score": result["score"],
+            "total": result["total"],
+            "percentage": result["percentage"],
+            "daily_count": result["daily_count"]
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+
+@app.get("/api/submission/{submission_id}")
+def get_submission(submission_id: str) -> Dict:
+    """Get submission by ID (basic info)"""
+    try:
+        submission = submission_manager.get_submission(submission_id)
+        
+        if not submission:
+            raise HTTPException(status_code=404, detail=f"Submission not found: {submission_id}")
+        
+        return {
+            "success": True,
+            "data": submission
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+
+@app.get("/api/submission/{submission_id}/result")
+def get_submission_result(submission_id: str) -> Dict:
+    """
+    Get detailed submission result with correct/incorrect breakdown
+    """
+    try:
+        # Get submission
+        submission = submission_manager.get_submission(submission_id)
+        
+        if not submission:
+            raise HTTPException(status_code=404, detail=f"Submission not found: {submission_id}")
+        
+        # Get quiz to get answer key
+        quiz = storage.get_quiz(submission["quiz_id"])
+        
+        if not quiz:
+            raise HTTPException(status_code=404, detail="Quiz not found")
+        
+        # Get detailed result
+        detailed = submission_manager.get_submission_with_details(
+            submission_id,
+            quiz["answer_key"]
+        )
+        
+        return {
+            "success": True,
+            "submission_id": submission_id,
+            "quiz_id": submission["quiz_id"],
+            "student_id": submission["student_id"],
+            "score": submission["score"],
+            "total": 10.0,
+            "percentage": (submission["score"] / 10.0) * 100,
+            "correct_count": detailed["correct_count"],
+            "incorrect_count": detailed["incorrect_count"],
+            "submitted_at": submission["submitted_at"],
+            "daily_count": submission["daily_count"],
+            "details": detailed["details"],
+            "quiz_info": {
+                "subject": quiz.get("subject"),
+                "topic": quiz.get("topic"),
+                "difficulty": quiz.get("difficulty")
+            }
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+
+@app.get("/api/submission/student/{student_id}")
+def get_student_submissions(
+    student_id: str,
+    limit: int = Query(10, ge=1, le=100),
+    offset: int = Query(0, ge=0)
+) -> Dict:
+    """Get submission history for a student"""
+    try:
+        submissions = submission_manager.get_student_submissions(
+            student_id,
+            limit=limit,
+            offset=offset
+        )
+        
+        return {
+            "success": True,
+            "student_id": student_id,
+            "count": len(submissions),
+            "data": submissions
         }
         
     except Exception as e:

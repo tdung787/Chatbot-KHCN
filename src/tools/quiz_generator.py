@@ -75,14 +75,14 @@ class QuizGenerator:
             "difficulty": get_difficulty_vietnamese(self.student_profile.get("difficulty_preference", "medium")),
             "grade_level": self.student_profile.get("grade_level")
         }
+        
+    
     
     def generate_quiz(
         self,
         subject: str,
         topic: str,
-        num_questions: int = 10,
         difficulty: str = None,
-        time_limit: int = 15,
         use_student_difficulty: bool = True
     ) -> Dict:
         """Generate quiz - Fixed for 15-min, 10 questions"""
@@ -111,7 +111,12 @@ QUY TẮC:
 1. BẮT BUỘC: Đúng 10 câu (Câu 1→10)
 2. Câu hỏi chính xác khoa học
 3. Đáp án nhiễu hợp lý
-4. CHỈ ĐỀ, KHÔNG ĐÁP ÁN
+4. CHỈ ĐỀ, KHÔNG ĐÁP ÁN TRONG NỘI DUNG
+
+QUAN TRỌNG: Sau khi tạo đề, thêm dòng ẩn ở cuối với đáp án đúng:
+<!-- ANSWER_KEY: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B -->
+
+Format đáp án: số-chữ cái, phân cách bằng dấu phẩy
 
 ĐỘ KHÓ (15 phút):
 - Dễ: Nhớ định nghĩa, 1 bước tính, số đẹp. VD: "v=s/t với s=100m, t=10s"
@@ -169,6 +174,23 @@ Yêu cầu: Đúng 10 câu, 4 đáp án/câu, không đáp án. Tập trung ch�
             
             quiz_markdown = response.choices[0].message.content.strip()
             
+            answer_key = self._extract_answer_key(quiz_markdown)
+            
+            if not answer_key:
+                print("   ⚠️ Không tìm thấy answer key, đang retry...")
+                # Retry with emphasis
+                response = self.client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt + "\n\n⚠️ CHÚ Ý: BẮT BUỘC phải thêm dòng:\n<!-- ANSWER_KEY: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B -->"}
+                    ],
+                    temperature=0.7,
+                    max_tokens=3000
+                )
+                quiz_markdown = response.choices[0].message.content.strip()
+                answer_key = self._extract_answer_key(quiz_markdown)
+            
             # Validate
             if not self._validate_quiz(quiz_markdown, num_questions):
                 print("   ⚠️ Retry...")
@@ -190,6 +212,7 @@ Yêu cầu: Đúng 10 câu, 4 đáp án/câu, không đáp án. Tập trung ch�
             return {
                 "success": True,
                 "quiz_markdown": quiz_markdown,
+                "answer_key": answer_key,
                 "metadata": {
                     "subject": subject,
                     "topic": topic,
@@ -232,7 +255,29 @@ Yêu cầu: Đúng 10 câu, 4 đáp án/câu, không đáp án. Tập trung ch�
         question_pattern = r'##\s+\*\*Câu\s+\d+\*\*:'
         questions = re.findall(question_pattern, quiz_markdown)
         return {"total_questions_found": len(questions)}
-
+    
+    def _extract_answer_key(self, quiz_markdown: str) -> Optional[str]:
+        """
+        Extract answer key from quiz markdown
+        
+        Format: <!-- ANSWER_KEY: 1-A,2-B,3-C,... -->
+        
+        Returns:
+            "1-A,2-B,3-C,..." hoặc None nếu không tìm thấy
+        """
+        import re
+        
+        # Try to find answer key in HTML comment
+        pattern = r'<!--\s*ANSWER_KEY:\s*(.+?)\s*-->'
+        match = re.search(pattern, quiz_markdown)
+        
+        if match:
+            answer_key = match.group(1).strip()
+            print(f"   ✓ Đã trích xuất answer key: {answer_key[:30]}...")
+            return answer_key
+        
+        print("   ⚠️ Không tìm thấy answer key trong markdown")
+        return None
 
 def extract_topic_from_query(query: str, openai_client: OpenAI) -> Optional[Dict]:
     """Extract subject and topic from query"""
@@ -247,9 +292,11 @@ JSON:
 {{
     "subject": "Toán"|"Vật lý"|"Hóa học"|"Sinh học"|null,
     "topic": "chủ đề CỤ THỂ (không chung chung)",
-    "num_questions": 10,
     "user_difficulty": "dễ"|"trung bình"|"khó"|null (chỉ set nếu user NÓI RÕ)
 }}
+
+LƯU Ý: 
+- KHÔNG trả về "num_questions" - hệ thống LUÔN tạo 10 câu cố định
 
 QUY TẮC QUAN TRỌNG:
 - CHỈ trả về subject nếu là 1 trong 4 môn: Toán, Vật lý, Hóa học, Sinh học

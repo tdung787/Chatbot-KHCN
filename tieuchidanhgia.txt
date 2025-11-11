@@ -1,0 +1,6 @@
+1. Số lần hoàn thành bài tập trong ngày
+- Dùng daily_count của chấm bài
+2. Điểm số
+- Dùng score của chấm bài
+3. Đúng hạn
+- Lấy thời gian nộp bài trừ đi thời gian tạo bài

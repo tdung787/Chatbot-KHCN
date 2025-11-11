@@ -32,13 +32,15 @@ class QuizStorage:
                 id TEXT PRIMARY KEY,
                 student_id TEXT NOT NULL,
                 date TEXT NOT NULL,
-                date_count INTEGER NOT NULL,
+                daily_count INTEGER NOT NULL,
                 content TEXT NOT NULL,
                 subject TEXT,
                 topic TEXT,
                 difficulty TEXT,
                 num_questions INTEGER DEFAULT 10,
                 time_limit INTEGER DEFAULT 15,
+                answer_key TEXT,           -- ← NEW
+                status TEXT DEFAULT 'pending',  -- ← NEW: 'pending' | 'completed'
                 created_at TEXT DEFAULT CURRENT_TIMESTAMP
             )
         """)
@@ -83,59 +85,94 @@ class QuizStorage:
         
         return count
     
-    def save_quiz(
-        self,
-        student_id: str,
-        content: str,
-        subject: str = None,
-        topic: str = None,
-        difficulty: str = None,
-        num_questions: int = 10,
-        time_limit: int = 15
-    ) -> str:
+    # Thêm vào class QuizStorage
+
+    def update_quiz_status(self, quiz_id: str, status: str):
         """
-        Save quiz to database
+        Update quiz status
         
         Args:
-            student_id: Student ID
-            content: Quiz markdown content
-            subject: Subject name (optional)
-            topic: Topic name (optional)
-            difficulty: Difficulty level (optional)
-            num_questions: Number of questions (default: 10)
-            time_limit: Time limit in minutes (default: 15)
-            
-        Returns:
-            Quiz ID
+            quiz_id: Quiz ID
+            status: 'pending' | 'completed'
         """
         conn = self._get_connection()
         cursor = conn.cursor()
         
-        # Get today's count for this student
-        date_count = self._get_today_count(student_id) + 1
+        cursor.execute("""
+            UPDATE quizzes
+            SET status = ?
+            WHERE id = ?
+        """, (status, quiz_id))
         
-        # Generate ID: quiz_YYYYMMDD_XXX
+        conn.commit()
+        conn.close()
+        
+        print(f"✅ Updated quiz {quiz_id} status: {status}")
+
+    def get_latest_pending_quiz(self, student_id: str) -> Optional[Dict]:
+        """Get latest quiz with status='pending'"""
+        conn = self._get_connection()
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT * FROM quizzes
+            WHERE student_id = ? AND status = 'pending'
+            ORDER BY date DESC
+            LIMIT 1
+        """, (student_id,))
+        
+        row = cursor.fetchone()
+        conn.close()
+        
+        if row:
+            return dict(row)
+        return None
+    
+    def save_quiz(
+        self,
+        student_id: str,
+        content: str,
+        answer_key: str,  # ← NEW
+        subject: str = None,
+        topic: str = None,
+        difficulty: str = None
+    ) -> str:
+        """Save quiz with answer key and status"""
+        
+        # FIXED VALUES
+        num_questions = 10
+        time_limit = 15
+        
+        conn = self._get_connection()
+        cursor = conn.cursor()
+        
+        daily_count = self._get_today_count(student_id) + 1
+        
         now = datetime.now()
         today = now.strftime("%Y%m%d")
-        quiz_id = f"quiz_{today}_{date_count:03d}"
+        quiz_id = f"quiz_{today}_{daily_count:03d}"
         
-        # Insert quiz
+        # Insert with answer_key and status
         cursor.execute("""
             INSERT INTO quizzes (
-                id, student_id, date, date_count, content,
-                subject, topic, difficulty, num_questions, time_limit
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                id, student_id, date, daily_count, content,
+                subject, topic, difficulty, num_questions, time_limit,
+                answer_key, status
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             quiz_id,
             student_id,
             now.isoformat(),
-            date_count,
+            daily_count,
             content,
             subject,
             topic,
             difficulty,
-            num_questions,
-            time_limit
+            10,
+            15,
+            answer_key,  # ← NEW
+            'pending'    # ← NEW
         ))
         
         conn.commit()
@@ -195,7 +232,7 @@ class QuizStorage:
         cursor.execute("""
             SELECT * FROM quizzes
             WHERE student_id = ? AND date LIKE ?
-            ORDER BY date_count ASC
+            ORDER BY daily_count ASC
         """, (student_id, f"{today}%"))
         
         rows = cursor.fetchall()

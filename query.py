@@ -22,6 +22,8 @@ from src.tools.quiz_generator import (
     extract_topic_from_query
 )
 from src.tools.quiz_storage import QuizStorage
+from src.tools.quiz_guard import QuizGuard
+from src.tools.submission_manager import SubmissionManager
 
 load_dotenv()
 
@@ -253,9 +255,96 @@ class SimpleAgent:
         self.intent_classifier = intent_classifier
         self.retriever = retriever
         self.graph_generator = GraphGenerator(client)
-        self.quiz_generator = QuizGenerator(client) 
+        self.quiz_generator = QuizGenerator(client)
         self.quiz_storage = QuizStorage()
+        self.quiz_guard = QuizGuard(client)
+        self.submission_manager = SubmissionManager()
         self.conversation_history = []
+    
+    def _get_system_prompt(self, mode: str = "general") -> str:
+        """
+        Get system prompt with real-time pending quiz check
+        
+        Args:
+            mode: "general" | "search" - prompt mode
+        """
+        
+        # Get student profile
+        student_info = ""
+        student_id = "unknown"
+        if self.quiz_generator.student_profile:
+            profile = self.quiz_generator.student_profile
+            student_id = profile.get('_id', 'unknown')
+            student_info = f"""
+THÔNG TIN HỌC SINH:
+- Họ tên: {profile.get('name', 'N/A')}
+- Lớp: {profile.get('grade', 'N/A')}
+- Độ khó phù hợp: {profile.get('difficulty_level', 'N/A')}
+"""
+        
+        # Check pending quiz
+        pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
+        
+        pending_warning = ""
+        if pending_quiz:
+            pending_warning = f"""
+⚠️⚠️⚠️ CẢNH BÁO QUAN TRỌNG ⚠️⚠️⚠️
+
+HỌC SINH ĐANG CÓ BÀI KIỂM TRA CHƯA NỘP!
+- Quiz ID: {pending_quiz['id']}
+- Môn: {pending_quiz.get('subject', 'N/A')}
+- Chủ đề: {pending_quiz.get('topic', 'N/A')}
+
+QUY TẮC BẮT BUỘC (NGHIÊM NGẶT):
+1. ❌ KHÔNG được tạo đề kiểm tra mới
+2. ❌ KHÔNG được giải thích nội dung liên quan đến đề đang làm
+3. ❌ KHÔNG được đưa ra gợi ý giúp làm bài
+4. ✅ CHỈ được chat về: thời tiết, câu chuyện, định nghĩa TỔNG QUÁT không liên quan đến đề
+
+Nếu học sinh yêu cầu tạo đề hoặc hỏi nội dung đề:
+→ TỪ CHỐI lịch sự và nhắc nhở nộp bài trước.
+
+Ví dụ từ chối:
+"Bạn cần nộp bài kiểm tra hiện tại trước khi tạo đề mới! Quiz ID: {pending_quiz['id']}"
+"""
+        
+        # Build prompt based on mode
+        if mode == "search":
+            return f"""Bạn là trợ lý giáo dục thông minh.
+
+{student_info}
+
+{pending_warning}
+
+NHIỆM VỤ:
+1. Dựa vào kết quả tìm kiếm, trả lời câu hỏi của học sinh
+2. Giải thích rõ ràng, dễ hiểu
+3. Trích dẫn nguồn (ID câu hỏi) khi trả lời
+4. Không copy nguyên văn, hãy diễn giải
+
+PHONG CÁCH: Thân thiện, khuyến khích học sinh tư duy
+
+Ví dụ trích dẫn: "Theo câu hỏi page_002_cau_5..."
+"""
+        else:  # general mode
+            return f"""Bạn là trợ lý học tập AI cho học sinh THPT Việt Nam.
+
+{student_info}
+
+{pending_warning}
+
+NHIỆM VỤ:
+- Giải đáp thắc mắc học tập (trừ khi có quiz pending và câu hỏi liên quan)
+- KHÔNG tạo đề kiểm tra nếu có quiz pending
+- Vẽ đồ thị minh họa (nếu cần)
+- Tìm kiếm thông tin (nếu cần)
+
+PHONG CÁCH:
+- Thân thiện, dễ hiểu
+- Giải thích rõ ràng với ví dụ
+- Khuyến khích tư duy độc lập
+
+Hãy giúp học sinh học tốt hơn! 📚✨"""
     
     def _should_use_tool(self, query: str) -> bool:
         """Decide if should use search tool"""
@@ -278,37 +367,62 @@ class SimpleAgent:
         graph_keywords = ["vẽ đồ thị", "vẽ đồ", "đồ thị", "graph", "plot", "vẽ hàm"]
         return any(kw in query.lower() for kw in graph_keywords)
     
-    def _should_create_quiz(self, query: str) -> bool:
-        """Detect if query asks for quiz"""
+    def _should_create_quiz(self, user_query: str) -> bool:
+        """
+        Detect quiz creation intent
+        
+        Uses hybrid approach:
+        1. Keyword matching (primary - fast & reliable)
+        2. Regex patterns (backup - catch edge cases)
+        
+        Returns:
+            True if user wants to create a quiz
+        """
+        query_lower = user_query.lower()
+        
+        # ========== METHOD 1: KEYWORD MATCHING ==========
+        # Simple, fast, covers 95% of cases
         quiz_keywords = [
-            "tạo đề", "ra đề", "đề kiểm tra", "đề thi", "bài kiểm tra", 
-            "quiz", "đề", "trắc nghiệm", "15 phút", "30 phút",
-            "kiểm tra", "bài thi", "cho tôi bài", "cho em bài",
-            "cho tôi đề", "cho em đề", "tạo bài", "ra bài"  # ← THÊM
+            # Core keywords
+            "tạo đề", "ra đề", "đề kiểm tra", "đề thi", "bài kiểm tra",
+            
+            # English
+            "quiz", "test",
+            
+            # Variants
+            "trắc nghiệm", "15 phút", "30 phút",
+            
+            # Short forms
+            "kiểm tra", "bài thi",
+            
+            # Request patterns
+            "cho tôi bài", "cho em bài", "cho mình bài",
+            "cho tôi đề", "cho em đề", "cho mình đề",
+            
+            # Action verbs
+            "tạo bài", "ra bài", "làm bài",
+            "muốn bài", "cần bài", "muốn đề", "cần đề"
         ]
         
-        query_lower = query.lower()
+        for keyword in quiz_keywords:
+            if keyword in query_lower:
+                print(f"   ✓ Matched keyword: '{keyword}'")
+                return True
         
-        # Check patterns like "cho tôi bài kiểm tra về..."
-        if re.search(r'cho (tôi|em|mình) (bài|đề).*(kiểm tra|thi|văn|toán|lý|hóa|sinh)', query_lower):
-            return True
+        # ========== METHOD 2: REGEX PATTERNS ==========
+        # Backup for complex cases
+        patterns = [
+            r'cho\s+(tôi|em|mình)\s+(một|1)?\s*(bài|đề)',
+            r'(tạo|ra|làm)\s+(cho\s+)?(tôi|em|mình)?\s*(một|1)?\s*(bài|đề)',
+            r'(muốn|cần|được)\s+(làm|có)?\s*(bài|đề)',
+        ]
         
-        # Check patterns like "tạo (tôi|cho tôi) bài..."
-        if re.search(r'(tạo|ra|cho).*(tôi|em|mình)?.*(bài|đề).*(kiểm tra|thi|văn|toán|lý|hóa)', query_lower):
-            return True
+        for pattern in patterns:
+            if re.search(pattern, query_lower):
+                print(f"   ✓ Matched regex pattern")
+                return True
         
-        # Strong indicators
-        if any(kw in query_lower for kw in ["tạo đề", "ra đề", "đề kiểm tra", "đề thi"]):
-            return True
-        
-        # Check if combines keyword + subject (including "môn")
-        subjects = ["toán", "lý", "hóa", "sinh", "vật lý", "hóa học", "sinh học", "văn", "anh", "sử", "địa", "tiếng anh", "ngữ văn"] 
-        has_subject = any(subj in query_lower for subj in subjects)
-        has_quiz_word = any(kw in query_lower for kw in quiz_keywords)
-        
-        if has_subject and has_quiz_word:
-            return True
-        
+        print("   ✗ No quiz creation intent detected")
         return False
     
     def _extract_equation(self, query: str) -> Optional[str]:
@@ -321,6 +435,53 @@ class SimpleAgent:
             print(f"\n{'='*70}")
             print(f"USER QUERY: {user_query}")
             print(f"{'='*70}")
+            
+            # Get student ID from profile
+            student_id = "unknown"
+            if self.quiz_generator.student_profile:
+                student_id = self.quiz_generator.student_profile.get("_id", "unknown")
+            
+            # ========== CHECK PENDING QUIZ (EARLY RETURN) ==========
+            pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
+            
+            if pending_quiz:
+                print(f"\n⚠️  Student có quiz đang làm: {pending_quiz['id']}")
+                
+                # PRIORITY 1: Block new quiz creation
+                if self._should_create_quiz(user_query):
+                    print("   🚫 BLOCKED: Cannot create new quiz")
+                    
+                    return f"""❌ Bạn không thể tạo đề mới khi đang có bài chưa nộp!
+
+📋 **Bài kiểm tra đang chờ:**
+- Quiz ID: `{pending_quiz['id']}`
+- Môn: {pending_quiz.get('subject', 'N/A')}
+- Chủ đề: {pending_quiz.get('topic', 'N/A')}
+- Ngày tạo: {pending_quiz.get('date', 'N/A')[:10]}
+
+💡 **Hướng dẫn nộp bài:**
+```bash
+POST /api/submission/submit?quiz_id={pending_quiz['id']}&student_id={student_id}&answers=1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
+```
+
+Sau khi nộp xong, bạn có thể tạo đề mới! 📝"""
+                
+                # PRIORITY 2: Check if cheating
+                guard_result = self.quiz_guard.is_cheating(user_query, pending_quiz)
+                
+                if guard_result["is_blocked"]:
+                    print(f"   🚫 BLOCKED: {guard_result['reason']} (method: {guard_result['method']})")
+                    
+                    return f"""🚫 **Không thể trả lời câu hỏi này!**
+
+**Lý do:** {guard_result['reason']}
+
+Bạn đang làm bài kiểm tra về **{pending_quiz.get('topic', 'N/A')}** (Môn {pending_quiz.get('subject', 'N/A')}).
+
+💡 Hãy hoàn thành và nộp bài để có thể hỏi lại! 📝"""
+                else:
+                    print(f"   ✓ ALLOWED: {guard_result['reason']} (method: {guard_result['method']})")
+            # =======================================================
             
             # Debug: Check all conditions
             print(f"\n🔍 Debug:")
@@ -337,52 +498,52 @@ class SimpleAgent:
                 
                 # ========== CHECK 1: Tool failure ==========
                 if not quiz_info:
-                    return """Xin lỗi, Mình chưa hiểu rõ yêu cầu của bạn rồi 😅
+                    return """Xin lỗi, mình chưa hiểu rõ yêu cầu của bạn 😅
 
-                📚 **Hệ thống hiện hỗ trợ 4 môn tự nhiên:**
-                    • Toán
-                    • Vật lý  
-                    • Hóa học
-                    • Sinh học
+📚 **Hệ thống hiện hỗ trợ 4 môn tự nhiên:**
+- Toán
+- Vật lý  
+- Hóa học
+- Sinh học
 
-                💡 **Bạn có thể thử:**
-                    "Tạo đề Vật lý về Động lực học"
-                    "Ra đề kiểm tra Toán về Hệ bất phương trình"
-                    "Tạo đề Hóa học về Bảng tuần hoàn"
-                """
+💡 **Bạn có thể thử:**
+- "Tạo đề Vật lý về Động lực học"
+- "Ra đề kiểm tra Toán về Hệ bất phương trình"
+- "Tạo đề Hóa học về Bảng tuần hoàn"
+"""
                 
                 # ========== CHECK 2: No subject detected ==========
                 if not quiz_info.get("subject"):
                     return """⚠️ Không xác định được môn học.
 
-            💡 **Các môn hỗ trợ:** Toán, Vật lý, Hóa học, Sinh học
+💡 **Các môn hỗ trợ:** Toán, Vật lý, Hóa học, Sinh học
 
-            **Ví dụ câu hỏi đúng:**
-            • "Tạo đề Toán về Hàm số bậc hai"
-            • "Đề kiểm tra Vật lý về Dao động điều hòa"
-            • "Ra 10 câu Hóa về Axit - Bazơ - Muối"
-            """
+**Ví dụ câu hỏi đúng:**
+- "Tạo đề Toán về Hàm số bậc hai"
+- "Đề kiểm tra Vật lý về Dao động điều hòa"
+- "Ra 10 câu Hóa về Axit - Bazơ - Muối"
+"""
                 
                 # ========== CHECK 3: Subject not in allowed list ==========
                 detected_subject = quiz_info.get("subject")
                 if detected_subject not in ALLOWED_QUIZ_SUBJECTS:
                     return f"""⚠️ Xin lỗi, hiện tại hệ thống chỉ hỗ trợ tạo đề cho **4 môn tự nhiên**.
 
-            🔍 **Phát hiện:** Bạn yêu cầu môn "{detected_subject}"
+🔍 **Phát hiện:** Bạn yêu cầu môn "{detected_subject}"
 
-            📚 **Các môn được hỗ trợ:**
-            ✅ Toán
-            ✅ Vật lý
-            ✅ Hóa học
-            ✅ Sinh học
+📚 **Các môn được hỗ trợ:**
+✅ Toán
+✅ Vật lý
+✅ Hóa học
+✅ Sinh học
 
-            💡 **Gợi ý:**
-            • "Tạo đề Toán về Hệ bất phương trình"
-            • "Tạo đề Vật lý về Động lực học"
-            • "Tạo đề Hóa học về Bảng tuần hoàn"
-            • "Tạo đề Sinh học về Quang hợp"
+💡 **Gợi ý:**
+- "Tạo đề Toán về Hệ bất phương trình"
+- "Tạo đề Vật lý về Động lực học"
+- "Tạo đề Hóa học về Bảng tuần hoàn"
+- "Tạo đề Sinh học về Quang hợp"
 
-            ❓ Bạn có muốn tạo đề cho môn nào trong 4 môn trên không?"""
+❓ Bạn có muốn tạo đề cho môn nào trong 4 môn trên không?"""
                 
                 # ========== VALID REQUEST - Proceed ==========
                 print(f"   📚 Môn: {quiz_info['subject']}")
@@ -402,7 +563,6 @@ class SimpleAgent:
                 result = self.quiz_generator.generate_quiz(
                     subject=quiz_info["subject"],
                     topic=quiz_info["topic"],
-                    num_questions=quiz_info.get("num_questions", 10),
                     difficulty=user_difficulty,
                     use_student_difficulty=use_student_difficulty
                 )
@@ -415,10 +575,16 @@ class SimpleAgent:
                         if self.quiz_generator.student_profile:
                             student_id = self.quiz_generator.student_profile.get("_id", "unknown")
                         
-                        # Save to storage
+                        # Check if has answer_key
+                        if not result.get("answer_key"):
+                            print("   ⚠️ Thiếu answer_key!")
+                            return "❌ Lỗi: Không thể tạo đề vì thiếu đáp án. Vui lòng thử lại."
+                        
+                        # Save to storage WITH answer_key
                         quiz_id = self.quiz_storage.save_quiz(
                             student_id=student_id,
                             content=result['quiz_markdown'],
+                            answer_key=result['answer_key'],
                             subject=quiz_info["subject"],
                             topic=quiz_info["topic"],
                             difficulty=result["metadata"]["difficulty"]
@@ -431,18 +597,18 @@ class SimpleAgent:
                     # Return markdown directly
                     return f"""✅ Đã tạo xong đề kiểm tra!
 
-            {result['quiz_markdown']}
+{result['quiz_markdown']}
 
-            ---
+---
 
-            💡 **Lưu ý**: 
-            - Đề kiểm tra được tạo bởi AI, vui lòng kiểm tra kỹ trước khi sử dụng
-            - Bạn có thể yêu cầu tạo đề khác với độ khó hoặc số câu khác nhau
-            """
+💡 **Lưu ý**: 
+- Đề kiểm tra được tạo bởi AI, vui lòng kiểm tra kỹ trước khi sử dụng
+- Bạn có thể yêu cầu tạo đề khác với độ khó hoặc số câu khác nhau
+"""
                 else:
                     return f"""❌ Không thể tạo đề kiểm tra: {result['error']}
 
-            💡 Vui lòng thử lại hoặc cung cấp thông tin rõ ràng hơn."""
+💡 Vui lòng thử lại hoặc cung cấp thông tin rõ ràng hơn."""
             
             # Check if graph request
             if self._should_draw_graph(user_query):
@@ -500,18 +666,7 @@ class SimpleAgent:
                 messages = [
                     {
                         "role": "system",
-                        "content": """Bạn là trợ lý giáo dục thông minh.
-
-Nhiệm vụ:
-1. Dựa vào kết quả tìm kiếm, trả lời câu hỏi của học sinh
-2. Giải thích rõ ràng, dễ hiểu
-3. Trích dẫn nguồn (ID câu hỏi) khi trả lời
-4. Không copy nguyên văn, hãy diễn giải
-
-Phong cách: Thân thiện, khuyến khích học sinh tư duy
-
-Ví dụ trích dẫn: "Theo câu hỏi page_002_cau_5..."
-"""
+                        "content": self._get_system_prompt(mode="search")
                     },
                     {
                         "role": "user",
@@ -525,7 +680,7 @@ Ví dụ trích dẫn: "Theo câu hỏi page_002_cau_5..."
                 messages = [
                     {
                         "role": "system",
-                        "content": "Bạn là trợ lý giáo dục thân thiện. Trả lời câu hỏi một cách ngắn gọn và hữu ích."
+                        "content": self._get_system_prompt(mode="general")
                     },
                     {
                         "role": "user",
@@ -537,7 +692,8 @@ Ví dụ trích dẫn: "Theo câu hỏi page_002_cau_5..."
             response = self.client.chat.completions.create(
                 model=OPENAI_MODEL,
                 messages=messages,
-                temperature=0.3
+                temperature=0.7,
+                max_tokens=2000
             )
             
             return response.choices[0].message.content
@@ -600,7 +756,7 @@ def main():
     print("HỆ THỐNG RAG - TRỢ LÝ HỌC TẬP MÔN TỰ NHIÊN")
     print("=" * 70)
     print("Môn học hỗ trợ: Toán, Lý, Hóa, Sinh")
-    print("✨ Tính năng mới: Vẽ đồ thị hàm số!")
+    print("✨ Tính năng: Vẽ đồ thị + Tạo đề kiểm tra + Chấm điểm tự động")
     print("Gõ 'exit' hoặc 'quit' để thoát")
     print("=" * 70)
     
@@ -618,8 +774,8 @@ def main():
     print("   - Định luật Newton là gì?")
     print("   - Vẽ đồ thị y = x**2")
     print("   - Vẽ đồ thị sin(x) từ -5 đến 5")
-    print("   - Tạo đề kiểm tra Vật lý về Tốc độ và vận tốc")
-    print("   - Ra 15 câu Toán về Hệ bất phương trình khó")
+    print("   - Tạo đề kiểm tra Vật lý về Động lực học")
+    print("   - Tạo đề Toán về Hệ bất phương trình")
     print("   - Hàm bậc hai có tính chất gì?\n")
     
     # Interactive loop
@@ -638,7 +794,7 @@ def main():
             response = rag_system.query(user_input)
             
             print(f"\n🤖 Trợ lý:")
-            display_response(response)  # ← Use display helper
+            display_response(response)
             
         except KeyboardInterrupt:
             print("\n\n👋 Tạm biệt!")
