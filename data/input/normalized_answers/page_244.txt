@@ -1,6 +1,0 @@
-B. 4 m/s  
-A. 4 s.  
-B. 5 m/s.  
-C. 12,75 m/s.  
-C. Sau thời gian 2,5 s thì vật dừng lại, sau đó tiếp tục chuyển động nhanh dần đều. Vận tốc của nó lúc t = 5 s là v = 10 m/s.  
-B. A = 3 m/s²; s = 16,67 m.

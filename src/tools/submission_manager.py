@@ -3,10 +3,9 @@ tools/submission_manager.py
 
 Quản lý việc nộp bài và chấm điểm
 """
-
 import sqlite3
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
 
@@ -31,6 +30,7 @@ class SubmissionManager:
                 score REAL NOT NULL,
                 daily_count INTEGER NOT NULL,
                 submitted_at TEXT NOT NULL,
+                duration INTEGER DEFAULT 0,
                 FOREIGN KEY (quiz_id) REFERENCES quizzes(id)
             )
         """)
@@ -88,35 +88,30 @@ class SubmissionManager:
             Score (0.0 - 10.0)
         """
         try:
-            # Parse answer key
-            correct_dict = {}
-            for item in answer_key.split(','):
-                parts = item.strip().split('-')
-                if len(parts) == 2:
-                    num, ans = parts
-                    correct_dict[int(num)] = ans.strip().upper()
+            def parse(ans: str) -> Dict[str, str]:
+                pairs = [p.strip() for p in ans.split(",") if p.strip()]
+                d = {}
+                for p in pairs:
+                    if "-" in p:
+                        num, choice = p.split("-", 1)
+                        d[num.strip()] = choice.strip().upper()
+                return d
             
-            # Parse student answers
-            student_dict = {}
-            for item in student_answers.split(','):
-                parts = item.strip().split('-')
-                if len(parts) == 2:
-                    num, ans = parts
-                    student_dict[int(num)] = ans.strip().upper()
+            student_map = parse(student_answers)
+            key_map = parse(answer_key)
             
-            # Compare and count correct answers
-            correct_count = 0
-            for i in range(1, 11):  # 10 questions
-                if student_dict.get(i) == correct_dict.get(i):
-                    correct_count += 1
+            if not key_map:
+                return 0.0
             
-            # Score: 1 point per question
-            score = float(correct_count)
+            total = len(key_map)
+            correct = 0
+            for qnum, correct_choice in key_map.items():
+                if student_map.get(qnum) == correct_choice:
+                    correct += 1
             
+            score = round((correct / total) * 10.0, 2)
             return score
-            
-        except Exception as e:
-            print(f"⚠️ Grading error: {e}")
+        except Exception:
             return 0.0
     
     def submit_quiz(
@@ -127,17 +122,9 @@ class SubmissionManager:
         answer_key: str
     ) -> Dict:
         """
-        Submit quiz and auto-grade
-        
-        Args:
-            quiz_id: Quiz ID
-            student_id: Student ID
-            student_answers: "1-A,2-B,3-C,..."
-            answer_key: Correct answers from quiz
-            
-        Returns:
-            Submission result with score
+        Submit quiz and auto-grade. Calculates duration (minutes) using quizzes.created_at.
         """
+        conn = None
         try:
             conn = self._get_connection()
             cursor = conn.cursor()
@@ -146,19 +133,56 @@ class SubmissionManager:
             daily_count = self._get_today_submission_count(student_id) + 1
             
             # 2. Generate submission_id
-            now = datetime.now()
+            # use UTC-aware now to match quizzes.created_at (SQLite CURRENT_TIMESTAMP is UTC)
+            now = datetime.now(timezone.utc)
             today = now.strftime("%Y%m%d")
             submission_id = f"sub_{today}_{daily_count:03d}"
             
             # 3. Grade submission
             score = self.grade_submission(quiz_id, student_answers, answer_key)
             
-            # 4. Save to database
+            # 4. Calculate duration (minutes) = submitted_at - quiz.created_at
+            duration_minutes = 0
+            try:
+                cursor.execute("SELECT created_at FROM quizzes WHERE id = ?", (quiz_id,))
+                row = cursor.fetchone()
+                created_at_str = row[0] if row else None
+
+                # Debug: show what we got
+                print(f"[DEBUG] quiz_id={quiz_id} created_at_str={created_at_str} now={now.isoformat()}")
+
+                if created_at_str:
+                    # parse common formats robustly
+                    try:
+                        if "T" in created_at_str:
+                            created_at = datetime.fromisoformat(created_at_str)
+                        else:
+                            created_at = datetime.strptime(created_at_str, "%Y-%m-%d %H:%M:%S")
+                    except Exception as e:
+                        print(f"[DEBUG] parse created_at failed: {e}; trying fromisoformat fallback")
+                        created_at = datetime.fromisoformat(created_at_str)
+
+                    # assume UTC if no tzinfo (SQLite CURRENT_TIMESTAMP is UTC)
+                    if created_at.tzinfo is None:
+                        created_at = created_at.replace(tzinfo=timezone.utc)
+
+                    # compute delta
+                    delta = now - created_at
+                    print(f"[DEBUG] delta seconds = {delta.total_seconds()}")
+                    # round up to nearest minute so 17s => 1 minute
+                    duration_minutes = max(0, int((delta.total_seconds() + 59) // 60))
+                else:
+                    print("[DEBUG] created_at not found for quiz_id")
+            except Exception as e:
+                print(f"[DEBUG] error computing duration: {e}")
+                duration_minutes = 0
+            
+            # 5. Save to database (include duration)
             cursor.execute("""
                 INSERT INTO submissions (
                     id, quiz_id, student_id, student_answers,
-                    score, daily_count, submitted_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?)
+                    score, daily_count, submitted_at, duration
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 submission_id,
                 quiz_id,
@@ -166,98 +190,94 @@ class SubmissionManager:
                 student_answers,
                 score,
                 daily_count,
-                now.isoformat()
+                now.isoformat(),
+                duration_minutes
             ))
             
             conn.commit()
-            conn.close()
-            
-            print(f"✅ Đã lưu bài nộp: {submission_id} - Điểm: {score}/10")
             
             return {
                 "success": True,
                 "submission_id": submission_id,
                 "score": score,
                 "total": 10.0,
-                "percentage": (score / 10.0) * 100,
+                "percentage": (score / 10.0) * 100.0,
                 "daily_count": daily_count,
-                "submitted_at": now.isoformat()
+                "submitted_at": now.isoformat(),
+                "duration": duration_minutes
             }
-            
         except Exception as e:
-            print(f"⚠️ Submit error: {e}")
-            return {
-                "success": False,
-                "error": str(e)
-            }
+            return {"success": False, "error": str(e)}
+        finally:
+            try:
+                if conn:
+                    conn.close()
+            except Exception:
+                pass
     
     def get_submission(self, submission_id: str) -> Optional[Dict]:
-        """Get submission by ID"""
         conn = self._get_connection()
-        conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
-        
-        cursor.execute("""
-            SELECT * FROM submissions WHERE id = ?
-        """, (submission_id,))
-        
+        cursor.execute("SELECT id, quiz_id, student_id, student_answers, score, daily_count, submitted_at, duration FROM submissions WHERE id = ?", (submission_id,))
         row = cursor.fetchone()
         conn.close()
-        
-        if row:
-            return dict(row)
-        return None
+        if not row:
+            return None
+        return {
+            "id": row[0],
+            "quiz_id": row[1],
+            "student_id": row[2],
+            "student_answers": row[3],
+            "score": row[4],
+            "daily_count": row[5],
+            "submitted_at": row[6],
+            "duration": row[7]
+        }
     
     def get_submission_with_details(self, submission_id: str, answer_key: str) -> Optional[Dict]:
         """
-        Get submission with detailed comparison
-        
-        Args:
-            submission_id: Submission ID
-            answer_key: Correct answers from quiz
-            
-        Returns:
-            Submission with details array showing correct/incorrect per question
+        Return detailed per-question info for a submission.
         """
         submission = self.get_submission(submission_id)
         if not submission:
             return None
         
         # Parse answers
-        correct_dict = {}
-        for item in answer_key.split(','):
-            parts = item.strip().split('-')
-            if len(parts) == 2:
-                num, ans = parts
-                correct_dict[int(num)] = ans.strip().upper()
+        def parse(ans: str) -> Dict[str, str]:
+            pairs = [p.strip() for p in ans.split(",") if p.strip()]
+            d = {}
+            for p in pairs:
+                if "-" in p:
+                    num, choice = p.split("-", 1)
+                    d[num.strip()] = choice.strip().upper()
+            return d
         
-        student_dict = {}
-        for item in submission['student_answers'].split(','):
-            parts = item.strip().split('-')
-            if len(parts) == 2:
-                num, ans = parts
-                student_dict[int(num)] = ans.strip().upper()
+        student_map = parse(submission["student_answers"])
+        key_map = parse(answer_key)
         
-        # Build details
         details = []
-        for i in range(1, 11):
-            correct_ans = correct_dict.get(i, "?")
-            student_ans = student_dict.get(i, "?")
-            is_correct = (student_ans == correct_ans)
-            
+        correct_count = 0
+        for qnum in sorted(key_map.keys(), key=lambda x: int(x)):
+            correct_choice = key_map.get(qnum)
+            student_choice = student_map.get(qnum, "")
+            is_correct = (student_choice == correct_choice)
+            if is_correct:
+                correct_count += 1
             details.append({
-                "question_number": i,
-                "correct_answer": correct_ans,
-                "student_answer": student_ans,
-                "is_correct": is_correct,
-                "points": 1.0 if is_correct else 0.0
+                "question_number": int(qnum),
+                "correct_answer": correct_choice,
+                "student_answer": student_choice,
+                "is_correct": is_correct
             })
         
-        submission['details'] = details
-        submission['correct_count'] = sum(1 for d in details if d['is_correct'])
-        submission['incorrect_count'] = sum(1 for d in details if not d['is_correct'])
+        incorrect_count = len(key_map) - correct_count
         
-        return submission
+        return {
+            "submission": submission,
+            "details": details,
+            "correct_count": correct_count,
+            "incorrect_count": incorrect_count
+        }
     
     def get_student_submissions(
         self,
@@ -265,7 +285,6 @@ class SubmissionManager:
         limit: int = 10,
         offset: int = 0
     ) -> List[Dict]:
-        """Get submissions by student"""
         conn = self._get_connection()
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()

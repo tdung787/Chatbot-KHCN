@@ -429,6 +429,82 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
         """Extract equation from query"""
         return extract_equation_from_query(query, self.client)
     
+    def _should_submit_quiz(self, user_query: str) -> bool:
+        """
+        Detect quiz submission intent
+        
+        Matches:
+        - "nộp bài: 1-A,2-B,..."
+        - "submit: 1-A,2-B,..."
+        - "đáp án: 1-A,2-B,..."
+        - "1-A,2-B,3-C,..." (bare answers)
+        """
+        query_lower = user_query.lower()
+        
+        # Check for submission keywords
+        submission_keywords = [
+            "nộp bài", "nộp đề", "nộp",
+            "submit", "answer",
+            "đáp án", "đáp án của em là", "đáp án là",
+            "kết quả", "bài làm"
+        ]
+        
+        for keyword in submission_keywords:
+            if keyword in query_lower:
+                print(f"   ✓ Submission keyword: '{keyword}'")
+                return True
+        
+        # Check for answer pattern: "1-A,2-B,3-C,..."
+        # Must have format: number-letter, at least 5 pairs
+        answer_pattern = r'(\d+\s*-\s*[A-D]\s*,?\s*){5,}'
+        if re.search(answer_pattern, user_query, re.IGNORECASE):
+            print(f"   ✓ Answer pattern detected")
+            return True
+        
+        return False
+
+    def _extract_answers(self, user_query: str) -> Optional[str]:
+        """
+        Extract answers from user query
+        
+        Input formats accepted:
+        - "1-A,2-B,3-C,..."
+        - "1-A, 2-B, 3-C, ..."
+        - "1A,2B,3C,..."
+        - "Nộp bài: 1-A,2-B,..."
+        
+        Returns:
+            Normalized format "1-A,2-B,3-C,..." or None
+        """
+        try:
+            # Remove submission keywords
+            query = user_query
+            for keyword in ["nộp bài:", "nộp:", "submit:", "đáp án:", "kết quả:"]:
+                query = query.lower().replace(keyword, "")
+            
+            # Find all answer pairs
+            # Pattern: number + optional dash/space + letter
+            pattern = r'(\d+)\s*-?\s*([A-D])'
+            matches = re.findall(pattern, query, re.IGNORECASE)
+            
+            if len(matches) < 10:
+                print(f"   ⚠️ Only found {len(matches)} answers, need 10")
+                return None
+            
+            # Normalize to "1-A,2-B,..." format
+            normalized = []
+            for num, letter in matches[:10]:  # Take first 10
+                normalized.append(f"{num}-{letter.upper()}")
+            
+            result = ",".join(normalized)
+            print(f"   ✓ Extracted answers: {result}")
+            
+            return result
+            
+        except Exception as e:
+            print(f"   ⚠️ Error extracting answers: {e}")
+            return None
+    
     def query(self, user_query: str) -> str:
         """Process user query"""
         try:
@@ -447,6 +523,109 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             if pending_quiz:
                 print(f"\n⚠️  Student có quiz đang làm: {pending_quiz['id']}")
                 
+                # ========== NEW: CHECK SUBMISSION INTENT ==========
+                if self._should_submit_quiz(user_query):
+                    print("   📝 Phát hiện ý định nộp bài!")
+                    
+                    # Extract answers
+                    answers = self._extract_answers(user_query)
+                    
+                    if not answers:
+                        return f"""❌ Không thể đọc được đáp án!
+
+            📋 **Quiz đang làm:** `{pending_quiz['id']}`
+
+            💡 **Format đúng:**
+            - "Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B"
+            - "1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B"
+
+            ⚠️ **Lưu ý:** Cần đủ 10 câu, format: số-chữ cái (VD: 1-A, 2-B)"""
+                    
+                    # Submit via submission manager
+                    try:
+                        quiz = self.quiz_storage.get_quiz(pending_quiz['id'])
+                        
+                        if not quiz:
+                            return f"❌ Lỗi: Không tìm thấy quiz {pending_quiz['id']}"
+                        
+                        # Check if already submitted
+                        if self.submission_manager.check_quiz_submitted(pending_quiz['id'], student_id):
+                            return f"""❌ Bài này đã được nộp rồi!
+
+            📋 Quiz ID: `{pending_quiz['id']}`
+
+            💡 Bạn có thể tạo đề mới bằng cách nói: "Tạo đề Toán về..."
+            """
+                        
+                        # Get answer key
+                        answer_key = quiz.get("answer_key")
+                        if not answer_key:
+                            return "❌ Lỗi: Đề thi thiếu đáp án. Vui lòng liên hệ admin."
+                        
+                        # Submit and grade
+                        result = self.submission_manager.submit_quiz(
+                            quiz_id=pending_quiz['id'],
+                            student_id=student_id,
+                            student_answers=answers,
+                            answer_key=answer_key
+                        )
+                        
+                        if not result["success"]:
+                            return f"❌ Lỗi nộp bài: {result.get('error', 'Unknown error')}"
+                        
+                        # Update quiz status to completed
+                        self.quiz_storage.update_quiz_status(pending_quiz['id'], "completed")
+                        
+                        # Get detailed result
+                        detailed = self.submission_manager.get_submission_with_details(
+                            result["submission_id"],
+                            answer_key
+                        )
+                        
+                        # Format result message
+                        score = result["score"]
+                        total = result["total"]
+                        percentage = result["percentage"]
+                        
+                        # Build details
+                        details_text = ""
+                        for detail in detailed["details"]:
+                            num = detail["question_number"]
+                            correct = detail["correct_answer"]
+                            student = detail["student_answer"]
+                            is_correct = detail["is_correct"]
+                            
+                            icon = "✅" if is_correct else "❌"
+                            if is_correct:
+                                details_text += f"   {icon} Câu {num}: {student} (Đúng)\n"
+                            else:
+                                details_text += f"   {icon} Câu {num}: {student} → Đúng là {correct}\n"
+                        
+                        return f"""🎉 **ĐÃ NỘP BÀI THÀNH CÔNG!**
+
+            📊 **KẾT QUẢ:**
+            - Điểm: **{score}/{total}** ({percentage:.1f}%)
+            - Đúng: {detailed["correct_count"]} câu
+            - Sai: {detailed["incorrect_count"]} câu
+            - Thời gian hoàn thành: {result["duration"]} phút
+
+            📝 **CHI TIẾT:**
+            {details_text}
+
+            💾 **Thông tin:**
+            - Submission ID: `{result["submission_id"]}`
+            - Quiz ID: `{pending_quiz['id']}`
+            - Lần nộp thứ {result["daily_count"]} hôm nay
+
+            🎯 **Bạn có thể:**
+            - Tạo đề mới: "Tạo đề Toán về Hàm số"
+            """
+                        
+                    except Exception as e:
+                        print(f"⚠️ Submission error: {e}")
+                        return f"❌ Lỗi khi nộp bài: {str(e)}"
+                # ================================================
+
                 # PRIORITY 1: Block new quiz creation
                 if self._should_create_quiz(user_query):
                     print("   🚫 BLOCKED: Cannot create new quiz")
@@ -457,14 +636,13 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
 - Quiz ID: `{pending_quiz['id']}`
 - Môn: {pending_quiz.get('subject', 'N/A')}
 - Chủ đề: {pending_quiz.get('topic', 'N/A')}
-- Ngày tạo: {pending_quiz.get('date', 'N/A')[:10]}
 
-💡 **Hướng dẫn nộp bài:**
-```bash
-POST /api/submission/submit?quiz_id={pending_quiz['id']}&student_id={student_id}&answers=1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
+💡 **Để nộp bài, chat:**
 ```
-
-Sau khi nộp xong, bạn có thể tạo đề mới! 📝"""
+Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
+```
+Sau khi nộp xong, bạn có thể tạo đề mới! 📝
+"""
                 
                 # PRIORITY 2: Check if cheating
                 guard_result = self.quiz_guard.is_cheating(user_query, pending_quiz)
@@ -476,9 +654,13 @@ Sau khi nộp xong, bạn có thể tạo đề mới! 📝"""
 
 **Lý do:** {guard_result['reason']}
 
-Bạn đang làm bài kiểm tra về **{pending_quiz.get('topic', 'N/A')}** (Môn {pending_quiz.get('subject', 'N/A')}).
+Bạn đang làm bài kiểm tra về **{pending_quiz.get('topic', 'N/A')}**.
 
-💡 Hãy hoàn thành và nộp bài để có thể hỏi lại! 📝"""
+💡 Hãy hoàn thành và nộp bài:
+```
+Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
+```
+"""
                 else:
                     print(f"   ✓ ALLOWED: {guard_result['reason']} (method: {guard_result['method']})")
             # =======================================================

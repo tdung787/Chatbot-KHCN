@@ -1,4 +1,0 @@
-C. Vật đang đứng yên.  
-D. Vật chuyển động thẳng đều theo chiều dương rồi đổi chiều chuyển động ngược lại.  
-A. Trong khoảng thời gian từ 0 đến t1.  
-D. Từ giây thứ 9 đến giây thứ 10 xe quay về đúng vị trí xuất phát rồi dừng lại.

@@ -1,4 +1,0 @@
-D. Các tính chất A, B, C.
-D. Vecto, đặc trung cho sự biến đổi nhanh hay chậm của vận tốc.
-D. Vận tốc tăng đêu theo thời gian.
-A- Gia tốc là một đại lượng không đổi.

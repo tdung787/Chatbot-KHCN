@@ -1,3 +1,0 @@
-C. f - e - b - g - a - i - d - h - C_
-B. d - e - a - c - b.
-A. 0,1%

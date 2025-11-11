@@ -1,8 +1,0 @@
-A. Vật 1 chạm đất trước.  
-B. Hai vật cùng có tầm bay xa.  
-A. s = 120m; v = 50m/s.  
-D. 0,5s.  
-B. 3m/s.  
-A. 15m/s.  
-B. 4s.  
-C. 13,4m/s.

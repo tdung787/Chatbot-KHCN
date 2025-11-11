@@ -1,5 +1,0 @@
-C.   
-B. Vận tốc có giá trị (-); gia tốc có giá trị (-). 
-A. Vận tốc biến thiên được những lượng bằng nhau trong những khoảng thời gian bằng nhau bất kì.  
-B. s = 35,5 km.  
-B. A = 0,2 m/s²; v = 18 m/s.

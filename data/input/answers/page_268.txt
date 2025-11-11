@@ -1,9 +1,0 @@
-c.
-D. v2 Vo
-2as.
-c. Vận tốc của chuyển động tăng đêu theo thời gian.
-A. Quãng đường đi được của vật luôn tỉ lệ thuận với thời gian vật đi.
-B_ Vận tốc giảm đểu, gia tốc
-không đổi.
-B. Tích số a.v > 0_
-C.d = Vot + at2/2 (a, Vo cùng dấu)

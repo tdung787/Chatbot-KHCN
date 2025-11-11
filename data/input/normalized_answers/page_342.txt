@@ -1,6 +1,0 @@
-C. Các vật nặng nhẹ rơi tự do nhanh như nhau.  
-B. Vận tốc bằng 0, gia tốc khác 0.  
-A. Tỷ lệ với căn số bậc 2 của đoạn đường rơi.  
-C. Cả hai quả cầu chạm đất có cùng tốc độ.  
-B.
-A.

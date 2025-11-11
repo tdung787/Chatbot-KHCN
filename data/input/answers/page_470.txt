@@ -1,4 +1,0 @@
-B_ Đổng hổ đo thời gian hiện số, cổng quang điện, viên bi, máng và thước thẳng.
-D.0,4 m/s?
-D _ 2,4cm/s
-C. 5,6 m/s?

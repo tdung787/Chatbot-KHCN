@@ -1,8 +1,0 @@
-B. Vận tốc của vật.  
-C. Lúc vận tốc bằng 2 m/s thì sau 2 s vận tốc của nó bằng 8 m/s.  
-A. Gia tốc.  
-B. Vận tốc là hằng số; gia tốc thay đổi.  
-B. D = 5t² - 2t.  
-A. 0 m/s².  
-C. Đổi chiều gia tốc.
-C.

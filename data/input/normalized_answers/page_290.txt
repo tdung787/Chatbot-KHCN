@@ -1,8 +1,0 @@
-B.  
-C. Vectơ vận tốc tức thời.  
-C. Tích a.v luôn dương.  
-D.  
-B.  
-C. Vận tốc của chuyển động tăng dần đều theo thời gian.  
-A. Trong các chuyển động nhanh thẳng đều, vận tốc có giá trị dương 
-B. Luôn luôn cùng dấu với v.

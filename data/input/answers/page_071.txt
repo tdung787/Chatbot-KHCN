@@ -1,7 +1,0 @@
-B. (1) K; (2) Nhiệt độ; (3) Cường độ dòng điện; (4) Cường độ ánh sáng.
-D Năm.
-D_ (1) thứ nguyên; (2) đơn vị; (3) Hai vế_
-B. là sai số do điểm 0 ban đẩu của dụng cụ đo bị lệch.
-B. là những sai sót mắc phải khi đo.
-C. là phép so sánh nó với một đại lượng cùng loại được quy ước làm đơn vi
-B.Các đại lượng vật lí luôn có thể đo trực tiếp.

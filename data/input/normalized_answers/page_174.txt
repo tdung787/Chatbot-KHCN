@@ -1,5 +1,0 @@
-D. MODE A + B: Đo thời gian vật chuyển động từ cổng quang điện nối với ổ A tới cổng quang điện nối với ổ B.  
-A. MODE A: Đo thời gian vật chắn cổng quang điện nối với ổ A.  
-B. MODE A B: Đo tổng của hai khoảng thời gian vật chắn cổng quang điện nối với ổ A và vật chắn cổng quang điện nối với ổ B.  
-C. MODE B: Đo thời gian vật chắn cổng quang điện nối với ổ B.  
-D. Nút RESET: Đặt vật lên vị trí nam châm điện.

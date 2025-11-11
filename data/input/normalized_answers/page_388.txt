@@ -1,6 +1,0 @@
-D. Ban đầu bay lên với vận tốc Vo, sau đó tốc độ giảm dần và dừng lại, và cuối cùng đi xuống với tốc độ tăng dần.  
-B. Giữ thẳng đứng dưới máy bay
-D. vật B chạm đất với vận tốc lớn hơn vật A.  
-B. Bằng gia tốc của hòn đá ném xuống.  
-D. Tầm ném xa tỉ lệ với vận tốc ban đầu và độ cao ban đầu.  
-B. Vì gia tốc luôn không đổi nên đó là chuyển động thẳng biến đổi đều.

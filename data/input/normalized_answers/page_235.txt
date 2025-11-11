@@ -1,6 +1,0 @@
-D. A luôn ngược dấu với v.  
-C. V < 0 là chuyển chậm dần đều.  
-B. Độ lớn vectơ gia tốc là một hằng số, ngược chiều với vectơ vận tốc của vật.  
-C. Gia tốc tăng dần đều theo thời gian.  
-D. Gia tốc trong chuyển động thẳng nhanh dần đều có phương, chiều và độ lớn không đổi.  
-A. Trong chuyển động thẳng biến đổi đều, quãng đường đi được trong những khoảng thời gian bằng nhau thì bằng nhau.

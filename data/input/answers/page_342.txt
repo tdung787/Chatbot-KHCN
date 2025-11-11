@@ -1,8 +1,0 @@
-C. Các vật nặng nhẹ rơi do nhanh như nhau tự
-B_ Vận tốc bằng 0, gia
-tốc khác 0
-A Tỷ lệ với căn số bậc 2 của đoạn đường rơi
-C. Cả hai quả cẩu chạm đất có cùng tốc
-độ
-B- 2 s
-A 9,8- m/s

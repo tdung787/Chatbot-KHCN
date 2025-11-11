@@ -1,6 +1,0 @@
-D. a luôn ngược dấu với v_
-C. a. v < 0 là chuyển chậm dẩn đêu.
-B. độ lớn vecto gia tốc là một hằng số, ngược chiểu với vecto vận tốc của vật.
-C. gia tốc tăng dẩn đêu theo thời gian.
-D_ Gia tốc trong chuyển động thẳng nhanh dẩn đểu có phuong, chiểu và độ lớn không đổi.
-A Trong chuyển động thẳng biến đổi đểu, quãng đường đi được trong những khoảng thời gian bằng nhau thì bằng nhau.

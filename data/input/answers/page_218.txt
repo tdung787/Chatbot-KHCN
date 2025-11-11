@@ -1,4 +1,0 @@
-c. Vật đang đứng yên.
-D. Vật chuyển động thẳng đểu theo chiểu dưong rổi đổi chiêu chuyển động ngược lại.
-A Trong khoảng thời gian từ 0 đến t1.
-D_ Từ giây thứ 9 đến giây thứ 10 xe quay vể đúng vị trí xuất phát rổi dừng lại.
