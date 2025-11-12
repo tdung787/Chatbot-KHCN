@@ -32,7 +32,7 @@ def validate_student_id(student_id: str) -> Dict:
     Validate student_id against external API
     
     Args:
-        student_id: Student ID to validate
+        student_id: User ID (from user_id._id field)
         
     Returns:
         {
@@ -45,7 +45,7 @@ def validate_student_id(student_id: str) -> Dict:
         # Call external API
         url = f"{EXTERNAL_API_BASE_URL}/api/public/rag/students"
         
-        print(f"   🔍 Validating student_id: {student_id}")
+        print(f"   🔍 Validating student_id (user_id): {student_id}")
         print(f"   🌐 Calling: {url}")
         
         response = requests.get(url, timeout=5)
@@ -66,10 +66,13 @@ def validate_student_id(student_id: str) -> Dict:
                 "error": "API returned success=false"
             }
         
-        # Find student in list
+        # Find student in list BY USER_ID._ID
         students = data.get("data", {}).get("students", [])
         
-        student = next((s for s in students if s["_id"] == student_id), None)
+        student = next(
+            (s for s in students if s.get("user_id", {}).get("_id") == student_id),
+            None
+        )
         
         if student:
             print(f"   ✅ Student found: {student['user_id']['full_name']}")
@@ -83,7 +86,7 @@ def validate_student_id(student_id: str) -> Dict:
             return {
                 "is_valid": False,
                 "student_info": None,
-                "error": f"Student ID {student_id} not found"
+                "error": f"User ID {student_id} not found"
             }
         
     except requests.exceptions.Timeout:
@@ -107,7 +110,6 @@ def validate_student_id(student_id: str) -> Dict:
             "student_info": None,
             "error": f"Validation error: {str(e)}"
         }
-
 
 # ==================== FASTAPI APP ====================
 app = FastAPI(
