@@ -8,7 +8,11 @@ from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional, Dict, List
 import sys
+import os
+import requests
 from pathlib import Path
+from openai import OpenAI
+from dotenv import load_dotenv
 
 # Add parent directory to path to import from src
 sys.path.append(str(Path(__file__).parent.parent.parent))
@@ -16,6 +20,93 @@ sys.path.append(str(Path(__file__).parent.parent.parent))
 from src.tools.quiz_storage import QuizStorage
 from src.tools.submission_manager import SubmissionManager
 from query import ScienceQASystem
+from src.tools.session_manager import SessionManager
+from src.tools.chat_history_manager import ChatHistoryManager
+
+# ==================== EXTERNAL API CONFIG ====================
+EXTERNAL_API_BASE_URL = os.getenv("EXTERNAL_API_BASE_URL", "https://v5bfv7qs-3001.asse.devtunnels.ms")
+
+# ==================== HELPER FUNCTIONS ====================
+def validate_student_id(student_id: str) -> Dict:
+    """
+    Validate student_id against external API
+    
+    Args:
+        student_id: Student ID to validate
+        
+    Returns:
+        {
+            "is_valid": bool,
+            "student_info": dict or None,
+            "error": str or None
+        }
+    """
+    try:
+        # Call external API
+        url = f"{EXTERNAL_API_BASE_URL}/api/public/rag/students"
+        
+        print(f"   🔍 Validating student_id: {student_id}")
+        print(f"   🌐 Calling: {url}")
+        
+        response = requests.get(url, timeout=5)
+        
+        if response.status_code != 200:
+            return {
+                "is_valid": False,
+                "student_info": None,
+                "error": f"API returned status {response.status_code}"
+            }
+        
+        data = response.json()
+        
+        if not data.get("success"):
+            return {
+                "is_valid": False,
+                "student_info": None,
+                "error": "API returned success=false"
+            }
+        
+        # Find student in list
+        students = data.get("data", {}).get("students", [])
+        
+        student = next((s for s in students if s["_id"] == student_id), None)
+        
+        if student:
+            print(f"   ✅ Student found: {student['user_id']['full_name']}")
+            return {
+                "is_valid": True,
+                "student_info": student,
+                "error": None
+            }
+        else:
+            print(f"   ❌ Student not found in list")
+            return {
+                "is_valid": False,
+                "student_info": None,
+                "error": f"Student ID {student_id} not found"
+            }
+        
+    except requests.exceptions.Timeout:
+        print(f"   ⚠️ API timeout")
+        return {
+            "is_valid": False,
+            "student_info": None,
+            "error": "External API timeout"
+        }
+    except requests.exceptions.RequestException as e:
+        print(f"   ⚠️ API error: {e}")
+        return {
+            "is_valid": False,
+            "student_info": None,
+            "error": f"External API error: {str(e)}"
+        }
+    except Exception as e:
+        print(f"   ⚠️ Validation error: {e}")
+        return {
+            "is_valid": False,
+            "student_info": None,
+            "error": f"Validation error: {str(e)}"
+        }
 
 
 # ==================== FASTAPI APP ====================
@@ -37,6 +128,10 @@ app.add_middleware(
 # Initialize storage
 storage = QuizStorage()
 submission_manager = SubmissionManager()
+openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+session_manager = SessionManager(openai_client=openai_client)
+chat_history_manager = ChatHistoryManager()
+print("✅ Session managers initialized")
 
 # Initialize RAG system
 try:
@@ -301,6 +396,405 @@ def get_quizzes_by_date(
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+    
+# ==================== SESSION MANAGEMENT ENDPOINTS ====================
+
+@app.post("/api/session/create")
+def create_session(
+    student_id: str = Query(..., description="Student ID (required)"),
+    first_message: Optional[str] = Query(None, description="Optional first message to start conversation")
+) -> Dict:
+    """
+    Create new chat session
+    
+    - Validates student_id against external API
+    - If first_message provided: Create session + process message + get response
+    - If no first_message: Create empty session with default name
+    """
+    try:
+        # ========== VALIDATE STUDENT ID ==========
+        validation = validate_student_id(student_id)
+        
+        if not validation["is_valid"]:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Student not found: {validation['error']}"
+            )
+        
+        student_info = validation["student_info"]
+        print(f"   ✅ Student validated: {student_info['user_id']['full_name']}")
+        # =========================================
+        
+        # ========== CASE 1: WITH FIRST MESSAGE ==========
+        if first_message:
+            if not rag_system:
+                raise HTTPException(
+                    status_code=503,
+                    detail="RAG system not initialized"
+                )
+            
+            # Create session with LLM-generated name
+            session_result = session_manager.create_session(
+                student_id=student_id,
+                first_message=first_message
+            )
+            
+            if not session_result["success"]:
+                raise HTTPException(
+                    status_code=500,
+                    detail=session_result.get("error", "Failed to create session")
+                )
+            
+            session = session_result["session"]
+            
+            print(f"   ✨ Created session: {session['id']} - {session['name']}")
+            
+            # Process first message and get response
+            response = rag_system.query(first_message, conversation_history=[])
+            
+            # Save messages to session
+            try:
+                # Save user message
+                chat_history_manager.save_message(
+                    session_id=session['id'],
+                    role="user",
+                    content=first_message
+                )
+                
+                # Save assistant response
+                chat_history_manager.save_message(
+                    session_id=session['id'],
+                    role="assistant",
+                    content=response
+                )
+                
+                # Update message count
+                new_count = chat_history_manager.get_message_count(session['id'])
+                session_manager.update_session(
+                    session_id=session['id'],
+                    message_count=new_count
+                )
+                
+                print(f"   💾 Saved initial messages (total: {new_count})")
+                
+            except Exception as e:
+                print(f"   ⚠️ Failed to save messages: {e}")
+            
+            return {
+                "success": True,
+                "session": session,
+                "student_info": {
+                    "id": student_info["_id"],
+                    "name": student_info["user_id"]["full_name"],
+                    "grade": student_info["grade_level"],
+                    "class": student_info["current_class"]
+                },
+                "response": response,
+                "has_first_message": True
+            }
+        
+        # ========== CASE 2: EMPTY SESSION ==========
+        else:
+            # Create empty session with default name
+            session_id = session_manager._generate_session_id(student_id)
+            default_name = "Cuộc trò chuyện mới"
+            
+            from datetime import datetime
+            now = datetime.now()
+            
+            conn = session_manager._get_connection()
+            cursor = conn.cursor()
+            
+            cursor.execute("""
+                INSERT INTO chat_sessions (
+                    id, student_id, name, first_message,
+                    created_at, updated_at, message_count, is_archived
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                session_id,
+                student_id,
+                default_name,
+                "",
+                now.isoformat(),
+                now.isoformat(),
+                0,
+                0
+            ))
+            
+            conn.commit()
+            conn.close()
+            
+            print(f"   ✨ Created empty session: {session_id}")
+            
+            return {
+                "success": True,
+                "session": {
+                    "id": session_id,
+                    "student_id": student_id,
+                    "name": default_name,
+                    "created_at": now.isoformat(),
+                    "updated_at": now.isoformat(),
+                    "message_count": 0
+                },
+                "student_info": {
+                    "id": student_info["_id"],
+                    "name": student_info["user_id"]["full_name"],
+                    "grade": student_info["grade_level"],
+                    "class": student_info["current_class"]
+                },
+                "response": None,
+                "has_first_message": False
+            }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Session creation error: {str(e)}")
+
+@app.get("/api/session/list")
+def list_sessions(
+    student_id: str = Query(..., description="Student ID (required)"),
+    limit: int = Query(20, ge=1, le=100, description="Max sessions to return"),
+    offset: int = Query(0, ge=0, description="Offset for pagination"),
+    include_archived: bool = Query(False, description="Include archived sessions")
+) -> Dict:
+    """
+    List all sessions for a student
+    
+    Args:
+        student_id: Student ID
+        limit: Max sessions to return
+        offset: Pagination offset
+        include_archived: Include archived sessions
+        
+    Returns:
+        List of sessions
+    """
+    try:
+        sessions = session_manager.list_sessions(
+            student_id=student_id,
+            limit=limit,
+            offset=offset,
+            include_archived=include_archived
+        )
+        
+        return {
+            "success": True,
+            "student_id": student_id,
+            "count": len(sessions),
+            "sessions": sessions
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"List sessions error: {str(e)}")
+
+
+@app.get("/api/session/{session_id}")
+def get_session(
+    session_id: str,
+    student_id: str = Query(..., description="Student ID for ownership verification")
+) -> Dict:
+    """
+    Get session info
+    
+    Args:
+        session_id: Session ID
+        student_id: Student ID for verification
+        
+    Returns:
+        Session info
+    """
+    try:
+        # Verify ownership
+        if not session_manager.verify_ownership(session_id, student_id):
+            raise HTTPException(
+                status_code=403,
+                detail="Session not found or doesn't belong to you"
+            )
+        
+        session = session_manager.get_session(session_id, student_id)
+        
+        if not session:
+            raise HTTPException(status_code=404, detail="Session not found")
+        
+        return {
+            "success": True,
+            "session": session
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Get session error: {str(e)}")
+
+
+@app.get("/api/session/{session_id}/history")
+def get_session_history(
+    session_id: str,
+    student_id: str = Query(..., description="Student ID for ownership verification"),
+    limit: Optional[int] = Query(None, description="Limit number of messages")
+) -> Dict:
+    """
+    Get chat history for a session
+    
+    Args:
+        session_id: Session ID
+        student_id: Student ID for verification
+        limit: Optional limit on number of messages
+        
+    Returns:
+        Session info + chat history
+    """
+    try:
+        # Verify ownership
+        if not session_manager.verify_ownership(session_id, student_id):
+            raise HTTPException(
+                status_code=403,
+                detail="Session not found or doesn't belong to you"
+            )
+        
+        # Get session info
+        session = session_manager.get_session(session_id, student_id)
+        
+        if not session:
+            raise HTTPException(status_code=404, detail="Session not found")
+        
+        # Get chat history
+        messages = chat_history_manager.get_session_history(
+            session_id=session_id,
+            limit=limit
+        )
+        
+        return {
+            "success": True,
+            "session": {
+                "id": session['id'],
+                "name": session['name'],
+                "student_id": session['student_id'],
+                "created_at": session['created_at'],
+                "updated_at": session['updated_at'],
+                "message_count": session['message_count']
+            },
+            "messages": messages
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Get history error: {str(e)}")
+
+
+@app.delete("/api/session/{session_id}")
+def delete_session(
+    session_id: str,
+    student_id: str = Query(..., description="Student ID for ownership verification")
+) -> Dict:
+    """
+    Delete a session and all its messages
+    
+    Args:
+        session_id: Session ID to delete
+        student_id: Student ID for verification
+        
+    Returns:
+        Success message
+    """
+    try:
+        # Delete session (will also delete messages via CASCADE)
+        result = session_manager.delete_session(session_id, student_id)
+        
+        if not result["success"]:
+            if "doesn't belong to you" in result.get("error", ""):
+                raise HTTPException(status_code=403, detail=result["error"])
+            else:
+                raise HTTPException(status_code=500, detail=result["error"])
+        
+        return {
+            "success": True,
+            "message": result["message"]
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Delete session error: {str(e)}")
+
+
+@app.put("/api/session/{session_id}/rename")
+def rename_session(
+    session_id: str,
+    student_id: str = Query(..., description="Student ID for ownership verification"),
+    new_name: str = Query(..., description="New session name")
+) -> Dict:
+    """
+    Rename a session
+    
+    Args:
+        session_id: Session ID
+        student_id: Student ID for verification
+        new_name: New name for session
+        
+    Returns:
+        Success message
+    """
+    try:
+        # Verify ownership
+        if not session_manager.verify_ownership(session_id, student_id):
+            raise HTTPException(
+                status_code=403,
+                detail="Session not found or doesn't belong to you"
+            )
+        
+        # Update session name
+        session_manager.update_session(
+            session_id=session_id,
+            name=new_name
+        )
+        
+        return {
+            "success": True,
+            "message": f"Session renamed to: {new_name}"
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Rename session error: {str(e)}")
+
+
+@app.post("/api/session/{session_id}/archive")
+def archive_session(
+    session_id: str,
+    student_id: str = Query(..., description="Student ID for ownership verification")
+) -> Dict:
+    """
+    Archive a session (soft delete)
+    
+    Args:
+        session_id: Session ID
+        student_id: Student ID for verification
+        
+    Returns:
+        Success message
+    """
+    try:
+        result = session_manager.archive_session(session_id, student_id)
+        
+        if not result["success"]:
+            if "doesn't belong to you" in result.get("error", ""):
+                raise HTTPException(status_code=403, detail=result["error"])
+            else:
+                raise HTTPException(status_code=500, detail=result["error"])
+        
+        return {
+            "success": True,
+            "message": result["message"]
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Archive session error: {str(e)}")
     
 # ==================== SUBMISSION ENDPOINTS ====================
 
@@ -568,24 +1062,30 @@ def get_statistics(
 @app.post("/api/rag/query")
 def rag_query(
     user_input: str = Query(..., description="User question or request"),
-    student_id: Optional[str] = Query(None, description="Optional student ID for context")
+    session_id: str = Query(..., description="Session ID (required)"),
+    student_id: Optional[str] = Query(None, description="Optional student ID for verification")
 ) -> Dict:
     """
-    Query the RAG system for responses
+    Query the RAG system within a session
+    
+    User must create a session first via POST /api/session/create
     
     Supports:
-    - Answering questions about subjects (Toán, Vật lý, Hóa học, Sinh học)
-    - Creating quizzes: "Tạo đề Toán về Hàm số"
-    - Drawing graphs: "Vẽ đồ thị y = x**2"
-    - Submitting answers: "Nộp bài: 1-A,2-B,3-C,..."
+    - Answering questions about subjects
+    - Creating quizzes
+    - Drawing graphs
+    - Submitting answers
     - General Q&A
+    
+    All interactions are saved to the session's chat history.
     
     Args:
         user_input: User's question or command
-        student_id: Optional student context
+        session_id: Session ID (REQUIRED)
+        student_id: Optional student ID for ownership verification
         
     Returns:
-        RAG system response
+        RAG system response with session info
     """
     try:
         if not rag_system:
@@ -594,13 +1094,106 @@ def rag_query(
                 detail="RAG system not initialized. Please check logs."
             )
         
-        # Process query through RAG system
-        response = rag_system.query(user_input)
+        # ========== VALIDATE SESSION ==========
+        # Get session info
+        session = session_manager.get_session(session_id)
         
+        if not session:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Session not found: {session_id}"
+            )
+        
+        # Verify ownership if student_id provided
+        if student_id:
+            if not session_manager.verify_ownership(session_id, student_id):
+                raise HTTPException(
+                    status_code=403,
+                    detail="Session doesn't belong to you"
+                )
+        
+        print(f"   📂 Using session: {session_id} - {session.get('name')}")
+        
+        # ========== LOAD CONVERSATION HISTORY ==========
+        conversation_history = chat_history_manager.get_session_history(session_id)
+        print(f"   📜 Loaded {len(conversation_history)} messages from history")
+        
+        # ========== PROCESS QUERY ==========
+        response = rag_system.query(user_input, conversation_history)
+        
+        # ========== SAVE TO SESSION ==========
+        try:
+            # Save user message
+            chat_history_manager.save_message(
+                session_id=session_id,
+                role="user",
+                content=user_input
+            )
+            
+            # Save assistant response
+            chat_history_manager.save_message(
+                session_id=session_id,
+                role="assistant",
+                content=response
+            )
+            
+            # Update session metadata
+            new_count = chat_history_manager.get_message_count(session_id)
+            
+            # ========== AUTO RENAME IF EMPTY SESSION ==========
+            # Check if this is the first message in an empty session
+            if session.get('first_message') == "" and new_count == 2:
+                # This was an empty session, now has first message
+                # Generate name using LLM based on user's first input
+                new_name = session_manager._generate_session_name(user_input)
+                
+                # Update both message count AND name
+                session_manager.update_session(
+                    session_id=session_id,
+                    message_count=new_count,
+                    name=new_name
+                )
+                
+                # Also update first_message field in database
+                conn = session_manager._get_connection()
+                cursor = conn.cursor()
+                cursor.execute("""
+                    UPDATE chat_sessions
+                    SET first_message = ?
+                    WHERE id = ?
+                """, (user_input, session_id))
+                conn.commit()
+                conn.close()
+                
+                print(f"   🏷️  Auto-renamed empty session to: '{new_name}'")
+            else:
+                # Normal update - just update message count
+                session_manager.update_session(
+                    session_id=session_id,
+                    message_count=new_count
+                )
+            # ================================================
+            
+            print(f"   💾 Saved messages to session (total: {new_count})")
+            
+        except Exception as e:
+            print(f"   ⚠️ Failed to save to session: {e}")
+            # Don't fail the request, just log
+            
+        except Exception as e:
+            print(f"   ⚠️ Failed to save to session: {e}")
+            # Don't fail the request, just log
+        
+        # ========== RETURN RESPONSE ==========
         return {
             "success": True,
             "user_input": user_input,
-            "student_id": student_id,
+            "session": {
+                "id": session['id'],
+                "name": session.get('name'),
+                "student_id": session.get('student_id'),
+                "message_count": session.get('message_count', 0) + 2  # +2 for new messages
+            },
             "response": response
         }
         
@@ -608,34 +1201,7 @@ def rag_query(
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"RAG query error: {str(e)}")
-
-
-@app.get("/api/rag/health")
-def rag_health() -> Dict:
-    """Check RAG system health"""
-    try:
-        if not rag_system:
-            return {
-                "status": "unavailable",
-                "message": "RAG system not initialized"
-            }
-        
-        # Try a simple query to verify functionality
-        test_response = rag_system.query("Xin chào")
-        
-        return {
-            "status": "healthy",
-            "message": "RAG system is operational",
-            "test_response_length": len(test_response)
-        }
-        
-    except Exception as e:
-        return {
-            "status": "error",
-            "message": f"RAG system error: {str(e)}"
-        }
-
-
+    
 # ==================== RUN INFO ====================
 if __name__ == "__main__":
     import uvicorn

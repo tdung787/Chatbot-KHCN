@@ -505,8 +505,22 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             print(f"   ⚠️ Error extracting answers: {e}")
             return None
     
-    def query(self, user_query: str) -> str:
-        """Process user query"""
+    def query(self, user_query: str, conversation_history: List[Dict] = None) -> str:
+        """
+        Process user query with optional conversation history
+        
+        Args:
+            user_query: Current user query
+            conversation_history: Optional list of previous messages
+                                Format: [
+                                    {"role": "user", "content": "..."},
+                                    {"role": "assistant", "content": "..."},
+                                    ...
+                                ]
+        
+        Returns:
+            Response string
+        """
         try:
             print(f"\n{'='*70}")
             print(f"USER QUERY: {user_query}")
@@ -844,12 +858,21 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                     {
                         "role": "system",
                         "content": self._get_system_prompt(mode="search")
-                    },
-                    {
-                        "role": "user",
-                        "content": f"Câu hỏi của học sinh: {user_query}\n\nKết quả tìm kiếm:\n{tool_result}\n\nHãy trả lời câu hỏi dựa trên kết quả trên."
                     }
                 ]
+                
+                # ========== THÊM CONVERSATION HISTORY ==========
+                if conversation_history:
+                    # Add previous conversation context
+                    messages.extend(conversation_history)
+                    print(f"   📜 Added {len(conversation_history)} history messages")
+                # ===============================================
+                
+                # Add current query
+                messages.append({
+                    "role": "user",
+                    "content": f"Câu hỏi của học sinh: {user_query}\n\nKết quả tìm kiếm:\n{tool_result}\n\nHãy trả lời câu hỏi dựa trên kết quả trên."
+                })
             else:
                 print("\n💬 Quyết định: Trả lời trực tiếp (không cần search)")
                 
@@ -858,12 +881,21 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                     {
                         "role": "system",
                         "content": self._get_system_prompt(mode="general")
-                    },
-                    {
-                        "role": "user",
-                        "content": user_query
                     }
                 ]
+                
+                # ========== THÊM CONVERSATION HISTORY ==========
+                if conversation_history:
+                    # Add previous conversation context
+                    messages.extend(conversation_history)
+                    print(f"   📜 Added {len(conversation_history)} history messages")
+                # ===============================================
+                
+                # Add current query
+                messages.append({
+                    "role": "user",
+                    "content": user_query
+                })
             
             # Get LLM response
             response = self.client.chat.completions.create(
@@ -891,9 +923,18 @@ class ScienceQASystem:
         self.retriever = QuestionRetriever(self.client, QDRANT_PATH, COLLECTION_NAME)
         self.agent = SimpleAgent(self.client, self.intent_classifier, self.retriever)
     
-    def query(self, user_query: str) -> str:
-        """Process user query through RAG system"""
-        return self.agent.query(user_query)
+    def query(self, user_query: str, conversation_history: List[Dict] = None) -> str:
+        """
+        Process user query through RAG system with optional conversation history
+        
+        Args:
+            user_query: Current user query
+            conversation_history: Optional list of previous messages
+            
+        Returns:
+            Response string
+        """
+        return self.agent.query(user_query, conversation_history)
 
 # ================== DISPLAY HELPER ==================
 def display_response(response: str):

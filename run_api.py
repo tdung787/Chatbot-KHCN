@@ -45,7 +45,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "src.api.app:app",
         host="0.0.0.0",
-        port=8000,
+        port=8110,
         reload=True,  # Auto-reload khi code thay đổi
         log_level="info"
     )
