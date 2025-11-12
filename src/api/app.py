@@ -589,20 +589,20 @@ def list_sessions(
         raise HTTPException(status_code=500, detail=f"List sessions error: {str(e)}")
 
 
-@app.get("/api/session/{session_id}")
+@app.get("/api/session")
 def get_session(
-    session_id: str,
+    session_id: str = Query(..., description="Session ID"),
     student_id: str = Query(..., description="Student ID for ownership verification")
 ) -> Dict:
     """
-    Get session info
+    Get session info with full conversation history
     
     Args:
-        session_id: Session ID
+        session_id: Session ID (query param)
         student_id: Student ID for verification
         
     Returns:
-        Session info
+        Session info + full chat history in user-chatbot pairs
     """
     try:
         # Verify ownership
@@ -617,9 +617,47 @@ def get_session(
         if not session:
             raise HTTPException(status_code=404, detail="Session not found")
         
+        # Get full chat history
+        messages = chat_history_manager.get_session_history(session_id)
+        
+        # Format messages into conversation pairs
+        conversation = []
+        for i in range(0, len(messages), 2):
+            if i + 1 < len(messages):
+                # Complete pair (user + assistant)
+                conversation.append({
+                    "user": {
+                        "content": messages[i]["content"],
+                        "timestamp": messages[i]["timestamp"]
+                    },
+                    "chatbot": {
+                        "content": messages[i + 1]["content"],
+                        "timestamp": messages[i + 1]["timestamp"]
+                    }
+                })
+            else:
+                # Odd message (user only, no response yet)
+                conversation.append({
+                    "user": {
+                        "content": messages[i]["content"],
+                        "timestamp": messages[i]["timestamp"]
+                    },
+                    "chatbot": None
+                })
+        
         return {
             "success": True,
-            "session": session
+            "session": {
+                "id": session['id'],
+                "name": session['name'],
+                "student_id": session['student_id'],
+                "created_at": session['created_at'],
+                "updated_at": session['updated_at'],
+                "message_count": session['message_count'],
+                "is_archived": session['is_archived']
+            },
+            "conversation": conversation,
+            "total_pairs": len(conversation)
         }
         
     except HTTPException:
@@ -684,16 +722,16 @@ def get_session_history(
         raise HTTPException(status_code=500, detail=f"Get history error: {str(e)}")
 
 
-@app.delete("/api/session/{session_id}")
+@app.delete("/api/session")
 def delete_session(
-    session_id: str,
+    session_id: str = Query(..., description="Session ID"),
     student_id: str = Query(..., description="Student ID for ownership verification")
 ) -> Dict:
     """
     Delete a session and all its messages
     
     Args:
-        session_id: Session ID to delete
+        session_id: Session ID to delete (query param)
         student_id: Student ID for verification
         
     Returns:

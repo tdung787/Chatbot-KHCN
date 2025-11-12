@@ -322,46 +322,25 @@ Chỉ trả về TÊN, không giải thích."""
         conn.close()
     
     def delete_session(self, session_id: str, student_id: str) -> Dict:
-        """
-        Delete session with ownership check
-        
-        Args:
-            session_id: Session ID to delete
-            student_id: Student ID for ownership check
-            
-        Returns:
-            {"success": bool, "message": str}
-        """
         try:
-            # 1. Verify ownership
             if not self.verify_ownership(session_id, student_id):
-                return {
-                    "success": False,
-                    "error": "Session not found or doesn't belong to you"
-                }
+                return {"success": False, "error": "Session not found or doesn't belong to you"}
             
-            # 2. Delete session (CASCADE will delete messages)
             conn = self._get_connection()
             cursor = conn.cursor()
             
+            # Xóa messages trước (optional - CASCADE đã làm rồi)
+            cursor.execute("DELETE FROM chat_messages WHERE session_id = ?", (session_id,))
+            
+            # Xóa session
             cursor.execute("DELETE FROM chat_sessions WHERE id = ?", (session_id,))
             
             conn.commit()
             conn.close()
             
-            print(f"✅ Deleted session: {session_id}")
-            
-            return {
-                "success": True,
-                "message": f"Đã xóa session {session_id}"
-            }
-            
+            return {"success": True, "message": f"Đã xóa session {session_id}"}
         except Exception as e:
-            print(f"❌ Failed to delete session: {e}")
-            return {
-                "success": False,
-                "error": str(e)
-            }
+            return {"success": False, "error": str(e)}
     
     def list_sessions(
         self,
