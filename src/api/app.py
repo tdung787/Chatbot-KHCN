@@ -15,6 +15,7 @@ sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from src.tools.quiz_storage import QuizStorage
 from src.tools.submission_manager import SubmissionManager
+from query import ScienceQASystem
 
 
 # ==================== FASTAPI APP ====================
@@ -36,6 +37,13 @@ app.add_middleware(
 # Initialize storage
 storage = QuizStorage()
 submission_manager = SubmissionManager()
+
+# Initialize RAG system
+try:
+    rag_system = ScienceQASystem()
+except Exception as e:
+    print(f"⚠️  Warning: RAG system initialization failed: {e}")
+    rag_system = None
 
 
 # ==================== HEALTH CHECK ====================
@@ -554,6 +562,78 @@ def get_statistics(
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+
+# ==================== RAG QUERY ENDPOINT ====================
+@app.post("/api/rag/query")
+def rag_query(
+    user_input: str = Query(..., description="User question or request"),
+    student_id: Optional[str] = Query(None, description="Optional student ID for context")
+) -> Dict:
+    """
+    Query the RAG system for responses
+    
+    Supports:
+    - Answering questions about subjects (Toán, Vật lý, Hóa học, Sinh học)
+    - Creating quizzes: "Tạo đề Toán về Hàm số"
+    - Drawing graphs: "Vẽ đồ thị y = x**2"
+    - Submitting answers: "Nộp bài: 1-A,2-B,3-C,..."
+    - General Q&A
+    
+    Args:
+        user_input: User's question or command
+        student_id: Optional student context
+        
+    Returns:
+        RAG system response
+    """
+    try:
+        if not rag_system:
+            raise HTTPException(
+                status_code=503,
+                detail="RAG system not initialized. Please check logs."
+            )
+        
+        # Process query through RAG system
+        response = rag_system.query(user_input)
+        
+        return {
+            "success": True,
+            "user_input": user_input,
+            "student_id": student_id,
+            "response": response
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"RAG query error: {str(e)}")
+
+
+@app.get("/api/rag/health")
+def rag_health() -> Dict:
+    """Check RAG system health"""
+    try:
+        if not rag_system:
+            return {
+                "status": "unavailable",
+                "message": "RAG system not initialized"
+            }
+        
+        # Try a simple query to verify functionality
+        test_response = rag_system.query("Xin chào")
+        
+        return {
+            "status": "healthy",
+            "message": "RAG system is operational",
+            "test_response_length": len(test_response)
+        }
+        
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": f"RAG system error: {str(e)}"
+        }
 
 
 # ==================== RUN INFO ====================

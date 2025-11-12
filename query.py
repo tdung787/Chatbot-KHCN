@@ -781,11 +781,6 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
 
 {result['quiz_markdown']}
 
----
-
-💡 **Lưu ý**: 
-- Đề kiểm tra được tạo bởi AI, vui lòng kiểm tra kỹ trước khi sử dụng
-- Bạn có thể yêu cầu tạo đề khác với độ khó hoặc số câu khác nhau
 """
                 else:
                     return f"""❌ Không thể tạo đề kiểm tra: {result['error']}
