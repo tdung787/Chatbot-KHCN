@@ -55,8 +55,10 @@ class SubmissionManager:
         conn.close()
     
     def _get_connection(self):
-        """Get database connection"""
-        return sqlite3.connect(self.db_path)
+        """Get database connection with timeout"""
+        conn = sqlite3.connect(self.db_path, timeout=30.0)
+        conn.execute("PRAGMA journal_mode=WAL")
+        return conn
     
     def _get_today_submission_count(self, student_id: str) -> int:
         """Count submissions today"""
@@ -124,6 +126,8 @@ class SubmissionManager:
         """
         Submit quiz and auto-grade. Calculates duration (minutes) using quizzes.created_at.
         """
+        import uuid
+        
         conn = None
         try:
             conn = self._get_connection()
@@ -132,11 +136,12 @@ class SubmissionManager:
             # 1. Calculate daily_count
             daily_count = self._get_today_submission_count(student_id) + 1
             
-            # 2. Generate submission_id
-            # use UTC-aware now to match quizzes.created_at (SQLite CURRENT_TIMESTAMP is UTC)
+            # 2. Generate submission_id with UUID
             now = datetime.now(timezone.utc)
-            today = now.strftime("%Y%m%d")
-            submission_id = f"sub_{today}_{daily_count:03d}"
+            timestamp = now.strftime("%Y%m%d%H%M%S")
+            unique_id = uuid.uuid4().hex[:8]
+            
+            submission_id = f"sub_{timestamp}_{unique_id}"
             
             # 3. Grade submission
             score = self.grade_submission(quiz_id, student_answers, answer_key)

@@ -65,8 +65,10 @@ class QuizStorage:
         conn.close()
     
     def _get_connection(self):
-        """Get database connection"""
-        return sqlite3.connect(self.db_path)
+        """Get database connection with timeout"""
+        conn = sqlite3.connect(self.db_path, timeout=30.0)
+        conn.execute("PRAGMA journal_mode=WAL")
+        return conn
     
     def _get_today_count(self, student_id: str) -> int:
         """Get count of quizzes created today by this student"""
@@ -133,12 +135,13 @@ class QuizStorage:
         self,
         student_id: str,
         content: str,
-        answer_key: str,  # ← NEW
+        answer_key: str,
         subject: str = None,
         topic: str = None,
         difficulty: str = None
     ) -> str:
         """Save quiz with answer key and status"""
+        import uuid
         
         # FIXED VALUES
         num_questions = 10
@@ -150,8 +153,11 @@ class QuizStorage:
         daily_count = self._get_today_count(student_id) + 1
         
         now = datetime.now()
-        today = now.strftime("%Y%m%d")
-        quiz_id = f"quiz_{today}_{daily_count:03d}"
+        timestamp = now.strftime("%Y%m%d%H%M%S")
+        unique_id = uuid.uuid4().hex[:8]
+        
+        # Generate UUID-based quiz ID
+        quiz_id = f"quiz_{timestamp}_{unique_id}"
         
         # Insert with answer_key and status
         cursor.execute("""

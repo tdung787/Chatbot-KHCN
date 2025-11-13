@@ -221,70 +221,39 @@ def get_latest_quiz(
 @app.get("/api/quiz/all")
 def get_all_quizzes(
     student_id: Optional[str] = Query(None, description="Filter by student ID"),
-    subject: Optional[str] = Query(None, description="Filter by subject (Toán, Vật lý, Hóa học, Sinh học)"),
-    difficulty: Optional[str] = Query(None, description="Filter by difficulty (dễ, trung bình, khó)"),
+    subject: Optional[str] = Query(None, description="Filter by subject"),
+    difficulty: Optional[str] = Query(None, description="Filter by difficulty"),
     date_from: Optional[str] = Query(None, description="Filter from date (ISO format: 2025-01-01)"),
-    date_to: Optional[str] = Query(None, description="Filter to date (ISO format: 2025-01-31)"),
-    page: int = Query(1, ge=1, description="Page number (starts from 1)"),
-    size: int = Query(20, ge=1, le=100, description="Items per page (max 100)")
+    date_to: Optional[str] = Query(None, description="Filter to date (ISO format: 2025-01-31)")
 ) -> Dict:
     """
-    Lấy tất cả bài kiểm tra với phân trang và filter
+    Get all quizzes with filters (no pagination)
     
     Args:
-        student_id: Optional - Lọc theo student
-        subject: Optional - Lọc theo môn học
-        difficulty: Optional - Lọc theo độ khó
-        date_from: Optional - Lọc từ ngày
-        date_to: Optional - Lọc đến ngày
-        page: Page number (default: 1)
-        size: Items per page (default: 20, max: 100)
+        student_id: Optional - Filter by student
+        subject: Optional - Filter by subject
+        difficulty: Optional - Filter by difficulty
+        date_from: Optional - Filter from date
+        date_to: Optional - Filter to date
         
     Returns:
-        Paginated list of quizzes
+        List of all quizzes matching filters
     """
     try:
-        # Calculate offset
-        offset = (page - 1) * size
-        
-        # Get filtered quizzes
+        # Get filtered quizzes (no limit)
         quizzes = storage.get_quizzes_by_filter(
             student_id=student_id,
             subject=subject,
             difficulty=difficulty,
             date_from=date_from,
             date_to=date_to,
-            limit=size,
-            offset=offset
-        )
-        
-        # Get total count with same filters
-        # Note: Need to count with filters, not just count_total()
-        # We'll get total by querying without limit
-        all_filtered = storage.get_quizzes_by_filter(
-            student_id=student_id,
-            subject=subject,
-            difficulty=difficulty,
-            date_from=date_from,
-            date_to=date_to,
-            limit=999999,  # Large number to get all
+            limit=999999,  # Get all
             offset=0
         )
-        total = len(all_filtered)
-        
-        # Calculate total pages
-        total_pages = (total + size - 1) // size  # Ceiling division
         
         return {
             "success": True,
-            "pagination": {
-                "total": total,
-                "page": page,
-                "size": size,
-                "total_pages": total_pages,
-                "has_next": page < total_pages,
-                "has_prev": page > 1
-            },
+            "total": len(quizzes),
             "filters": {
                 "student_id": student_id,
                 "subject": subject,
@@ -293,6 +262,76 @@ def get_all_quizzes(
                 "date_to": date_to
             },
             "data": quizzes
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+# ==================== SUBMISSION ====================
+    
+@app.get("/api/submission/all")
+def get_all_submissions(
+    student_id: Optional[str] = Query(None, description="Filter by student ID"),
+    quiz_id: Optional[str] = Query(None, description="Filter by quiz ID"),
+    date_from: Optional[str] = Query(None, description="Filter from date (ISO format: 2025-01-01)"),
+    date_to: Optional[str] = Query(None, description="Filter to date (ISO format: 2025-01-31)"),
+) -> Dict:
+    """
+    Get all submissions with filters (no pagination)
+    
+    Returns only basic fields: id, quiz_id, student_id, student_answers, 
+    score, daily_count, submitted_at, duration
+    """
+    try:
+        import sqlite3
+        
+        conn = submission_manager._get_connection()
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        
+        # Build query
+        query = "SELECT * FROM submissions WHERE 1=1"
+        params = []
+        
+        # Add filters
+        if student_id:
+            query += " AND student_id = ?"
+            params.append(student_id)
+        
+        if quiz_id:
+            query += " AND quiz_id = ?"
+            params.append(quiz_id)
+        
+        if date_from:
+            query += " AND submitted_at >= ?"
+            params.append(date_from)
+        
+        if date_to:
+            query += " AND submitted_at < date(?, '+1 day')"
+            params.append(date_to)
+        
+        # Order by date DESC
+        query += " ORDER BY submitted_at DESC"
+        
+        # Execute query
+        cursor.execute(query, params)
+        rows = cursor.fetchall()
+        
+        # Format results
+        submissions = [dict(row) for row in rows]
+        
+        conn.close()
+        
+        return {
+            "success": True,
+            "total": len(submissions),
+            "filters": {
+                "student_id": student_id,
+                "quiz_id": quiz_id,
+                "date_from": date_from,
+                "date_to": date_to,
+            },
+            "data": submissions
         }
         
     except Exception as e:
