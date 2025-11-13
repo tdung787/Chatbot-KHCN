@@ -58,25 +58,19 @@ class SessionManager:
     
     def _generate_session_id(self, student_id: str) -> str:
         """
-        Generate unique session ID
+        Generate unique session ID using UUID
         
-        Format: sess_YYYYMMDD_XXX
+        Format: sess_{timestamp}_{uuid4}
+        Example: sess_20251112153045_a7b3c9d2
+        
+        Guaranteed unique, no race conditions
         """
-        conn = self._get_connection()
-        cursor = conn.cursor()
+        import uuid
         
-        today = datetime.now().strftime("%Y%m%d")
+        timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+        unique_id = uuid.uuid4().hex[:8]  # 8 characters from UUID
         
-        # Count sessions created today by this student
-        cursor.execute("""
-            SELECT COUNT(*) FROM chat_sessions
-            WHERE student_id = ? AND id LIKE ?
-        """, (student_id, f"sess_{today}_%"))
-        
-        count = cursor.fetchone()[0]
-        conn.close()
-        
-        session_id = f"sess_{today}_{count + 1:03d}"
+        session_id = f"sess_{timestamp}_{unique_id}"
         
         return session_id
     

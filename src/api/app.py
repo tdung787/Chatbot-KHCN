@@ -48,7 +48,7 @@ def validate_student_id(student_id: str) -> Dict:
         print(f"   🔍 Validating student_id (user_id): {student_id}")
         print(f"   🌐 Calling: {url}")
         
-        response = requests.get(url, timeout=5)
+        response = requests.get(url, timeout=30)
         
         if response.status_code != 200:
             return {
