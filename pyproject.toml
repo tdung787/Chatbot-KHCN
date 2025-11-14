@@ -23,4 +23,5 @@ dependencies = [
     "kaleido>=1.2.0",
     "plotly>=6.4.0",
     "jwt>=1.4.0",
+    "python-multipart>=0.0.20",
 ]

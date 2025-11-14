@@ -55,6 +55,27 @@ class IntentClassifier:
     def classify(self, query: str) -> Dict:
         """Classify query intent"""
         try:
+            # ========== DEBUG: PRINT FINAL MESSAGE ==========
+            print("\n🔍 DEBUG - Last message before API call:")
+            if messages:
+                last_msg = messages[-1]
+                print(f"   Role: {last_msg.get('role')}")
+                
+                content = last_msg.get('content')
+                if isinstance(content, list):
+                    print(f"   Content type: LIST (multimodal)")
+                    for i, item in enumerate(content):
+                        print(f"     [{i}] Type: {item.get('type')}")
+                        if item.get('type') == 'text':
+                            print(f"         Text: {item.get('text', '')[:50]}...")
+                        elif item.get('type') == 'image_url':
+                            url = item.get('image_url', {}).get('url', '')
+                            print(f"         URL prefix: {url[:50]}...")
+                            print(f"         Detail: {item.get('image_url', {}).get('detail', 'auto')}")
+                else:
+                    print(f"   Content type: STRING")
+                    print(f"   Text: {str(content)[:50]}...")
+            print("=" * 70)
             response = self.client.chat.completions.create(
                 model=OPENAI_MODEL,
                 messages=[
@@ -508,7 +529,12 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             print(f"   ⚠️ Error extracting answers: {e}")
             return None
     
-    def query(self, user_query: str, conversation_history: List[Dict] = None) -> str:
+    def query(
+        self, 
+        user_query: str, 
+        conversation_history: List[Dict] = None,
+        image_context: Optional[Dict] = None
+    ) -> str:
         """
         Process user query with optional conversation history
         
@@ -922,10 +948,33 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                 # ===============================================
                 
                 # Add current query
-                messages.append({
-                    "role": "user",
-                    "content": f"Câu hỏi của học sinh: {user_query}\n\nKết quả tìm kiếm:\n{tool_result}\n\nHãy trả lời câu hỏi dựa trên kết quả trên."
-                })
+                # ========== ADD CURRENT QUERY WITH IMAGE ==========
+                if image_context:
+                    # Add with image
+                    messages.append({
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": user_query
+                            },
+                            {
+                                "type": "image_url",
+                                "image_url": {
+                                    "url": f"data:image/jpeg;base64,{image_context['base64']}",
+                                    "detail": "low"
+                                }
+                            }
+                        ]
+                    })
+                    print(f"   🖼️  Added image to query: {image_context['size']}")
+                else:
+                    # Text only
+                    messages.append({
+                        "role": "user",
+                        "content": user_query
+                    })
+                # ==================================================
             else:
                 print("\n💬 Quyết định: Trả lời trực tiếp (không cần search)")
                 
@@ -949,6 +998,31 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                     "role": "user",
                     "content": user_query
                 })
+                
+                
+            # ========== BUILD FINAL MESSAGE WITH IMAGE ==========
+            if image_context:
+                # Replace last user message with image + text
+                last_message = messages[-1]
+                
+                messages[-1] = {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": last_message["content"]
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{image_context['base64']}",
+                                "detail": "low"  # 512px, cost-effective
+                            }
+                        }
+                    ]
+                }
+                print(f"   🖼️  Added image to query: {image_context['size']}")
+            # ===================================================
             
             # Get LLM response
             response = self.client.chat.completions.create(
@@ -971,7 +1045,12 @@ class ScienceQASystem:
         self.retriever = QuestionRetriever(self.client, QDRANT_PATH, COLLECTION_NAME)
         self.agent = SimpleAgent(self.client, self.intent_classifier, self.retriever, student_id)
     
-    def query(self, user_query: str, conversation_history: List[Dict] = None) -> str:
+    def query(
+        self, 
+        user_query: str, 
+        conversation_history: List[Dict] = None,
+        image_context: Optional[Dict] = None
+    ) -> str:
         """
         Process user query through RAG system with optional conversation history
         
@@ -982,7 +1061,7 @@ class ScienceQASystem:
         Returns:
             Response string
         """
-        return self.agent.query(user_query, conversation_history)
+        return self.agent.query(user_query, conversation_history, image_context)
 
 # ================== DISPLAY HELPER ==================
 def display_response(response: str):

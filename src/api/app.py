@@ -4,7 +4,7 @@ FastAPI application for Quiz Management System
 Provides simple REST API for accessing quiz history
 """
 
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, HTTPException, Query, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional, Dict, List
 import sys
@@ -13,13 +13,17 @@ import requests
 from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
+import base64
+from PIL import Image
+import io
+from datetime import datetime
 
 # Add parent directory to path to import from src
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from src.tools.quiz_storage import QuizStorage
 from src.tools.submission_manager import SubmissionManager
-from query import ScienceQASystem
+from query import ScienceQASystem, QuestionRetriever, IntentClassifier, SimpleAgent
 from src.tools.session_manager import SessionManager
 from src.tools.chat_history_manager import ChatHistoryManager
 from src.tools.evaluation_storage import EvaluationStorage
@@ -129,17 +133,32 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# ==================== INITIALIZE COMPONENTS ====================
 # Initialize storage
 storage = QuizStorage()
 submission_manager = SubmissionManager()
+
+# ========== INIT OPENAI CLIENT (ONLY ONCE) ==========
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 session_manager = SessionManager(openai_client=openai_client)
 chat_history_manager = ChatHistoryManager()
 print("✅ Session managers initialized")
 
-# Initialize RAG system
-rag_system = None
-print("ℹ️  RAG system will be initialized per-request with student_id")
+# ========== INIT RAG COMPONENTS (SINGLETON) ==========
+try:
+    intent_classifier = IntentClassifier(openai_client)
+    retriever = QuestionRetriever(
+        openai_client, 
+        "database/qdrant_storage", 
+        "KHTN_QA"
+    )
+    print("✅ Shared RAG components initialized")
+except Exception as e:
+    print(f"⚠️ Failed to init RAG components: {e}")
+    import traceback
+    traceback.print_exc()
+    intent_classifier = None
+    retriever = None
 
 # ==================== HEALTH CHECK ====================
 @app.get("/")
@@ -378,7 +397,6 @@ def get_daily_count(
         )
         
         # Calculate summary
-        from datetime import datetime
         today_date = datetime.now().strftime("%Y-%m-%d")
         today_count = daily_stats.get(today_date, {}).get("count", 0)
         
@@ -466,17 +484,7 @@ def create_session(
         
         # ========== CASE 1: WITH FIRST MESSAGE ==========
         if first_message:
-            # Initialize RAG system with student_id from session
-            try:
-                session_student_id = session.get('student_id')
-                rag_system_instance = ScienceQASystem(student_id=session_student_id)
-            except Exception as e:
-                raise HTTPException(
-                    status_code=503,
-                    detail=f"Failed to initialize RAG system: {str(e)}"
-    )
-            
-            # Create session with LLM-generated name
+            # Create session with LLM-generated name FIRST
             session_result = session_manager.create_session(
                 student_id=student_id,
                 first_message=first_message
@@ -489,11 +497,34 @@ def create_session(
                 )
             
             session = session_result["session"]
-            
             print(f"   ✨ Created session: {session['id']} - {session['name']}")
             
+            # NOW create agent with session's student_id
+            if not openai_client or not intent_classifier or not retriever:
+                raise HTTPException(
+                    status_code=503,
+                    detail="RAG components not initialized"
+                )
+            
+            try:
+                agent = SimpleAgent(
+                    openai_client,
+                    intent_classifier,
+                    retriever,
+                    session['student_id']
+                )
+                print(f"   ✅ Agent initialized")
+            except Exception as e:
+                print(f"   ❌ Agent init error: {e}")
+                import traceback
+                traceback.print_exc()
+                raise HTTPException(
+                    status_code=503,
+                    detail=f"Failed to initialize agent: {str(e)}"
+                )
+            
             # Process first message and get response
-            response = rag_system.query(first_message, conversation_history=[])
+            response = agent.query(first_message, conversation_history=[])
             
             # Save messages to session
             try:
@@ -542,7 +573,6 @@ def create_session(
             session_id = session_manager._generate_session_id(student_id)
             default_name = "Cuộc trò chuyện mới"
             
-            from datetime import datetime
             now = datetime.now()
             
             conn = session_manager._get_connection()
@@ -1141,13 +1171,14 @@ def get_statistics(
 
 # ==================== RAG QUERY ENDPOINT ====================
 @app.post("/api/rag/query")
-def rag_query(
-    user_input: str = Query(..., description="User question or request"),
-    session_id: str = Query(..., description="Session ID (required)"),
-    student_id: Optional[str] = Query(None, description="Optional student ID for verification")
+async def rag_query(
+    user_input: str = Form(..., description="User question or request"),
+    session_id: str = Form(..., description="Session ID (required)"),
+    student_id: Optional[str] = Form(None, description="Optional student ID for verification"),
+    image: Optional[UploadFile] = File(None, description="Optional image file (quiz/problem)")
 ) -> Dict:
     """
-    Query the RAG system within a session
+    Query the RAG system within a session with optional image support
     
     User must create a session first via POST /api/session/create
     
@@ -1156,6 +1187,7 @@ def rag_query(
     - Creating quizzes
     - Drawing graphs
     - Submitting answers
+    - Image-based questions (solving problems from photos)
     - General Q&A
     
     All interactions are saved to the session's chat history.
@@ -1164,6 +1196,7 @@ def rag_query(
         user_input: User's question or command
         session_id: Session ID (REQUIRED)
         student_id: Optional student ID for ownership verification
+        image: Optional image file (JPEG/PNG)
         
     Returns:
         RAG system response with session info
@@ -1188,16 +1221,72 @@ def rag_query(
         
         print(f"   📂 Using session: {session_id} - {session.get('name')}")
         
+        # ========== PROCESS IMAGE IF PROVIDED ==========
+        image_context = None
+        if image:
+            print(f"   🖼️  Image received: {image.filename}")
+            
+            try:
+                # Read image
+                image_data = await image.read()
+                
+                # Resize to 512px for cost optimization
+                img = Image.open(io.BytesIO(image_data))
+                
+                # Calculate resize ratio
+                max_size = 512
+                ratio = min(max_size / img.width, max_size / img.height)
+                
+                if ratio < 1:
+                    new_size = (int(img.width * ratio), int(img.height * ratio))
+                    img = img.resize(new_size, Image.Resampling.LANCZOS)
+                    print(f"   📐 Resized: original → {img.width}x{img.height}")
+                
+                # Convert to base64
+                buffer = io.BytesIO()
+                img.save(buffer, format="JPEG", quality=85)
+                base64_image = base64.b64encode(buffer.getvalue()).decode()
+                
+                image_context = {
+                    "base64": base64_image,
+                    "filename": image.filename,
+                    "size": f"{img.width}x{img.height}"
+                }
+                
+                print(f"   ✅ Image processed: {img.width}x{img.height}, {len(base64_image)/1024:.1f}KB")
+                print(f"   🔍 Base64 preview: {base64_image[:100]}...")
+                
+            except Exception as e:
+                print(f"   ⚠️ Image processing failed: {e}")
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid image file: {str(e)}"
+                )
+        # ===============================================
+        
         # ========== INITIALIZE RAG SYSTEM WITH STUDENT_ID ==========
         session_student_id = session.get('student_id')
         
+        # Check if shared components available
+        if not openai_client or not intent_classifier or not retriever:
+            raise HTTPException(
+                status_code=503,
+                detail="RAG components not initialized"
+            )
+
+        # Create lightweight agent instance (no Qdrant init)
         try:
-            rag_system_instance = ScienceQASystem(student_id=session_student_id)
-            print(f"   ✅ RAG system initialized for student: {session_student_id}")
+            agent = SimpleAgent(
+                openai_client, 
+                intent_classifier, 
+                retriever, 
+                session_student_id
+            )
+            print(f"   ✅ Agent initialized for student: {session_student_id}")
         except Exception as e:
-            print(f"   ❌ RAG init error: {e}")  # ← THÊM DÒNG NÀY
+            print(f"   ❌ RAG init error: {e}")
             import traceback
-            traceback.print_exc()  # ← VÀ DÒNG NÀY
+            traceback.print_exc()
             raise HTTPException(
                 status_code=503,
                 detail=f"Failed to initialize RAG system: {str(e)}"
@@ -1208,16 +1297,24 @@ def rag_query(
         conversation_history = chat_history_manager.get_session_history(session_id)
         print(f"   📜 Loaded {len(conversation_history)} messages from history")
         
-        # ========== PROCESS QUERY ==========
-        response = rag_system_instance.query(user_input, conversation_history)
+        # ========== PROCESS QUERY WITH IMAGE ==========
+        response = agent.query(
+            user_input, 
+            conversation_history,
+            image_context=image_context
+        )
         
         # ========== SAVE TO SESSION ==========
         try:
-            # Save user message
+            # Save user message (with image indicator)
+            user_content = user_input
+            if image_context:
+                user_content = f"[Có ảnh: {image_context['filename']}] {user_input}"
+            
             chat_history_manager.save_message(
                 session_id=session_id,
                 role="user",
-                content=user_input
+                content=user_content
             )
             
             # Save assistant response
@@ -1231,20 +1328,15 @@ def rag_query(
             new_count = chat_history_manager.get_message_count(session_id)
             
             # ========== AUTO RENAME IF EMPTY SESSION ==========
-            # Check if this is the first message in an empty session
             if session.get('first_message') == "" and new_count == 2:
-                # This was an empty session, now has first message
-                # Generate name using LLM based on user's first input
                 new_name = session_manager._generate_session_name(user_input)
                 
-                # Update both message count AND name
                 session_manager.update_session(
                     session_id=session_id,
                     message_count=new_count,
                     name=new_name
                 )
                 
-                # Also update first_message field in database
                 conn = session_manager._get_connection()
                 cursor = conn.cursor()
                 cursor.execute("""
@@ -1257,7 +1349,6 @@ def rag_query(
                 
                 print(f"   🏷️  Auto-renamed empty session to: '{new_name}'")
             else:
-                # Normal update - just update message count
                 session_manager.update_session(
                     session_id=session_id,
                     message_count=new_count
@@ -1268,12 +1359,12 @@ def rag_query(
             
         except Exception as e:
             print(f"   ⚠️ Failed to save to session: {e}")
-            # Don't fail the request, just log
         
         # ========== RETURN RESPONSE ==========
         return {
             "success": True,
             "user_input": user_input,
+            "has_image": image_context is not None,
             "session": {
                 "id": session['id'],
                 "name": session.get('name'),
@@ -1312,7 +1403,6 @@ def get_daily_evaluation(
     """
     try:
         import sqlite3
-        from datetime import datetime
         
         # Parse date
         if date:
@@ -1447,7 +1537,8 @@ def get_daily_evaluation(
             else:  # 5.0
                 rating = "⭐⭐⭐⭐⭐ Xuất sắc"
                 teacher_comment = "Học sinh đạt chuẩn tối ưu về cả tham gia, năng lực và kỷ luật. Xứng đáng được khen thưởng và làm gương cho các bạn khác!"
-                    # ========== SAVE TO DATABASE ==========
+        
+        # ========== SAVE TO DATABASE ==========
         try:
             eval_id = evaluation_storage.save_evaluation({
                 "student_id": student_id,
