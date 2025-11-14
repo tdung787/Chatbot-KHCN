@@ -3,6 +3,8 @@ import json
 import re
 import platform
 import subprocess
+import requests
+from datetime import datetime
 from typing import List, Dict, Optional
 from pathlib import Path
 from dotenv import load_dotenv
@@ -539,6 +541,23 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             # ========== CHECK PENDING QUIZ (EARLY RETURN) ==========
             pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
             
+            if self._should_submit_quiz(user_query):
+                print("   📝 Phát hiện ý định nộp bài!")
+                
+                pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
+                
+                if not pending_quiz:
+                    return """❌ Chưa có bài kiểm tra nào được tạo!
+
+            💡 Bạn có thể tạo đề mới"
+            """
+                
+                # Có pending quiz → Tiếp tục submission logic như cũ
+                # ... (giữ nguyên code submission hiện tại)
+
+            # ========== CHECK PENDING QUIZ FOR OTHER ACTIONS ==========
+            pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
+            
             if pending_quiz:
                 print(f"\n⚠️  Student có quiz đang làm: {pending_quiz['id']}")
                 print(f"   Input: {user_query}")
@@ -598,6 +617,30 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
                         
                         # Update quiz status to completed
                         self.quiz_storage.update_quiz_status(pending_quiz['id'], "completed")
+                        
+                        # ========== TRIGGER DAILY EVALUATION ==========
+                        try:
+                            
+                            today = datetime.now().strftime("%Y-%m-%d")
+                            api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
+                            eval_response = requests.get(
+                                f"{api_base_url}/api/stats/daily",
+                                params={
+                                    "student_id": student_id,
+                                    "date": today
+                                },
+                                timeout=5
+                            )
+                            
+                            if eval_response.status_code == 200:
+                                print(f"   ✅ Daily evaluation updated")
+                            else:
+                                print(f"   ⚠️ Evaluation API returned {eval_response.status_code}")
+                                
+                        except Exception as e:
+                            print(f"   ⚠️ Failed to update evaluation: {e}")
+                            # Don't fail submission, just log
+                        # ==============================================
                         
                         # Get detailed result
                         detailed = self.submission_manager.get_submission_with_details(
@@ -693,6 +736,7 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
             print(f"   - Should create quiz: {self._should_create_quiz(user_query)}")
             print(f"   - Should draw graph: {self._should_draw_graph(user_query)}")
             print(f"   - Should use search: {self._should_use_tool(user_query)}")
+            print(f"   - Should submit quiz: {self._should_submit_quiz(user_query)}")
             
             # Check if quiz request
             if self._should_create_quiz(user_query):

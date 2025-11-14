@@ -12,7 +12,12 @@ from typing import Dict, Optional
 from openai import OpenAI 
 
 
-def load_student_profile(student_id: str, api_base_url: str = "http://localhost:8110") -> Optional[Dict]:
+def load_student_profile(
+    student_id: str, 
+    api_base_url: str = None
+) -> Optional[Dict]:
+    if api_base_url is None:
+        api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
     """
     Load student profile from evaluation API
     
@@ -83,13 +88,13 @@ def load_student_profile(student_id: str, api_base_url: str = "http://localhost:
             recommendation = "Học sinh xuất sắc - Đề khó để thử thách"
         elif "⭐⭐⭐⭐" in rating or "Giỏi" in rating:
             difficulty_level = "hard"
-            recommendation = "Học sinh giỏi - Đề trung bình-khó"
+            recommendation = "Học sinh giỏi - Đề khó"
         elif "⭐⭐⭐" in rating or "Khá" in rating:
             difficulty_level = "medium"
-            recommendation = "Học sinh khá - Đề trung bình"
+            recommendation = "Học sinh khá - Đề trung bình-khó"
         elif "⭐⭐" in rating or "Trung bình" in rating:
             difficulty_level = "medium"
-            recommendation = "Học sinh trung bình - Đề dễ-trung bình"
+            recommendation = "Học sinh trung bình - Đề trung bình"
         else:  # ⭐ Yếu
             difficulty_level = "easy"
             recommendation = "Học sinh cần hỗ trợ - Đề dễ"
@@ -144,9 +149,18 @@ def get_difficulty_vietnamese(difficulty_pref: str) -> str:
 class QuizGenerator:
     """Generate quiz using AI"""
     
-    def __init__(self, client: OpenAI, student_id: str = None, api_base_url: str = "http://localhost:8110"):
+    def __init__(
+        self, 
+        client: OpenAI, 
+        student_id: str = None, 
+        api_base_url: str = None
+    ):
         self.client = client
         self.student_id = student_id
+        
+        if api_base_url is None:
+            api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
+        
         self.api_base_url = api_base_url
         
         # Load profile if student_id provided
