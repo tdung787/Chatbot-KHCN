@@ -18,71 +18,66 @@ def load_student_profile(
     api_base_url: str = None
 ) -> Optional[Dict]:
     """
-    Load student profile from evaluation API
+    Load student profile from DATABASE (avoid deadlock)
     
     Args:
         student_id: Student ID
-        api_base_url: Base URL of API server
+        api_base_url: Not used anymore
         
     Returns:
-        Student profile with difficulty_level based on performance rating
+        Student profile with difficulty_level from database
     """
-    if api_base_url is None:
-        api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
-    
-    import requests
+    import sqlite3
     from datetime import datetime
     
     try:
-        # Call evaluation API
-        today = datetime.now().strftime("%Y-%m-%d")
-        url = f"{api_base_url}/api/stats/daily"
-        
-        print(f"🔍 Loading student profile from API...")
-        print(f"   URL: {url}")
+        print(f"📥 Loading student profile from database...")
         print(f"   Student ID: {student_id}")
         
-        response = requests.get(
-            url,
-            params={
-                "student_id": student_id,
-                "date": today
-            },
-            timeout=5  # ← GIẢM TỪ 30s → 5s
-        )
+        # Connect to correct database
+        db_path = "database/student_evaluations.db"  # ← TÊN ĐÚNG
         
-        if response.status_code != 200:
-            print(f"⚠️  API returned status {response.status_code}")
+        if not os.path.exists(db_path):
+            print(f"⚠️  Database not found, using default difficulty")
             return {
                 "_id": student_id,
                 "difficulty_level": "medium",
-                "name": "Unknown",
-                "grade": "Unknown",
-                "error": f"API error: {response.status_code}"
+                "error": "Database not found"
             }
         
-        data = response.json()
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
         
-        if not data.get("success"):
-            print(f"⚠️  API returned success=false")
+        # Get latest evaluation for student
+        cursor.execute("""
+            SELECT * FROM daily_evaluations
+            WHERE student_id = ?
+            ORDER BY date DESC
+            LIMIT 1
+        """, (student_id,))
+        
+        row = cursor.fetchone()
+        conn.close()
+        
+        if not row:
+            print(f"⚠️  No evaluation found, using default difficulty")
             return {
                 "_id": student_id,
                 "difficulty_level": "medium",
-                "name": "Unknown",
-                "grade": "Unknown",
-                "error": "API failed"
+                "error": "No evaluation data"
             }
         
-        # Extract rating
-        rating = data.get("rating", "")
-        avg_score = data.get("avg_score", 0.0)
-        total_score = data.get("total_score", 0.0)
+        eval_data = dict(row)
+        rating = eval_data.get("rating", "")
+        avg_score = eval_data.get("avg_score", 0.0)
+        total_score = eval_data.get("total_score", 0.0)
         
         print(f"   📊 Rating: {rating}")
         print(f"   📈 Avg Score: {avg_score}")
         print(f"   🎯 Total Score: {total_score}")
         
-        # ========== FIX: Map rating to difficulty level ==========
+        # Map rating to difficulty level
         if "Xuất sắc" in rating:
             difficulty_level = "hard"
             recommendation = "Học sinh xuất sắc - Đề khó để thử thách"
@@ -99,10 +94,8 @@ def load_student_profile(
             difficulty_level = "easy"
             recommendation = "Học sinh cần hỗ trợ - Đề dễ"
         else:
-            # Fallback - nếu không match bất kỳ
             difficulty_level = "medium"
             recommendation = "Chưa có đánh giá - Đề trung bình"
-        # =========================================================
         
         print(f"   🎓 Difficulty Level: {difficulty_level}")
         print(f"   💡 {recommendation}")
@@ -115,27 +108,13 @@ def load_student_profile(
             "avg_score": avg_score,
             "total_score": total_score,
             "recommendation": recommendation,
-            "evaluated_date": today
+            "evaluated_date": eval_data.get("date")
         }
         
-        print(f"✅ Student profile loaded successfully")
+        print(f"✅ Student profile loaded from database")
         
         return profile
         
-    except requests.exceptions.Timeout:
-        print(f"⚠️  API timeout (5s)")
-        return {
-            "_id": student_id,
-            "difficulty_level": "medium",
-            "error": "API timeout"
-        }
-    except requests.exceptions.RequestException as e:
-        print(f"⚠️  API request failed: {e}")
-        return {
-            "_id": student_id,
-            "difficulty_level": "medium",
-            "error": str(e)
-        }
     except Exception as e:
         print(f"⚠️  Error loading profile: {e}")
         return {
@@ -143,7 +122,6 @@ def load_student_profile(
             "difficulty_level": "medium",
             "error": str(e)
         }
-
 
 def get_difficulty_vietnamese(difficulty_pref: str) -> str:
     """Convert difficulty to Vietnamese"""

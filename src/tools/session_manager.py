@@ -247,6 +247,7 @@ Chỉ trả về TÊN, không giải thích."""
             return dict(row)
         return None
     
+    
     def verify_ownership(self, session_id: str, student_id: str) -> bool:
         """
         Verify session belongs to student
@@ -378,6 +379,38 @@ Chỉ trả về TÊN, không giải thích."""
         conn.close()
         
         return [dict(row) for row in rows]
+
+    def get_latest_session(self, student_id: str) -> Optional[Dict]:
+        """
+        Get latest session for a student (regardless of archived status)
+        """
+        import sqlite3
+        
+        try:
+            conn = self._get_connection()
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            
+            cursor.execute("""
+                SELECT *
+                FROM chat_sessions
+                WHERE student_id = ?
+                ORDER BY updated_at DESC
+                LIMIT 1
+            """, (student_id,))
+            
+            row = cursor.fetchone()
+            conn.close()
+            
+            if row:
+                return dict(row)
+            
+            return None
+            
+        except Exception as e:
+            print(f"⚠️ Get latest session error: {e}")
+            return None
+    # ============================================
     
     def archive_session(self, session_id: str, student_id: str) -> Dict:
         """

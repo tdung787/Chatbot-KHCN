@@ -463,11 +463,15 @@ def create_session(
     first_message: Optional[str] = Query(None, description="Optional first message to start conversation")
 ) -> Dict:
     """
-    Create new chat session
+    Create new chat session (or reuse empty one)
+    
+    Logic:
+    - If latest session is empty (message_count=0) → Reuse it
+    - Otherwise → Create new session
     
     - Validates student_id against external API
-    - If first_message provided: Create session + process message + get response
-    - If no first_message: Create empty session with default name
+    - If first_message provided: Create/reuse session + process message + get response
+    - If no first_message: Create/reuse empty session with default name
     """
     try:
         # ========== VALIDATE STUDENT ID ==========
@@ -483,22 +487,53 @@ def create_session(
         print(f"   ✅ Student validated: {student_info['user_id']['full_name']}")
         # =========================================
         
+        # ========== CHECK FOR EMPTY SESSION ==========
+        latest_session = session_manager.get_latest_session(student_id)
+        
+        if latest_session and latest_session.get('message_count', 0) == 0:
+            print(f"   ♻️  Reusing empty session: {latest_session['id']}")
+            existing_session_id = latest_session['id']
+        else:
+            existing_session_id = None
+            print(f"   ✨ Will create new session")
+        # =============================================
+        
         # ========== CASE 1: WITH FIRST MESSAGE ==========
         if first_message:
-            # Create session with LLM-generated name FIRST
-            session_result = session_manager.create_session(
-                student_id=student_id,
-                first_message=first_message
-            )
-            
-            if not session_result["success"]:
-                raise HTTPException(
-                    status_code=500,
-                    detail=session_result.get("error", "Failed to create session")
+            # Reuse or create session
+            if existing_session_id:
+                session_id = existing_session_id
+                
+                # Update session name based on first message
+                new_name = session_manager._generate_session_name(first_message)
+                
+                conn = session_manager._get_connection()
+                cursor = conn.cursor()
+                cursor.execute("""
+                    UPDATE chat_sessions
+                    SET name = ?, first_message = ?, updated_at = ?
+                    WHERE id = ?
+                """, (new_name, first_message, datetime.now().isoformat(), session_id))
+                conn.commit()
+                conn.close()
+                
+                session = session_manager.get_session(session_id, student_id)
+                print(f"   ♻️  Reused and renamed session: {session_id} - {new_name}")
+            else:
+                # Create new session
+                session_result = session_manager.create_session(
+                    student_id=student_id,
+                    first_message=first_message
                 )
-            
-            session = session_result["session"]
-            print(f"   ✨ Created session: {session['id']} - {session['name']}")
+                
+                if not session_result["success"]:
+                    raise HTTPException(
+                        status_code=500,
+                        detail=session_result.get("error", "Failed to create session")
+                    )
+                
+                session = session_result["session"]
+                print(f"   ✨ Created new session: {session['id']} - {session['name']}")
             
             # NOW create agent with session's student_id
             if not openai_client or not intent_classifier or not retriever:
@@ -565,60 +600,81 @@ def create_session(
                     "class": student_info["current_class"]
                 },
                 "response": response,
-                "has_first_message": True
+                "has_first_message": True,
+                "reused_session": existing_session_id is not None
             }
         
         # ========== CASE 2: EMPTY SESSION ==========
         else:
-            # Create empty session with default name
-            session_id = session_manager._generate_session_id(student_id)
-            default_name = "Cuộc trò chuyện mới"
-            
-            now = datetime.now()
-            
-            conn = session_manager._get_connection()
-            cursor = conn.cursor()
-            
-            cursor.execute("""
-                INSERT INTO chat_sessions (
-                    id, student_id, name, first_message,
-                    created_at, updated_at, message_count, is_archived
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            """, (
-                session_id,
-                student_id,
-                default_name,
-                "",
-                now.isoformat(),
-                now.isoformat(),
-                0,
-                0
-            ))
-            
-            conn.commit()
-            conn.close()
-            
-            print(f"   ✨ Created empty session: {session_id}")
-            
-            return {
-                "success": True,
-                "session": {
-                    "id": session_id,
-                    "student_id": student_id,
-                    "name": default_name,
-                    "created_at": now.isoformat(),
-                    "updated_at": now.isoformat(),
-                    "message_count": 0
-                },
-                "student_info": {
-                    "id": student_info["_id"],
-                    "name": student_info["user_id"]["full_name"],
-                    "grade": student_info["grade_level"],
-                    "class": student_info["current_class"]
-                },
-                "response": None,
-                "has_first_message": False
-            }
+            # Reuse or create empty session
+            if existing_session_id:
+                session = session_manager.get_session(existing_session_id, student_id)
+                print(f"   ♻️  Reusing empty session: {existing_session_id}")
+                
+                return {
+                    "success": True,
+                    "session": session,
+                    "student_info": {
+                        "id": student_info["_id"],
+                        "name": student_info["user_id"]["full_name"],
+                        "grade": student_info["grade_level"],
+                        "class": student_info["current_class"]
+                    },
+                    "response": None,
+                    "has_first_message": False,
+                    "reused_session": True
+                }
+            else:
+                # Create new empty session
+                session_id = session_manager._generate_session_id(student_id)
+                default_name = "Cuộc trò chuyện mới"
+                
+                now = datetime.now()
+                
+                conn = session_manager._get_connection()
+                cursor = conn.cursor()
+                
+                cursor.execute("""
+                    INSERT INTO chat_sessions (
+                        id, student_id, name, first_message,
+                        created_at, updated_at, message_count, is_archived
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """, (
+                    session_id,
+                    student_id,
+                    default_name,
+                    "",
+                    now.isoformat(),
+                    now.isoformat(),
+                    0,
+                    0
+                ))
+                
+                conn.commit()
+                conn.close()
+                
+                print(f"   ✨ Created empty session: {session_id}")
+                
+                return {
+                    "success": True,
+                    "session": {
+                        "id": session_id,
+                        "student_id": student_id,
+                        "name": default_name,
+                        "created_at": now.isoformat(),
+                        "updated_at": now.isoformat(),
+                        "message_count": 0
+                    },
+                    "student_info": {
+                        "id": student_info["_id"],
+                        "name": student_info["user_id"]["full_name"],
+                        "grade": student_info["grade_level"],
+                        "class": student_info["current_class"]
+                    },
+                    "response": None,
+                    "has_first_message": False,
+                    "reused_session": False
+                }
         
     except HTTPException:
         raise

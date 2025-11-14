@@ -703,8 +703,7 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
                     
                     return f"""❌ Bạn không thể tạo đề mới khi đang có bài chưa nộp!
 
-📋 **Bài kiểm tra đang chờ:**
-- Quiz ID: `{pending_quiz['id']}`
+📋 **Bài kiểm tra chưa hoàn thành:**
 - Môn: {pending_quiz.get('subject', 'N/A')}
 - Chủ đề: {pending_quiz.get('topic', 'N/A')}
 
