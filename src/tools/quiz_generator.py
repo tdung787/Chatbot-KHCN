@@ -6,6 +6,7 @@ Cost: ~$0.015/quiz (10 câu) - optimized
 """
 
 import re
+import os
 import json
 from pathlib import Path
 from typing import Dict, Optional

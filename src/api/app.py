@@ -1195,6 +1195,9 @@ def rag_query(
             rag_system_instance = ScienceQASystem(student_id=session_student_id)
             print(f"   ✅ RAG system initialized for student: {session_student_id}")
         except Exception as e:
+            print(f"   ❌ RAG init error: {e}")  # ← THÊM DÒNG NÀY
+            import traceback
+            traceback.print_exc()  # ← VÀ DÒNG NÀY
             raise HTTPException(
                 status_code=503,
                 detail=f"Failed to initialize RAG system: {str(e)}"
