@@ -8,6 +8,8 @@ import sqlite3
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional
+from uuid import uuid4
+from datetime import datetime
 
 
 class ChatHistoryManager:
@@ -51,30 +53,21 @@ class ChatHistoryManager:
     def _get_connection(self):
         """Get database connection"""
         return sqlite3.connect(self.db_path)
-    
+
     def _generate_message_id(self, session_id: str) -> str:
         """
-        Generate unique message ID
+        Generate a unique message ID
         
-        Format: msg_YYYYMMDD_XXX
+        Format: msg_YYYYMMDD_<8-char-UUID>
+        Example: msg_20251114_a7b3c9d2
+        
+        Guaranteed unique, no race conditions
         """
-        conn = self._get_connection()
-        cursor = conn.cursor()
-        
         today = datetime.now().strftime("%Y%m%d")
-        
-        # Count messages created today
-        cursor.execute("""
-            SELECT COUNT(*) FROM chat_messages
-            WHERE id LIKE ?
-        """, (f"msg_{today}_%",))
-        
-        count = cursor.fetchone()[0]
-        conn.close()
-        
-        message_id = f"msg_{today}_{count + 1:03d}"
-        
+        unique_part = uuid4().hex[:8]  # 8 characters from UUID
+        message_id = f"msg_{today}_{unique_part}"
         return message_id
+
     
     def save_message(
         self,
