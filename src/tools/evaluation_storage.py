@@ -2,7 +2,8 @@ import sqlite3
 from typing import Dict, List, Optional
 from datetime import datetime
 from pathlib import Path
-
+from datetime import datetime
+from uuid import uuid4
 
 class EvaluationStorage:
     """Store and retrieve daily student evaluations"""
@@ -52,15 +53,16 @@ class EvaluationStorage:
         
         print("✅ Evaluation storage initialized")
     
+
     def save_evaluation(self, evaluation_data: Dict) -> str:
         """
-        Save or update daily evaluation
+        Save or update daily evaluation using UUID for new records
         
         Args:
             evaluation_data: Dict with all evaluation fields
             
         Returns:
-            evaluation_id
+            evaluation_id (UUID string)
         """
         conn = self._get_connection()
         cursor = conn.cursor()
@@ -68,7 +70,7 @@ class EvaluationStorage:
         student_id = evaluation_data.get("student_id")
         date = evaluation_data.get("date")
         
-        # Check if exists
+        # Check if evaluation exists
         cursor.execute("""
             SELECT id FROM daily_evaluations
             WHERE student_id = ? AND date = ?
@@ -111,8 +113,9 @@ class EvaluationStorage:
             
             print(f"   📝 Updated evaluation: {eval_id}")
         else:
-            # Insert new
-            eval_id = f"eval_{date}_{student_id[:8]}"
+            # Insert new with UUID
+            unique_part = uuid4().hex[:8]  # 8 characters from UUID
+            eval_id = f"eval_{unique_part}"
             
             cursor.execute("""
                 INSERT INTO daily_evaluations (

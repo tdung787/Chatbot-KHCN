@@ -9,13 +9,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional, Dict, List
 import sys
 import os
+import io
+import sqlite3
 import requests
 from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
 import base64
 from PIL import Image
-import io
 from datetime import datetime
 
 # Add parent directory to path to import from src
@@ -1402,8 +1403,6 @@ def get_daily_evaluation(
         Daily evaluation with rating và nhận xét cho giáo viên
     """
     try:
-        import sqlite3
-        
         # Parse date
         if date:
             target_date = date

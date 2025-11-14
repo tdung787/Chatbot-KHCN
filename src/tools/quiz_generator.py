@@ -17,8 +17,6 @@ def load_student_profile(
     student_id: str, 
     api_base_url: str = None
 ) -> Optional[Dict]:
-    if api_base_url is None:
-        api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
     """
     Load student profile from evaluation API
     
@@ -29,6 +27,9 @@ def load_student_profile(
     Returns:
         Student profile with difficulty_level based on performance rating
     """
+    if api_base_url is None:
+        api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
+    
     import requests
     from datetime import datetime
     
@@ -37,10 +38,9 @@ def load_student_profile(
         today = datetime.now().strftime("%Y-%m-%d")
         url = f"{api_base_url}/api/stats/daily"
         
-        print(f"🔍 Fetching student evaluation from API...")
+        print(f"🔍 Loading student profile from API...")
         print(f"   URL: {url}")
         print(f"   Student ID: {student_id}")
-        print(f"   Date: {today}")
         
         response = requests.get(
             url,
@@ -48,12 +48,11 @@ def load_student_profile(
                 "student_id": student_id,
                 "date": today
             },
-            timeout=10
+            timeout=5  # ← GIẢM TỪ 30s → 5s
         )
         
         if response.status_code != 200:
             print(f"⚠️  API returned status {response.status_code}")
-            # Fallback to medium difficulty
             return {
                 "_id": student_id,
                 "difficulty_level": "medium",
@@ -83,7 +82,7 @@ def load_student_profile(
         print(f"   📈 Avg Score: {avg_score}")
         print(f"   🎯 Total Score: {total_score}")
         
-        # Map rating to difficulty level
+        # ========== FIX: Map rating to difficulty level ==========
         if "Xuất sắc" in rating:
             difficulty_level = "hard"
             recommendation = "Học sinh xuất sắc - Đề khó để thử thách"
@@ -96,12 +95,14 @@ def load_student_profile(
         elif "Trung bình" in rating:
             difficulty_level = "medium"
             recommendation = "Học sinh trung bình - Đề trung bình"
-        elif "Yếu" in rating: 
+        elif "Yếu" in rating:
             difficulty_level = "easy"
             recommendation = "Học sinh cần hỗ trợ - Đề dễ"
-        else:  #Yếu
-            difficulty_level = "easy"
-            recommendation = "Học sinh cần hỗ trợ - Đề dễ"
+        else:
+            # Fallback - nếu không match bất kỳ
+            difficulty_level = "medium"
+            recommendation = "Chưa có đánh giá - Đề trung bình"
+        # =========================================================
         
         print(f"   🎓 Difficulty Level: {difficulty_level}")
         print(f"   💡 {recommendation}")
@@ -122,7 +123,7 @@ def load_student_profile(
         return profile
         
     except requests.exceptions.Timeout:
-        print(f"⚠️  API timeout")
+        print(f"⚠️  API timeout (5s)")
         return {
             "_id": student_id,
             "difficulty_level": "medium",
@@ -167,21 +168,35 @@ class QuizGenerator:
         
         self.api_base_url = api_base_url
         
-        # Load profile if student_id provided
-        if student_id:
-            self.student_profile = load_student_profile(student_id, api_base_url)
-        else:
-            self.student_profile = None
-            print("⚠️  No student_id provided, profile not loaded")
+        # ========== FIX: LAZY LOADING - KHÔNG GỌI NGAY ==========
+        self.student_profile = None
         
-        if self.student_profile:
-            full_name = self.student_profile.get("user_id", {}).get("full_name", "")
-            grade = self.student_profile.get("grade_level", "")
-            diff = self.student_profile.get("difficulty_level", "medium")
-            print(f"✓ Profile: {full_name} - Lớp {grade} - Độ khó: {get_difficulty_vietnamese(diff)}")
+        if student_id:
+            print(f"   📋 QuizGenerator initialized for student: {student_id}")
+            print(f"   💡 Profile will be loaded when generating quiz")
+        else:
+            print("⚠️  No student_id provided")
+        # ========================================================
+    
+    def _ensure_profile_loaded(self):
+        """Lazy load profile if not already loaded"""
+        if self.student_id and not self.student_profile:
+            print(f"   📥 Loading profile for {self.student_id}...")
+            self.student_profile = load_student_profile(
+                self.student_id, 
+                self.api_base_url
+            )
+            
+            if self.student_profile:
+                diff = self.student_profile.get("difficulty_level", "medium")
+                rating = self.student_profile.get("rating", "N/A")
+                print(f"   ✓ Profile loaded: {rating} → Độ khó: {get_difficulty_vietnamese(diff)}")
     
     def get_student_info(self) -> Dict:
         """Get formatted student info"""
+        # Ensure profile is loaded
+        self._ensure_profile_loaded()
+        
         if not self.student_profile:
             return {
                 "full_name": "........................",
@@ -197,8 +212,6 @@ class QuizGenerator:
             "difficulty": get_difficulty_vietnamese(self.student_profile.get("difficulty_level", "medium")),
             "grade_level": self.student_profile.get("grade_level")
         }
-        
-    
     
     def generate_quiz(
         self,
@@ -208,6 +221,10 @@ class QuizGenerator:
         use_student_difficulty: bool = True
     ) -> Dict:
         """Generate quiz - Fixed for 15-min, 10 questions"""
+        
+        # ========== LAZY LOAD PROFILE HERE ==========
+        self._ensure_profile_loaded()
+        # ============================================
         
         # Force 15-min, 10 questions format
         num_questions = 10
