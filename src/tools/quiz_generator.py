@@ -12,31 +12,127 @@ from typing import Dict, Optional
 from openai import OpenAI 
 
 
-# ================== STUDENT PROFILE LOADER ==================
-def load_student_profile(profile_path: str = "data/api/student.json") -> Optional[Dict]:
-    """Load student profile from JSON file"""
+def load_student_profile(student_id: str, api_base_url: str = "http://localhost:8110") -> Optional[Dict]:
+    """
+    Load student profile from evaluation API
+    
+    Args:
+        student_id: Student ID
+        api_base_url: Base URL of API server
+        
+    Returns:
+        Student profile with difficulty_level based on performance rating
+    """
+    import requests
+    from datetime import datetime
+    
     try:
-        path = Path(profile_path)
-        if not path.is_absolute():
-            path = Path.cwd() / path
-        path = path.resolve()
+        # Call evaluation API
+        today = datetime.now().strftime("%Y-%m-%d")
+        url = f"{api_base_url}/api/stats/daily"
         
-        if not path.exists():
-            print(f"⚠️  Profile not found: {path}")
-            return None
+        print(f"🔍 Fetching student evaluation from API...")
+        print(f"   URL: {url}")
+        print(f"   Student ID: {student_id}")
+        print(f"   Date: {today}")
         
-        with open(path, 'r', encoding='utf-8') as f:
-            response = json.load(f)
+        response = requests.get(
+            url,
+            params={
+                "student_id": student_id,
+                "date": today
+            },
+            timeout=10
+        )
         
-        if not response.get("success"):
-            print(f"⚠️  Load failed: {response.get('message')}")
-            return None
+        if response.status_code != 200:
+            print(f"⚠️  API returned status {response.status_code}")
+            # Fallback to medium difficulty
+            return {
+                "_id": student_id,
+                "difficulty_level": "medium",
+                "name": "Unknown",
+                "grade": "Unknown",
+                "error": f"API error: {response.status_code}"
+            }
         
-        return response.get("data")
+        data = response.json()
         
+        if not data.get("success"):
+            print(f"⚠️  API returned success=false")
+            return {
+                "_id": student_id,
+                "difficulty_level": "medium",
+                "name": "Unknown",
+                "grade": "Unknown",
+                "error": "API failed"
+            }
+        
+        # Extract rating
+        rating = data.get("rating", "")
+        avg_score = data.get("avg_score", 0.0)
+        total_score = data.get("total_score", 0.0)
+        
+        print(f"   📊 Rating: {rating}")
+        print(f"   📈 Avg Score: {avg_score}")
+        print(f"   🎯 Total Score: {total_score}")
+        
+        # Map rating to difficulty level
+        if "⭐⭐⭐⭐⭐" in rating or "Xuất sắc" in rating:
+            difficulty_level = "hard"
+            recommendation = "Học sinh xuất sắc - Đề khó để thử thách"
+        elif "⭐⭐⭐⭐" in rating or "Giỏi" in rating:
+            difficulty_level = "hard"
+            recommendation = "Học sinh giỏi - Đề trung bình-khó"
+        elif "⭐⭐⭐" in rating or "Khá" in rating:
+            difficulty_level = "medium"
+            recommendation = "Học sinh khá - Đề trung bình"
+        elif "⭐⭐" in rating or "Trung bình" in rating:
+            difficulty_level = "medium"
+            recommendation = "Học sinh trung bình - Đề dễ-trung bình"
+        else:  # ⭐ Yếu
+            difficulty_level = "easy"
+            recommendation = "Học sinh cần hỗ trợ - Đề dễ"
+        
+        print(f"   🎓 Difficulty Level: {difficulty_level}")
+        print(f"   💡 {recommendation}")
+        
+        # Build profile
+        profile = {
+            "_id": student_id,
+            "difficulty_level": difficulty_level,
+            "rating": rating,
+            "avg_score": avg_score,
+            "total_score": total_score,
+            "recommendation": recommendation,
+            "evaluated_date": today
+        }
+        
+        print(f"✅ Student profile loaded successfully")
+        
+        return profile
+        
+    except requests.exceptions.Timeout:
+        print(f"⚠️  API timeout")
+        return {
+            "_id": student_id,
+            "difficulty_level": "medium",
+            "error": "API timeout"
+        }
+    except requests.exceptions.RequestException as e:
+        print(f"⚠️  API request failed: {e}")
+        return {
+            "_id": student_id,
+            "difficulty_level": "medium",
+            "error": str(e)
+        }
     except Exception as e:
-        print(f"⚠️  Error: {e}")
-        return None
+        print(f"⚠️  Error loading profile: {e}")
+        return {
+            "_id": student_id,
+            "difficulty_level": "medium",
+            "error": str(e)
+        }
 
 
 def get_difficulty_vietnamese(difficulty_pref: str) -> str:
@@ -48,9 +144,17 @@ def get_difficulty_vietnamese(difficulty_pref: str) -> str:
 class QuizGenerator:
     """Generate quiz using AI"""
     
-    def __init__(self, openai_client: OpenAI, student_profile_path: str = "data/api/student.json"):
-        self.client = openai_client
-        self.student_profile = load_student_profile(student_profile_path)
+    def __init__(self, client: OpenAI, student_id: str = None, api_base_url: str = "http://localhost:8110"):
+        self.client = client
+        self.student_id = student_id
+        self.api_base_url = api_base_url
+        
+        # Load profile if student_id provided
+        if student_id:
+            self.student_profile = load_student_profile(student_id, api_base_url)
+        else:
+            self.student_profile = None
+            print("⚠️  No student_id provided, profile not loaded")
         
         if self.student_profile:
             full_name = self.student_profile.get("user_id", {}).get("full_name", "")

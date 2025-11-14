@@ -22,8 +22,10 @@ from src.tools.submission_manager import SubmissionManager
 from query import ScienceQASystem
 from src.tools.session_manager import SessionManager
 from src.tools.chat_history_manager import ChatHistoryManager
+from src.tools.evaluation_storage import EvaluationStorage
 
 # ==================== EXTERNAL API CONFIG ====================
+evaluation_storage = EvaluationStorage()
 EXTERNAL_API_BASE_URL = os.getenv("EXTERNAL_API_BASE_URL", "https://v5bfv7qs-3001.asse.devtunnels.ms")
 
 # ==================== HELPER FUNCTIONS ====================
@@ -136,12 +138,8 @@ chat_history_manager = ChatHistoryManager()
 print("✅ Session managers initialized")
 
 # Initialize RAG system
-try:
-    rag_system = ScienceQASystem()
-except Exception as e:
-    print(f"⚠️  Warning: RAG system initialization failed: {e}")
-    rag_system = None
-
+rag_system = None
+print("ℹ️  RAG system will be initialized per-request with student_id")
 
 # ==================== HEALTH CHECK ====================
 @app.get("/")
@@ -468,11 +466,15 @@ def create_session(
         
         # ========== CASE 1: WITH FIRST MESSAGE ==========
         if first_message:
-            if not rag_system:
+            # Initialize RAG system with student_id from session
+            try:
+                session_student_id = session.get('student_id')
+                rag_system_instance = ScienceQASystem(student_id=session_student_id)
+            except Exception as e:
                 raise HTTPException(
                     status_code=503,
-                    detail="RAG system not initialized"
-                )
+                    detail=f"Failed to initialize RAG system: {str(e)}"
+    )
             
             # Create session with LLM-generated name
             session_result = session_manager.create_session(
@@ -1167,14 +1169,7 @@ def rag_query(
         RAG system response with session info
     """
     try:
-        if not rag_system:
-            raise HTTPException(
-                status_code=503,
-                detail="RAG system not initialized. Please check logs."
-            )
-        
         # ========== VALIDATE SESSION ==========
-        # Get session info
         session = session_manager.get_session(session_id)
         
         if not session:
@@ -1193,12 +1188,25 @@ def rag_query(
         
         print(f"   📂 Using session: {session_id} - {session.get('name')}")
         
+        # ========== INITIALIZE RAG SYSTEM WITH STUDENT_ID ==========
+        session_student_id = session.get('student_id')
+        
+        try:
+            rag_system_instance = ScienceQASystem(student_id=session_student_id)
+            print(f"   ✅ RAG system initialized for student: {session_student_id}")
+        except Exception as e:
+            raise HTTPException(
+                status_code=503,
+                detail=f"Failed to initialize RAG system: {str(e)}"
+            )
+        # ===========================================================
+        
         # ========== LOAD CONVERSATION HISTORY ==========
         conversation_history = chat_history_manager.get_session_history(session_id)
         print(f"   📜 Loaded {len(conversation_history)} messages from history")
         
         # ========== PROCESS QUERY ==========
-        response = rag_system.query(user_input, conversation_history)
+        response = rag_system_instance.query(user_input, conversation_history)
         
         # ========== SAVE TO SESSION ==========
         try:
@@ -1258,10 +1266,6 @@ def rag_query(
         except Exception as e:
             print(f"   ⚠️ Failed to save to session: {e}")
             # Don't fail the request, just log
-            
-        except Exception as e:
-            print(f"   ⚠️ Failed to save to session: {e}")
-            # Don't fail the request, just log
         
         # ========== RETURN RESPONSE ==========
         return {
@@ -1271,7 +1275,7 @@ def rag_query(
                 "id": session['id'],
                 "name": session.get('name'),
                 "student_id": session.get('student_id'),
-                "message_count": session.get('message_count', 0) + 2  # +2 for new messages
+                "message_count": new_count
             },
             "response": response
         }
@@ -1280,6 +1284,280 @@ def rag_query(
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"RAG query error: {str(e)}")
+    
+# ==================== STUDENT EVALUATION ENDPOINT ====================
+
+@app.get("/api/stats/daily")
+def get_daily_evaluation(
+    student_id: str = Query(..., description="Student ID (required)"),
+    date: Optional[str] = Query(None, description="Date in YYYY-MM-DD format (default: today)")
+) -> Dict:
+    """
+    Đánh giá học sinh theo ngày dựa trên 3 tiêu chí (cho giáo viên):
+    1. Tính tích cực / Mức độ tham gia (0-2 điểm)
+    2. Năng lực học tập / Chất lượng làm bài (0-2 điểm)
+    3. Tính kỷ luật / Quản lý thời gian (0-1 điểm)
+    
+    Áp dụng Quality Gating: Chất lượng là tiêu chí quan trọng nhất
+    
+    Args:
+        student_id: Student ID
+        date: Date to evaluate (default: today)
+        
+    Returns:
+        Daily evaluation with rating (⭐-⭐⭐⭐⭐⭐) và nhận xét cho giáo viên
+    """
+    try:
+        import sqlite3
+        from datetime import datetime
+        
+        # Parse date
+        if date:
+            target_date = date
+        else:
+            target_date = datetime.now().strftime("%Y-%m-%d")
+        
+        # Get submissions for the day
+        conn = submission_manager._get_connection()
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT 
+                score,
+                duration
+            FROM submissions
+            WHERE student_id = ? 
+            AND DATE(submitted_at) = ?
+        """, (student_id, target_date))
+        
+        rows = cursor.fetchall()
+        conn.close()
+        
+        # Calculate stats
+        total_submissions = len(rows)
+        
+        if total_submissions == 0:
+            return {
+                "success": True,
+                "student_id": student_id,
+                "date": target_date,
+                "total_submissions": 0,
+                "avg_score": 0.0,
+                "on_time_rate": 0.0,
+                "participation_score": 0.0,
+                "competence_score": 0.0,
+                "discipline_score": 0.0,
+                "total_score": 0.0,
+                "rating": "⭐ Yếu",
+                "teacher_comment": "Học sinh chưa tham gia làm bài trong ngày này. Cần nhắc nhở."
+            }
+        
+        # Calculate average score
+        scores = [row["score"] for row in rows]
+        avg_score = sum(scores) / len(scores)
+        
+        # Calculate on-time rate (duration <= 15 minutes)
+        on_time_count = sum(1 for row in rows if row["duration"] <= 15)
+        late_count = total_submissions - on_time_count
+        on_time_rate = (on_time_count / total_submissions) * 100
+        
+        # ========== CALCULATE EVALUATION SCORES ==========
+        
+        # 1. Participation Score - Tính tích cực (0-2 điểm)
+        if total_submissions == 0:
+            participation_score = 0.0
+        elif total_submissions <= 2:
+            participation_score = 0.5
+        elif total_submissions <= 4:
+            participation_score = 1.0
+        elif total_submissions <= 7:
+            participation_score = 1.5
+        else:  # 8+
+            participation_score = 2.0
+        
+        # 2. Competence Score - Năng lực học tập (0-2 điểm)
+        if avg_score < 5.0:
+            competence_score = 0.0
+        elif avg_score < 6.5:
+            competence_score = 0.5
+        elif avg_score < 7.5:
+            competence_score = 1.0
+        elif avg_score < 9.0:
+            competence_score = 1.5
+        else:  # 9.0-10.0
+            competence_score = 2.0
+        
+        # 3. Discipline Score - Tính kỷ luật (0-1 điểm)
+        if on_time_rate < 50:
+            discipline_score = 0.0
+        elif on_time_rate < 70:
+            discipline_score = 0.25
+        elif on_time_rate < 80:
+            discipline_score = 0.5
+        elif on_time_rate < 90:
+            discipline_score = 0.75
+        else:  # 90-100%
+            discipline_score = 1.0
+        
+        # Total score
+        total_score = participation_score + competence_score + discipline_score
+        
+        # ========== QUALITY GATING (OPTION 1) ==========
+        # Chất lượng là tiêu chí quan trọng nhất
+        
+        if avg_score < 5.0:
+            # Học sinh yếu về năng lực
+            if total_score >= 3.0:
+                rating = "⭐⭐ Trung bình"
+                teacher_comment = f"Học sinh tích cực tham gia ({total_submissions} bài) nhưng năng lực còn hạn chế (điểm TB: {round(avg_score, 1)}). Cần hỗ trợ về phương pháp học tập và nắm vững kiến thức cơ bản."
+            else:
+                rating = "⭐ Yếu"
+                teacher_comment = "Học sinh cần được quan tâm và hỗ trợ thêm. Đề xuất liên hệ phụ huynh để tìm hiểu nguyên nhân và có biện pháp hỗ trợ kịp thời."
+        
+        elif avg_score < 6.5:
+            # Học sinh trung bình về năng lực
+            if total_score >= 4.0:
+                rating = "⭐⭐⭐ Khá"
+                teacher_comment = "Học sinh tích cực và có năng lực ở mức trung bình khá. Khuyến khích tiếp tục cố gắng để đạt kết quả cao hơn."
+            elif total_score >= 3.0:
+                rating = "⭐⭐⭐ Khá"
+                teacher_comment = "Học sinh hoàn thành tốt nhiệm vụ. Cần cố gắng thêm ở chất lượng làm bài để đạt kết quả tốt hơn."
+            else:
+                rating = "⭐⭐ Trung bình"
+                teacher_comment = "Học sinh đạt mức cơ bản. Cần tăng cường cả số lượng và chất lượng bài làm."
+        
+        else:
+            # Năng lực tốt (>= 6.5)
+            if total_score < 1.5:
+                rating = "⭐⭐ Trung bình"
+                teacher_comment = f"Học sinh có năng lực tốt (điểm TB: {round(avg_score, 1)}) nhưng tham gia rất ít. Cần khuyến khích làm thêm bài để rèn luyện."
+            elif total_score < 3.0:
+                rating = "⭐⭐⭐ Khá"
+                teacher_comment = f"Học sinh có năng lực tốt (điểm TB: {round(avg_score, 1)}). Khuyến khích tham gia nhiều hơn để phát triển toàn diện."
+            elif total_score < 4.0:
+                rating = "⭐⭐⭐ Khá"
+                teacher_comment = "Học sinh hoàn thành tốt nhiệm vụ học tập. Tiếp tục duy trì và phát huy!"
+            elif total_score < 5.0:
+                rating = "⭐⭐⭐⭐ Giỏi"
+                teacher_comment = "Học sinh học tập nghiêm túc và đạt kết quả tốt. Rất đáng khích lệ và khen ngợi!"
+            else:  # 5.0
+                rating = "⭐⭐⭐⭐⭐ Xuất sắc"
+                teacher_comment = "Học sinh đạt chuẩn tối ưu về cả tham gia, năng lực và kỷ luật. Xứng đáng được khen thưởng và làm gương cho các bạn khác!"
+                    # ========== SAVE TO DATABASE ==========
+        try:
+            eval_id = evaluation_storage.save_evaluation({
+                "student_id": student_id,
+                "date": target_date,
+                "total_submissions": total_submissions,
+                "avg_score": round(avg_score, 2),
+                "on_time_rate": round(on_time_rate, 2),
+                "participation_score": participation_score,
+                "competence_score": competence_score,
+                "discipline_score": discipline_score,
+                "total_score": round(total_score, 2),
+                "rating": rating,
+                "teacher_comment": teacher_comment
+            })
+            print(f"   💾 Saved to DB: {eval_id}")
+        except Exception as e:
+            print(f"   ⚠️ Failed to save evaluation: {e}")
+            # Don't fail request, just log
+        # =======================================
+        
+        return {
+            "success": True,
+            "student_id": student_id,
+            "date": target_date,
+            "total_submissions": total_submissions,
+            "avg_score": round(avg_score, 2),
+            "on_time_rate": round(on_time_rate, 2),
+            "participation_score": participation_score,
+            "competence_score": competence_score,
+            "discipline_score": discipline_score,
+            "total_score": round(total_score, 2),
+            "rating": rating,
+            "teacher_comment": teacher_comment
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Evaluation error: {str(e)}")
+    
+@app.get("/api/stats/history")
+def get_evaluation_history(
+    student_id: str = Query(..., description="Student ID (required)"),
+    days: int = Query(7, ge=1, le=365, description="Number of recent days (default: 7, max: 365)"),
+    start_date: Optional[str] = Query(None, description="Start date (YYYY-MM-DD)"),
+    end_date: Optional[str] = Query(None, description="End date (YYYY-MM-DD)")
+) -> Dict:
+    """
+    Get evaluation history from database
+    
+    Two modes:
+    1. Recent days: Get last N days of evaluations
+    2. Date range: Get evaluations between start_date and end_date
+    
+    Args:
+        student_id: Student ID
+        days: Number of recent days (default: 7)
+        start_date: Optional start date
+        end_date: Optional end date
+        
+    Returns:
+        List of daily evaluations ordered by date DESC
+    """
+    try:
+        # Get history from database
+        history = evaluation_storage.get_history(
+            student_id=student_id,
+            days=days,
+            start_date=start_date,
+            end_date=end_date
+        )
+        
+        # Calculate summary statistics
+        if history:
+            avg_total_score = sum(h['total_score'] for h in history) / len(history)
+            avg_submissions = sum(h['total_submissions'] for h in history) / len(history)
+            avg_score = sum(h['avg_score'] for h in history) / len(history)
+            
+            # Count ratings
+            rating_counts = {}
+            for h in history:
+                rating = h['rating']
+                rating_counts[rating] = rating_counts.get(rating, 0) + 1
+            
+            summary = {
+                "total_days": len(history),
+                "avg_total_score": round(avg_total_score, 2),
+                "avg_daily_submissions": round(avg_submissions, 1),
+                "avg_score": round(avg_score, 2),
+                "rating_distribution": rating_counts,
+                "date_range": {
+                    "from": history[-1]['date'] if history else None,
+                    "to": history[0]['date'] if history else None
+                }
+            }
+        else:
+            summary = {
+                "total_days": 0,
+                "message": "Chưa có dữ liệu đánh giá"
+            }
+        
+        return {
+            "success": True,
+            "student_id": student_id,
+            "query": {
+                "days": days,
+                "start_date": start_date,
+                "end_date": end_date
+            },
+            "summary": summary,
+            "history": history
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"History error: {str(e)}")
     
 # ==================== RUN INFO ====================
 if __name__ == "__main__":

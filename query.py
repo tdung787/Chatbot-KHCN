@@ -250,12 +250,13 @@ def search_questions_tool(
 class SimpleAgent:
     """Simple agent implementation without LangChain"""
     
-    def __init__(self, client: OpenAI, intent_classifier: IntentClassifier, retriever: QuestionRetriever):
+    def __init__(self, client: OpenAI, intent_classifier: IntentClassifier, retriever: QuestionRetriever, student_id: str = None):
         self.client = client
         self.intent_classifier = intent_classifier
         self.retriever = retriever
+        self.student_id = student_id
         self.graph_generator = GraphGenerator(client)
-        self.quiz_generator = QuizGenerator(client)
+        self.quiz_generator = QuizGenerator(client, student_id=student_id)  # ← THÊM student_id
         self.quiz_storage = QuizStorage()
         self.quiz_guard = QuizGuard(client)
         self.submission_manager = SubmissionManager()
@@ -526,16 +527,23 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             print(f"USER QUERY: {user_query}")
             print(f"{'='*70}")
             
-            # Get student ID from profile
-            student_id = "unknown"
-            if self.quiz_generator.student_profile:
+            # Get student ID from instance (passed from API)
+            student_id = self.student_id if self.student_id else "unknown"
+
+            # Also try to get from profile as fallback
+            if student_id == "unknown" and self.quiz_generator.student_profile:
                 student_id = self.quiz_generator.student_profile.get("_id", "unknown")
+
+            print(f"   🆔 Student ID: {student_id}")
             
             # ========== CHECK PENDING QUIZ (EARLY RETURN) ==========
             pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
             
             if pending_quiz:
                 print(f"\n⚠️  Student có quiz đang làm: {pending_quiz['id']}")
+                print(f"   Input: {user_query}")
+                should_submit = self._should_submit_quiz(user_query)
+                print(f"   Should submit: {should_submit}")
                 
                 # ========== NEW: CHECK SUBMISSION INTENT ==========
                 if self._should_submit_quiz(user_query):
@@ -552,6 +560,7 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             💡 **Format đúng:**
             - "Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B"
             - "1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B"
+            - "1-A 2-B 3-C 4-D 5-A 6-B 7-C 8-D 9-A 10-B"
 
             ⚠️ **Lưu ý:** Cần đủ 10 câu, format: số-chữ cái (VD: 1-A, 2-B)"""
                     
@@ -767,9 +776,9 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                     # Save to storage
                     try:
                         # Get student_id from profile
-                        student_id = "unknown"
-                        if self.quiz_generator.student_profile:
-                            student_id = self.quiz_generator.student_profile.get("_id", "unknown")
+                        #student_id = "unknown"
+                        #if self.quiz_generator.student_profile:
+                            #student_id = self.quiz_generator.student_profile.get("_id", "unknown")
                         
                         # Check if has answer_key
                         if not result.get("answer_key"):
@@ -912,16 +921,11 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
 
 # ================== RAG SYSTEM ==================
 class ScienceQASystem:
-    """Main RAG system for science Q&A"""
-    
-    def __init__(self):
-        # Initialize OpenAI client
+    def __init__(self, student_id: str = None):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        
-        # Initialize components
         self.intent_classifier = IntentClassifier(self.client)
         self.retriever = QuestionRetriever(self.client, QDRANT_PATH, COLLECTION_NAME)
-        self.agent = SimpleAgent(self.client, self.intent_classifier, self.retriever)
+        self.agent = SimpleAgent(self.client, self.intent_classifier, self.retriever, student_id)
     
     def query(self, user_query: str, conversation_history: List[Dict] = None) -> str:
         """
