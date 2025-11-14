@@ -84,19 +84,22 @@ def load_student_profile(
         print(f"   🎯 Total Score: {total_score}")
         
         # Map rating to difficulty level
-        if "⭐⭐⭐⭐⭐" in rating or "Xuất sắc" in rating:
+        if "Xuất sắc" in rating:
             difficulty_level = "hard"
             recommendation = "Học sinh xuất sắc - Đề khó để thử thách"
-        elif "⭐⭐⭐⭐" in rating or "Giỏi" in rating:
+        elif "Giỏi" in rating:
             difficulty_level = "hard"
             recommendation = "Học sinh giỏi - Đề khó"
-        elif "⭐⭐⭐" in rating or "Khá" in rating:
+        elif "Khá" in rating:
             difficulty_level = "medium"
             recommendation = "Học sinh khá - Đề trung bình-khó"
-        elif "⭐⭐" in rating or "Trung bình" in rating:
+        elif "Trung bình" in rating:
             difficulty_level = "medium"
             recommendation = "Học sinh trung bình - Đề trung bình"
-        else:  # ⭐ Yếu
+        elif "Yếu" in rating: 
+            difficulty_level = "easy"
+            recommendation = "Học sinh cần hỗ trợ - Đề dễ"
+        else:  #Yếu
             difficulty_level = "easy"
             recommendation = "Học sinh cần hỗ trợ - Đề dễ"
         
@@ -174,7 +177,7 @@ class QuizGenerator:
         if self.student_profile:
             full_name = self.student_profile.get("user_id", {}).get("full_name", "")
             grade = self.student_profile.get("grade_level", "")
-            diff = self.student_profile.get("difficulty_preference", "medium")
+            diff = self.student_profile.get("difficulty_level", "medium")
             print(f"✓ Profile: {full_name} - Lớp {grade} - Độ khó: {get_difficulty_vietnamese(diff)}")
     
     def get_student_info(self) -> Dict:
@@ -191,7 +194,7 @@ class QuizGenerator:
         return {
             "full_name": user_info.get("full_name", "........................"),
             "current_class": self.student_profile.get("current_class", "........................"),
-            "difficulty": get_difficulty_vietnamese(self.student_profile.get("difficulty_preference", "medium")),
+            "difficulty": get_difficulty_vietnamese(self.student_profile.get("difficulty_level", "medium")),
             "grade_level": self.student_profile.get("grade_level")
         }
         

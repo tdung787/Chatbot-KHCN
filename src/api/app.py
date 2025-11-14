@@ -1399,7 +1399,7 @@ def get_daily_evaluation(
         date: Date to evaluate (default: today)
         
     Returns:
-        Daily evaluation with rating (⭐-⭐⭐⭐⭐⭐) và nhận xét cho giáo viên
+        Daily evaluation with rating và nhận xét cho giáo viên
     """
     try:
         import sqlite3
@@ -1442,7 +1442,7 @@ def get_daily_evaluation(
                 "competence_score": 0.0,
                 "discipline_score": 0.0,
                 "total_score": 0.0,
-                "rating": "⭐ Yếu",
+                "rating": "Yếu",
                 "teacher_comment": "Học sinh chưa tham gia làm bài trong ngày này. Cần nhắc nhở."
             }
         
@@ -1502,40 +1502,40 @@ def get_daily_evaluation(
         if avg_score < 5.0:
             # Học sinh yếu về năng lực
             if total_score >= 3.0:
-                rating = "⭐⭐ Trung bình"
+                rating = "Trung bình"
                 teacher_comment = f"Học sinh tích cực tham gia ({total_submissions} bài) nhưng năng lực còn hạn chế (điểm TB: {round(avg_score, 1)}). Cần hỗ trợ về phương pháp học tập và nắm vững kiến thức cơ bản."
             else:
-                rating = "⭐ Yếu"
+                rating = "Yếu"
                 teacher_comment = "Học sinh cần được quan tâm và hỗ trợ thêm. Đề xuất liên hệ phụ huynh để tìm hiểu nguyên nhân và có biện pháp hỗ trợ kịp thời."
         
         elif avg_score < 6.5:
             # Học sinh trung bình về năng lực
             if total_score >= 4.0:
-                rating = "⭐⭐⭐ Khá"
+                rating = "Khá"
                 teacher_comment = "Học sinh tích cực và có năng lực ở mức trung bình khá. Khuyến khích tiếp tục cố gắng để đạt kết quả cao hơn."
             elif total_score >= 3.0:
-                rating = "⭐⭐⭐ Khá"
+                rating = "Khá"
                 teacher_comment = "Học sinh hoàn thành tốt nhiệm vụ. Cần cố gắng thêm ở chất lượng làm bài để đạt kết quả tốt hơn."
             else:
-                rating = "⭐⭐ Trung bình"
+                rating = "Trung bình"
                 teacher_comment = "Học sinh đạt mức cơ bản. Cần tăng cường cả số lượng và chất lượng bài làm."
         
         else:
             # Năng lực tốt (>= 6.5)
             if total_score < 1.5:
-                rating = "⭐⭐ Trung bình"
+                rating = "Trung bình"
                 teacher_comment = f"Học sinh có năng lực tốt (điểm TB: {round(avg_score, 1)}) nhưng tham gia rất ít. Cần khuyến khích làm thêm bài để rèn luyện."
             elif total_score < 3.0:
-                rating = "⭐⭐⭐ Khá"
+                rating = "Khá"
                 teacher_comment = f"Học sinh có năng lực tốt (điểm TB: {round(avg_score, 1)}). Khuyến khích tham gia nhiều hơn để phát triển toàn diện."
             elif total_score < 4.0:
-                rating = "⭐⭐⭐ Khá"
+                rating = "Khá"
                 teacher_comment = "Học sinh hoàn thành tốt nhiệm vụ học tập. Tiếp tục duy trì và phát huy!"
             elif total_score < 5.0:
-                rating = "⭐⭐⭐⭐ Giỏi"
+                rating = "Giỏi"
                 teacher_comment = "Học sinh học tập nghiêm túc và đạt kết quả tốt. Rất đáng khích lệ và khen ngợi!"
             else:  # 5.0
-                rating = "⭐⭐⭐⭐⭐ Xuất sắc"
+                rating = "Xuất sắc"
                 teacher_comment = "Học sinh đạt chuẩn tối ưu về cả tham gia, năng lực và kỷ luật. Xứng đáng được khen thưởng và làm gương cho các bạn khác!"
         
         # ========== SAVE TO DATABASE ==========

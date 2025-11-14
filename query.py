@@ -55,27 +55,6 @@ class IntentClassifier:
     def classify(self, query: str) -> Dict:
         """Classify query intent"""
         try:
-            # ========== DEBUG: PRINT FINAL MESSAGE ==========
-            print("\n🔍 DEBUG - Last message before API call:")
-            if messages:
-                last_msg = messages[-1]
-                print(f"   Role: {last_msg.get('role')}")
-                
-                content = last_msg.get('content')
-                if isinstance(content, list):
-                    print(f"   Content type: LIST (multimodal)")
-                    for i, item in enumerate(content):
-                        print(f"     [{i}] Type: {item.get('type')}")
-                        if item.get('type') == 'text':
-                            print(f"         Text: {item.get('text', '')[:50]}...")
-                        elif item.get('type') == 'image_url':
-                            url = item.get('image_url', {}).get('url', '')
-                            print(f"         URL prefix: {url[:50]}...")
-                            print(f"         Detail: {item.get('image_url', {}).get('detail', 'auto')}")
-                else:
-                    print(f"   Content type: STRING")
-                    print(f"   Text: {str(content)[:50]}...")
-            print("=" * 70)
             response = self.client.chat.completions.create(
                 model=OPENAI_MODEL,
                 messages=[
