@@ -1294,18 +1294,17 @@ async def rag_query(
 
         if image:
             print(f"   🖼️  Image received: {image.filename}")
-            
             try:
                 from datetime import datetime
                 import uuid
                 
                 # Read image
                 image_data = await image.read()
-
+                
                 # Open and convert to RGB (handle PNG/RGBA)
                 img = Image.open(io.BytesIO(image_data))
-
-                # Convert RGBA/LA to RGB
+                
+                # Convert RGBA/LA/P to RGB BEFORE any processing
                 if img.mode in ('RGBA', 'LA', 'P'):
                     # Create white background
                     background = Image.new('RGB', img.size, (255, 255, 255))
@@ -1322,32 +1321,32 @@ async def rag_query(
                 # Resize to 1024px for better quality
                 max_size = 1024
                 ratio = min(max_size / img.width, max_size / img.height)
-
                 if ratio < 1:
                     new_size = (int(img.width * ratio), int(img.height * ratio))
                     img = img.resize(new_size, Image.Resampling.LANCZOS)
                     print(f"   📐 Resized: original → {img.width}x{img.height}")
-
+                
+                # At this point, img is GUARANTEED to be RGB mode
+                
                 # ========== SAVE IMAGE TO DISK ==========
                 # Generate unique filename
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 unique_id = uuid.uuid4().hex[:8]
                 filename = f"chat_img_{session_id}_{timestamp}_{unique_id}.jpg"
-
+                
                 # Save to disk (local directory)
                 filepath = f"database/chat_images/{filename}"
-                img.save(filepath, format="JPEG", quality=95)  # ← Higher quality
-
+                img.save(filepath, format="JPEG", quality=95)  # Now safe to save as JPEG
+                
                 # Generate public URL
                 api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
                 image_url = f"{api_base_url}/static/images/{filename}"
-
                 print(f"   💾 Saved image: {filepath}")
                 print(f"   🌐 Public URL: {image_url}")
                 # ========================================
-
-                # Convert to base64 for LLM (separate buffer)
-                buffer_base64 = io.BytesIO()  # ← Đổi tên biến
+                
+                # Convert to base64 for LLM (use the same RGB image)
+                buffer_base64 = io.BytesIO()
                 img.save(buffer_base64, format="JPEG", quality=95)
                 base64_image = base64.b64encode(buffer_base64.getvalue()).decode()
                 
