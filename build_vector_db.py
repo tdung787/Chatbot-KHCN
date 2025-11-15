@@ -20,7 +20,7 @@ BATCH_SIZE = 100
 COLLECTION_NAME = "KHTN_QA"
 
 # Paths
-INPUT_JSON = "database/parsed_questions.json"
+INPUT_JSON = "database/data_sinh.json"
 DATABASE_FOLDER = "database"
 QDRANT_PATH = f"{DATABASE_FOLDER}/qdrant_storage"
 CHECKPOINT_FILE = f"{DATABASE_FOLDER}/embedding_checkpoint.json"
@@ -116,14 +116,11 @@ def main():
             dup_questions = [q for q in all_questions if q["id"] == dup_id]
             logger.error(f"\n🔴 ID: {dup_id} - Xuất hiện {len(dup_questions)} lần:")
             for i, q in enumerate(dup_questions, 1):
-                logger.error(f"   [{i}] Question #{q['question_number']}: {q['question'][:60]}...")
-                if 'primary_page' in q:
-                    logger.error(f"       Page: {q['primary_page']}")
+                logger.error(f"   [{i}] Question: {q['question'][:60]}...")
         
         logger.error("\n💡 Giải pháp:")
-        logger.error("   1. Kiểm tra lại logic parse trong parse_questions_to_json.py")
-        logger.error("   2. Có thể có câu hỏi trùng số trong cùng 1 page")
-        logger.error("   3. Cần sửa logic tạo ID để đảm bảo unique")
+        logger.error("   1. Kiểm tra lại dữ liệu JSON")
+        logger.error("   2. Đảm bảo mỗi ID là duy nhất")
         raise ValueError(f"Found {len(set(duplicate_ids))} duplicate IDs. Fix them before embedding.")
     
     logger.info("✓ Không có duplicate IDs")
@@ -168,14 +165,11 @@ def main():
         logger.info("✅ Tất cả câu hỏi đã được embed rồi!")
         return
     
-    # Count split questions
-    split_questions = [q for q in questions_to_embed if "spans_pages" in q]
-    if split_questions:
-        logger.info(f"📄 Trong đó có {len(split_questions)} câu bị ngắt qua nhiều trang")
-    
-    # Estimate cost
+    # Estimate cost (bao gồm cả explanation)
     total_chars = sum(
-        len(q["question"]) + len(q["correct_answer_text"]) 
+        len(q["question"]) + 
+        len(q["correct_answer_text"]) + 
+        len(q.get("explanation", ""))
         for q in questions_to_embed
     )
     total_tokens = total_chars * 0.75  # Rough estimate: 1 char ≈ 0.75 tokens for Vietnamese
@@ -197,7 +191,7 @@ def main():
     
     # Process in batches
     logger.info(f"\n🚀 Bắt đầu embedding với batch size = {BATCH_SIZE}")
-    logger.info(f"📝 Embedding text format: question + correct_answer_text")
+    logger.info(f"📝 Embedding text format: question + correct_answer_text + explanation")
     
     total_batches = (len(questions_to_embed) + BATCH_SIZE - 1) // BATCH_SIZE
     points_to_upload = []
@@ -207,9 +201,9 @@ def main():
                           total=total_batches):
         batch = questions_to_embed[batch_idx:batch_idx + BATCH_SIZE]
         
-        # Prepare embedding texts (question + correct answer)
+        # Prepare embedding texts (question + correct answer + explanation)
         embedding_texts = [
-            f"{q['question']} {q['correct_answer_text']}"
+            f"{q['question']} {q['correct_answer_text']} {q.get('explanation', '')}"
             for q in batch
         ]
         
@@ -219,21 +213,16 @@ def main():
             
             # Prepare points for Qdrant
             for question, embedding in zip(batch, embeddings):
-                # Prepare payload
+                # Prepare payload - chỉ lấy các trường tồn tại
                 payload = {
                     "id": question["id"],
                     "question": question["question"],
                     "options": question["options"],
                     "correct_answer": question["correct_answer"],
                     "correct_answer_text": question["correct_answer_text"],
-                    "question_number": question["question_number"],
-                    "primary_page": question.get("primary_page", "unknown"),
-                    "subject": question.get("subject", "unknown")  # ← Thêm subject
+                    "explanation": question.get("explanation", ""),
+                    "subject": question.get("subject", "unknown")
                 }
-                
-                # Add spans_pages if exists
-                if "spans_pages" in question:
-                    payload["spans_pages"] = question["spans_pages"]
                 
                 point = PointStruct(
                     id=hash(question["id"]) & 0x7FFFFFFFFFFFFFFF,  # Convert to positive int

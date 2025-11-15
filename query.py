@@ -202,18 +202,15 @@ def search_questions_tool(
 ) -> str:
     """
     Tool function to search questions
-    
     Args:
         query: User query
         intent_classifier: Intent classifier instance
         retriever: Question retriever instance
-        
     Returns:
         Formatted search results
     """
     # Classify intent
     intent = intent_classifier.classify(query)
-    
     print(f"\n🔍 Intent Classification:")
     print(f"   - Is subject question: {intent['is_subject_question']}")
     print(f"   - Subject: {intent['subject']}")
@@ -242,10 +239,18 @@ def search_questions_tool(
         output += f"Môn: {result['subject']}\n"
         output += f"Câu hỏi: {result['question']}\n"
         output += f"Các lựa chọn:\n"
+        
         for key, value in result['options'].items():
             marker = "✓" if key == result['correct_answer'] else " "
             output += f"  [{marker}] {key}. {value}\n"
-        output += f"Đáp án đúng: {result['correct_answer']} - {result['correct_answer_text']}\n\n"
+        
+        output += f"Đáp án đúng: {result['correct_answer']} - {result['correct_answer_text']}\n"
+        
+        # Thêm explanation nếu có
+        if result.get('explanation'):
+            output += f"Giải thích: {result['explanation']}\n"
+        
+        output += "\n"
     
     return output
 

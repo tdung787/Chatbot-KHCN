@@ -1,40 +1,50 @@
 import os
-import sys
-import pdfplumber
+import fitz  # PyMuPDF
 from tqdm import tqdm
 
-def extract_text_per_page(filepath: str, output_dir: str = "data/output"):
-    """Trích xuất text từ PDF và lưu riêng từng trang"""
+def parse_pdf(filepath: str, output_dir: str = "data/output"):
+    """Trích xuất chỉ text, bỏ qua ảnh hoàn toàn"""
     
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"❌ Không tìm thấy file: {filepath}")
     
-    pages_dir = os.path.join(output_dir, "pages")
-    os.makedirs(pages_dir, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
     
-    pdf = pdfplumber.open(filepath)
-    num_pages = len(pdf.pages)
+    doc = fitz.open(filepath)
+    num_pages = len(doc)
+    
+    all_text = []
     
     print(f"📄 Đang đọc PDF: {os.path.basename(filepath)}")
     print(f"📊 Tổng số trang: {num_pages}\n")
     
-    for i, page in enumerate(tqdm(pdf.pages, desc="Đang trích xuất text"), start=1):
-        text = page.extract_text(x_tolerance=2, y_tolerance=3) or ""
+    for page_num in tqdm(range(num_pages), desc="Đang trích xuất text"):
+        page = doc[page_num]
         
-        # Lưu từng trang
-        page_file = os.path.join(pages_dir, f"page_{i:03d}.txt")
-        with open(page_file, "w", encoding="utf-8") as f:
-            f.write(text.strip())
+        # Chỉ lấy text, bỏ qua ảnh
+        text = page.get_text("text")  # Không lấy ảnh
+        
+        if text.strip():
+            all_text.append(f"{'='*60}")
+            all_text.append(f"TRANG {page_num + 1}")
+            all_text.append(f"{'='*60}")
+            all_text.append(text.strip())
+            all_text.append("")
     
-    pdf.close()
+    doc.close()
+    
+    full_text = "\n".join(all_text)
+    
+    output_file = os.path.join(
+        output_dir, 
+        f"{os.path.splitext(os.path.basename(filepath))[0]}_text.txt"
+    )
+    
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(full_text)
     
     print(f"\n✅ Hoàn tất!")
-    print(f"📁 Text từng trang lưu tại: {pages_dir}")
-
-if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        input_file = sys.argv[1]
-    else:
-        input_file = "data/input/bt10.pdf"
+    print(f"📁 File text: {output_file}")
+    print(f"📝 Tổng ký tự: {len(full_text):,}")
     
-    extract_text_per_page(input_file)
+    return output_file

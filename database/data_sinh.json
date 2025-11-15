@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cau_114",
+    "question": "Từ cây có kiểu gen aaBbDD, bằng phương pháp nuôi cấy hạt phấn trong ống nghiệm có thể tạo ra dòng cây đơn bội có kiểu gen nào sau đây?",
+    "options": {
+      "A": "ABD.",
+      "B": "AbD.",
+      "C": "aBd.",
+      "D": "aBD."
+    },
+    "correct_answer": "A",
+    "correct_answer_text": "ABD.",
+    "explanation": "Cơ thể có kiểu gen aaBbDD giảm phân cho 2 loại hạt phấn có kiểu gen aBD và abD. Khi nuôi hạt phấn trong ống nghiệm có thể tạo ra 2 dòng đơn bội là: aBD và abD.",
+    "subject": "Sinh học"
+  },
+  {
+    "id": "cau_116",
+    "question": "Gen A dài 0,5 µm có hiệu số % nucleotit loại Adenin với một loại nucleotit khác là 5%. Gen A bị đột biến thành alen a. Alen a bị đột biến thành alen a1, a1 bị đột biến thành alen a2. Cho biết đột biến chỉ liên quan đến 1 cặp nucleotit. Số liên kết hidro của gen A ít hơn so với alen a là 1, nhiều hơn so với số liên kết hidro của alen a1 là 2 và nhiều hơn so với số liên kết hidro của alen a2 là 1. Số nucleotit mỗi loại của alen a2 là",
+    "options": {
+      "A": "A = T = 824; G = X = 676.",
+      "B": "A = T = 826; G = X = 674.",
+      "C": "A = T = 825; G = X = 674.",
+      "D": "A = T = 823; G = X = 676."
+    },
+    "correct_answer": "D",
+    "correct_answer_text": "A = T = 823; G = X = 676.",
+    "explanation": "Xét gen A: số Nu của gen là 3000 Nu. Với %A - %G = 5% và %A + %G = 50% → %A = 27,5%; %G = %X = 22,5%. Số Nu từng loại của gen A là: A = T = 825; G = X = 675. Vì đột biến chỉ liên quan đến 1 cặp nucleotit: A → a → a1 → a2. Số liên kết hiđro của gen A ít hơn alen a là 1 → đột biến thay thế 1 cặp A-T bằng 1 cặp G-X. Số liên kết hiđro của a1 ít hơn a là 3 liên kết → a → a1: mất 1 cặp G-X. a1 → a2 tăng 1 liên kết → thay thế 1 cặp A-T bằng G-X. Xét cả quá trình: thay thế 2 cặp A-T bằng 2 cặp G-X và mất 1 cặp G-X. Vậy số nucleotit mỗi loại của alen a2 là: A = T = 825 - 2 = 823; G = X = 675 + 1 = 676.",
+    "subject": "Sinh học"
+  },
+  {
+    "id": "cau_117",
+    "question": "Ở phép lai ♂ AaBbDD × ♀ AaBbDd. Trong quá trình giảm phân của cơ thể đực, cặp gen Aa có 10% tế bào không phân li trong giảm phân I, giảm phân II phân li bình thường, các cặp NST khác phân li bình thường. Trong quá trình giảm phân của cơ thể cái, cặp NST Bb có 20% tế bào không phân li trong giảm phân II, giảm phân I phân li bình thường, các cặp NST khác phân li bình thường. Có học sinh đã đưa ra một số nhận định sau:\n(1) Kiểu gen AaabDd ở đời con chiếm tỉ lệ 0,25%.\n(2) Kiểu gen AaaBBBDD ở đời con chiếm tỉ lệ 0,031%.\n(3) Kiểu gen AaaDdd chiếm tỉ lệ gấp đôi kiểu gen AaaBbbDd.\n(4) Kiểu gen BBB bằng kiểu gen BBb và cùng chiếm tỉ lệ 2,5%.\n(5) Số kiểu gen khác nhau tạo ra trong quần thể là 64.\nSố nhận định đúng là",
+    "options": {
+      "A": "2.",
+      "B": "1.",
+      "C": "4.",
+      "D": "5."
+    },
+    "correct_answer": "C",
+    "correct_answer_text": "4.",
+    "explanation": "Xét cặp Aa - Giới đực: 0,05 Aa; 0,05O; 0,45 A; 0,45 a. Giới cái: 0,5 A, 0,5 a → Aaa = 0,05×0,5 = 0,025. Số kiểu gen: 7 (3 bình thường; 4 đột biến). Xét cặp Bb - Giới đực: 0,5B, 0,5b. Giới cái: 0,05BB; 0,05bb; 0,1O; 0,4B; 0,4b → BBB = Bbb = 0,05×0,5 = 0,025. Số kiểu gen: 9 (6 đột biến; 3 bình thường). Xét cặp Dd: DD × Dd → 1DD:1Dd. Kiểm tra các phát biểu: (1) đúng, AaabbbDd = 0,025×0,4×0,5×0,5 = 0,25%. (2) đúng, AaaBBBDD = 0,025×0,025×0,5 = 0,03125%. (3) đúng, AaabDd = 0,025×0,5×0,1×0,5 = 0,0625%; AaaBbbDd = 0,025×0,025×0,5 = 0,03125%. (4) đúng. (5) sai, số kiểu gen tối đa: 7×9×2 = 126. Vậy có 4 nhận định đúng.",
+    "subject": "Sinh học"
+  }
+]
