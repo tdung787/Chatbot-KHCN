@@ -18,6 +18,7 @@ from dotenv import load_dotenv
 import base64
 from PIL import Image
 from datetime import datetime
+from fastapi.staticfiles import StaticFiles
 
 # Add parent directory to path to import from src
 sys.path.append(str(Path(__file__).parent.parent.parent))
@@ -133,6 +134,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+chat_images_dir = Path("database/chat_images")
+chat_images_dir.mkdir(parents=True, exist_ok=True)
+
+app.mount(
+    "/static/images", 
+    StaticFiles(directory=str(chat_images_dir)), 
+    name="chat_images"
+)
+print(f"✅ Static images mounted at: /static/images")
 
 # ==================== INITIALIZE COMPONENTS ====================
 # Initialize storage
@@ -1280,10 +1290,15 @@ async def rag_query(
         
         # ========== PROCESS IMAGE IF PROVIDED ==========
         image_context = None
+        image_url = None
+
         if image:
             print(f"   🖼️  Image received: {image.filename}")
             
             try:
+                from datetime import datetime
+                import uuid
+                
                 # Read image
                 image_data = await image.read()
                 
@@ -1299,7 +1314,25 @@ async def rag_query(
                     img = img.resize(new_size, Image.Resampling.LANCZOS)
                     print(f"   📐 Resized: original → {img.width}x{img.height}")
                 
-                # Convert to base64
+                # ========== SAVE IMAGE TO DISK ==========
+                # Generate unique filename
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                unique_id = uuid.uuid4().hex[:8]
+                filename = f"chat_img_{session_id}_{timestamp}_{unique_id}.jpg"
+                
+                # Save to disk
+                filepath = f"database/chat_images/{filename}"
+                img.save(filepath, format="JPEG", quality=85)
+                
+                # Generate public URL
+                api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
+                image_url = f"{api_base_url}/static/images/{filename}"
+                
+                print(f"   💾 Saved image: {filepath}")
+                print(f"   🌐 Public URL: {image_url}")
+                # ========================================
+                
+                # Convert to base64 for LLM
                 buffer = io.BytesIO()
                 img.save(buffer, format="JPEG", quality=85)
                 base64_image = base64.b64encode(buffer.getvalue()).decode()
@@ -1307,11 +1340,11 @@ async def rag_query(
                 image_context = {
                     "base64": base64_image,
                     "filename": image.filename,
-                    "size": f"{img.width}x{img.height}"
+                    "size": f"{img.width}x{img.height}",
+                    "url": image_url  # ← THÊM URL
                 }
                 
                 print(f"   ✅ Image processed: {img.width}x{img.height}, {len(base64_image)/1024:.1f}KB")
-                print(f"   🔍 Base64 preview: {base64_image[:100]}...")
                 
             except Exception as e:
                 print(f"   ⚠️ Image processing failed: {e}")
@@ -1363,17 +1396,22 @@ async def rag_query(
         
         # ========== SAVE TO SESSION ==========
         try:
-            # Save user message (with image indicator)
+            # ========== SAVE USER MESSAGE WITH IMAGE MARKDOWN ==========
             user_content = user_input
+
             if image_context:
-                user_content = f"[Có ảnh: {image_context['filename']}] {user_input}"
-            
+                # Prepend markdown image syntax
+                image_markdown = f"![Uploaded image]({image_context['url']})"
+                user_content = f"{image_markdown}\n\n{user_input}"
+                print(f"   📝 Added image markdown to message")
+
             chat_history_manager.save_message(
                 session_id=session_id,
                 role="user",
                 content=user_content
             )
-            
+            # ===========================================================
+                        
             # Save assistant response
             chat_history_manager.save_message(
                 session_id=session_id,
@@ -1418,9 +1456,15 @@ async def rag_query(
             print(f"   ⚠️ Failed to save to session: {e}")
         
         # ========== RETURN RESPONSE ==========
+        
+        full_user_message = user_input
+        if image_context:
+            image_markdown = f"![Uploaded image]({image_context['url']})"
+            full_user_message = f"{image_markdown}\n\n{user_input}"
+            
         return {
             "success": True,
-            "user_input": user_input,
+            "user_input": full_user_message,
             "has_image": image_context is not None,
             "session": {
                 "id": session['id'],
