@@ -40,7 +40,12 @@ COLLECTION_NAME = "KHTN_QA"
 SUBJECTS = {
     "Vật lý": ["vật lý", "physics", "lực", "năng lượng", "điện", "từ", "quang", "nhiệt"],
     "Hóa học": ["hóa học", "chemistry", "phản ứng", "nguyên tố", "hợp chất", "ion"],
-    "Sinh học": ["sinh học", "biology", "tế bào", "gen", "protein", "DNA"],
+    "Sinh học": [
+        "gen", "adn", "arn", "protein", "tế bào", "NST", "nhiễm sắc thể",
+        "đột biến", "nucleotit", "adenin", "guanin", "timin", "xitozin",
+        "liên kết hidro", "giảm phân", "nguyên phân", "kiểu gen", "kiểu hình",
+        "di truyền", "alen", "dna", "rna", "enzyme", "hạt phấn"
+    ],
     "Toán": ["toán", "math", "phương trình", "hàm số", "đồ thị", "số học"]
 }
 # Allowed subjects for quiz generation
@@ -273,11 +278,9 @@ class SimpleAgent:
     def _get_system_prompt(self, mode: str = "general") -> str:
         """
         Get system prompt with real-time pending quiz check
-        
         Args:
             mode: "general" | "search" - prompt mode
         """
-        
         # Get student profile
         student_info = ""
         student_id = "unknown"
@@ -285,89 +288,146 @@ class SimpleAgent:
             profile = self.quiz_generator.student_profile
             student_id = profile.get('_id', 'unknown')
             student_info = f"""
-THÔNG TIN HỌC SINH:
-- Họ tên: {profile.get('name', 'N/A')}
-- Lớp: {profile.get('grade', 'N/A')}
-- Độ khó phù hợp: {profile.get('difficulty_level', 'N/A')}
-"""
+    THÔNG TIN HỌC SINH:
+    - Họ tên: {profile.get('name', 'N/A')}
+    - Lớp: {profile.get('grade', 'N/A')}
+    - Độ khó phù hợp: {profile.get('difficulty_level', 'N/A')}
+    """
         
         # Check pending quiz
         pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
-        
         pending_warning = ""
         if pending_quiz:
             pending_warning = f"""
-⚠️⚠️⚠️ CẢNH BÁO QUAN TRỌNG ⚠️⚠️⚠️
+    ⚠️⚠️⚠️ CẢNH BÁO QUAN TRỌNG ⚠️⚠️⚠️
+    HỌC SINH ĐANG CÓ BÀI KIỂM TRA CHƯA NỘP!
+    - Quiz ID: {pending_quiz['id']}
+    - Môn: {pending_quiz.get('subject', 'N/A')}
+    - Chủ đề: {pending_quiz.get('topic', 'N/A')}
 
-HỌC SINH ĐANG CÓ BÀI KIỂM TRA CHƯA NỘP!
-- Quiz ID: {pending_quiz['id']}
-- Môn: {pending_quiz.get('subject', 'N/A')}
-- Chủ đề: {pending_quiz.get('topic', 'N/A')}
+    QUY TẮC BẮT BUỘC (NGHIÊM NGẶT):
+    1. ❌ KHÔNG được tạo đề kiểm tra mới
+    2. ❌ KHÔNG được giải thích nội dung liên quan đến đề đang làm
+    3. ❌ KHÔNG được đưa ra gợi ý giúp làm bài
+    4. ✅ CHỈ được chat về: thời tiết, câu chuyện, định nghĩa TỔNG QUÁT không liên quan đến đề
 
-QUY TẮC BẮT BUỘC (NGHIÊM NGẶT):
-1. ❌ KHÔNG được tạo đề kiểm tra mới
-2. ❌ KHÔNG được giải thích nội dung liên quan đến đề đang làm
-3. ❌ KHÔNG được đưa ra gợi ý giúp làm bài
-4. ✅ CHỈ được chat về: thời tiết, câu chuyện, định nghĩa TỔNG QUÁT không liên quan đến đề
+    Nếu học sinh yêu cầu tạo đề hoặc hỏi nội dung đề:
+    → TỪ CHỐI lịch sự và nhắc nhở nộp bài trước.
 
-Nếu học sinh yêu cầu tạo đề hoặc hỏi nội dung đề:
-→ TỪ CHỐI lịch sự và nhắc nhở nộp bài trước.
+    Ví dụ từ chối:
+    "Bạn cần nộp bài kiểm tra hiện tại trước khi tạo đề mới! Quiz ID: {pending_quiz['id']}"
+    """
+        
+        # THÊM DATABASE VÀO PROMPT
+        question_database = """
+    📚 CƠ SỞ DỮ LIỆU CÂU HỎI:
 
-Ví dụ từ chối:
-"Bạn cần nộp bài kiểm tra hiện tại trước khi tạo đề mới! Quiz ID: {pending_quiz['id']}"
-"""
+    Câu 114:
+    Câu hỏi: Từ cây có kiểu gen aaBbDD, bằng phương pháp nuôi cấy hạt phấn trong ống nghiệm có thể tạo ra dòng cây đơn bội có kiểu gen nào sau đây?
+    A. ABD.
+    B. AbD.
+    C. aBd.
+    D. aBD.
+    Đáp án: A
+    Giải thích: Cơ thể có kiểu gen aaBbDD giảm phân cho 2 loại hạt phấn có kiểu gen aBD và abD. Khi nuôi hạt phấn trong ống nghiệm có thể tạo ra 2 dòng đơn bội là: aBD và abD.
+
+    ---
+
+    Câu 116:
+    Câu hỏi: Gen A dài 0,5 µm có hiệu số % nucleotit loại Adenin với một loại nucleotit khác là 5%. Gen A bị đột biến thành alen a. Alen a bị đột biến thành alen a1, a1 bị đột biến thành alen a2. Cho biết đột biến chỉ liên quan đến 1 cặp nucleotit. Số liên kết hidro của gen A ít hơn so với alen a là 1, nhiều hơn so với số liên kết hidro của alen a1 là 2 và nhiều hơn so với số liên kết hidro của alen a2 là 1. Số nucleotit mỗi loại của alen a2 là
+    A. A = T = 824; G = X = 676.
+    B. A = T = 826; G = X = 674.
+    C. A = T = 825; G = X = 674.
+    D. A = T = 823; G = X = 676.
+    Đáp án: D
+    Giải thích: Xét gen A: số Nu của gen là 3000 Nu. Với %A - %G = 5% và %A + %G = 50% → %A = 27,5%; %G = %X = 22,5%. Số Nu từng loại của gen A là: A = T = 825; G = X = 675. Vì đột biến chỉ liên quan đến 1 cặp nucleotit: A → a → a1 → a2. Số liên kết hiđro của gen A ít hơn alen a là 1 → đột biến thay thế 1 cặp A-T bằng 1 cặp G-X. Số liên kết hiđro của a1 ít hơn a là 3 liên kết → a → a1: mất 1 cặp G-X. a1 → a2 tăng 1 liên kết → thay thế 1 cặp A-T bằng G-X. Xét cả quá trình: thay thế 2 cặp A-T bằng 2 cặp G-X và mất 1 cặp G-X. Vậy số nucleotit mỗi loại của alen a2 là: A = T = 825 - 2 = 823; G = X = 675 + 1 = 676.
+
+    ---
+
+    Câu 117:
+    Câu hỏi: Ở phép lai ♂ AaBbDD × ♀ AaBbDd. Trong quá trình giảm phân của cơ thể đực, cặp gen Aa có 10% tế bào không phân li trong giảm phân I, giảm phân II phân li bình thường, các cặp NST khác phân li bình thường. Trong quá trình giảm phân của cơ thể cái, cặp NST Bb có 20% tế bào không phân li trong giảm phân II, giảm phân I phân li bình thường, các cặp NST khác phân li bình thường. Có học sinh đã đưa ra một số nhận định sau:
+    (1) Kiểu gen AaabDd ở đời con chiếm tỉ lệ 0,25%.
+    (2) Kiểu gen AaaBBBDD ở đời con chiếm tỉ lệ 0,031%.
+    (3) Kiểu gen AaaDdd chiếm tỉ lệ gấp đôi kiểu gen AaaBbbDd.
+    (4) Kiểu gen BBB bằng kiểu gen BBb và cùng chiếm tỉ lệ 2,5%.
+    (5) Số kiểu gen khác nhau tạo ra trong quần thể là 64.
+    Số nhận định đúng là
+    A. 2.
+    B. 1.
+    C. 4.
+    D. 5.
+    Đáp án: C
+    Giải thích: Xét cặp Aa - Giới đực: 0,05 Aa; 0,05O; 0,45 A; 0,45 a. Giới cái: 0,5 A, 0,5 a → Aaa = 0,05×0,5 = 0,025. Số kiểu gen: 7 (3 bình thường; 4 đột biến). Xét cặp Bb - Giới đực: 0,5B, 0,5b. Giới cái: 0,05BB; 0,05bb; 0,1O; 0,4B; 0,4b → BBB = Bbb = 0,05×0,5 = 0,025. Số kiểu gen: 9 (6 đột biến; 3 bình thường). Xét cặp Dd: DD × Dd → 1DD:1Dd. Kiểm tra các phát biểu: (1) đúng, AaabbbDd = 0,025×0,4×0,5×0,5 = 0,25%. (2) đúng, AaaBBBDD = 0,025×0,025×0,5 = 0,03125%. (3) đúng, AaabDd = 0,025×0,5×0,1×0,5 = 0,0625%; AaaBbbDd = 0,025×0,025×0,5 = 0,03125%. (4) đúng. (5) sai, số kiểu gen tối đa: 7×9×2 = 126. Vậy có 4 nhận định đúng.
+    """
         
         # Build prompt based on mode
         if mode == "search":
             return f"""Bạn là trợ lý giáo dục thông minh.
 
-{student_info}
+    {student_info}
+    {pending_warning}
 
-{pending_warning}
+    {question_database}
 
-NHIỆM VỤ:
-1. Dựa vào kết quả tìm kiếm, trả lời câu hỏi của học sinh
-2. Giải thích rõ ràng, dễ hiểu
-3. Trích dẫn nguồn (ID câu hỏi) khi trả lời
-4. Không copy nguyên văn, hãy diễn giải
+    NHIỆM VỤ:
+    1. Tìm câu hỏi KHỚP NHẤT với câu hỏi của học sinh trong CƠ SỞ DỮ LIỆU trên
+    2. Trả lời theo format: Đáp án + Giải thích (COPY NGUYÊN VĂN từ database)
 
-PHONG CÁCH: Thân thiện, khuyến khích học sinh tư duy
+    ĐỊNH DẠNG TRẢ LỜI:
+    Đáp án [chữ cái]
+    Giải thích: [Copy nguyên văn giải thích từ database]
 
-Ví dụ trích dẫn: "Theo câu hỏi page_002_cau_5..."
-"""
+    QUY TẮC:
+    - KHÔNG tự bịa giải thích
+    - KHÔNG suy luận
+    - CHỈ lấy từ database trên
+    """
         else:  # general mode
             return f"""Bạn là trợ lý học tập AI cho học sinh THPT Việt Nam.
 
-{student_info}
+    {student_info}
+    {pending_warning}
 
-{pending_warning}
+    {question_database}
 
-NHIỆM VỤ:
-- Giải đáp thắc mắc học tập (trừ khi có quiz pending và câu hỏi liên quan)
-- KHÔNG tạo đề kiểm tra nếu có quiz pending
-- Vẽ đồ thị minh họa (nếu cần)
-- Tìm kiếm thông tin (nếu cần)
+    NHIỆM VỤ:
+    - Giải đáp thắc mắc học tập
+    - Nếu học sinh hỏi câu hỏi có trong database → trả lời theo format: Đáp án + Giải thích
+    - KHÔNG tạo đề kiểm tra nếu có quiz pending
 
-PHONG CÁCH:
-- Thân thiện, dễ hiểu
-- Giải thích rõ ràng với ví dụ
-- Khuyến khích tư duy độc lập
+    PHONG CÁCH:
+    - Thân thiện, dễ hiểu
+    - Khuyến khích tư duy độc lập
 
-Hãy giúp học sinh học tốt hơn! 📚✨"""
+    Hãy giúp học sinh học tốt hơn! 📚✨"""
     
     def _should_use_tool(self, query: str) -> bool:
-        """Decide if should use search tool"""
-        # Quick keyword check first
-        keywords = ["gì", "nào", "như thế nào", "tại sao", "là gì", "?"]
-        has_question = any(kw in query.lower() for kw in keywords)
+        # """Decide if should use search tool"""
+        # query_lower = query.lower()
         
-        if not has_question:
-            return False
+        # # Kiểm tra từ khóa câu hỏi
+        # question_keywords = ["gì", "nào", "như thế nào", "tại sao", "là gì", "?", 
+        #                     "bao nhiêu", "tính", "xác định", "số", "tỉ lệ"]
+        # has_question = any(kw in query_lower for kw in question_keywords)
         
-        # Check if related to subjects
-        for subject, keywords in SUBJECTS.items():
-            if any(kw in query.lower() for kw in keywords):
-                return True
+        # # Kiểm tra nếu là bài tập/câu hỏi trắc nghiệm (có A. B. C. D.)
+        # is_multiple_choice = ("A." in query or "a." in query) and \
+        #                     ("B." in query or "b." in query) and \
+        #                     ("C." in query or "c." in query) and \
+        #                     ("D." in query or "d." in query)
+        
+        # # Nếu là câu hỏi trắc nghiệm → luôn search
+        # if is_multiple_choice:
+        #     return True
+        
+        # # Kiểm tra có phải câu hỏi không
+        # if not has_question:
+        #     return False
+        
+        # # Kiểm tra liên quan đến môn học
+        # for subject, keywords in SUBJECTS.items():
+        #     if any(kw in query_lower for kw in keywords):
+        #         return True
         
         return False
     
