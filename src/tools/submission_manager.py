@@ -239,46 +239,62 @@ class SubmissionManager:
             "duration": row[7]
         }
     
-    def get_submission_with_details(self, submission_id: str, answer_key: str) -> Optional[Dict]:
-        """
-        Return detailed per-question info for a submission.
-        """
+    def get_submission_with_details(self, submission_id: str, answer_key: str) -> Dict:
+        """Get submission with detailed breakdown"""
+        
+        # Get submission
         submission = self.get_submission(submission_id)
+        
         if not submission:
-            return None
+            return {"details": [], "correct_count": 0, "incorrect_count": 0}
         
         # Parse answers
-        def parse(ans: str) -> Dict[str, str]:
-            pairs = [p.strip() for p in ans.split(",") if p.strip()]
-            d = {}
-            for p in pairs:
-                if "-" in p:
-                    num, choice = p.split("-", 1)
-                    d[num.strip()] = choice.strip().upper()
-            return d
+        student_answers = submission["student_answers"]  # "1-A,2-B,..."
         
-        student_map = parse(submission["student_answers"])
-        key_map = parse(answer_key)
+        student_dict = {}
+        for item in student_answers.split(","):
+            num, ans = item.strip().split("-")
+            student_dict[int(num)] = ans.upper()
         
+        answer_dict = {}
+        for item in answer_key.split(","):
+            num, ans = item.strip().split("-")
+            answer_dict[int(num)] = ans.upper()
+        
+        # ========== DEBUG LOG ==========
+        print(f"\n🔍 DEBUG - Submission details:")
+        print(f"   Student answers: {student_dict}")
+        print(f"   Answer key: {answer_dict}")
+        # ===============================
+        
+        # Build details
         details = []
         correct_count = 0
-        for qnum in sorted(key_map.keys(), key=lambda x: int(x)):
-            correct_choice = key_map.get(qnum)
-            student_choice = student_map.get(qnum, "")
-            is_correct = (student_choice == correct_choice)
+        incorrect_count = 0
+        
+        for num in range(1, 11):  # Questions 1-10
+            student_ans = student_dict.get(num, "?")
+            correct_ans = answer_dict.get(num, "?")
+            is_correct = (student_ans == correct_ans)
+            
             if is_correct:
                 correct_count += 1
+            else:
+                incorrect_count += 1
+            
             details.append({
-                "question_number": int(qnum),
-                "correct_answer": correct_choice,
-                "student_answer": student_choice,
+                "question_number": num,
+                "student_answer": student_ans,
+                "correct_answer": correct_ans,
                 "is_correct": is_correct
             })
         
-        incorrect_count = len(key_map) - correct_count
+        # ========== DEBUG LOG ==========
+        print(f"   Total details: {len(details)}")
+        print(f"   Correct: {correct_count}, Incorrect: {incorrect_count}")
+        # ===============================
         
         return {
-            "submission": submission,
             "details": details,
             "correct_count": correct_count,
             "incorrect_count": incorrect_count

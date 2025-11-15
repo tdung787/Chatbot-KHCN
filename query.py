@@ -4,6 +4,7 @@ import re
 import platform
 import subprocess
 import requests
+import threading
 from datetime import datetime
 from typing import List, Dict, Optional
 from pathlib import Path
@@ -523,12 +524,10 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
         return f"""📋 **ĐỀ KIỂM TRA ĐANG LÀM**
 
     {quiz_content}
-
-    ---
+    
     💡 **Để nộp bài, chat:**
-    ```
+    
     Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
-    ```
 
     ⚠️ **Lưu ý:** Đảm bảo đúng 10 câu trước khi nộp!"""
 
@@ -695,27 +694,23 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
                         # Update quiz status to completed
                         self.quiz_storage.update_quiz_status(pending_quiz['id'], "completed")
                         
-                        # ========== TRIGGER DAILY EVALUATION ==========
-                        try:
-                            
-                            today = datetime.now().strftime("%Y-%m-%d")
+                        # ========== TRIGGER DAILY EVALUATION =========
+                        def call_daily(student_id: str, date: str):
+                            import requests
                             api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
-                            eval_response = requests.get(
-                                f"{api_base_url}/api/stats/daily",
-                                params={
-                                    "student_id": student_id,
-                                    "date": today
-                                },
-                                timeout=5
-                            )
-                            
-                            if eval_response.status_code == 200:
-                                print(f"   ✅ Daily evaluation updated")
-                            else:
-                                print(f"   ⚠️ Evaluation API returned {eval_response.status_code}")
-                                
-                        except Exception as e:
-                            print(f"   ⚠️ Failed to update evaluation: {e}")
+                            try:
+                                response = requests.get(
+                                    f"{api_base_url}/api/stats/daily",
+                                    params={"student_id": student_id, "date": date},
+                                    timeout=5
+                                )
+                                print(f"✅ Daily evaluation updated: {response.status_code}")
+                            except Exception as e:
+                                print(f"⚠️ Failed to call daily evaluation: {e}")
+
+                        # Thay vì gọi trực tiếp requests.get, chạy background thread
+                        today = datetime.now().strftime("%Y-%m-%d")
+                        threading.Thread(target=call_daily, args=(student_id, today), daemon=True).start()
                             # Don't fail submission, just log
                         # ==============================================
                         
@@ -724,14 +719,14 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
                             result["submission_id"],
                             answer_key
                         )
-                        
+
                         # Format result message
                         score = result["score"]
                         total = result["total"]
                         percentage = result["percentage"]
-                        
-                        # Build details
-                        details_text = ""
+
+                        # ========== BUILD DETAILS (FIXED) ==========
+                        details_list = []
                         for detail in detailed["details"]:
                             num = detail["question_number"]
                             correct = detail["correct_answer"]
@@ -740,12 +735,23 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
                             
                             icon = "✅" if is_correct else "❌"
                             if is_correct:
-                                details_text += f"   {icon} Câu {num}: {student} (Đúng)\n"
+                                line = f"   {icon} Câu {num}: {student} (Đúng)"
                             else:
-                                details_text += f"   {icon} Câu {num}: {student} → Đúng là {correct}\n"
-                        
-                            return f"""🎉 **ĐÃ NỘP BÀI THÀNH CÔNG!**
+                                line = f"   {icon} Câu {num}: {student} → Đúng là {correct}"
+                            
+                            details_list.append(line)
 
+                        # Join all lines
+                        details_text = "\n".join(details_list)
+
+                        # ========== DEBUG LOG ==========
+                        print(f"\n🔍 Details text preview:")
+                        print(f"   Lines built: {len(details_list)}")
+                        print(f"   Text length: {len(details_text)}")
+                        print(f"   First 200 chars: {details_text[:200]}")
+                        # ===============================
+
+                        return f"""🎉 **ĐÃ NỘP BÀI THÀNH CÔNG!**
 📊 **KẾT QUẢ:**
 - Điểm: **{score}/{total}** ({percentage:.1f}%)
 - Đúng: {detailed["correct_count"]} câu
@@ -756,15 +762,12 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
 {details_text}
 
 💾 **Thông tin:**
-- Submission ID: `{result["submission_id"]}`
-- Quiz ID: `{pending_quiz['id']}`
 - Lần nộp thứ {result["daily_count"]} hôm nay
 
 🎯 **Bạn có thể:**
 - Tạo đề mới: "Tạo đề Toán về Hàm số"
-"""
+                        """
 
-                        
                     except Exception as e:
                         print(f"⚠️ Submission error: {e}")
                         return f"❌ Lỗi khi nộp bài: {str(e)}"
