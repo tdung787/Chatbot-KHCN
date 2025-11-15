@@ -246,8 +246,6 @@ FORMAT:
 **Độ khó**: [level]
 **Thời gian**: 15 phút
 **Tổng điểm**: 10 điểm
-**Họ và tên**: [name]
-**Lớp**: [class]
 ---
 ## **Câu 1**: [question]
 **A.** [option]  
