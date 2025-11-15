@@ -1306,6 +1306,7 @@ async def rag_query(
                 img = Image.open(io.BytesIO(image_data))
                 
                 # Calculate resize ratio
+                # Resize to 1024px for better quality
                 max_size = 1024
                 ratio = min(max_size / img.width, max_size / img.height)
 
@@ -1313,29 +1314,29 @@ async def rag_query(
                     new_size = (int(img.width * ratio), int(img.height * ratio))
                     img = img.resize(new_size, Image.Resampling.LANCZOS)
                     print(f"   📐 Resized: original → {img.width}x{img.height}")
-                
+
                 # ========== SAVE IMAGE TO DISK ==========
                 # Generate unique filename
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 unique_id = uuid.uuid4().hex[:8]
                 filename = f"chat_img_{session_id}_{timestamp}_{unique_id}.jpg"
-                
-                # Save to disk
+
+                # Save to disk (local directory)
                 filepath = f"database/chat_images/{filename}"
-                img.save(buffer, format="JPEG", quality=95)
-                
+                img.save(filepath, format="JPEG", quality=95)  # ← Higher quality
+
                 # Generate public URL
                 api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
                 image_url = f"{api_base_url}/static/images/{filename}"
-                
+
                 print(f"   💾 Saved image: {filepath}")
                 print(f"   🌐 Public URL: {image_url}")
                 # ========================================
-                
-                # Convert to base64 for LLM
-                buffer = io.BytesIO()
-                img.save(buffer, format="JPEG", quality=95)
-                base64_image = base64.b64encode(buffer.getvalue()).decode()
+
+                # Convert to base64 for LLM (separate buffer)
+                buffer_base64 = io.BytesIO()  # ← Đổi tên biến
+                img.save(buffer_base64, format="JPEG", quality=95)
+                base64_image = base64.b64encode(buffer_base64.getvalue()).decode()
                 
                 image_context = {
                     "base64": base64_image,
