@@ -1752,6 +1752,38 @@ def get_evaluation_history(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"History error: {str(e)}")
     
+@app.post("/api/teacher/comment")
+def submit_teacher_comment(
+    teacher_id: str = Query(..., description="Teacher ID (required)"),
+    teacher_comment: str = Query(..., description="Teacher's comment"),
+    teacher_rating: Optional[str] = Query(None, description="Teacher's rating (optional)")
+) -> Dict:
+    """
+    Submit teacher comment with optional rating
+    
+    Args:
+        teacher_id: Teacher ID
+        teacher_comment: Comment text
+        teacher_rating: Optional rating (e.g., "Xuất sắc", "Giỏi", "Khá", "Trung bình", "Yếu")
+        
+    Returns:
+        Echo back the same data
+    """
+    from datetime import datetime
+    
+    response = {
+        "success": True,
+        "teacher_id": teacher_id,
+        "teacher_comment": teacher_comment,
+        "submitted_at": datetime.now().isoformat()
+    }
+    
+    # Add rating if provided
+    if teacher_rating:
+        response["teacher_rating"] = teacher_rating
+    
+    return response
+    
 # ==================== RUN INFO ====================
 if __name__ == "__main__":
     import uvicorn
