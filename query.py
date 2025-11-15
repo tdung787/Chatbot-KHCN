@@ -465,6 +465,72 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             return True
         
         return False
+    
+    def _should_view_quiz(self, user_query: str) -> bool:
+        """
+        Detect intent to view current quiz
+        
+        Matches:
+        - "xem lại đề"
+        - "nhắc lại đề"
+        - "cho tôi xem đề"
+        - "đề nào"
+        - "show quiz"
+        """
+        query_lower = user_query.lower()
+        
+        # Keywords for viewing quiz
+        view_keywords = [
+            "xem lại đề", "nhắc lại đề", "xem đề", "hiển thị đề",
+            "cho tôi xem đề", "cho em xem đề", "cho mình xem đề",
+            "đề nào", "đề gì", "bài thi nào", "bài kiểm tra nào",
+            "show quiz", "view quiz", "display quiz",
+            "xem bài", "xem lại bài", "nhắc bài", "đọc lại đề"
+        ]
+        
+        for keyword in view_keywords:
+            if keyword in query_lower:
+                print(f"   ✓ View quiz keyword: '{keyword}'")
+                return True
+        
+        return False
+    
+    def _show_quiz_content(self, pending_quiz: Dict) -> str:
+        """
+        Return full quiz content with instructions
+        
+        Args:
+            pending_quiz: Quiz data from database
+            
+        Returns:
+            Formatted quiz markdown
+        """
+        quiz_id = pending_quiz.get("id")
+        quiz_content = pending_quiz.get("content", "")
+        subject = pending_quiz.get("subject", "N/A")
+        topic = pending_quiz.get("topic", "N/A")
+        
+        if not quiz_content:
+            return f"""⚠️ Không thể tải nội dung đề kiểm tra!
+
+    📋 **Thông tin đề:**
+    - Quiz ID: `{quiz_id}`
+    - Môn: {subject}
+    - Chủ đề: {topic}
+
+    💡 Vui lòng liên hệ giáo viên nếu vấn đề vẫn tiếp diễn."""
+        
+        return f"""📋 **ĐỀ KIỂM TRA ĐANG LÀM**
+
+    {quiz_content}
+
+    ---
+    💡 **Để nộp bài, chat:**
+    ```
+    Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
+    ```
+
+    ⚠️ **Lưu ý:** Đảm bảo đúng 10 câu trước khi nộp!"""
 
     def _extract_answers(self, user_query: str) -> Optional[str]:
         """
@@ -563,11 +629,17 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
             # ========== CHECK PENDING QUIZ FOR OTHER ACTIONS ==========
             pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
             
+            # ========== CHECK PENDING QUIZ FOR OTHER ACTIONS ==========
+            pending_quiz = self.quiz_storage.get_latest_pending_quiz(student_id)
+
             if pending_quiz:
                 print(f"\n⚠️  Student có quiz đang làm: {pending_quiz['id']}")
                 print(f"   Input: {user_query}")
-                should_submit = self._should_submit_quiz(user_query)
-                print(f"   Should submit: {should_submit}")
+                
+                # ========== PRIORITY 1: CHECK VIEW QUIZ INTENT ==========
+                if self._should_view_quiz(user_query):
+                    print("   📋 Phát hiện ý định xem lại đề!")
+                    return self._show_quiz_content(pending_quiz)
                 
                 # ========== NEW: CHECK SUBMISSION INTENT ==========
                 if self._should_submit_quiz(user_query):
@@ -672,32 +744,33 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
                             else:
                                 details_text += f"   {icon} Câu {num}: {student} → Đúng là {correct}\n"
                         
-                        return f"""🎉 **ĐÃ NỘP BÀI THÀNH CÔNG!**
+                            return f"""🎉 **ĐÃ NỘP BÀI THÀNH CÔNG!**
 
-            📊 **KẾT QUẢ:**
-            - Điểm: **{score}/{total}** ({percentage:.1f}%)
-            - Đúng: {detailed["correct_count"]} câu
-            - Sai: {detailed["incorrect_count"]} câu
-            - Thời gian hoàn thành: {result["duration"]} phút
+📊 **KẾT QUẢ:**
+- Điểm: **{score}/{total}** ({percentage:.1f}%)
+- Đúng: {detailed["correct_count"]} câu
+- Sai: {detailed["incorrect_count"]} câu
+- Thời gian hoàn thành: {result["duration"]} phút
 
-            📝 **CHI TIẾT:**
-            {details_text}
+📝 **CHI TIẾT:**
+{details_text}
 
-            💾 **Thông tin:**
-            - Submission ID: `{result["submission_id"]}`
-            - Quiz ID: `{pending_quiz['id']}`
-            - Lần nộp thứ {result["daily_count"]} hôm nay
+💾 **Thông tin:**
+- Submission ID: `{result["submission_id"]}`
+- Quiz ID: `{pending_quiz['id']}`
+- Lần nộp thứ {result["daily_count"]} hôm nay
 
-            🎯 **Bạn có thể:**
-            - Tạo đề mới: "Tạo đề Toán về Hàm số"
-            """
+🎯 **Bạn có thể:**
+- Tạo đề mới: "Tạo đề Toán về Hàm số"
+"""
+
                         
                     except Exception as e:
                         print(f"⚠️ Submission error: {e}")
                         return f"❌ Lỗi khi nộp bài: {str(e)}"
                 # ================================================
 
-                # PRIORITY 1: Block new quiz creation
+                # PRIORITY 2: Block new quiz creation
                 if self._should_create_quiz(user_query):
                     print("   🚫 BLOCKED: Cannot create new quiz")
                     
@@ -707,12 +780,14 @@ Hãy giúp học sinh học tốt hơn! 📚✨"""
 - Môn: {pending_quiz.get('subject', 'N/A')}
 - Chủ đề: {pending_quiz.get('topic', 'N/A')}
 
-💡 **Để nộp bài, chat:**
+💡 **Bạn có thể:**
+1. **Xem lại đề:** Gõ "Xem lại đề" hoặc "Nhắc lại đề"
+2. **Nộp bài:** 
 ```
 Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
 ```
-Sau khi nộp xong, bạn có thể tạo đề mới! 📝
-"""
+
+Sau khi nộp xong, bạn có thể tạo đề mới! 📝"""
                 
                 # PRIORITY 2: Check if cheating
                 guard_result = self.quiz_guard.is_cheating(user_query, pending_quiz)
