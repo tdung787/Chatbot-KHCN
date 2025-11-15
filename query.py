@@ -1018,7 +1018,7 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                                 "type": "image_url",
                                 "image_url": {
                                     "url": f"data:image/jpeg;base64,{image_context['base64']}",
-                                    "detail": "low"
+                                    "detail": "high"
                                 }
                             }
                         ]
@@ -1072,7 +1072,7 @@ Nộp bài: 1-A,2-B,3-C,4-D,5-A,6-B,7-C,8-D,9-A,10-B
                             "type": "image_url",
                             "image_url": {
                                 "url": f"data:image/jpeg;base64,{image_context['base64']}",
-                                "detail": "low"  # 512px, cost-effective
+                                "detail": "high"  # 512px, cost-effective
                             }
                         }
                     ]

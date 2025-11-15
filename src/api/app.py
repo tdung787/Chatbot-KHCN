@@ -1306,9 +1306,9 @@ async def rag_query(
                 img = Image.open(io.BytesIO(image_data))
                 
                 # Calculate resize ratio
-                max_size = 512
+                max_size = 1024
                 ratio = min(max_size / img.width, max_size / img.height)
-                
+
                 if ratio < 1:
                     new_size = (int(img.width * ratio), int(img.height * ratio))
                     img = img.resize(new_size, Image.Resampling.LANCZOS)
@@ -1322,7 +1322,7 @@ async def rag_query(
                 
                 # Save to disk
                 filepath = f"database/chat_images/{filename}"
-                img.save(filepath, format="JPEG", quality=85)
+                img.save(buffer, format="JPEG", quality=95)
                 
                 # Generate public URL
                 api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8110')
@@ -1334,7 +1334,7 @@ async def rag_query(
                 
                 # Convert to base64 for LLM
                 buffer = io.BytesIO()
-                img.save(buffer, format="JPEG", quality=85)
+                img.save(buffer, format="JPEG", quality=95)
                 base64_image = base64.b64encode(buffer.getvalue()).decode()
                 
                 image_context = {
