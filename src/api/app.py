@@ -1301,9 +1301,22 @@ async def rag_query(
                 
                 # Read image
                 image_data = await image.read()
-                
-                # Resize to 512px for cost optimization
+
+                # Open and convert to RGB (handle PNG/RGBA)
                 img = Image.open(io.BytesIO(image_data))
+
+                # Convert RGBA/LA to RGB
+                if img.mode in ('RGBA', 'LA', 'P'):
+                    # Create white background
+                    background = Image.new('RGB', img.size, (255, 255, 255))
+                    if img.mode == 'P':
+                        img = img.convert('RGBA')
+                    background.paste(img, mask=img.split()[-1] if img.mode in ('RGBA', 'LA') else None)
+                    img = background
+                    print(f"   🔄 Converted {img.mode} to RGB")
+                elif img.mode != 'RGB':
+                    img = img.convert('RGB')
+                    print(f"   🔄 Converted {img.mode} to RGB")
                 
                 # Calculate resize ratio
                 # Resize to 1024px for better quality
